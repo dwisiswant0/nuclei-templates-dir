@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nuclei Templates Directory</title>
+  <link href="//unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+  <link href="./style.css" rel="stylesheet" />
+</head>
+
+<body onload="init();">
+<div id="nescss">
+  <header>
+    <div class="container">
+      <div class="nav-brand">
+        <a href="https://nuclei-templates.dw1.io">
+          <h1><i class="nuclei-logo brand-logo"></i>nuclei-templates</h1>
+        </a>
+        <p>directory.</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <main class="main-content">
+      <a class="github-link active" href="https://github.com/projectdiscovery/nuclei-templates" target="_blank" rel="noopener">
+        <p class="nes-balloon from-right">Browse me<br />on GitHub</p>
+        <i class="nes-octocat"></i>
+      </a>
+
+      <section class="topic">
+        <p>
+          Made with <i class="nes-icon is-small heart"></i> by 
+          <a href="https://twitter.com/dwisiswant0" class="nes-badge is-icon author">
+            <span class="is-primary"><i class="nes-icon twitter is-small"></i></span>
+            <span class="is-primary">dwisiswant0</span>
+          </a>
+        </p>
+
+        <p class="nes-balloon from-left">
+          Nuclei templates are the core of the <a href="https://github.com/projectdiscovery/nuclei" target="_blank">nuclei scanner</a> which powers the actual scanning engine.
+        </p>
+      </section>
+
+      <!-- Search -->
+      <section class="topic">        
+        <h2><a href="#search">#</a>Search</h2>
+        <p>
+          <button type="button" class="nes-btn is-primary" onclick="doSuggest('pikpikcu')">pikpikcu</button>
+          <button type="button" class="nes-btn is-success" onclick="doSuggest('workflow')">workflow</button>
+          <button type="button" class="nes-btn is-warning" onclick="doSuggest('cve-2021')">cve-2021</button>
+          <button type="button" class="nes-btn is-error" onclick="doSuggest('RCE')">RCE</button>
+        </p>
+        <p>
+          Search by template ID, name and/or author.
+        </p>
+        <div class="nes-field">
+          <input type="text" autocomplete="off" id="search" class="nes-input" placeholder="cve-2021-XXXX, default-login, jira unauthenticated...">
+        </div>
+      </section>
+
+      <section class="nes-container with-title" id="result" style="display: none;">
+        <h3 class="title"><span id="count"></span> results of <span class="nes-text is-error" id="keyword"></span></h3>
+        <div class="lists">
+          <ul class="nes-list is-circle" id="list">
+          </ul>
+        </div>
+      </section>
+
+      <section class="topic">
+        <p>
+          <h2><a href="#contributing">#</a>Contributing</h2>
+        </p>
+        <p class="lists">
+          <ul class="nes-list is-disc">
+            <li><a href="https://nuclei.projectdiscovery.io/templating-guide/">Nuclei Template Creation Guideline</a></li>
+            <li><a href="https://github.com/projectdiscovery/nuclei-templates/wiki/Unique-Template-Matchers">Nuclei Template Matcher Guideline</a></li>
+            <li><a href="https://github.com/projectdiscovery/nuclei-templates/blob/master/CONTRIBUTING.md">Nuclei Template Contributing Guideline</a></li>
+          </ul>
+        </p>
+
+        <section class="contributors">
+          <h3 class="topic-title"><i class="nes-icon trophy"></i>Top 10 Contributors</h3>
+          <span id="top-10"></span>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <a href="#" class="nes-badge is-splited version">
+          <span class="is-dark">nuclei-templates</span>
+          <span class="is-primary">v8.5.4</span>
+        </a>
+      </p>
+    </footer>
+  </div>
+</div>
+</body>
+<script src="./script.js"></script>
+</html>
