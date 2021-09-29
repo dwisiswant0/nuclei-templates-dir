@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nuclei Templates Directory</title>
   <link href="//unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
   <link href="./style.css" rel="stylesheet" />
@@ -26,6 +27,19 @@
         <i class="nes-octocat"></i>
       </a>
 
+      <!-- Dialog -->
+      <section>
+        <dialog class="nes-dialog" id="dialog">
+          <form method="dialog">
+            <p class="title">Error!</p>
+            <p id="dialog-message"></p>
+            <menu class="dialog-menu">
+              <button class="nes-btn is-error">Confirm</button>
+            </menu>
+          </form>
+        </dialog>
+      </section>
+
       <section class="topic">
         <p>
           Made with <i class="nes-icon is-small heart"></i> by 
@@ -45,6 +59,7 @@
         <h2><a href="#search">#</a>Search</h2>
         <p>
           <button type="button" class="nes-btn is-primary" onclick="doSuggest('pikpikcu')">pikpikcu</button>
+          <button type="button" class="nes-btn" onclick="doSuggest('takeover')">takeover</button>
           <button type="button" class="nes-btn is-success" onclick="doSuggest('workflow')">workflow</button>
           <button type="button" class="nes-btn is-warning" onclick="doSuggest('cve-2021')">cve-2021</button>
           <button type="button" class="nes-btn is-error" onclick="doSuggest('RCE')">RCE</button>
@@ -53,7 +68,7 @@
           Search by template ID, name and/or author.
         </p>
         <div class="nes-field">
-          <input type="text" autocomplete="off" id="search" class="nes-input" placeholder="cve-2021-XXXX, default-login, jira unauthenticated...">
+          <input type="text" autocomplete="off" id="search" class="nes-input" placeholder="cve-2021-XXXX, default-login, jira unauthenticated..." disabled="disabled">
         </div>
       </section>
 
@@ -77,7 +92,7 @@
           </ul>
         </p>
 
-        <section class="contributors">
+        <section class="contributors" id="contributors" style="display: none;">
           <h3 class="topic-title"><i class="nes-icon trophy"></i>Top 10 Contributors</h3>
           <span id="top-10"></span>
         </section>
