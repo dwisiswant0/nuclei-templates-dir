@@ -59,6 +59,8 @@ header.sticky > .container {
   font-size: 0.8rem;
   padding: 0;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 header.sticky .nav-brand h1 {
   margin: 0;
