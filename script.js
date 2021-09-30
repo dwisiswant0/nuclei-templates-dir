@@ -85,7 +85,7 @@ function doSearch() {
 	});
 
 	count.innerText = i;
-	keyword.innerText = input.toHtmlEntities();
+	keyword.innerText = input;
 	list.innerHTML = output;
 	result.style.display = "block"
 };
