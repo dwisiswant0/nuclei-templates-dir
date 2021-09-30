@@ -1,0 +1,15 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Cache-Control = '''
+    max-age=0,
+    no-cache,
+    no-store,
+    must-revalidate'''
+
+[[redirects]]
+    from = "/*"
+    to = "/"
+    status = 302
