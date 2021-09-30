@@ -6,6 +6,7 @@ var contributors = document.getElementById("contributors"),
 	list = document.getElementById("list"),
 	result = document.getElementById("result"),
 	search = document.getElementById("search"),
+	suggest = document.getElementById("suggest"),
 	top10 = document.getElementById("top-10");
 
 String.prototype.toHtmlEntities = function() {	
@@ -28,6 +29,7 @@ function init() {
 		if (this.readyState === this.DONE) {
 			try {
 				window.db = JSON.parse(this.response);
+				suggest.style.display = "block";
 				search.removeAttribute("disabled")
 			} catch(e) {
 				dialogMsg.innerText = "Database can't be loaded: " + e.message;
