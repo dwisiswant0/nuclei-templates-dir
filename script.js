@@ -77,7 +77,7 @@ function doSearch() {
 
 	window.db.forEach(function(e) {
 		if ((e.author.toString().search(regex) != -1) || (e.id.search(regex) != -1) || (e.name.search(regex) != -1)) {
-			output += `<li><a href="${e.url}" target="_blank">${e.name}</a></li>`;
+			output += `<li><a href="${e.url}" target="_blank">${e.id.toLowerCase().startsWith("cve-") ? `${e.id}:` : ""} ${e.name}</a></li>`;
 			i++
 		}
 	});
