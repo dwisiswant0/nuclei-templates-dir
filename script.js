@@ -2,8 +2,10 @@ var contributors = document.getElementById("contributors"),
 	count = document.getElementById("count"),
 	dialog = document.getElementById("dialog"),
 	dialogMsg = document.getElementById("dialog-message"),
+	header = document.getElementById("header"),
 	keyword = document.getElementById("keyword"),
 	list = document.getElementById("list"),
+	octocat = document.getElementsByClassName("github-link")[0],
 	result = document.getElementById("result"),
 	search = document.getElementById("search"),
 	suggest = document.getElementById("suggest"),
@@ -19,7 +21,18 @@ String.prototype.escapeRegExp = function() {
 	return this.replace(/./gm, function(s) {
 		return s.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
 	});
-}
+};
+
+document.body.onscroll = function() {
+	console.log('masuk')
+	if (window.pageYOffset > 50) {
+		header.setAttribute("class", "sticky");
+		octocat.classList.remove("active")
+	} else {
+		header.removeAttribute("class");
+		octocat.classList.add("active")
+	}
+};
 
 function init() {
 	let req = new XMLHttpRequest();
