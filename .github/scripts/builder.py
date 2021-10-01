@@ -48,8 +48,22 @@ for template in tpl:
 	path = re.sub(".*%s-%s" % (name, data["version"][1:]), "", template)
 	with open(template, "r") as stream:
 		obj = yaml.safe_load(stream)
+
+		author = obj['info']['author'] if obj.get("info", {}).get("author") else ""
+		ID = obj['id'] if obj.get("id") else ""
+		name = obj['info']['name'] if obj.get("info", {}).get("name") else ""
+		tags = obj['info']['tags'] if obj.get("info", {}).get("tags") else ""
+
 		try:
-			data["data"].append({"author": obj['info']['author'], "id": obj['id'], "name": obj['info']['name'], "url": blob + path})
+			data["data"].append(
+				{
+					"author": author,
+					"id": ID,
+					"name": name,
+					"tags": tags,
+					"url": blob + path
+				}
+			)
 		except:
 			pass
 
