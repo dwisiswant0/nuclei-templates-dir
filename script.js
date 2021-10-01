@@ -9,7 +9,9 @@ var contributors = document.getElementById("contributors"),
 	result = document.getElementById("result"),
 	search = document.getElementById("search"),
 	suggest = document.getElementById("suggest"),
-	top10 = document.getElementById("top-10");
+	top10 = document.getElementById("top-10"),
+	version = document.getElementById("version"),
+	versionBadge = document.getElementById("version-badge");
 
 String.prototype.toHtmlEntities = function() {	
 	return this.replace(/./gm, function(s) {
@@ -42,6 +44,8 @@ function init() {
 		if (this.readyState === this.DONE) {
 			try {
 				window.db = JSON.parse(this.response);
+				version.innerText = window.db["version"];
+				versionBadge.removeAttribute("style")
 				suggest.style.display = "block";
 				search.removeAttribute("disabled")
 			} catch(e) {
@@ -90,7 +94,7 @@ function doSearch() {
 		return
 	}
 
-	window.db.forEach(function(e) {
+	window.db["data"].forEach(function(e) {
 		if ((e.author.toString().search(regex) != -1) || (e.id.search(regex) != -1) || (e.name.search(regex) != -1)) {
 			output += `<li><a href="${e.url}" target="_blank">${e.id.toLowerCase().startsWith("cve-") ? `${e.id}:` : ""} ${e.name}</a></li>`;
 			i++
