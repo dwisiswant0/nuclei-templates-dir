@@ -1,0 +1,36 @@
+name: "Database builder"
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@master
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.8"
+
+      - name: Install dependencies
+        run: python -m pip install -r .github/scripts/requirements.txt
+
+      - name: Building & update database...
+        id: build
+        run: |
+          python .github/scripts/builder.py 2>/dev/null > db.json
+          echo "::set-output name=changes::$(git status -s | wc -l)"
+
+      - name: Commit changes
+        if: steps.build.outputs.changes > 0
+        run: |
+          git config --local user.email "me@dw1.io"
+          git config --local user.name "Dwi Siswanto"
+          git add .
+          git commit -m "Update DB [$(date)] :robot:"
+          git push origin master
