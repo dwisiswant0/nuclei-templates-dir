@@ -45,7 +45,7 @@ tpl = glob.glob("%s/%s-%s/**/*.yaml" % (temp, name, data["version"][1:]), recurs
 
 print("Building data...", file=sys.stderr)
 for template in tpl:
-	path = re.sub(r".*nuclei-templates", "", template)
+	path = re.sub(".*%s-%s" % (name, data["version"][1:]), "", template)
 	with open(template, "r") as stream:
 		obj = yaml.safe_load(stream)
 		try:
