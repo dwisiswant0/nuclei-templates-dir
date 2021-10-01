@@ -26,7 +26,6 @@ String.prototype.escapeRegExp = function() {
 };
 
 document.body.onscroll = function() {
-	console.log('masuk')
 	if (window.pageYOffset > 50) {
 		header.setAttribute("class", "sticky");
 		octocat.classList.remove("active")
