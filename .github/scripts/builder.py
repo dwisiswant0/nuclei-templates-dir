@@ -20,9 +20,20 @@ repo = "projectdiscovery/" + name
 blob = "https://github.com/%s/blob/master" % (repo)
 data = {}
 
+def get_latest():
+	latest = json.loads(urlopen("https://api.github.com/repos/%s/releases/latest" % (repo)).read())
+	return latest["tag_name"]
+
+try:
+	if sys.argv[1] == "get-latest":
+		print(get_latest())
+except:
+	pass
+else:
+	sys.exit(0)
+
 print("Get latest releases...", file=sys.stderr)
-latest = json.loads(urlopen("https://api.github.com/repos/%s/releases/latest" % (repo)).read())
-data["version"] = latest["tag_name"]
+data["version"] = get_latest()
 data["data"] = []
 
 print("Downloading tag...", file=sys.stderr)
