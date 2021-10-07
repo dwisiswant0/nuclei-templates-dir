@@ -46,7 +46,8 @@ function init() {
 				version.innerText = window.db["version"];
 				versionBadge.removeAttribute("style")
 				suggest.style.display = "block";
-				search.removeAttribute("disabled")
+				search.removeAttribute("disabled");
+				getQueryHash()
 			} catch(e) {
 				dialogMsg.innerText = "Database can't be loaded: " + e.message;
 				dialog.showModal()
@@ -75,6 +76,23 @@ function loadTop10() {
 			contributors.style.display = "block"
 		}
 	})
+}
+
+function getQueryHash() {
+	var params = location.hash.substr(1).split('&'),
+		keyword = "";
+
+	params.forEach(function(val) {
+		var split = val.split("=");
+		if (split[0] == "q") {
+			keyword = split[1];
+			return
+		}
+	});
+
+	if (keyword !== "") {
+		doSuggest(keyword)
+	}
 }
 
 function doSuggest(keyword) {
