@@ -32,7 +32,7 @@ jobs:
           echo "::set-output name=available::$STATUS"
 
       - name: Building & update database...
-        if: steps.update.outputs.available == true
+        if: steps.update.outputs.available == 'true'
         id: build
         run: |
           python .github/scripts/builder.py 2>/dev/null > db.json
