@@ -1,5 +1,5 @@
 {
-    "version": "v8.5.8",
+    "version": "v8.5.9",
     "data": [
         {
             "author": "pikpikcu",
@@ -103,7 +103,7 @@
             "author": "random-robbie",
             "id": "aem-default-login",
             "name": "Adobe AEM Default Login",
-            "tags": "aem,default-login,fuzz",
+            "tags": "aem,default-login",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/default-logins/aem/aem-default-login.yaml"
         },
         {
@@ -126,6 +126,13 @@
             "name": "Szhe Default Login",
             "tags": "szhe,default-login",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/default-logins/szhe/szhe-default-login.yaml"
+        },
+        {
+            "author": "princechaddha",
+            "id": "rancher-default-login",
+            "name": "Rancher Default Login",
+            "tags": "default-login,rancher,kubernetes,devops,cloud",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/default-logins/rancher/rancher-default-login.yaml"
         },
         {
             "author": "pdteam",
@@ -422,6 +429,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/default-logins/oracle/businessintelligence-default-login.yaml"
         },
         {
+            "author": "orpheus,johnjhacking",
+            "id": "google-earth-dlogin",
+            "name": "Google Earth Enterprise Default Login",
+            "tags": "default-login,google",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/default-logins/google/google-earth-dlogin.yaml"
+        },
+        {
             "author": "pikpikcu",
             "id": "flir-default-login",
             "name": "Flir Default Login",
@@ -511,6 +525,62 @@
             "name": "Vmware Vcenter LFI for Linux appliances",
             "tags": "vmware,lfi",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/vmware/vmware-vcenter-lfi-linux.yaml"
+        },
+        {
+            "author": "zh",
+            "id": "fastjson-1.2.62-rce",
+            "name": "Fastjson 1.2.62 Deserialization RCE",
+            "tags": "fastjson,rce,deserialization,oob",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/fastjson/fastjson-1.2.62-rce.yaml"
+        },
+        {
+            "author": "zh",
+            "id": "fastjson-1.2.24-rce",
+            "name": "Fastjson 1.2.24 Deserialization RCE",
+            "tags": "fastjson,rce,deserialization,oob",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/fastjson/fastjson-1.2.24-rce.yaml"
+        },
+        {
+            "author": "zh",
+            "id": "fastjson-1.2.42-rce",
+            "name": "Fastjson 1.2.42 Deserialization RCE",
+            "tags": "fastjson,rce,deserialization,oob",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/fastjson/fastjson-1.2.42-rce.yaml"
+        },
+        {
+            "author": "zh",
+            "id": "fastjson-1.2.47-rce",
+            "name": "Fastjson 1.2.47 Deserialization RCE",
+            "tags": "fastjson,rce,deserialization,oob",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/fastjson/fastjson-1.2.47-rce.yaml"
+        },
+        {
+            "author": "zh",
+            "id": "fastjson-1.2.43-rce",
+            "name": "Fastjson 1.2.43 Deserialization RCE",
+            "tags": "fastjson,rce,deserialization,oob",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/fastjson/fastjson-1.2.43-rce.yaml"
+        },
+        {
+            "author": "zh",
+            "id": "fastjson-1.2.41-rce",
+            "name": "Fastjson 1.2.41 Deserialization RCE",
+            "tags": "fastjson,rce,deserialization,oob",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/fastjson/fastjson-1.2.41-rce.yaml"
+        },
+        {
+            "author": "zh",
+            "id": "fastjson-1.2.68-rce",
+            "name": "Fastjson 1.2.68 Deserialization RCE",
+            "tags": "fastjson,rce,deserialization,oob",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/fastjson/fastjson-1.2.68-rce.yaml"
+        },
+        {
+            "author": "zh",
+            "id": "fastjson-1.2.67-rce",
+            "name": "Fastjson 1.2.67 Deserialization RCE",
+            "tags": "fastjson,rce,deserialization,oob",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/fastjson/fastjson-1.2.67-rce.yaml"
         },
         {
             "author": "rojanrijal",
@@ -658,6 +728,13 @@
             "name": "WordPress Plugin church_admin - 'id' Reflected Cross-Site Scripting (XSS)",
             "tags": "wordpress,xss,wp-plugin",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/wordpress/wp-church-admin-xss.yaml"
+        },
+        {
+            "author": "0x_Akoko",
+            "id": "cherry-file-download",
+            "name": "Cherry Plugin < 1.2.7 - Unauthenticated Arbitrary File Download",
+            "tags": "wordpress,wp-plugin,lfi",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/wordpress/cherry-file-download.yaml"
         },
         {
             "author": "daffainfo",
@@ -962,6 +1039,13 @@
         },
         {
             "author": "0x_Akoko",
+            "id": "advanced-access-manager-lfi",
+            "name": "Advanced Access Manager < 5.9.9 - Unauthenticated Local File Inclusion",
+            "tags": "wordpress,wp-plugin,lfi",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/wordpress/advanced-access-manager-lfi.yaml"
+        },
+        {
+            "author": "0x_Akoko",
             "id": "wordpress-wordfence-lfi",
             "name": "Wordpress Plugin wordfence.7.4.5 - Local File Disclosure",
             "tags": "wordpress,wp-plugin,lfi,wordfence",
@@ -984,7 +1068,7 @@
         {
             "author": "0x_Akoko",
             "id": "brandfolder-open-redirect",
-            "name": "Wordpress brandfolder plugin Open Redirect",
+            "name": "WordPress Brandfolder Plugin Open Redirect",
             "tags": "wordpress,wp-plugin,lfi,rfi",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/wordpress/brandfolder-open-redirect.yaml"
         },
@@ -1071,6 +1155,13 @@
             "name": "WordPress Plugin Iwp-client Listing",
             "tags": "wordpress,listing",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/wordpress/wp-iwp-client-listing.yaml"
+        },
+        {
+            "author": "0x_Akoko",
+            "id": "wp-oxygen-theme-lfi",
+            "name": "WordPress Oxygen-Theme Themes LFI",
+            "tags": "wordpress,wp-theme,lfi",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/wordpress/wp-oxygen-theme-lfi.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -1467,7 +1558,7 @@
         {
             "author": "pikpikcu",
             "id": "h3c-imc-rce",
-            "name": "H3c IMC Rce",
+            "name": "H3c IMC RCE",
             "tags": "rce,h3c-imc",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/other/h3c-imc-rce.yaml"
         },
@@ -1941,13 +2032,6 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/other/sap-redirect.yaml"
         },
         {
-            "author": "0x_Akoko",
-            "id": "ecoa-building-automation-lfd",
-            "name": "ECOA Building Automation System - LFD",
-            "tags": "ecoa,lfi",
-            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/other/ecoa-building-automation-lfd.yaml"
-        },
-        {
             "author": "pikpikcu",
             "id": "duomicms-sql-injection",
             "name": "DuomiCMS SQL Injection",
@@ -2107,13 +2191,6 @@
             "name": "Yapi Remote Code Execution",
             "tags": "yapi,rce",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/other/yapi-rce.yaml"
-        },
-        {
-            "author": "gy741",
-            "id": "ecoa-building-lfi",
-            "name": "ECOA Building Automation System - Directory Traversal Content Disclosure",
-            "tags": "ecoa,lfi",
-            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/other/ecoa-building-lfi.yaml"
         },
         {
             "author": "gy741",
@@ -2459,13 +2536,6 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/apache/apache-solr-file-read.yaml"
         },
         {
-            "author": "pdteam",
-            "id": "apache-httpd-rce",
-            "name": "Apache HTTPd - 2.4.49 (CGI enabled) RCE",
-            "tags": "cve,cve2021,rce,apache",
-            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/apache/apache-httpd-rce.yaml"
-        },
-        {
             "author": "pikpikcu",
             "id": "eclipse-help-system-xss",
             "name": "Eclipse Help System RXSS vulnerability",
@@ -2735,7 +2805,7 @@
             "author": "philippedelteil",
             "id": "confluence-detect",
             "name": "Confluence Detect",
-            "tags": "tech,confluence",
+            "tags": "tech,confluence,atlassian",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/confluence-detect.yaml"
         },
         {
@@ -2781,10 +2851,10 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/sceditor-detect.yaml"
         },
         {
-            "author": "NkxxkN,ELSFA7110",
+            "author": "NkxxkN,ELSFA7110,@OFJAAAH",
             "id": "graphql-detect",
             "name": "GraphQL API Detection",
-            "tags": "tech,graphql",
+            "tags": "tech,graphql,fuzz",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/graphql-detect.yaml"
         },
         {
@@ -3537,7 +3607,7 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/default-redhat-test-page.yaml"
         },
         {
-            "author": "pikpikcu",
+            "author": "pikpikcu,philippedelteil",
             "id": "aviatrix-detect",
             "name": "Aviatrix Detect",
             "tags": "tech,aviatrix",
@@ -4277,6 +4347,13 @@
             "name": "Azkaban Security Checks",
             "tags": "",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/workflows/azkaban-workflow.yaml"
+        },
+        {
+            "author": "philippedelteil",
+            "id": "apache-workflow",
+            "name": "Apache workflow",
+            "tags": "",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/workflows/apache-workflow.yaml"
         },
         {
             "author": "dwisiswant0",
@@ -5168,6 +5245,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2017/CVE-2017-9140.yaml"
         },
         {
+            "author": "divya_mudgal",
+            "id": "CVE-2017-12544",
+            "name": "HPE System Management - XSS",
+            "tags": "cve,cve2017,xss,hp",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2017/CVE-2017-12544.yaml"
+        },
+        {
             "author": "dwisiswant0",
             "id": "CVE-2017-11444",
             "name": "Subrion CMS SQL Injection",
@@ -5560,6 +5644,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-28854.yaml"
         },
         {
+            "author": "pikpikcu",
+            "id": "CVE-2021-40978",
+            "name": "mkdocs 1.2.2 built-in dev-server allows directory traversal",
+            "tags": "cve,cve2021,mkdocs,lfi",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-40978.yaml"
+        },
+        {
             "author": "lotusdll",
             "id": "CVE-2021-21389",
             "name": "BuddyPress REST API Privilege Escalation to RCE",
@@ -5586,6 +5677,13 @@
             "name": "Node.js Systeminformation Command Injection",
             "tags": "nodejs,cve,cve2021",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-21315.yaml"
+        },
+        {
+            "author": "gy741",
+            "id": "CVE-2021-41291",
+            "name": "ECOA Building Automation System - Directory Traversal Content Disclosure",
+            "tags": "cve,cve2021,ecoa,lfi",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-41291.yaml"
         },
         {
             "author": "gy741",
@@ -5677,6 +5775,13 @@
             "name": "Unauthorised Remote Access of Internal Panel",
             "tags": "cve,cve2021,tieline,default-login",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-35336.yaml"
+        },
+        {
+            "author": "0x_Akoko",
+            "id": "CVE-2021-41293",
+            "name": "ECOA Building Automation System - LFD",
+            "tags": "cve,cve2021,ecoa,lfi",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-41293.yaml"
         },
         {
             "author": "gy741,pdteam,parth",
@@ -6044,6 +6149,13 @@
         },
         {
             "author": "geeknik",
+            "id": "CVE-2021-39327",
+            "name": "WordPress BulletProof Security 5.1 Information Disclosure",
+            "tags": "cve,cve2021,wordpress,exposures",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-39327.yaml"
+        },
+        {
+            "author": "geeknik",
             "id": "CVE-2021-31581",
             "name": "Akkadian Provisioning Manager MariaDB Credentials",
             "tags": "cve,cve2021,akkadian,mariadb,disclosure",
@@ -6108,8 +6220,8 @@
         {
             "author": "daffainfo",
             "id": "CVE-2021-41773",
-            "name": "Apache 2.4.49 - Path Traversal",
-            "tags": "cve,cve2021,lfi,apache,misconfig",
+            "name": "Apache 2.4.49 - Path Traversal and Remote Code Execution",
+            "tags": "cve,cve2021,lfi,rce,apache,misconfig",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-41773.yaml"
         },
         {
@@ -6288,7 +6400,7 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-28937.yaml"
         },
         {
-            "author": "nvn1729",
+            "author": "nvn1729,0xd0ff9",
             "id": "CVE-2021-42013",
             "name": "Apache 2.4.49/2.4.50 - Path Traversal and Remote Code Execution",
             "tags": "cve,cve2021,lfi,apache,rce,misconfig",
@@ -6447,6 +6559,13 @@
             "name": "CVE-2021-25281 - SaltStack wheel_async unauth access",
             "tags": "cve,cve2021,saltapi,rce,saltstack",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-25281.yaml"
+        },
+        {
+            "author": "pdteam",
+            "id": "CVE-2021-40438",
+            "name": "Apache <= 2.4.48 - Mod_Proxy SSRF",
+            "tags": "cve,cve2021,ssrf,apache,mod-proxy,oob",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-40438.yaml"
         },
         {
             "author": "0xsapra",
@@ -6925,6 +7044,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2018/CVE-2018-16283.yaml"
         },
         {
+            "author": "daffainfo",
+            "id": "CVE-2018-9205",
+            "name": "Drupal avatar_uploader v7.x-1.0-beta8 - Arbitrary File Disclosure",
+            "tags": "cve,cve2018,lfi,drupal",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2018/CVE-2018-9205.yaml"
+        },
+        {
             "author": "gy741",
             "id": "CVE-2018-15745",
             "name": "Argus Surveillance DVR - Directory Traversal",
@@ -7318,6 +7444,13 @@
         },
         {
             "author": "daffainfo",
+            "id": "CVE-2015-2067",
+            "name": "Magento Server Magmi Plugin - Directory Traversal",
+            "tags": "cve,cve2015,lfi,magento",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2015/CVE-2015-2067.yaml"
+        },
+        {
+            "author": "daffainfo",
             "id": "CVE-2015-4414",
             "name": "WordPress Plugin SE HTML5 Album Audio Player 1.1.0 - Directory Traversal",
             "tags": "cve,cve2015,wordpress,wp-plugin,lfi",
@@ -7420,6 +7553,13 @@
             "name": "Elasticsearch Head plugin LFI",
             "tags": "cve,cve2015,elastic,lfi",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2015/CVE-2015-3337.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "CVE-2015-2068",
+            "name": "Magento Server Magmi Plugin - Cross Site Scripting",
+            "tags": "cve,cve2015,magento,xss",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2015/CVE-2015-2068.yaml"
         },
         {
             "author": "pikpikcu",
@@ -8008,6 +8148,13 @@
             "name": "D-Link DNS-320 - Unauthenticated Remote Code Execution",
             "tags": "cve,cve2020,dlink,rce,oob",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2020/CVE-2020-25506.yaml"
+        },
+        {
+            "author": "0x_Akoko",
+            "id": "CVE-2020-8641",
+            "name": "Lotus Core CMS 1.0.1 - Local File Inclusion",
+            "tags": "cve,cve202,lfi,lotus",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2020/CVE-2020-8641.yaml"
         },
         {
             "author": "dwisiswant0",
@@ -11111,7 +11258,7 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposures/configs/sftp-credentials-exposure.yaml"
         },
         {
-            "author": "dhiyaneshDk",
+            "author": "dhiyaneshDk,geeknik",
             "id": "github-workflows-disclosure",
             "name": "Github Workflow Disclosure",
             "tags": "exposure,config",
@@ -12770,6 +12917,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/yarn-manager-exposure.yaml"
         },
         {
+            "author": "geeknik",
+            "id": "adiscon-loganalyzer",
+            "name": "Detect exposed Adiscon LogAnalyzer",
+            "tags": "adiscon,loganalyzer,syslog,exposures",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/adiscon-loganalyzer.yaml"
+        },
+        {
             "author": "e_schultze_",
             "id": "weave-scope-dashboard",
             "name": "Weave Scope Dashboard",
@@ -13148,13 +13302,6 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/amcrest-login.yaml"
         },
         {
-            "author": "dhiyaneshDk",
-            "id": "netscalar-aaa-login",
-            "name": "NetScalar AAA Login Panel",
-            "tags": "panel",
-            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/netscalar-aaa-login.yaml"
-        },
-        {
             "author": "dhiyaneshDK,hackergautam",
             "id": "open-stack-dashboard-login",
             "name": "OpenStack Dashboard",
@@ -13358,6 +13505,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/portainer-init-deploy.yaml"
         },
         {
+            "author": "princechaddha",
+            "id": "rancher-panel",
+            "name": "Rancher Login Panel",
+            "tags": "panel,rancher,kubernetes,devops,cloud",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/rancher-panel.yaml"
+        },
+        {
             "author": "bsysop",
             "id": "pulse-secure-panel",
             "name": "Pulse Secure VPN Panel",
@@ -13540,6 +13694,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/plesk-obsidian.yaml"
         },
         {
+            "author": "divya_mudgal",
+            "id": "hpe-system-management-login",
+            "name": "HPE System Management Login",
+            "tags": "hp,tech,panel",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/hpe-system-management-login.yaml"
+        },
+        {
             "author": "dhiyaneshDK",
             "id": "lucee-login",
             "name": "Lucee Web/Server Administrator Login",
@@ -13694,6 +13855,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/luci-login-detection.yaml"
         },
         {
+            "author": "divya_mudgal",
+            "id": "lansweeper-login",
+            "name": "Lansweeper Login",
+            "tags": "lansweeper,tech,panel",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/lansweeper-login.yaml"
+        },
+        {
             "author": "PR3R00T",
             "id": "webmin-panel",
             "name": "Webmin Admin Panel",
@@ -13762,6 +13930,13 @@
             "name": "Atlassian Crowd panel detect",
             "tags": "panel",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/atlassian-crowd-panel.yaml"
+        },
+        {
+            "author": "dhiyaneshDk",
+            "id": "netscaler-aaa-login",
+            "name": "NetScaler AAA Login Panel",
+            "tags": "panel",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/netscaler-aaa-login.yaml"
         },
         {
             "author": "johnk3r",
@@ -14000,6 +14175,41 @@
             "name": "Detects IBM Security Access Manager",
             "tags": "panel,ibm",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/ibm/ibm-security-access-manager.yaml"
+        },
+        {
+            "author": "dhiyaneshDk",
+            "id": "cisco-edge-340",
+            "name": "Cisco Edge 340",
+            "tags": "panel,cisco",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/cisco/cisco-edge-340.yaml"
+        },
+        {
+            "author": "dhiyaneshDk",
+            "id": "cisco-systems-login",
+            "name": "Cisco Systems Login",
+            "tags": "panel,cisco",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/cisco/cisco-systems-login.yaml"
+        },
+        {
+            "author": "dhiyaneshDk",
+            "id": "cisco-ace-device-manager",
+            "name": "ACE 4710 Device Manager",
+            "tags": "panel,cisco",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/cisco/cisco-ace-device-manager.yaml"
+        },
+        {
+            "author": "dhiyaneshDk",
+            "id": "cisco-secure-cn",
+            "name": "Cisco Secure CN",
+            "tags": "panel,cisco",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/cisco/cisco-secure-cn.yaml"
+        },
+        {
+            "author": "dhiyaneshDk",
+            "id": "cisco-telepresence",
+            "name": "Cisco Telepresence",
+            "tags": "panel,cisco",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/cisco/cisco-telepresence.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -14534,6 +14744,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/etcd-unauthenticated-api.yaml"
         },
         {
+            "author": "divya_mudgal",
+            "id": "hpe-system-management-anonymous-access",
+            "name": "HPE System Management Anonymous Access",
+            "tags": "hp,unauth",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/hpe-system-management-anonymous.yaml"
+        },
+        {
             "author": "dhiyaneshDk",
             "id": "exposed-jquery-file-upload",
             "name": "Exposed jQuery File Upload",
@@ -14560,6 +14777,13 @@
             "name": "D-Link Arbitrary File Read",
             "tags": "dlink,lfi",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/d-link-arbitary-fileread.yaml"
+        },
+        {
+            "author": "divya_mudgal",
+            "id": "unauthenticated-lansweeper",
+            "name": "Unauthenticated Lansweeper Instance",
+            "tags": "lansweeper,unauth",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/unauthenticated-lansweeper.yaml"
         },
         {
             "author": "notsoevilweasel",
@@ -16177,6 +16401,13 @@
             "name": "Node Integration Enabled",
             "tags": "electron,file,nodejs",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/file/electron/node-integration-enabled.yaml"
+        },
+        {
+            "author": "me9187",
+            "id": "electron-version-detect.yaml",
+            "name": "Electron Version Detect",
+            "tags": "electron,file",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/file/electron/electron-version-detect.yaml"
         },
         {
             "author": "geeknik",
