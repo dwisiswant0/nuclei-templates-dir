@@ -1,6 +1,13 @@
 {
-    "version": "v8.6.0",
+    "version": "v8.6.1",
     "data": [
+        {
+            "author": "Lark-Lab",
+            "id": "CNVD-2019-06255",
+            "name": "CatfishCMS RCE",
+            "tags": "rce,cvnd,catfishcms",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cnvd/CNVD-2019-06255.yaml"
+        },
         {
             "author": "pikpikcu",
             "id": "CNVD-2021-30167",
@@ -618,6 +625,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/thinkphp/thinkphp-2-rce.yaml"
         },
         {
+            "author": "lark-lab",
+            "id": "thinkphp-501-rce",
+            "name": "ThinkPHP 5.0.1 RCE",
+            "tags": "thinkphp,rce",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/thinkphp/thinkphp-501-rce.yaml"
+        },
+        {
             "author": "dr_set",
             "id": "thinkphp-5022-rce",
             "name": "ThinkPHP 5.0.22 RCE",
@@ -714,6 +728,13 @@
             "name": "Wordpress Aspose Importer & Exporter v1.0 Plugin File Download",
             "tags": "wordpress,wp-plugin,lfi,aspose",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/wordpress/aspose-ie-file-download.yaml"
+        },
+        {
+            "author": "0x_Akoko",
+            "id": "wp-javospot-lfi",
+            "name": "Javo Spot Premium Theme - Unauthenticated Directory Traversal",
+            "tags": "wordpress,wp-theme,lfi,wp",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/wordpress/wp-javospot-lfi.yaml"
         },
         {
             "author": "Suman_Kar",
@@ -1137,6 +1158,13 @@
         },
         {
             "author": "0x_Akoko",
+            "id": "wp-tinymce-lfi",
+            "name": "Tinymce Thumbnail Gallery <= 1.0.7 - download-image.php LFI",
+            "tags": "wordpress,wp-theme,lfi,wordpress,tinymce",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/wordpress/wp-tinymce-lfi.yaml"
+        },
+        {
+            "author": "0x_Akoko",
             "id": "brandfolder-lfi",
             "name": "Wordpress brandfolder plugin - RFI & LFI",
             "tags": "wordpress,wp-plugin,lfi,rfi",
@@ -1502,7 +1530,7 @@
         {
             "author": "gy741",
             "id": "zhiyuan-file-upload",
-            "name": "Zhiyuan Oa arbitrary file upload vulnerability",
+            "name": "Zhiyuan OA arbitrary file upload vulnerability",
             "tags": "zhiyuan,rce",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/other/zhiyuan-file-upload.yaml"
         },
@@ -2412,7 +2440,7 @@
         {
             "author": "pikpikcu",
             "id": "zhiyuan-oa-session-leak",
-            "name": "Zhiyuan Oa Session Leak",
+            "name": "Zhiyuan OA Session Leak",
             "tags": "zhiyuan,leak,disclosure",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/other/zhiyuan-oa-session-leak.yaml"
         },
@@ -2891,13 +2919,6 @@
             "name": "GraphQL API Detection",
             "tags": "tech,graphql,fuzz",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/graphql-detect.yaml"
-        },
-        {
-            "author": "dhiyaneshDK,pussycat0x",
-            "id": "ibm-http-server",
-            "name": "Default IBM HTTP Server",
-            "tags": "tech,ibm",
-            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/ibm-http-server.yaml"
         },
         {
             "author": "joanbono",
@@ -4111,6 +4132,20 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/apache/apache-detect.yaml"
         },
         {
+            "author": "dhiyaneshDK,pussycat0x",
+            "id": "ibm-http-server",
+            "name": "Default IBM HTTP Server",
+            "tags": "tech,ibm",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/ibm/ibm-http-server.yaml"
+        },
+        {
+            "author": "princechaddha",
+            "id": "ibm-sterling-detect",
+            "name": "IBM Sterling File Gateway Detect",
+            "tags": "tech,sterling,ibm",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/ibm/ibm-sterling-detect.yaml"
+        },
+        {
             "author": "organiccrap",
             "id": "telerik-fileupload-detect",
             "name": "Detect Telerik Web UI fileupload handler",
@@ -4592,6 +4627,13 @@
             "name": "hatenablog takeover detection",
             "tags": "takeover",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/takeovers/hatenablog-takeover.yaml"
+        },
+        {
+            "author": "harshinsecurity,philippedelteil",
+            "id": "wix-takeover",
+            "name": "",
+            "tags": "takeover,wix",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/takeovers/wix-takeover.yaml"
         },
         {
             "author": "pdteam",
@@ -5693,6 +5735,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-40978.yaml"
         },
         {
+            "author": "dwisiswant0",
+            "id": "CVE-2021-42258",
+            "name": "BillQuick Web Suite SQLi",
+            "tags": "cve,cve2021,sqli,billquick",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-42258.yaml"
+        },
+        {
             "author": "lotusdll",
             "id": "CVE-2021-21389",
             "name": "BuddyPress REST API Privilege Escalation to RCE",
@@ -6246,6 +6295,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-27651.yaml"
         },
         {
+            "author": "pdteam",
+            "id": "CVE-2021-22205",
+            "name": "GitLab CE/EE Unauthenticated RCE using ExifTool",
+            "tags": "cve,cve2021,gitlab,rce,oast",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-22205.yaml"
+        },
+        {
             "author": "geeknik",
             "id": "CVE-2021-33221",
             "name": "CommScope Ruckus IoT Controller Unauthenticated Service Details",
@@ -6265,6 +6321,13 @@
             "name": "Workreap WordPress theme - unauthenticated RCE",
             "tags": "cve,cve2021,wordpress,wp-plugin,rce,intrusive",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-24499.yaml"
+        },
+        {
+            "author": "_0xf4n9x_",
+            "id": "CVE-2021-36749",
+            "name": "Apache Druid Authentication Restrictions Bypass",
+            "tags": "cve,cve2021,apache,lfi,auth-bypass",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-36749.yaml"
         },
         {
             "author": "daffainfo",
@@ -7597,6 +7660,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2015/CVE-2015-9480.yaml"
         },
         {
+            "author": "0x_Akoko",
+            "id": "CVE-2015-5471",
+            "name": "Swim Team <= v1.44.10777 - Local File Inclusion",
+            "tags": "cve,cve2015,wordpress,wp-plugin,lfi",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2015/CVE-2015-5471.yaml"
+        },
+        {
             "author": "pdteam",
             "id": "CVE-2015-3306",
             "name": "ProFTPd RCE",
@@ -8034,7 +8104,7 @@
             "author": "pdteam",
             "id": "CVE-2020-28208",
             "name": "RocketChat Unauthenticated Email enumeration",
-            "tags": "cve,cve2020,rockethchat",
+            "tags": "cve,cve2020,rocketchat",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2020/CVE-2020-28208.yaml"
         },
         {
@@ -8869,6 +8939,13 @@
             "name": "HDW WordPress Video Gallery <= 1.2 - Reflected Cross-Site Scripting (XSS) via mychannel.php",
             "tags": "cve,cve2016,wordpress,xss,wp-plugin",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2016/CVE-2016-1000135.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "CVE-2016-1000136",
+            "name": "heat-trackr v1.0 - XSS via heat-trackr_abtest_add.php",
+            "tags": "cve,cve2016,wordpress,xss,wp-plugin",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2016/CVE-2016-1000136.yaml"
         },
         {
             "author": "daffainfo",
@@ -12000,6 +12077,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposures/files/yarn-lock.yaml"
         },
         {
+            "author": "KaizenSecurity",
+            "id": "dwsync-exposure",
+            "name": "Dwsync.xml Exposure",
+            "tags": "dwsync,exposure,dreamweaver",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposures/files/dwsync-exposure.yaml"
+        },
+        {
             "author": "Mubassirpatel",
             "id": "ioncube-loader-wizard",
             "name": "Ioncube Loader Wizard disclosure",
@@ -12033,6 +12117,13 @@
             "name": "Php User.ini Disclosure",
             "tags": "exposure,config",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposures/files/php-user-ini-disclosure.yaml"
+        },
+        {
+            "author": "martincodes-de",
+            "id": "idea-folder-exposure",
+            "name": "Public .idea Folder containing files with sensitive data",
+            "tags": "phpstorm,jetbrains,idea,exposure",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposures/files/idea-folder-exposure.yaml"
         },
         {
             "author": "Borna Nematzadeh,nadino",
@@ -12292,6 +12383,13 @@
             "name": "Apache Struts in Dev Mode",
             "tags": "exposure,apache,struts,debug",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposures/logs/struts-problem-report.yaml"
+        },
+        {
+            "author": "martincodes-de",
+            "id": "idea-logs-exposure",
+            "name": "Public .idea Folder containing http logs",
+            "tags": "phpstorm,jetbrains,idea,exposure",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposures/logs/idea-logs-exposure.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -12616,6 +12714,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/solarwinds-orion.yaml"
         },
         {
+            "author": "dhiyaneshDK",
+            "id": "workresources-rdp",
+            "name": "Work Resources RemoteApp and Desktop Connection",
+            "tags": "panel",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/workresources-rdp.yaml"
+        },
+        {
             "author": "righettod",
             "id": "jenkins-api-panel",
             "name": "Jenkins API Instance Detection Template",
@@ -12694,6 +12799,13 @@
         },
         {
             "author": "dhiyaneshDK",
+            "id": "pure-storage-login",
+            "name": "Pure Storage Login",
+            "tags": "panel",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/pure-storage-login.yaml"
+        },
+        {
+            "author": "dhiyaneshDK",
             "id": "wso2-management-console",
             "name": "WSO2 Management Console",
             "tags": "panel",
@@ -12754,6 +12866,13 @@
             "name": "Radius Manager Control Panel",
             "tags": "panel",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/radius-manager.yaml"
+        },
+        {
+            "author": "johnk3r",
+            "id": "sugarcrm-panel",
+            "name": "Detect SugarCRM Panel",
+            "tags": "sugarcrm,panel",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/sugarcrm-panel.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -13491,6 +13610,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/minio-console-detect.yaml"
         },
         {
+            "author": "pussycat0x",
+            "id": "securityspy-detect",
+            "name": "SecuritySpy Camera Detect",
+            "tags": "unauth,iot,securityspy,panel,camera",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/securityspy-detect.yaml"
+        },
+        {
             "author": "pikpikcu",
             "id": "zentao-detect",
             "name": "Zentao detect",
@@ -13918,6 +14044,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/lucee-login.yaml"
         },
         {
+            "author": "dahse89",
+            "id": "redis-commander-exposure",
+            "name": "Redis Commander Exposure",
+            "tags": "panel,redis",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/redis-commander-exposure.yaml"
+        },
+        {
             "author": "dhiyaneshDK",
             "id": "icinga-web-login",
             "name": "Icinga Web 2 Login",
@@ -14093,6 +14226,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/lansweeper-login.yaml"
         },
         {
+            "author": "dhiyaneshDK",
+            "id": "zeroshell-login",
+            "name": "ZeroShell Login",
+            "tags": "panel,zeroshell",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/zeroshell-login.yaml"
+        },
+        {
             "author": "PR3R00T",
             "id": "webmin-panel",
             "name": "Webmin Admin Panel",
@@ -14262,6 +14402,13 @@
         },
         {
             "author": "dhiyaneshDK",
+            "id": "forcepoint-applicance",
+            "name": "Forcepoint Appliance",
+            "tags": "panel,forcepoint",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/forcepoint-applicance.yaml"
+        },
+        {
+            "author": "dhiyaneshDK",
             "id": "sidekiq-dashboard",
             "name": "sidekiq-dashboard",
             "tags": "unauth",
@@ -14294,6 +14441,13 @@
             "name": "Okta Login Panel",
             "tags": "panel,okta",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/okta-panel.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "openemr-detect",
+            "name": "OpenEMR Product Detect",
+            "tags": "panel,openemr",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/openemr-detect.yaml"
         },
         {
             "author": "DhiyaneshDK",
@@ -15990,6 +16144,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/google-mapsembedadvanced.yaml"
         },
         {
+            "author": "dwisiswant0",
+            "id": "api-appveyor",
+            "name": "AppVeyor API Test",
+            "tags": "token-spray,appveyor",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/api-appveyor.yaml"
+        },
+        {
             "author": "zzeitlin",
             "id": "api-github",
             "name": "GitHub API Test",
@@ -16025,11 +16186,39 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/weglot.yaml"
         },
         {
+            "author": "dwisiswant0",
+            "id": "api-optimizely",
+            "name": "Optimizely API Test",
+            "tags": "token-spray,optimizely",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/optimizely.yaml"
+        },
+        {
+            "author": "dwisiswant0",
+            "id": "api-intercom",
+            "name": "Intercom API Test",
+            "tags": "token-spray,intercom",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/intercom.yaml"
+        },
+        {
             "author": "zzeitlin",
             "id": "api-lokalise",
             "name": "Lokalise API Test",
             "tags": "token-spray,lokalise",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/lokalise.yaml"
+        },
+        {
+            "author": "dwisiswant0",
+            "id": "api-tink",
+            "name": "Tink API Test",
+            "tags": "token-spray,tink",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/tink.yaml"
+        },
+        {
+            "author": "dwisiswant0",
+            "id": "api-strava",
+            "name": "Strava API Test",
+            "tags": "token-spray,strava",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/api-strava.yaml"
         },
         {
             "author": "zzeitlin",
@@ -16130,6 +16319,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/buttercms.yaml"
         },
         {
+            "author": "dwisiswant0",
+            "id": "api-webex",
+            "name": "Cisco Webex API Test",
+            "tags": "token-spray,cisco,webex",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/api-webex.yaml"
+        },
+        {
             "author": "zzeitlin",
             "id": "api-jumpcloud",
             "name": "JumpCloud API Test",
@@ -16137,11 +16333,25 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/jumpcloud.yaml"
         },
         {
+            "author": "dwisiswant0",
+            "id": "api-adafruit-io",
+            "name": "Adafruit IO API Test",
+            "tags": "token-spray,adafruit",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/api-adafruit-io.yaml"
+        },
+        {
             "author": "zzeitlin",
             "id": "api-mailgun",
             "name": "Mailgun API Test",
             "tags": "token-spray,mailgun",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/mailgun.yaml"
+        },
+        {
+            "author": "dwisiswant0",
+            "id": "api-paypal",
+            "name": "PayPal API Test",
+            "tags": "token-spray,paypal",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/paypal.yaml"
         },
         {
             "author": "zzeitlin",
@@ -16156,6 +16366,13 @@
             "name": "WakaTime CI API Test",
             "tags": "token-spray,wakatime",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/wakatime.yaml"
+        },
+        {
+            "author": "dwisiswant0",
+            "id": "api-particle",
+            "name": "Particle Cloud API Test",
+            "tags": "token-spray,particle",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/api-particle.yaml"
         },
         {
             "author": "zzeitlin",
@@ -16214,6 +16431,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/google-timezone.yaml"
         },
         {
+            "author": "dwisiswant0",
+            "id": "api-fontawesome",
+            "name": "FontAwesome API Test",
+            "tags": "token-spray,fontawesome",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/fontawesome.yaml"
+        },
+        {
             "author": "zzeitlin",
             "id": "api-stripe",
             "name": "Stripe API Test",
@@ -16249,6 +16473,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/google-geolocation.yaml"
         },
         {
+            "author": "dwisiswant0",
+            "id": "api-dbt",
+            "name": "dbt Cloud API Test",
+            "tags": "token-spray,dbt",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/api-dbt.yaml"
+        },
+        {
             "author": "zzeitlin",
             "id": "api-pivotaltracker",
             "name": "PivotalTracker API Test",
@@ -16263,11 +16494,25 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/visualstudio.yaml"
         },
         {
+            "author": "dwisiswant0",
+            "id": "api-taiga",
+            "name": "Taiga API Test",
+            "tags": "token-spray,taiga",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/api-taiga.yaml"
+        },
+        {
             "author": "zzeitlin",
             "id": "api-youtube",
             "name": "YouTube API Test",
             "tags": "token-spray,youtube",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/youtube.yaml"
+        },
+        {
+            "author": "dwisiswant0",
+            "id": "api-leanix",
+            "name": "LeanIX API Test",
+            "tags": "token-spray,leanix",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/api-leanix.yaml"
         },
         {
             "author": "zzeitlin",
@@ -16298,6 +16543,20 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/buildkite.yaml"
         },
         {
+            "author": "dwisiswant0",
+            "id": "api-netlify",
+            "name": "Netlify API Test",
+            "tags": "token-spray,netlify",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/netlify.yaml"
+        },
+        {
+            "author": "dwisiswant0",
+            "id": "api-apigee-edge",
+            "name": "Apigee Edge API Test",
+            "tags": "token-spray,apigee",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/apigee-edge.yaml"
+        },
+        {
             "author": "zzeitlin",
             "id": "api-googlespeedlimit",
             "name": "Google Speed Limit API Test",
@@ -16324,6 +16583,13 @@
             "name": "Google Static Maps API Test",
             "tags": "token-spray,google,maps",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/google-staticmaps.yaml"
+        },
+        {
+            "author": "dwisiswant0",
+            "id": "api-facebook",
+            "name": "Facebook API Test",
+            "tags": "token-spray,facebook",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/facebook.yaml"
         },
         {
             "author": "zzeitlin",
@@ -16354,6 +16620,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/google-autocomplete.yaml"
         },
         {
+            "author": "dwisiswant0",
+            "id": "api-onelogin",
+            "name": "OneLogin API Test",
+            "tags": "token-spray,onelogin",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/onelogin.yaml"
+        },
+        {
             "author": "zzeitlin",
             "id": "api-loqate",
             "name": "Loqate API Test",
@@ -16375,6 +16648,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/google-playablelocations.yaml"
         },
         {
+            "author": "dwisiswant0",
+            "id": "api-fortitoken-cloud",
+            "name": "FortiToken Cloud API Test",
+            "tags": "token-spray,fortinet",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/fortitoken-cloud.yaml"
+        },
+        {
             "author": "zzeitlin",
             "id": "api-heroku",
             "name": "Heroku API Test",
@@ -16387,6 +16667,13 @@
             "name": "Twitter API Test",
             "tags": "token-spray,twitter",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/twitter.yaml"
+        },
+        {
+            "author": "dwisiswant0",
+            "id": "api-vercel",
+            "name": "Vercel API Test",
+            "tags": "token-spray,vercel",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/api-vercel.yaml"
         },
         {
             "author": "zzeitlin",
@@ -16415,6 +16702,13 @@
             "name": "Asana API Test",
             "tags": "token-spray,asana",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/asana.yaml"
+        },
+        {
+            "author": "dwisiswant0",
+            "id": "api-linkedin",
+            "name": "LinkedIn API Test",
+            "tags": "token-spray,linkedin",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/linkedin.yaml"
         },
         {
             "author": "geeknik",
@@ -16513,6 +16807,13 @@
             "name": "Android Debug Enabled",
             "tags": "android,file",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/file/android/debug-enabled.yaml"
+        },
+        {
+            "author": "majidmc2",
+            "id": "python-scanner",
+            "name": "Python Scanner",
+            "tags": "python,file,sast",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/file/python/python-scanner.yaml"
         },
         {
             "author": "gaurang",
