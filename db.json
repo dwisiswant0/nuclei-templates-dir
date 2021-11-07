@@ -1,5 +1,5 @@
 {
-    "version": "v8.6.2",
+    "version": "v8.6.6",
     "data": [
         {
             "author": "F1tz",
@@ -702,6 +702,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2019/CVE-2019-13101.yaml"
         },
         {
+            "author": "leovalcante",
+            "id": "CVE-2019-2579",
+            "name": "Oracle WebCenter Sites - SQL Injection",
+            "tags": "cve,cve2019,oracle,wcs,sqli",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2019/CVE-2019-2579.yaml"
+        },
+        {
             "author": "daffainfo",
             "id": "CVE-2019-19134",
             "name": "Hero Maps Premium < 2.2.3 - Unauthenticated Reflected Cross-Site Scripting (XSS)",
@@ -784,6 +791,13 @@
             "name": "Yachtcontrol Webapplication 1.0 - Unauthenticated Rce",
             "tags": "rce,yachtcontrol,cve,cve2019",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2019/CVE-2019-17270.yaml"
+        },
+        {
+            "author": "leovalcante",
+            "id": "CVE-2019-2578",
+            "name": "Broken Access Control Oracle WebCenter Sites",
+            "tags": "cve,cve2019,oracle,wcs,auth-bypass",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2019/CVE-2019-2578.yaml"
         },
         {
             "author": "daffainfo",
@@ -966,6 +980,13 @@
             "name": "WordPress Plugin GraceMedia Media Player 1.0 - Local File Inclusion (LFI)",
             "tags": "cve,cve2019,wordpress,wp-plugin,lfi",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2019/CVE-2019-9618.yaml"
+        },
+        {
+            "author": "_0xf4n9x_",
+            "id": "CVE-2019-3929",
+            "name": "Barco/AWIND OEM Presentation Platform Unauthenticated Remote Command Injection (CVE-2019-3929)",
+            "tags": "rce,cve,cve2019,oast",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2019/CVE-2019-3929.yaml"
         },
         {
             "author": "daffainfo",
@@ -1764,6 +1785,13 @@
             "name": "Mail Masta 1.0 - Unauthenticated Local File Inclusion (LFI)",
             "tags": "cve,cve2016,wordpress,wp-plugin,lfi",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2016/CVE-2016-10956.yaml"
+        },
+        {
+            "author": "fq_hsu",
+            "id": "CVE-2016-3088",
+            "name": "ActiveMQ Arbitrary File Write Vulnerability (CVE-2016-3088)",
+            "tags": "fileupload,cve,cve2016,apache,activemq",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2016/CVE-2016-3088.yaml"
         },
         {
             "author": "daffainfo",
@@ -3236,10 +3264,10 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2018/CVE-2018-15745.yaml"
         },
         {
-            "author": "madrobot",
+            "author": "madrobot,leovalcante",
             "id": "CVE-2018-2791",
-            "name": "Oracle WebCenter Sites XSS",
-            "tags": "cve,cve2018,oracle,xss",
+            "name": "Oracle WebCenter Sites Multiple XSS",
+            "tags": "cve,cve2018,oracle,xss,wcs",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2018/CVE-2018-2791.yaml"
         },
         {
@@ -3262,6 +3290,13 @@
             "name": "Fortinet FortiOS Cross-Site Scripting",
             "tags": "cve,cve2018,fortios,xss",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2018/CVE-2018-13380.yaml"
+        },
+        {
+            "author": "leovalcante",
+            "id": "CVE-2018-3238",
+            "name": "Multiple XSS Oracle WebCenter Sites",
+            "tags": "cve,cve2018,oracle,wcs,xss",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2018/CVE-2018-3238.yaml"
         },
         {
             "author": "daffainfo",
@@ -4328,6 +4363,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2020/CVE-2020-27986.yaml"
         },
         {
+            "author": "_0xf4n9x_,pikpikcu",
+            "id": "CVE-2020-26413",
+            "name": "Gitlab User enumeration via Graphql API",
+            "tags": "cve,cve2020,gitlab,exposure,enum",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2020/CVE-2020-26413.yaml"
+        },
+        {
             "author": "pikpikcu",
             "id": "CVE-2020-24223",
             "name": "Mara CMS  7.5 - Reflective Cross-Site Scripting",
@@ -5005,6 +5047,13 @@
             "name": "WordPress Plugin Delightful Downloads Jquery File Tree 2.1.5 Path Traversal",
             "tags": "cve,cve2017,wordpress,wp-plugin,lfi",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2017/CVE-2017-1000170.yaml"
+        },
+        {
+            "author": "0x_Akoko",
+            "id": "CVE-2017-5982",
+            "name": "Kodi 17.1 Local File Inclusion",
+            "tags": "cve,cve2017,kodi,lfi",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2017/CVE-2017-5982.yaml"
         },
         {
             "author": "pikpikcu",
@@ -5686,11 +5735,25 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-21234.yaml"
         },
         {
+            "author": "dhiyaneshDk",
+            "id": "CVE-2021-43287",
+            "name": "Pre-Auth Takeover of Build Pipelines in GoCD",
+            "tags": "cve,cve2021,go,lfi,gocd",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-43287.yaml"
+        },
+        {
             "author": "z3bd,pdteam",
             "id": "CVE-2021-3129",
             "name": "Laravel <= v8.4.2 Debug Mode - Remote Code Execution",
             "tags": "cve,cve2021,laravel,rce",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-3129.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "CVE-2021-31602",
+            "name": "Pentaho <= 9.1 Authentication Bypass of Spring APIs",
+            "tags": "cve,cve2021,pentaho,auth-bypass",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-31602.yaml"
         },
         {
             "author": "daffainfo",
@@ -5789,6 +5852,13 @@
             "name": "Akkadian Provisioning Manager MariaDB Credentials",
             "tags": "cve,cve2021,akkadian,mariadb,disclosure",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-31581.yaml"
+        },
+        {
+            "author": "pdteam",
+            "id": "CVE-2021-42237",
+            "name": "Sitecore Experience Platform Pre-Auth RCE",
+            "tags": "rce,sitecore,deserialization,oast",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-42237.yaml"
         },
         {
             "author": "dwisiswant0",
@@ -6083,6 +6153,13 @@
             "name": "PuneethReddyHC online-shopping-system-advanced SQL Injection homeaction.php",
             "tags": "cve,cve2021,sqli",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-41649.yaml"
+        },
+        {
+            "author": "pdteam",
+            "id": "CVE-2021-41174",
+            "name": "Grafana 8.0.0 <= v.8.2.2 Angularjs Rendering XSS",
+            "tags": "cve,cve2021,grafana,xss",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/cves/2021/CVE-2021-41174.yaml"
         },
         {
             "author": "pikpikcu",
@@ -7611,13 +7688,6 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/iot/huawei-home-gateway.yaml"
         },
         {
-            "author": "pdteam",
-            "id": "sitecore-pre-auth-rce",
-            "name": "Sitecore Experience Platform Pre-Auth RCE",
-            "tags": "rce,sitecore,deserialization,oast",
-            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/sitecore-pre-auth-rce.yaml"
-        },
-        {
             "author": "pikpikcu",
             "id": "samsung-wlan-ap-rce",
             "name": "Samsung Wlan AP (WEA453e) RCE",
@@ -8169,6 +8239,13 @@
             "name": "KevinLAB HEMS Undocumented Backdoor Account",
             "tags": "kevinlab,default-login,backdoor",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/other/kevinlab-hems-backdoor.yaml"
+        },
+        {
+            "author": "ImNightmaree",
+            "id": "vanguard-post-xss",
+            "name": "Vanguard Marketplace CMS \u2264 2.1",
+            "tags": "vanguard,xss",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/other/vanguard-post-xss.yaml"
         },
         {
             "author": "shifacyclewla,hackergautam",
@@ -9249,6 +9326,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/wordpress/wp-javospot-lfi.yaml"
         },
         {
+            "author": "0x_Akoko",
+            "id": "ad-widget-lfi",
+            "name": "WordPress Plugin WordPress Ad Widget Local File Inclusion (2.11.0)",
+            "tags": "wordpress,wp-plugin,lfi",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/vulnerabilities/wordpress/ad-widget-lfi.yaml"
+        },
+        {
             "author": "dhiyaneshDk",
             "id": "wordpress-redirection-plugin-listing",
             "name": "WordPress Redirection Plugin Directory Listing",
@@ -10173,6 +10257,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/openweather.yaml"
         },
         {
+            "author": "daffainfo",
+            "id": "api-nownodes",
+            "name": "Nownodes API Test",
+            "tags": "token-spray,nownodes",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/api-nownodes.yaml"
+        },
+        {
             "author": "zzeitlin",
             "id": "api-bitly",
             "name": "Bitly API Test",
@@ -10201,6 +10292,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/google-nearbysearch.yaml"
         },
         {
+            "author": "daffainfo",
+            "id": "api-thedogapi",
+            "name": "TheDogApi API Test",
+            "tags": "token-spray,thedogapi",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/api-thedogapi.yaml"
+        },
+        {
             "author": "zzeitlin",
             "id": "api-sonarcloud",
             "name": "SonarCloud API Test",
@@ -10220,6 +10318,13 @@
             "name": "Google Place Details API Test",
             "tags": "token-spray,google,place,details",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/google-placedetails.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "api-covalent",
+            "name": "Covalent API Test",
+            "tags": "token-spray,covalent",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/api-covalent.yaml"
         },
         {
             "author": "dwisiswant0",
@@ -10290,6 +10395,13 @@
             "name": "IPStack API Test",
             "tags": "token-spray,ipstack",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/ipstack.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "api-etherscan",
+            "name": "Etherscan API Test",
+            "tags": "token-spray,etherscan",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/token-spray/api-etherscan.yaml"
         },
         {
             "author": "zzeitlin",
@@ -11030,7 +11142,7 @@
             "author": "pdteam",
             "id": "solr-exposure",
             "name": "Apache Solr Exposure",
-            "tags": "panel",
+            "tags": "panel,solr",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/solr-exposure.yaml"
         },
         {
@@ -11685,6 +11797,13 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/solarwinds-orion.yaml"
         },
         {
+            "author": "bing0o",
+            "id": "weblogic-login",
+            "name": "Weblogic Login Panel",
+            "tags": "panel,weblogic",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/weblogic-login.yaml"
+        },
+        {
             "author": "pdteam",
             "id": "hadoop-exposure",
             "name": "Apache Hadoop Exposure",
@@ -11935,6 +12054,13 @@
             "name": "Faraday Login",
             "tags": "panel,faraday",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/faraday-login.yaml"
+        },
+        {
+            "author": "dhiyaneshDK",
+            "id": "gocd-login",
+            "name": "GoCD Login",
+            "tags": "go,panel,gocd",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/exposed-panels/gocd-login.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -12726,6 +12852,13 @@
             "name": "Apache workflow",
             "tags": "",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/workflows/apache-workflow.yaml"
+        },
+        {
+            "author": "dhiyaneshDk",
+            "id": "gocd-workflow",
+            "name": "GoCD Security Checks",
+            "tags": "",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/workflows/gocd-workflow.yaml"
         },
         {
             "author": "pdteam",
@@ -15038,7 +15171,7 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/default-glassfish-server-page.yaml"
         },
         {
-            "author": "bing0o",
+            "author": "pdteam",
             "id": "weblogic-detect",
             "name": "Detect Weblogic",
             "tags": "tech,weblogic",
@@ -15267,6 +15400,13 @@
             "name": "Detect PRTG",
             "tags": "tech,prtg",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/prtg-detect.yaml"
+        },
+        {
+            "author": "yuansec",
+            "id": "fastjson-version",
+            "name": "Fastjson Version Detection",
+            "tags": "fastjson,tech",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/technologies/fastjson-version.yaml"
         },
         {
             "author": "dogasantos",
@@ -17334,6 +17474,27 @@
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/phpmyadmin/pma-server-import.yaml"
         },
         {
+            "author": "dhiyaneshDk",
+            "id": "gocd-unauth-dashboard",
+            "name": "GoCd Unauth Dashboard",
+            "tags": "go,gocd,unauth,misconfig",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/gocd/gocd-unauth-dashboard.yaml"
+        },
+        {
+            "author": "dhiyaneshDk",
+            "id": "gocd-cruise-configuration",
+            "name": "GoCd Cruise Configuration disclosure",
+            "tags": "go,gocd,config,exposure,misconfig",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/gocd/gocd-cruise-configuration.yaml"
+        },
+        {
+            "author": "dhiyaneshDk",
+            "id": "gocd-encryption-key",
+            "name": "GoCd Encryption Key",
+            "tags": "go,gocd,exposure,misconfig",
+            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/gocd/gocd-encryption-key.yaml"
+        },
+        {
             "author": "randomstr1ng",
             "id": "sap-netweaver-info-leak",
             "name": "SAP NetWeaver ICM Info page leak",
@@ -17388,13 +17549,6 @@
             "name": "GitLab - User Information Disclosure Via Open API",
             "tags": "gitlab,enum,misconfig",
             "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/gitlab/gitlab-api-user-enum.yaml"
-        },
-        {
-            "author": "pikpikcu",
-            "id": "gitlab-graphql-user-enum",
-            "name": "Gitlab User enumeration via Graphql API",
-            "tags": "gitlab,enum,misconfig",
-            "url": "https://github.com/projectdiscovery/nuclei-templates/blob/master/misconfiguration/gitlab/gitlab-graphql-user-enum.yaml"
         },
         {
             "author": "pdteam",
