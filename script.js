@@ -100,12 +100,19 @@ function doSuggest(keyword) {
 	doSearch()
 }
 
+function replaceState(keyword) {
+	var URL = window.location.pathname + (keyword != "" ? `#q=${keyword}` : "");
+	window.history.replaceState(null, window.document.title, URL);
+}
+
 function doSearch() {
 	var input = search.value,
 		regex = new RegExp(input.escapeRegExp(), "i"),
 		i = 0,
 		blob = "https://github.com/projectdiscovery/nuclei-templates/blob/master/",
 		output = "";
+
+	replaceState(input);
 
 	if (input === "") {
 		result.style.display = "none";
