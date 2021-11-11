@@ -35,7 +35,7 @@ print("Get latest releases...", file=sys.stderr)
 data["version"] = get_latest()
 data["data"] = []
 
-print("Downloading tag...", file=sys.stderr)
+print("Downloading %s tag..." % (data["version"]), file=sys.stderr)
 with closing(urlopen("https://github.com/%s/archive/refs/tags/%s.zip" % (repo, data["version"]))) as stream:
 	with ZipFile(io.BytesIO(stream.read())) as zfile:
 		zfile.extractall(path=temp)

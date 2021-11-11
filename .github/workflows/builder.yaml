@@ -35,7 +35,7 @@ jobs:
         if: steps.update.outputs.available == 'true'
         id: build
         run: |
-          python .github/scripts/builder.py 2>/dev/null > db.json
+          python .github/scripts/builder.py 1>db.json
           echo "::set-output name=changes::$(git status -s | wc -l)"
 
       - name: Commit changes
