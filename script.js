@@ -36,7 +36,7 @@ document.body.onscroll = function() {
 };
 
 function init() {
-	hljs.highlightAll();
+	// hljs.highlightAll();
 
 	let req = new XMLHttpRequest();
 	req.open("GET", "db.json", true);
