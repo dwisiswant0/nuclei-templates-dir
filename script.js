@@ -36,6 +36,8 @@ document.body.onscroll = function() {
 };
 
 function init() {
+	hljs.highlightAll();
+
 	let req = new XMLHttpRequest();
 	req.open("GET", "db.json", true);
 	req.send();
@@ -104,6 +106,7 @@ function doSearch() {
 	var input = search.value,
 		regex = new RegExp(input.escapeRegExp(), "i"),
 		i = 0,
+		blob = "https://github.com/projectdiscovery/nuclei-templates/blob/master/",
 		output = "";
 
 	if (input === "") {
@@ -113,7 +116,7 @@ function doSearch() {
 
 	window.db["data"].forEach(function(e) {
 		if ((e.author.toString().search(regex) != -1) || (e.id.search(regex) != -1) || (e.name.search(regex) != -1) || (e.tags.search(regex) != -1)) {
-			output += `<li><a href="${e.url}" target="_blank">${e.id.toLowerCase().startsWith("cve-") ? `${e.id}:` : ""} ${e.name}</a></li>`;
+			output += `<li><a href="${blob + e.path}" target="_blank">${e.path.startsWith("cves") ? `${e.id}:` : ""} ${e.name}</a></li>`;
 			i++
 		}
 	});

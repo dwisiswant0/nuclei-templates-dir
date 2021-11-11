@@ -17,7 +17,6 @@ from zipfile import ZipFile
 temp = tempfile.mkdtemp()
 name = "nuclei-templates"
 repo = "projectdiscovery/" + name
-blob = "https://github.com/%s/blob/master" % (repo)
 data = {}
 
 def get_latest():
@@ -45,7 +44,7 @@ tpl = glob.glob("%s/%s-%s/**/*.yaml" % (temp, name, data["version"][1:]), recurs
 
 print("Building data...", file=sys.stderr)
 for template in tpl:
-	path = re.sub(r"^(/[\w\.\-]+){3}", "", template)
+	path = re.sub(r"^(/[\w\.\-]+){3}/", "", template)
 	with open(template, "r") as stream:
 		obj = yaml.safe_load(stream)
 
@@ -61,7 +60,7 @@ for template in tpl:
 					"id": ID,
 					"name": name,
 					"tags": tags,
-					"url": blob + path
+					"path": path
 				}
 			)
 		except:
