@@ -106,7 +106,7 @@ function replaceState(keyword) {
 }
 
 function doSearch() {
-	var input = search.value,
+	var input = search.value.trim(),
 		regex = new RegExp(input.escapeRegExp(), "i"),
 		i = 0,
 		blob = "https://github.com/projectdiscovery/nuclei-templates/blob/master/",
