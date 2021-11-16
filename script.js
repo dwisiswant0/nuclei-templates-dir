@@ -11,7 +11,8 @@ var contributors = document.getElementById("contributors"),
 	suggest = document.getElementById("suggest"),
 	top10 = document.getElementById("top-10"),
 	version = document.getElementById("version"),
-	versionBadge = document.getElementById("version-badge");
+	versionBadge = document.getElementById("version-badge"),
+	shrug = document.getElementById("shrug");
 
 String.prototype.toHtmlEntities = function() {	
 	return this.replace(/./gm, function(s) {
@@ -125,6 +126,8 @@ function doSearch() {
 			i++
 		}
 	});
+
+	0 == i ? shrug.style.display = "block" : shrug.style.display = "none";
 
 	count.innerText = i;
 	keyword.innerText = input;
