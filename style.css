@@ -167,7 +167,7 @@ section.showcase > section.samplecode {
   right: 0px;
 }
 
-section.showcase > section.samplecode > pre code {
+section.showcase > section.samplecode > pre code, pre code#command {
   font-size: 13px;
   line-height: 1.5;
   padding: 1.5rem;

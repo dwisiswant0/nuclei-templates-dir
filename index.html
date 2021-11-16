@@ -19,8 +19,11 @@
   <meta name="twitter:description" content="Browse published Nuclei templates here!">
   <meta name="twitter:image" content="https://user-images.githubusercontent.com/25837540/135294176-e22d09cd-7174-41c9-b27a-a4f6c7bf2e69.jpg">
   <title>Nuclei Templates Directory</title>
+  <script src="//unpkg.com/@highlightjs/cdn-assets@11.3.1/highlight.min.js"></script>
+  <script src="//unpkg.com/@highlightjs/cdn-assets@11.3.1/languages/bash.min.js"></script>
   <link href="//nuclei-templates.netlify.app" rel="canonical">
   <link href="//nuclei.projectdiscovery.io/static/favicon.png" rel="shortcut icon">
+  <link href="//nostalgic-css.github.io/NES.css/lib/highlight-theme.css" rel="stylesheet">
   <link href="//unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
   <link href="./style.css" rel="stylesheet" />
 </head>
@@ -53,6 +56,19 @@
             <p id="dialog-message"></p>
             <menu class="dialog-menu">
               <button class="nes-btn is-error">Confirm</button>
+            </menu>
+          </form>
+        </dialog>
+      </section>
+
+      <section>
+        <dialog class="nes-dialog is-rounded" id="command-dialog">
+          <form method="dialog">
+            <p class="title" id="command-title"></p>
+            <pre><code class="language-bash" id="command">...</code></pre>
+            <menu class="dialog-menu">
+              <button class="nes-btn">Close</button>
+              <a class="nes-btn is-primary" id="command-url" href="#" target="_blank">Open</a>
             </menu>
           </form>
         </dialog>

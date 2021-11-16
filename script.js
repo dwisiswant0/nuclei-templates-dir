@@ -1,4 +1,5 @@
-var contributors = document.getElementById("contributors"),
+var blob = "https://github.com/projectdiscovery/nuclei-templates/blob/master";
+	contributors = document.getElementById("contributors"),
 	count = document.getElementById("count"),
 	dialog = document.getElementById("dialog"),
 	dialogMsg = document.getElementById("dialog-message"),
@@ -12,7 +13,11 @@ var contributors = document.getElementById("contributors"),
 	top10 = document.getElementById("top-10"),
 	version = document.getElementById("version"),
 	versionBadge = document.getElementById("version-badge"),
-	shrug = document.getElementById("shrug");
+	shrug = document.getElementById("shrug"),
+	cmd = document.getElementById("command"),
+	cmdDialog = document.getElementById("command-dialog"),
+	cmdTitle = document.getElementById("command-title"),
+	cmdURL = document.getElementById("command-url");
 
 String.prototype.toHtmlEntities = function() {	
 	return this.replace(/./gm, function(s) {
@@ -79,6 +84,31 @@ function loadTop10() {
 	})
 }
 
+function genCommand(title, obj) {
+	var cmdTxt = "$ nuclei -u ",
+		path = obj.getAttribute("href").replace(`${blob}/`, "");
+
+	if (path.startsWith(`file/`)) {
+		cmdTxt += `DIRECTORY -t "${path}"`
+	} else if (path.startsWith(`workflows/`)) {
+		cmdTxt += `URL -w "${path}"`
+	} else if (path.startsWith(`headless/`)) {
+		cmdTxt += `URL -t "${path}" -headless`
+	} else if (path.startsWith(`dns/`) || path.startsWith(`network/`)) {
+		cmdTxt += `HOST -t "${path}"`
+	} else {
+		cmdTxt += `URL -t "${path}"`
+	}
+
+	cmd.innerText = cmdTxt;
+	hljs.highlightAll();
+	cmdTitle.innerText = unescape(title);
+	cmdURL.setAttribute("href", `${blob}/${path}`);
+	cmdDialog.showModal();
+
+	return false
+}
+
 function getQueryHash() {
 	var params = location.hash.substr(1).split('&'),
 		keyword = "";
@@ -110,7 +140,6 @@ function doSearch() {
 	var input = search.value.trim(),
 		regex = new RegExp(input.escapeRegExp(), "i"),
 		i = 0,
-		blob = "https://github.com/projectdiscovery/nuclei-templates/blob/master/",
 		output = "";
 
 	replaceState(input);
@@ -122,7 +151,8 @@ function doSearch() {
 
 	window.db["data"].forEach(function(e) {
 		if ((e.author.toString().search(regex) != -1) || (e.id.search(regex) != -1) || (e.name.search(regex) != -1) || (e.tags.search(regex) != -1)) {
-			output += `<li><a href="${blob + e.path}" target="_blank">${e.path.startsWith("cves") ? `${e.id}:` : ""} ${e.name}</a></li>`;
+			var title = `${e.path.startsWith("cves") ? `${e.id}: ` : ""}${e.name}`
+			output += `<li><a href="${blob}/${e.path}" onclick="return genCommand('${escape(title)}', this);">${title}</a></li>`;
 			i++
 		}
 	});
