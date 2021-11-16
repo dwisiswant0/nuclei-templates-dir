@@ -1,5 +1,5 @@
 [[headers]]
-  for = "/*"
+  for = "/(index.html)?"
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
@@ -9,7 +9,9 @@
     no-store,
     must-revalidate'''
 
-[[redirects]]
-    from = "/*"
-    to = "/"
-    status = 302
+  for = "/*.(css|js(on)?)"
+  [headers.values]
+    Cache-Control = '''
+    public,
+    max-age=64800,
+    must-revalidate'''
