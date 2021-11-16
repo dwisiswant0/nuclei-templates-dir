@@ -1,5 +1,5 @@
 [[headers]]
-  for = "/"
+  for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
@@ -7,35 +7,4 @@
     max-age=0,
     no-cache,
     no-store,
-    must-revalidate'''
-
-  for = "/index.html"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-XSS-Protection = "1; mode=block"
-    Cache-Control = '''
-    max-age=0,
-    no-cache,
-    no-store,
-    must-revalidate'''
-
-  for = "/style.css"
-  [headers.values]
-    Cache-Control = '''
-    public,
-    max-age=64800,
-    must-revalidate'''
-
-  for = "/script.js"
-  [headers.values]
-    Cache-Control = '''
-    public,
-    max-age=64800,
-    must-revalidate'''
-
-  for = "/db.json"
-  [headers.values]
-    Cache-Control = '''
-    public,
-    max-age=64800,
     must-revalidate'''
