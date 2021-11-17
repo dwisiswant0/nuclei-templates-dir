@@ -357,7 +357,47 @@ img.lazy {
 }
 
 @media screen and (max-width: 580px) {
+  body {
+    font-size: 0.8rem;
+  }
+
+  p {
+    margin-bottom: 0px;
+  }
+
+  .topic {
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+
+  .nuclei-logo::before{
+    top: 15px;
+  }
+
+  header {
+    top: -20px;
+  }
+
+  header > .container {
+    margin-bottom: 8px;
+  }
+
   #nescss > .container {
-    margin-top: 190px;
+    margin-top: 95px;
+  }
+
+  section.topic > p {
+    margin-bottom: 20px;
+  }
+
+  section > h3.title {
+    font-size: 0.7rem !important;
+  }
+
+  section > div.lists > ul#list {
+    padding-left: 3px;
   }
 }
