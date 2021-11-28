@@ -84,25 +84,26 @@ function loadTop10() {
 	})
 }
 
-function genCommand(title, obj) {
+function genCommand(obj) {
 	var cmdTxt = "$ nuclei -u ",
+		title = unescape(obj.getAttribute("data-title")),
 		path = obj.getAttribute("href").replace(`${blob}/`, "");
 
 	if (path.startsWith(`file/`)) {
-		cmdTxt += `DIRECTORY -t "${path}"`
+		cmdTxt += `"DIRECTORY" -t "${path}"`
 	} else if (path.startsWith(`workflows/`)) {
-		cmdTxt += `URL -w "${path}"`
+		cmdTxt += `"URL" -w "${path}"`
 	} else if (path.startsWith(`headless/`)) {
-		cmdTxt += `URL -t "${path}" -headless`
+		cmdTxt += `"URL" -t "${path}" -headless`
 	} else if (path.startsWith(`dns/`) || path.startsWith(`network/`)) {
-		cmdTxt += `HOST -t "${path}"`
+		cmdTxt += `"HOST" -t "${path}"`
 	} else {
-		cmdTxt += `URL -t "${path}"`
+		cmdTxt += `"URL" -t "${path}"`
 	}
 
 	cmd.innerText = cmdTxt;
 	hljs.highlightAll();
-	cmdTitle.innerText = unescape(title);
+	cmdTitle.innerText = title;
 	cmdURL.setAttribute("href", `${blob}/${path}`);
 	cmdDialog.showModal();
 
@@ -151,11 +152,13 @@ function doSearch() {
 
 	window.db["data"].forEach(function(e) {
 		if ((e.author.toString().search(regex) != -1) || (e.id.search(regex) != -1) || (e.name.search(regex) != -1) || (e.tags.search(regex) != -1)) {
-			var title = `${e.path.startsWith("cves") ? `${e.id}: ` : ""}${e.name}`
+			var title = `${e.path.startsWith("cves") ? `${e.id}: ` : ""}${e.name}`,
+				severity = e.severity == "" ? "none" : e.severity.toLowerCase();
+
 			output += `<li><div class="severity-indicator"><div class="severity-indicator_separator"></div><div class="severity-indicator_separator"></div>` +
 				`<div class="severity-indicator_separator"></div><div class="severity-indicator_separator"></div>` +
-				`<div class="severity-indicator_progress severity-indicator_progress-${e.severity == "" ? "none" : e.severity.toLowerCase()}"></div></div> ` +
-				`<a href="${blob}/${e.path}" onclick="return genCommand('${escape(title)}', this);">${title}</a></li>`;
+				`<div class="severity-indicator_progress severity-indicator_progress-${severity}"></div></div> ` +
+				`<a href="${blob}/${e.path}" data-title="${escape(title)}" onclick="return genCommand(this);">${title}</a></li>`;
 			i++
 		}
 	});
