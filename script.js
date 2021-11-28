@@ -153,7 +153,8 @@ function doSearch() {
 		if ((e.author.toString().search(regex) != -1) || (e.id.search(regex) != -1) || (e.name.search(regex) != -1) || (e.tags.search(regex) != -1)) {
 			var title = `${e.path.startsWith("cves") ? `${e.id}: ` : ""}${e.name}`
 			output += `<li><div class="severity-indicator"><div class="severity-indicator_separator"></div><div class="severity-indicator_separator"></div>` +
-				`<div class="severity-indicator_separator"></div><div class="severity-indicator_separator"></div><div class="severity-indicator_progress severity-indicator_progress-${e.severity}"></div></div> ` +
+				`<div class="severity-indicator_separator"></div><div class="severity-indicator_separator"></div>` +
+				`<div class="severity-indicator_progress severity-indicator_progress-${e.severity == "" ? "none" : e.severity.toLowerCase()}"></div></div> ` +
 				`<a href="${blob}/${e.path}" onclick="return genCommand('${escape(title)}', this);">${title}</a></li>`;
 			i++
 		}
