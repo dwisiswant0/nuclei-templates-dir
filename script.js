@@ -152,7 +152,9 @@ function doSearch() {
 	window.db["data"].forEach(function(e) {
 		if ((e.author.toString().search(regex) != -1) || (e.id.search(regex) != -1) || (e.name.search(regex) != -1) || (e.tags.search(regex) != -1)) {
 			var title = `${e.path.startsWith("cves") ? `${e.id}: ` : ""}${e.name}`
-			output += `<li><a href="${blob}/${e.path}" onclick="return genCommand('${escape(title)}', this);">${title}</a></li>`;
+			output += `<li><div class="severity-indicator"><div class="severity-indicator_separator"></div><div class="severity-indicator_separator"></div>` +
+				`<div class="severity-indicator_separator"></div><div class="severity-indicator_separator"></div><div class="severity-indicator_progress severity-indicator_progress-${e.severity}"></div></div> ` +
+				`<a href="${blob}/${e.path}" onclick="return genCommand('${escape(title)}', this);">${title}</a></li>`;
 			i++
 		}
 	});

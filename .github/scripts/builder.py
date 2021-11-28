@@ -51,6 +51,7 @@ for template in tpl:
 		author = obj['info']['author'] if obj.get("info", {}).get("author") else ""
 		ID = obj['id'] if obj.get("id") else ""
 		name = obj['info']['name'] if obj.get("info", {}).get("name") else ""
+		severity = obj['info']['severity'] if obj.get("info", {}).get("severity") else ""
 		tags = obj['info']['tags'] if obj.get("info", {}).get("tags") else ""
 
 		try:
@@ -59,6 +60,7 @@ for template in tpl:
 					"author": author,
 					"id": ID,
 					"name": name,
+					"severity": severity,
 					"tags": tags,
 					"path": path
 				}
