@@ -1,5 +1,5 @@
 {
-    "version": "v8.6.9",
+    "version": "v8.7.0",
     "data": [
         {
             "author": "geeknik",
@@ -1363,6 +1363,14 @@
         },
         {
             "author": "daffainfo",
+            "id": "CVE-2014-9618",
+            "name": "Netsweeper 4.0.8 - Authentication Bypass (New Profile Creation)",
+            "severity": "critical",
+            "tags": "cve,cve2014,netsweeper,auth-bypass",
+            "path": "cves/2014/CVE-2014-9618.yaml"
+        },
+        {
+            "author": "daffainfo",
             "id": "CVE-2014-4544",
             "name": "Podcast Channels < 0.28 - Unauthenticated Reflected XSS",
             "severity": "medium",
@@ -1379,11 +1387,35 @@
         },
         {
             "author": "daffainfo",
+            "id": "CVE-2014-9617",
+            "name": "Netsweeper 3.0.6 - Open Redirection",
+            "severity": "medium",
+            "tags": "cve,cve2014,netsweeper,redirect",
+            "path": "cves/2014/CVE-2014-9617.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "CVE-2014-2908",
+            "name": "Siemens SIMATIC S7-1200 CPU - Cross-Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2014,xss,siemens",
+            "path": "cves/2014/CVE-2014-2908.yaml"
+        },
+        {
+            "author": "daffainfo",
             "id": "CVE-2014-4592",
             "name": "WP Planet <= 0.1 - Unauthenticated Reflected XSS",
             "severity": "medium",
             "tags": "cve,cve2014,wordpress,wp-plugin,xss",
             "path": "cves/2014/CVE-2014-4592.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "CVE-2014-9607",
+            "name": "Netsweeper 4.0.4 - Cross Site Scripting Injection",
+            "severity": "medium",
+            "tags": "cve,cve2014,netsweeper,xss",
+            "path": "cves/2014/CVE-2014-9607.yaml"
         },
         {
             "author": "daffainfo",
@@ -1411,6 +1443,14 @@
         },
         {
             "author": "daffainfo",
+            "id": "CVE-2014-9606",
+            "name": "Netsweeper 4.0.8 - Cross Site Scripting Injection",
+            "severity": "medium",
+            "tags": "cve,cve2014,netsweeper,xss",
+            "path": "cves/2014/CVE-2014-9606.yaml"
+        },
+        {
+            "author": "daffainfo",
             "id": "CVE-2014-4940",
             "name": "WordPress Plugin Tera Charts - Directory Traversal",
             "severity": "high",
@@ -1432,6 +1472,14 @@
             "severity": "critical",
             "tags": "cve,cve2014,elastic,rce",
             "path": "cves/2014/CVE-2014-3120.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "CVE-2014-9614",
+            "name": "Netsweeper 4.0.5 - Default Weak Account",
+            "severity": "critical",
+            "tags": "cve,cve2021,netsweeper,default-login",
+            "path": "cves/2014/CVE-2014-9614.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -1467,6 +1515,14 @@
         },
         {
             "author": "daffainfo",
+            "id": "CVE-2014-9608",
+            "name": "Netsweeper 4.0.3 - Cross Site Scripting Injection",
+            "severity": "medium",
+            "tags": "cve,cve2014,netsweeper,xss",
+            "path": "cves/2014/CVE-2014-9608.yaml"
+        },
+        {
+            "author": "daffainfo",
             "id": "CVE-2014-5368",
             "name": "WordPress Plugin WP Content Source Control - Directory Traversal",
             "severity": "high",
@@ -1491,6 +1547,14 @@
         },
         {
             "author": "daffainfo",
+            "id": "CVE-2014-9609",
+            "name": "Netsweeper 4.0.8 - Directory Traversal",
+            "severity": "medium",
+            "tags": "cve,cve2014,netsweeper,lfi",
+            "path": "cves/2014/CVE-2014-9609.yaml"
+        },
+        {
+            "author": "daffainfo",
             "id": "CVE-2014-4550",
             "name": "Shortcode Ninja <= 1.4 - Unauthenticated Reflected XSS",
             "severity": "medium",
@@ -1504,6 +1568,14 @@
             "severity": "medium",
             "tags": "cve,cve2014,wordpress,wp-plugin,xss",
             "path": "cves/2014/CVE-2014-4535.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "CVE-2014-9615",
+            "name": "Netsweeper 4.0.4 - Cross Site Scripting Injection",
+            "severity": "medium",
+            "tags": "cve,cve2014,netsweeper,xss",
+            "path": "cves/2014/CVE-2014-9615.yaml"
         },
         {
             "author": "pentest_swissky",
@@ -3744,6 +3816,14 @@
             "severity": "medium",
             "tags": "cve,cve2020,jenkins,xss",
             "path": "cves/2020/CVE-2020-2096.yaml"
+        },
+        {
+            "author": "gy741",
+            "id": "CVE-2020-8497",
+            "name": "Artica Pandora FMS - Arbitrary File Read",
+            "severity": "medium",
+            "tags": "cve,cve2020,fms",
+            "path": "cves/2020/CVE-2020-8497.yaml"
         },
         {
             "author": "dwisiswant0",
@@ -6674,6 +6754,14 @@
             "path": "cves/2018/CVE-2018-13379.yaml"
         },
         {
+            "author": "0x_akoko",
+            "id": "CVE-2018-8727",
+            "name": "Mirasys DVMS Workstation 5.12.6 Path Traversal",
+            "severity": "high",
+            "tags": "cve,cve2018,mirasys,lfi",
+            "path": "cves/2018/CVE-2018-8727.yaml"
+        },
+        {
             "author": "milo2012",
             "id": "CVE-2018-2628",
             "name": "Oracle WebLogic Server Deserialization RCE",
@@ -7715,6 +7803,14 @@
         },
         {
             "author": "daffainfo",
+            "id": "api-holidayapi",
+            "name": "Holiday API Test",
+            "severity": "info",
+            "tags": "token-spray,holidayapi",
+            "path": "token-spray/api-holidayapi.yaml"
+        },
+        {
+            "author": "daffainfo",
             "id": "api-europeana",
             "name": "Europeana API Test",
             "severity": "info",
@@ -8122,6 +8218,14 @@
             "path": "token-spray/api-pendo.yaml"
         },
         {
+            "author": "daffainfo",
+            "id": "api-festivo",
+            "name": "Festivo API Test",
+            "severity": "info",
+            "tags": "token-spray,festivo",
+            "path": "token-spray/api-festivo.yaml"
+        },
+        {
             "author": "zzeitlin",
             "id": "api-github",
             "name": "GitHub API Test",
@@ -8184,6 +8288,14 @@
             "severity": "info",
             "tags": "token-spray,rijksmuseum",
             "path": "token-spray/api-rijksmuseum.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "api-abstractapi",
+            "name": "Abstract Api Public Holidays Test",
+            "severity": "info",
+            "tags": "token-spray,abstractapi",
+            "path": "token-spray/api-abstractapi.yaml"
         },
         {
             "author": "zzeitlin",
@@ -8936,6 +9048,22 @@
             "severity": "info",
             "tags": "php,file",
             "path": "file/php/php-scanner.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "netsweeper-open-redirect",
+            "name": "Netsweeper 4.0.9 - Open Redirection",
+            "severity": "medium",
+            "tags": "netsweeper,redirect",
+            "path": "vulnerabilities/netsweeper/netsweeper-open-redirect.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "netsweeper-rxss",
+            "name": "Netsweeper 4.0.9 - Cross Site Scripting Injection",
+            "severity": "medium",
+            "tags": "netsweeper,xss",
+            "path": "vulnerabilities/netsweeper/netsweeper-rxss.yaml"
         },
         {
             "author": "ooooooo_q,rootxharsh,iamnoooob",
@@ -10448,6 +10576,14 @@
             "severity": "high",
             "tags": "apache,solr,lfi",
             "path": "vulnerabilities/apache/apache-solr-file-read.yaml"
+        },
+        {
+            "author": "z0ne,dhiyaneshDk",
+            "id": "grafana-file-read",
+            "name": "Grafana v8.x Arbitrary File Read",
+            "severity": "high",
+            "tags": "grafana,lfi",
+            "path": "vulnerabilities/grafana/grafana-file-read.yaml"
         },
         {
             "author": "pikpikcu",
@@ -12794,7 +12930,7 @@
             "path": "workflows/default-application-workflow.yaml"
         },
         {
-            "author": "dwisiswant0",
+            "author": "dwisiswant0,daffainfo",
             "id": "netsweeper-workflow",
             "name": "Netsweeper Security Checks",
             "severity": "",
@@ -15098,7 +15234,7 @@
             "path": "default-logins/rockmongo/rockmongo-default-login.yaml"
         },
         {
-            "author": "Suman_Kar",
+            "author": "Suman_Kar,dwisiswant0",
             "id": "gitlab-weak-login",
             "name": "Gitlab Weak Login",
             "severity": "high",
@@ -15731,7 +15867,7 @@
         },
         {
             "author": "0xelkomy",
-            "id": "unauthenticated-cache-purge",
+            "id": "unauthenticated-varnish-cache-purge",
             "name": "Varnish Unauthenticated Cache Purge",
             "severity": "low",
             "tags": "varnish,misconfig,cache",
@@ -15968,6 +16104,14 @@
             "severity": "low",
             "tags": "logs",
             "path": "misconfiguration/ups-status.yaml"
+        },
+        {
+            "author": "dhiyaneshDk",
+            "id": "jolokia-unauthenticated-lfi",
+            "name": "Jolokia - Unauthenticated Local File Read",
+            "severity": "high",
+            "tags": "jolokia,lfi",
+            "path": "misconfiguration/jolokia-unauthenticated-lfi.yaml"
         },
         {
             "author": "geeknik",
@@ -18362,6 +18506,14 @@
             "path": "technologies/ibm/ibm-sterling-detect.yaml"
         },
         {
+            "author": "ffffffff0x",
+            "id": "apache-dubbo-detect",
+            "name": "Apache dubbo detect",
+            "severity": "info",
+            "tags": "apache,dubbo,tech",
+            "path": "technologies/apache/apache-dubbo-detect.yaml"
+        },
+        {
             "author": "dhiyaneshDk",
             "id": "default-tomcat-page",
             "name": "Tomcat Default Page",
@@ -18424,6 +18576,14 @@
             "severity": "info",
             "tags": "tech,tomcat,apache",
             "path": "technologies/apache/tomcat-detect.yaml"
+        },
+        {
+            "author": "ffffffff0x",
+            "id": "apache-cocoon-detect",
+            "name": "Apache Cocoon detect",
+            "severity": "info",
+            "tags": "apache,cocoon,tech",
+            "path": "technologies/apache/apache-cocoon-detect.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -20562,11 +20722,11 @@
             "path": "exposed-panels/dell-wyse-login.yaml"
         },
         {
-            "author": "bing0o",
+            "author": "bing0o,meme-lord",
             "id": "weblogic-login",
             "name": "Weblogic Login Panel",
             "severity": "info",
-            "tags": "panel,weblogic",
+            "tags": "panel,oracle,weblogic",
             "path": "exposed-panels/weblogic-login.yaml"
         },
         {
