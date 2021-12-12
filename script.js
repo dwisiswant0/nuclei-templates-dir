@@ -86,7 +86,6 @@ function loadTop10() {
 
 function genCommand(obj) {
 	var cmdTxt = "$ nuclei -u ",
-		title = unescape(obj.getAttribute("data-title")),
 		path = obj.getAttribute("href").replace(`${blob}/`, "");
 
 	if (path.startsWith(`file/`)) {
@@ -103,7 +102,7 @@ function genCommand(obj) {
 
 	cmd.innerText = cmdTxt;
 	hljs.highlightAll();
-	cmdTitle.innerText = title;
+	cmdTitle.innerText = obj.innerText;
 	cmdURL.setAttribute("href", `${blob}/${path}`);
 	cmdDialog.showModal();
 
@@ -158,7 +157,7 @@ function doSearch() {
 			output += `<li><div class="severity-indicator"><div class="severity-indicator_separator"></div><div class="severity-indicator_separator"></div>` +
 				`<div class="severity-indicator_separator"></div><div class="severity-indicator_separator"></div>` +
 				`<div class="severity-indicator_progress severity-indicator_progress-${severity}"></div></div> ` +
-				`<a href="${blob}/${e.path}" data-title="${escape(title)}" onclick="return genCommand(this);">${title}</a></li>`;
+				`<a href="${blob}/${e.path}" onclick="return genCommand(this);">${title}</a></li>`;
 			i++
 		}
 	});
