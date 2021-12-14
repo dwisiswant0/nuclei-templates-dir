@@ -1,5 +1,5 @@
 {
-    "version": "v8.7.1",
+    "version": "v8.7.3",
     "data": [
         {
             "author": "geeknik",
@@ -5442,6 +5442,14 @@
             "path": "misconfiguration/salesforce-aura.yaml"
         },
         {
+            "author": "princechaddha",
+            "id": "formalms-install",
+            "name": "Formalms Exposed Installation",
+            "severity": "high",
+            "tags": "misconfig,formalms",
+            "path": "misconfiguration/formalms-install.yaml"
+        },
+        {
             "author": "pussycat0x",
             "id": "springboot-dump",
             "name": "Detect Springboot Dump Actuator",
@@ -6306,6 +6314,14 @@
             "path": "exposed-panels/ambari-exposure.yaml"
         },
         {
+            "author": "pussycat0x",
+            "id": "aerohive-netconfig-ui",
+            "name": "Aerohive NetConfig UI",
+            "severity": "info",
+            "tags": "panel,tech,hiveos,aerohive",
+            "path": "exposed-panels/aerohive-netconfig-ui.yaml"
+        },
+        {
             "author": "pdteam",
             "id": "selenoid-ui-exposure",
             "name": "Selenoid UI Dashboard Exposure",
@@ -6504,6 +6520,14 @@
             "severity": "info",
             "tags": "panel",
             "path": "exposed-panels/key-cloak-admin-panel.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "extreme-netconfig-ui",
+            "name": "Extreme NetConfig UI",
+            "severity": "info",
+            "tags": "panel,tech,hiveos,extreme",
+            "path": "exposed-panels/extreme-netconfig-ui.yaml"
         },
         {
             "author": "PR3R00T",
@@ -7402,6 +7426,14 @@
             "path": "exposed-panels/clave-login-panel.yaml"
         },
         {
+            "author": "ffffffff0x",
+            "id": "thruk-login",
+            "name": "thruk detect",
+            "severity": "info",
+            "tags": "thruk,panel",
+            "path": "exposed-panels/thruk-login.yaml"
+        },
+        {
             "author": "bing0o,meme-lord",
             "id": "weblogic-login",
             "name": "Weblogic Login Panel",
@@ -7672,6 +7704,14 @@
             "severity": "low",
             "tags": "panel",
             "path": "exposed-panels/couchdb-exposure.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "xds-amr-status",
+            "name": "XDS-AMR - status",
+            "severity": "info",
+            "tags": "panel,tech,xamr,xds",
+            "path": "exposed-panels/xds-amr-status.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -9840,6 +9880,14 @@
             "severity": "medium",
             "tags": "logs,wordpress,exposure",
             "path": "vulnerabilities/wordpress/wp-mailchimp-log-exposure.yaml"
+        },
+        {
+            "author": "0x_Akoko",
+            "id": "pieregister-open-redirect",
+            "name": "Pie Register < 3.7.2.4 - Open Redirect",
+            "severity": "low",
+            "tags": "wordpress,redirect,wp-plugin,pieregister",
+            "path": "vulnerabilities/wordpress/pieregister-open-redirect.yaml"
         },
         {
             "author": "r3dg33k",
@@ -12074,6 +12122,14 @@
             "path": "vulnerabilities/other/etouch-v2-sqli.yaml"
         },
         {
+            "author": "Evan Rubinstein",
+            "id": "hdnetwork-realtime-lfi",
+            "name": "HD-Network Real-time Monitoring System 2.0 - Local File Inclusion",
+            "severity": "high",
+            "tags": "hdnetwork,lfi,iot,camera",
+            "path": "vulnerabilities/other/hdnetwork-realtime-lfi.yaml"
+        },
+        {
             "author": "dhiyaneshDk",
             "id": "kafdrop-xss",
             "name": "KafDrop XSS",
@@ -12946,6 +13002,14 @@
             "path": "cves/2021/CVE-2021-31682.yaml"
         },
         {
+            "author": "Evan Rubinstein",
+            "id": "CVE-2021-43496",
+            "name": "Clustering LFI",
+            "severity": "high",
+            "tags": "cve,cve2021,lfi,clustering",
+            "path": "cves/2021/CVE-2021-43496.yaml"
+        },
+        {
             "author": "dwisiswant0",
             "id": "CVE-2021-3378",
             "name": "FortiLogger Unauthenticated Arbitrary File Upload",
@@ -13616,6 +13680,14 @@
             "severity": "critical",
             "tags": "cve,cve2021,rce,omi,microsoft",
             "path": "cves/2021/CVE-2021-38647.yaml"
+        },
+        {
+            "author": "Evan Rubinstein",
+            "id": "CVE-2021-24997",
+            "name": "CVE-2021-24997",
+            "severity": "",
+            "tags": "wordpress,guppy,api,cve2021,cve,wp-plugin",
+            "path": "cves/2021/CVE-2021-24997.yaml"
         },
         {
             "author": "daffainfo",
@@ -14808,6 +14880,14 @@
             "severity": "medium",
             "tags": "cve,cve2018,jolokia,xss",
             "path": "cves/2018/CVE-2018-1000129.yaml"
+        },
+        {
+            "author": "0x_Akoko",
+            "id": "CVE-2018-7467",
+            "name": "AxxonSoft Axxon Next Directory Traversal",
+            "severity": "high",
+            "tags": "cve,cve2018,axxonsoft,lfi",
+            "path": "cves/2018/CVE-2018-7467.yaml"
         },
         {
             "author": "gy741",
