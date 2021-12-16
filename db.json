@@ -1,5 +1,5 @@
 {
-    "version": "v8.7.3",
+    "version": "v8.7.8",
     "data": [
         {
             "author": "geeknik",
@@ -976,6 +976,30 @@
             "severity": "high",
             "tags": "takeover",
             "path": "takeovers/tumblr-takeover.yaml"
+        },
+        {
+            "author": "pdteam",
+            "id": "tls-version",
+            "name": "TLS Version",
+            "severity": "info",
+            "tags": "ssl",
+            "path": "ssl/tls-version.yaml"
+        },
+        {
+            "author": "pdteam",
+            "id": "expired-ssl",
+            "name": "Expired SSL Certificate",
+            "severity": "low",
+            "tags": "ssl",
+            "path": "ssl/expired-ssl.yaml"
+        },
+        {
+            "author": "pdteam",
+            "id": "ssl-dns-names",
+            "name": "SSL DNS Names",
+            "severity": "info",
+            "tags": "ssl",
+            "path": "ssl/ssl-dns-names.yaml"
         },
         {
             "author": "jarijaas",
@@ -6026,6 +6050,14 @@
             "path": "exposed-panels/nessus-panel.yaml"
         },
         {
+            "author": "Adam Crosser",
+            "id": "defectdojo-panel",
+            "name": "DefectDojo Exposure",
+            "severity": "info",
+            "tags": "panel",
+            "path": "exposed-panels/defectdojo-panel.yaml"
+        },
+        {
             "author": "dhiyaneshDK",
             "id": "sgp-login-panel",
             "name": "SGP Panel",
@@ -7488,6 +7520,14 @@
             "severity": "info",
             "tags": "panel,ems",
             "path": "exposed-panels/ems-login-panel.yaml"
+        },
+        {
+            "author": "Adam Crosser",
+            "id": "yopass-panel",
+            "name": "Yopass Application Exposure",
+            "severity": "info",
+            "tags": "panel",
+            "path": "exposed-panels/yopass-panel.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -9802,6 +9842,14 @@
             "path": "vulnerabilities/apache/apache-flink-unauth-rce.yaml"
         },
         {
+            "author": "Evan Rubinstein,nvn1729",
+            "id": "apache-solr-log4j-rce",
+            "name": "Apache Solr Log4j JNDI RCE",
+            "severity": "critical",
+            "tags": "solr,oast,log4j,rce,apache",
+            "path": "vulnerabilities/apache/apache-solr-log4j-rce.yaml"
+        },
+        {
             "author": "DhiyaneshDk",
             "id": "apache-solr-file-read",
             "name": "Apache Solr <= 8.8.1 Arbitrary File Read",
@@ -10744,6 +10792,14 @@
             "severity": "high",
             "tags": "vmware,lfi",
             "path": "vulnerabilities/vmware/vmware-vcenter-lfi.yaml"
+        },
+        {
+            "author": "_0xf4n9x_",
+            "id": "vmware-vcenter-log4j-jndi-rce",
+            "name": "VMware VCenter Log4j JNDI RCE",
+            "severity": "high",
+            "tags": "rce,jndi,log4j,vcenter,vmware",
+            "path": "vulnerabilities/vmware/vmware-vcenter-log4j-jndi-rce.yaml"
         },
         {
             "author": "pdteam",
@@ -12122,14 +12178,6 @@
             "path": "vulnerabilities/other/etouch-v2-sqli.yaml"
         },
         {
-            "author": "Evan Rubinstein",
-            "id": "hdnetwork-realtime-lfi",
-            "name": "HD-Network Real-time Monitoring System 2.0 - Local File Inclusion",
-            "severity": "high",
-            "tags": "hdnetwork,lfi,iot,camera",
-            "path": "vulnerabilities/other/hdnetwork-realtime-lfi.yaml"
-        },
-        {
             "author": "dhiyaneshDk",
             "id": "kafdrop-xss",
             "name": "KafDrop XSS",
@@ -12818,6 +12866,14 @@
             "path": "cves/2021/CVE-2021-22053.yaml"
         },
         {
+            "author": "Momen Eldawakhly,Evan Rubinstein",
+            "id": "CVE-2021-45043",
+            "name": "HD-Network Real-time Monitoring System 2.0 - Local File Inclusion",
+            "severity": "high",
+            "tags": "cve,cve2021,hdnetwork,lfi,iot,camera",
+            "path": "cves/2021/CVE-2021-45043.yaml"
+        },
+        {
             "author": "dhiyaneshDK",
             "id": "CVE-2021-39320",
             "name": "underConstruction < 1.19 - Reflected Cross-Site Scripting",
@@ -13128,6 +13184,14 @@
             "severity": "medium",
             "tags": "cve,cve2021,myfactory,xss",
             "path": "cves/2021/CVE-2021-42565.yaml"
+        },
+        {
+            "author": "geeknik",
+            "id": "CVE-2021-44528",
+            "name": "Open Redirect in Host Authorization Middleware",
+            "severity": "low",
+            "tags": "cve,cve2021,redirect",
+            "path": "cves/2021/CVE-2021-44528.yaml"
         },
         {
             "author": "2rs3c",
