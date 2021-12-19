@@ -1,5 +1,5 @@
 {
-    "version": "v8.7.8",
+    "version": "v8.7.9",
     "data": [
         {
             "author": "geeknik",
@@ -3595,6 +3595,14 @@
         },
         {
             "author": "daffainfo",
+            "id": "api-pinata",
+            "name": "Pinata API Test",
+            "severity": "info",
+            "tags": "token-spray,pinata",
+            "path": "token-spray/api-pinata.yaml"
+        },
+        {
+            "author": "daffainfo",
             "id": "api-harvardart",
             "name": "Harvard Art Museums API Test",
             "severity": "info",
@@ -3608,6 +3616,14 @@
             "severity": "info",
             "tags": "token-spray,google,place,details",
             "path": "token-spray/google-placedetails.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "api-bitrise",
+            "name": "Bitrise API Test",
+            "severity": "info",
+            "tags": "token-spray,bitrise",
+            "path": "token-spray/api-bitrise.yaml"
         },
         {
             "author": "dwisiswant0",
@@ -3696,6 +3712,14 @@
             "severity": "info",
             "tags": "token-spray,stripe",
             "path": "token-spray/api-stripe.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "api-web3storage",
+            "name": "Web3 Storage API Test",
+            "severity": "info",
+            "tags": "token-spray,web3storage",
+            "path": "token-spray/api-web3storage.yaml"
         },
         {
             "author": "zzeitlin",
@@ -4067,6 +4091,14 @@
         },
         {
             "author": "daffainfo",
+            "id": "api-pastebin",
+            "name": "Pastebin API Test",
+            "severity": "info",
+            "tags": "token-spray,pastebin",
+            "path": "token-spray/api-pastebin.yaml"
+        },
+        {
+            "author": "daffainfo",
             "id": "api-ddownload",
             "name": "ddownload API Test",
             "severity": "info",
@@ -4304,6 +4336,14 @@
             "severity": "info",
             "tags": "token-spray,adoptapet",
             "path": "token-spray/api-adoptapet.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "api-quip",
+            "name": "Quip API Test",
+            "severity": "info",
+            "tags": "token-spray,quip",
+            "path": "token-spray/api-quip.yaml"
         },
         {
             "author": "daffainfo",
@@ -7106,6 +7146,14 @@
             "path": "exposed-panels/project-insight-login.yaml"
         },
         {
+            "author": "ffffffff0x",
+            "id": "casemanager-panel",
+            "name": "CaseManager Panel",
+            "severity": "info",
+            "tags": "casemanager,panel",
+            "path": "exposed-panels/casemanager-panel.yaml"
+        },
+        {
             "author": "princechaddha",
             "id": "skycaiji-admin-panel",
             "name": "SkyCaiji Admin Panel",
@@ -7208,6 +7256,14 @@
             "severity": "info",
             "tags": "panel",
             "path": "exposed-panels/d-link-wireless.yaml"
+        },
+        {
+            "author": "ffffffff0x",
+            "id": "emessage-panel",
+            "name": "Emessage Panel Detect",
+            "severity": "info",
+            "tags": "panel,emessage",
+            "path": "exposed-panels/emessage-panel.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -7722,6 +7778,14 @@
             "path": "exposed-panels/sitecore-login.yaml"
         },
         {
+            "author": "princechaddha",
+            "id": "thinfinity-virtualui-panel",
+            "name": "Thinfinity VirtualUI Panel Detect",
+            "severity": "info",
+            "tags": "panel,thinfinity,virtualui",
+            "path": "exposed-panels/thinfinity-virtualui-panel.yaml"
+        },
+        {
             "author": "dhiyaneshDK",
             "id": "nginx-proxy-manager",
             "name": "Nginx Proxy Manager",
@@ -8192,6 +8256,14 @@
             "severity": "info",
             "tags": "panel",
             "path": "exposed-panels/ibm-advanced-system-management.yaml"
+        },
+        {
+            "author": "princechaddha",
+            "id": "emerson-power-panel",
+            "name": "Emerson Network Power IntelliSlot Web Card Panel",
+            "severity": "info",
+            "tags": "panel,intellislot,emerson",
+            "path": "exposed-panels/emerson-power-panel.yaml"
         },
         {
             "author": "impramodsargar",
@@ -9834,6 +9906,14 @@
             "path": "vulnerabilities/ibm/eclipse-help-system-xss.yaml"
         },
         {
+            "author": "meme-lord",
+            "id": "mobileiron-log4j-jndi-rce",
+            "name": "MobileIron Log4J JNDI RCE",
+            "severity": "high",
+            "tags": "rce,jndi,oast,log4j,mobileiron",
+            "path": "vulnerabilities/mobileiron/mobileiron-log4j-jndi-rce.yaml"
+        },
+        {
             "author": "pikpikcu",
             "id": "apache-flink-unauth-rce",
             "name": "Apache Flink Unauth RCE",
@@ -9848,6 +9928,14 @@
             "severity": "critical",
             "tags": "solr,oast,log4j,rce,apache",
             "path": "vulnerabilities/apache/apache-solr-log4j-rce.yaml"
+        },
+        {
+            "author": "pdteam",
+            "id": "apache-ofbiz-log4j-rce",
+            "name": "Apache OFBiz Log4j JNDI RCE",
+            "severity": "critical",
+            "tags": "ofbiz,oast,log4j,rce,apache",
+            "path": "vulnerabilities/apache/apache-ofbiz-log4j-rce.yaml"
         },
         {
             "author": "DhiyaneshDk",
@@ -10986,6 +11074,14 @@
             "path": "vulnerabilities/other/ecshop-sqli.yaml"
         },
         {
+            "author": "0x_Akoko",
+            "id": "global-domains-lfi",
+            "name": "Global Domains International Directory traversal Vulnerability",
+            "severity": "high",
+            "tags": "globaldomains,lfi",
+            "path": "vulnerabilities/other/global-domains-lfi.yaml"
+        },
+        {
             "author": "Gal Nagli",
             "id": "sap-redirect",
             "name": "SAP wide open redirect",
@@ -11000,6 +11096,14 @@
             "severity": "high",
             "tags": "shellshock,rce",
             "path": "vulnerabilities/other/rce-shellshock-user-agent.yaml"
+        },
+        {
+            "author": "0x_Akoko",
+            "id": "groupoffice-lfi",
+            "name": "Groupoffice 3.4.21 Directory Traversal Vulnerability",
+            "severity": "high",
+            "tags": "groupoffice,lfi",
+            "path": "vulnerabilities/other/groupoffice-lfi.yaml"
         },
         {
             "author": "madrobot",
@@ -11384,6 +11488,14 @@
             "severity": "high",
             "tags": "interlib,lfi",
             "path": "vulnerabilities/other/interlib-fileread.yaml"
+        },
+        {
+            "author": "0x_Akoko",
+            "id": "asanhamayesh-lfi",
+            "name": "Asanhamayesh CMS 3.4.6 Directory traversal Vulnerability",
+            "severity": "high",
+            "tags": "asanhamayesh,lfi",
+            "path": "vulnerabilities/other/asanhamayesh-lfi.yaml"
         },
         {
             "author": "0x_Akoko",
@@ -12018,6 +12130,14 @@
             "path": "vulnerabilities/other/luftguitar-arbitrary-file-upload.yaml"
         },
         {
+            "author": "princechaddha",
+            "id": "global-domains-xss",
+            "name": "Global Domains International XSS",
+            "severity": "medium",
+            "tags": "globaldomains,xss",
+            "path": "vulnerabilities/other/global-domains-xss.yaml"
+        },
+        {
             "author": "pikpikcu",
             "id": "oa-tongda-path-traversal",
             "name": "OA TongDa Path Traversal",
@@ -12168,6 +12288,14 @@
             "severity": "medium",
             "tags": "adobe,coldfusion,xss",
             "path": "vulnerabilities/other/coldfusion-debug-xss.yaml"
+        },
+        {
+            "author": "gy741",
+            "id": "oliver-library-lfi",
+            "name": "Oliver Library Server v5 - Arbitrary File Download",
+            "severity": "high",
+            "tags": "windows,lfi,oliver",
+            "path": "vulnerabilities/other/oliver-library-lfi.yaml"
         },
         {
             "author": "princechaddha",
@@ -12362,6 +12490,14 @@
             "path": "cves/2021/CVE-2021-24146.yaml"
         },
         {
+            "author": "danielmofer",
+            "id": "CVE-2021-44848",
+            "name": "Thinfinity VirtualUI User Enumeration",
+            "severity": "medium",
+            "tags": "cve,cve2021,exposure,thinfinity",
+            "path": "cves/2021/CVE-2021-44848.yaml"
+        },
+        {
             "author": "dhiyaneshDK",
             "id": "CVE-2021-24275",
             "name": "Popup by Supsystic < 1.10.5 - Reflected Cross-Site scripting (XSS)",
@@ -12474,7 +12610,7 @@
             "path": "cves/2021/CVE-2021-26475.yaml"
         },
         {
-            "author": "melbadry9,dhiyaneshDK,daffainfo",
+            "author": "melbadry9,dhiyaneshDK,daffainfo,anon-artist,0xceba",
             "id": "CVE-2021-44228",
             "name": "Remote code injection in Log4j",
             "severity": "critical",
@@ -13448,6 +13584,14 @@
             "severity": "high",
             "tags": "cve,cve2021,geutebruck,rce,oast",
             "path": "cves/2021/CVE-2021-33544.yaml"
+        },
+        {
+            "author": "danielmofer",
+            "id": "CVE-2021-45092",
+            "name": "Thinfinity Iframe Injection",
+            "severity": "medium",
+            "tags": "cve,cve2021,injection,iframe,thinfinity",
+            "path": "cves/2021/CVE-2021-45092.yaml"
         },
         {
             "author": "geeknik",
@@ -21152,6 +21296,14 @@
             "severity": "info",
             "tags": "tech,influxdb",
             "path": "technologies/influxdb-detect.yaml"
+        },
+        {
+            "author": "pdteam",
+            "id": "wordpress-detect",
+            "name": "WordPress Detection",
+            "severity": "info",
+            "tags": "tech,wordpress",
+            "path": "technologies/wordpress-detect.yaml"
         },
         {
             "author": "pikpikcu",
