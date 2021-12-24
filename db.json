@@ -1,5 +1,5 @@
 {
-    "version": "v8.7.9",
+    "version": "v8.8.0",
     "data": [
         {
             "author": "geeknik",
@@ -3538,6 +3538,14 @@
             "path": "token-spray/google-streetview.yaml"
         },
         {
+            "author": "daffainfo",
+            "id": "api-blockchain",
+            "name": "Blockhain API Test",
+            "severity": "info",
+            "tags": "token-spray,blockchain",
+            "path": "token-spray/api-blockchain.yaml"
+        },
+        {
             "author": "zzeitlin",
             "id": "api-googlespeedlimit",
             "name": "Google Speed Limit API Test",
@@ -3818,6 +3826,14 @@
             "path": "token-spray/google-mapsembed.yaml"
         },
         {
+            "author": "daffainfo",
+            "id": "api-alchemy",
+            "name": "Alchemy API Test",
+            "severity": "info",
+            "tags": "token-spray,alchemy",
+            "path": "token-spray/api-alchemy.yaml"
+        },
+        {
             "author": "dwisiswant0",
             "id": "api-fontawesome",
             "name": "FontAwesome API Test",
@@ -4000,6 +4016,14 @@
             "severity": "info",
             "tags": "token-spray,mapbox",
             "path": "token-spray/api-mapbox.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "api-coinlayer",
+            "name": "Coinlayer API Test",
+            "severity": "info",
+            "tags": "token-spray,coinlayer",
+            "path": "token-spray/api-coinlayer.yaml"
         },
         {
             "author": "dwisiswant0",
@@ -4227,6 +4251,14 @@
         },
         {
             "author": "daffainfo",
+            "id": "api-block",
+            "name": "block.io API Test",
+            "severity": "info",
+            "tags": "token-spray,block",
+            "path": "token-spray/api-block.yaml"
+        },
+        {
+            "author": "daffainfo",
             "id": "api-aniapi",
             "name": "AniAPI API Test",
             "severity": "info",
@@ -4288,6 +4320,14 @@
             "severity": "info",
             "tags": "token-spray,tinypng",
             "path": "token-spray/api-tinypng.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "api-bitcoinaverage",
+            "name": "BitcoinAverage API Test",
+            "severity": "info",
+            "tags": "token-spray,bitcoinaverage",
+            "path": "token-spray/api-bitcoinaverage.yaml"
         },
         {
             "author": "zzeitlin",
@@ -4536,6 +4576,14 @@
             "severity": "critical",
             "tags": "network,sap",
             "path": "network/sap-router-info-leak.yaml"
+        },
+        {
+            "author": "thesubtlety",
+            "id": "cowrie-honeypot-detect",
+            "name": "Cowrie SSH Honeypot Detect",
+            "severity": "info",
+            "tags": "network,ssh,honeypot",
+            "path": "network/cowrie-honeypot-detect.yaml"
         },
         {
             "author": "pdteam",
@@ -5203,6 +5251,14 @@
         },
         {
             "author": "pussycat0x",
+            "id": "unauthorized-puppet-node-manager",
+            "name": "Pupet Node Manager",
+            "severity": "medium",
+            "tags": "node,misconfig",
+            "path": "misconfiguration/unauthorized-puppet-node-manager-detect.yaml"
+        },
+        {
+            "author": "pussycat0x",
             "id": "node-exporter-metrics",
             "name": "Detect Node Exporter Metrics",
             "severity": "low",
@@ -5506,6 +5562,14 @@
             "path": "misconfiguration/salesforce-aura.yaml"
         },
         {
+            "author": "dhiyaneshDk",
+            "id": "dgraph-dashboard-exposure",
+            "name": "Dgraph Ratel Dashboard Exposure",
+            "severity": "low",
+            "tags": "exposure,unauth,panel",
+            "path": "misconfiguration/dgraph-dashboard-exposure.yaml"
+        },
+        {
             "author": "princechaddha",
             "id": "formalms-install",
             "name": "Formalms Exposed Installation",
@@ -5568,6 +5632,14 @@
             "severity": "low",
             "tags": "springboot,exposure",
             "path": "misconfiguration/springboot/springboot-mappings.yaml"
+        },
+        {
+            "author": "wdahlenb",
+            "id": "springboot-gateway",
+            "name": "Detect Spring Gateway Actuator",
+            "severity": "medium",
+            "tags": "springboot,exposure",
+            "path": "misconfiguration/springboot/springboot-gateway.yaml"
         },
         {
             "author": "ajaysenr",
@@ -6248,6 +6320,14 @@
             "severity": "info",
             "tags": "panel",
             "path": "exposed-panels/acunetix-panel.yaml"
+        },
+        {
+            "author": "Supras",
+            "id": "craftcms-admin-panel",
+            "name": "Craft CMS admin panel",
+            "severity": "info",
+            "tags": "panel,craftcms",
+            "path": "exposed-panels/craftcms-admin-panel.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -8194,6 +8274,14 @@
             "path": "exposed-panels/atlassian-crowd-panel.yaml"
         },
         {
+            "author": "dhiyaneshDk",
+            "id": "sequoiadb-login",
+            "name": "SequoiaDB Login Panel",
+            "severity": "info",
+            "tags": "sequoiadb,panel",
+            "path": "exposed-panels/sequoiadb-login.yaml"
+        },
+        {
             "author": "bsysop",
             "id": "fortinet-fortigate-panel",
             "name": "Fortinet FortiGate SSL VPN Panel",
@@ -9322,6 +9410,14 @@
             "path": "default-logins/iptime/iptime-default-login.yaml"
         },
         {
+            "author": "dhiyaneshDk",
+            "id": "sequoiadb-default-login",
+            "name": "SequoiaDB Default Login",
+            "severity": "high",
+            "tags": "default-login,sequoiadb",
+            "path": "default-logins/sequoiadb/sequoiadb-default-login.yaml"
+        },
+        {
             "author": "pdteam",
             "id": "zabbix-default-login",
             "name": "Zabbix Default Login",
@@ -10354,6 +10450,14 @@
             "path": "vulnerabilities/wordpress/wordpress-accessible-wpconfig.yaml"
         },
         {
+            "author": "dhiyaneshDk",
+            "id": "wordpress-ssrf-oembed",
+            "name": "Wordpress Oembed Proxy SSRF",
+            "severity": "medium",
+            "tags": "wordpress,ssrf,oast",
+            "path": "vulnerabilities/wordpress/wordpress-ssrf-oembed.yaml"
+        },
+        {
             "author": "daffainfo",
             "id": "wp-nextgen-xss",
             "name": "WordPress Plugin NextGEN Gallery 1.9.10 - Reflected Cross-Site Scripting (XSS)",
@@ -10890,6 +10994,14 @@
             "path": "vulnerabilities/vmware/vmware-vcenter-log4j-jndi-rce.yaml"
         },
         {
+            "author": "johnk3r",
+            "id": "vmware-horizon-log4j-jndi-rce",
+            "name": "VMware Horizon Log4j JNDI RCE",
+            "severity": "high",
+            "tags": "rce,jndi,log4j,horizon,vmware",
+            "path": "vulnerabilities/vmware/vmware-horizon-log4j-jndi-rce.yaml"
+        },
+        {
             "author": "pdteam",
             "id": "vmware-vcenter-ssrf",
             "name": "VMware vCenter SSRF/LFI/XSS",
@@ -11384,6 +11496,14 @@
             "severity": "critical",
             "tags": "lotuscms,rce",
             "path": "vulnerabilities/other/lotuscms-rce.yaml"
+        },
+        {
+            "author": "ok_bye_now",
+            "id": "servicenow-helpdesk-credential",
+            "name": "ServiceNow Helpdesk Credential Exposure",
+            "severity": "high",
+            "tags": "servicenow,exposure",
+            "path": "vulnerabilities/other/servicenow-helpdesk-credential.yaml"
         },
         {
             "author": "gy741",
@@ -12058,6 +12178,14 @@
             "path": "vulnerabilities/other/hasura-graphql-ssrf.yaml"
         },
         {
+            "author": "KrE80r",
+            "id": "unifi-network-log4j-rce",
+            "name": "UniFi Network Log4j JNDI RCE",
+            "severity": "critical",
+            "tags": "rce,log4j,ubnt,unifi,oast",
+            "path": "vulnerabilities/other/unifi-network-log4j-rce.yaml"
+        },
+        {
             "author": "princechaddha",
             "id": "unauth-hoteldruid-panel",
             "name": "Unauthenticated Hoteldruid Panel",
@@ -12240,6 +12368,14 @@
             "severity": "high",
             "tags": "seeyon,wooyun,lfi",
             "path": "vulnerabilities/other/WooYun-2015-148227.yaml"
+        },
+        {
+            "author": "0x_Akoko",
+            "id": "pacsone-server-lfi",
+            "name": "PACSOne Server 6.6.2 DICOM Web Viewer Directory Trasversal",
+            "severity": "high",
+            "tags": "pacsone,lfi",
+            "path": "vulnerabilities/other/pacsone-server-lfi.yaml"
         },
         {
             "author": "pikpikcu",
@@ -12610,7 +12746,7 @@
             "path": "cves/2021/CVE-2021-26475.yaml"
         },
         {
-            "author": "melbadry9,dhiyaneshDK,daffainfo,anon-artist,0xceba",
+            "author": "melbadry9,dhiyaneshDK,daffainfo,anon-artist,0xceba,Tea",
             "id": "CVE-2021-44228",
             "name": "Remote code injection in Log4j",
             "severity": "critical",
@@ -12680,6 +12816,14 @@
             "severity": "critical",
             "tags": "cve,cve2021,tieline,default-login",
             "path": "cves/2021/CVE-2021-35336.yaml"
+        },
+        {
+            "author": "ImNightmaree",
+            "id": "CVE-2021-45046",
+            "name": "Remote code injection in Log4j",
+            "severity": "critical",
+            "tags": "cve,cve2021,rce,oast,log4j",
+            "path": "cves/2021/CVE-2021-45046.yaml"
         },
         {
             "author": "0x_Akoko",
@@ -13002,6 +13146,14 @@
             "path": "cves/2021/CVE-2021-22053.yaml"
         },
         {
+            "author": "pussycat0x",
+            "id": "CVE-2021-40859",
+            "name": "CVE-2021-40859",
+            "severity": "critical",
+            "tags": "cve,cve2021,iot,unauth,voip",
+            "path": "cves/2021/CVE-2021-40859.yaml"
+        },
+        {
             "author": "Momen Eldawakhly,Evan Rubinstein",
             "id": "CVE-2021-45043",
             "name": "HD-Network Real-time Monitoring System 2.0 - Local File Inclusion",
@@ -13301,7 +13453,7 @@
             "author": "gy741",
             "id": "CVE-2021-40856",
             "name": "Auerswald COMfortel 1400/2600/3600 IP - Authentication Bypass",
-            "severity": "medium",
+            "severity": "high",
             "tags": "cve,cve2021,comfortel,auth-bypass",
             "path": "cves/2021/CVE-2021-40856.yaml"
         },
@@ -13589,7 +13741,7 @@
             "author": "danielmofer",
             "id": "CVE-2021-45092",
             "name": "Thinfinity Iframe Injection",
-            "severity": "medium",
+            "severity": "critical",
             "tags": "cve,cve2021,injection,iframe,thinfinity",
             "path": "cves/2021/CVE-2021-45092.yaml"
         },
@@ -13888,6 +14040,14 @@
             "severity": "critical",
             "tags": "cve,cve2021,rce,omi,microsoft",
             "path": "cves/2021/CVE-2021-38647.yaml"
+        },
+        {
+            "author": "princechaddha",
+            "id": "CVE-2021-26085",
+            "name": "Confluence Pre-Authorization Arbitrary File Read in /s/ endpoint - CVE-2021-26085",
+            "severity": "medium",
+            "tags": "cve,cve2021,confluence,atlassian,lfi",
+            "path": "cves/2021/CVE-2021-26085.yaml"
         },
         {
             "author": "Evan Rubinstein",
@@ -15266,6 +15426,14 @@
             "path": "cves/2018/CVE-2018-5233.yaml"
         },
         {
+            "author": "0x_Akoko",
+            "id": "CVE-2018-15138",
+            "name": "LG-Ericsson iPECS NMS 30M Directory Traversal",
+            "severity": "high",
+            "tags": "cve,cve2018,ericsson,lfi",
+            "path": "cves/2018/CVE-2018-15138.yaml"
+        },
+        {
             "author": "0x240x23elu",
             "id": "CVE-2018-16283",
             "name": "WordPress Plugin Wechat Broadcast 1.2.0 - Local File Inclusion",
@@ -16442,12 +16610,28 @@
             "path": "cves/2015/CVE-2015-1000012.yaml"
         },
         {
+            "author": "daffainfo",
+            "id": "CVE-2015-0554",
+            "name": "Pirelli ADSL2/2+ Wireless Router P.DGA4001N - Information Disclosure",
+            "severity": "high",
+            "tags": "cve,cve2015,pirelli,router,disclosure",
+            "path": "cves/2015/CVE-2015-0554.yaml"
+        },
+        {
             "author": "princechaddha",
             "id": "CVE-2015-8399",
             "name": "Atlassian Confluence configuration files read",
             "severity": "medium",
             "tags": "cve,cve2015,atlassian,confluence",
             "path": "cves/2015/CVE-2015-8399.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "CVE-2015-2166",
+            "name": "Ericsson Drutt MSDP (Instance Monitor) Directory Traversal",
+            "severity": "high",
+            "tags": "cve,cve2015,lfi,ericsson",
+            "path": "cves/2015/CVE-2015-2166.yaml"
         },
         {
             "author": "daffainfo",
@@ -20026,6 +20210,14 @@
             "path": "technologies/achecker-detect.yaml"
         },
         {
+            "author": "pussycat0x",
+            "id": "puppet-node-manager-detect",
+            "name": "Puppet Node Manager",
+            "severity": "info",
+            "tags": "node,tech",
+            "path": "technologies/puppet-node-manager-detect.yaml"
+        },
+        {
             "author": "pikpikcu",
             "id": "wuzhicms-detect",
             "name": "Wuzhicms Detect",
@@ -20104,6 +20296,14 @@
             "severity": "info",
             "tags": "tech,plesk",
             "path": "technologies/default-plesk-page.yaml"
+        },
+        {
+            "author": "pdteam",
+            "id": "vmware-horizon",
+            "name": "VMware Horizon",
+            "severity": "info",
+            "tags": "vmware,horizon",
+            "path": "technologies/vmware-horizon.yaml"
         },
         {
             "author": "ffffffff0x",
@@ -21114,6 +21314,14 @@
             "path": "technologies/vmware-vrealize-detect.yaml"
         },
         {
+            "author": "dhiyaneshDk",
+            "id": "couchbase-sync-gateway",
+            "name": "Couchbase Sync Gateway",
+            "severity": "info",
+            "tags": "tech,couchbase",
+            "path": "technologies/couchbase-sync-gateway.yaml"
+        },
+        {
             "author": "dhiyaneshDK",
             "id": "operations-automation-default-page",
             "name": "Operations Automation Default Page",
@@ -21152,6 +21360,14 @@
             "severity": "info",
             "tags": "tech,rhymix",
             "path": "technologies/rhymix-cms-detect.yaml"
+        },
+        {
+            "author": "TechbrunchFR",
+            "id": "tableau-server-detect",
+            "name": "Detect Tableau Server",
+            "severity": "info",
+            "tags": "tech,tableau",
+            "path": "technologies/tableau-server-detect.yaml"
         },
         {
             "author": "cyllective",
