@@ -1,5 +1,5 @@
 {
-    "version": "v8.8.0",
+    "version": "v8.8.1",
     "data": [
         {
             "author": "geeknik",
@@ -1202,11 +1202,19 @@
             "path": "exposures/logs/squid-analysis-report-generator.yaml"
         },
         {
+            "author": "organiccrap",
+            "id": "clockwork-php-page",
+            "name": "Clockwork PHP page exposure",
+            "severity": "high",
+            "tags": "tech,clockwork",
+            "path": "exposures/logs/clockwork-php-page.yaml"
+        },
+        {
             "author": "dhiyaneshDK",
             "id": "jboss-seam-debug-page",
             "name": "Jboss Seam Debug Page Enabled",
             "severity": "medium",
-            "tags": "logs,exposure",
+            "tags": "jboss,logs,exposure",
             "path": "exposures/logs/jboss-seam-debug-page.yaml"
         },
         {
@@ -2874,6 +2882,14 @@
             "path": "workflows/netgear-workflow.yaml"
         },
         {
+            "author": "daffainfo",
+            "id": "symfony-workflow",
+            "name": "Symfony Security Checks",
+            "severity": "",
+            "tags": "",
+            "path": "workflows/symfony-workflow.yaml"
+        },
+        {
             "author": "philippedelteil",
             "id": "confluence-workflow",
             "name": "Atlassian Confluence workflow",
@@ -2938,6 +2954,14 @@
             "path": "workflows/gocd-workflow.yaml"
         },
         {
+            "author": "daffainfo",
+            "id": "laravel-workflow",
+            "name": "Laravel Security Checks",
+            "severity": "",
+            "tags": "",
+            "path": "workflows/laravel-workflow.yaml"
+        },
+        {
             "author": "philippedelteil",
             "id": "phpmyadmin-workflow",
             "name": "phpmyadmin-workflow",
@@ -2960,6 +2984,14 @@
             "severity": "",
             "tags": "",
             "path": "workflows/ruijie-workflow.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "jboss-workflow",
+            "name": "JBoss Security Checks",
+            "severity": "",
+            "tags": "",
+            "path": "workflows/jboss-workflow.yaml"
         },
         {
             "author": "dwisiswant0",
@@ -2992,6 +3024,14 @@
             "severity": "",
             "tags": "",
             "path": "workflows/weblogic-workflow.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "drupal-workflow",
+            "name": "Wordpress Security Checks",
+            "severity": "",
+            "tags": "",
+            "path": "workflows/drupal-workflow.yaml"
         },
         {
             "author": "dwisiswant0,daffainfo",
@@ -3050,6 +3090,14 @@
             "path": "workflows/cacti-workflow.yaml"
         },
         {
+            "author": "daffainfo",
+            "id": "yii-workflow",
+            "name": "Yii Security Checks",
+            "severity": "",
+            "tags": "",
+            "path": "workflows/yii-workflow.yaml"
+        },
+        {
             "author": "pdteam",
             "id": "sitecore-workflow",
             "name": "SiteCore Security Checks",
@@ -3072,6 +3120,30 @@
             "severity": "",
             "tags": "",
             "path": "workflows/jenkins-workflow.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "microsoft-exchange-workflow",
+            "name": "Microsoft Exchange Security Checks",
+            "severity": "",
+            "tags": "",
+            "path": "workflows/microsoft-exchange-workflow.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "fortiner-workflow",
+            "name": "Fortinet Security Checks",
+            "severity": "",
+            "tags": "",
+            "path": "workflows/fortinet-workflow.yaml"
+        },
+        {
+            "author": "pathtaga",
+            "id": "tomcat-workflow",
+            "name": "Tomcat Security Checks",
+            "severity": "",
+            "tags": "",
+            "path": "workflows/tomcat-workflow.yaml"
         },
         {
             "author": "dwisiswant0",
@@ -3098,6 +3170,14 @@
             "path": "workflows/rabbitmq-workflow.yaml"
         },
         {
+            "author": "daffainfo",
+            "id": "prometheus-workflow",
+            "name": "Prometheus Security Checks",
+            "severity": "",
+            "tags": "",
+            "path": "workflows/prometheus-workflow.yaml"
+        },
+        {
             "author": "dr_set",
             "id": "thinkphp-workflow",
             "name": "ThinkPHP Security Checks",
@@ -3112,6 +3192,22 @@
             "severity": "",
             "tags": "",
             "path": "workflows/aem-workflow.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "glpi-workflow",
+            "name": "GLPI Security Checks",
+            "severity": "",
+            "tags": "",
+            "path": "workflows/glpi-workflow.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "metabase-workflow",
+            "name": "Metabase Security Checks",
+            "severity": "",
+            "tags": "",
+            "path": "workflows/metabase-workflow.yaml"
         },
         {
             "author": "dwisiswant0",
@@ -3192,6 +3288,22 @@
             "severity": "",
             "tags": "",
             "path": "workflows/jira-workflow.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "avantfax-workflow",
+            "name": "AvantFAX Security Checks",
+            "severity": "",
+            "tags": "",
+            "path": "workflows/avantfax-workflow.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "vmware-workflow",
+            "name": "VMware Security Checks",
+            "severity": "",
+            "tags": "",
+            "path": "workflows/vmware-workflow.yaml"
         },
         {
             "author": "dwisiswant0,pdteam",
@@ -5046,7 +5158,7 @@
             "id": "tomcat-scripts",
             "name": "Detect Tomcat Exposed Scripts",
             "severity": "info",
-            "tags": "apache",
+            "tags": "apache,tomcat",
             "path": "misconfiguration/tomcat-scripts.yaml"
         },
         {
@@ -5256,6 +5368,14 @@
             "severity": "medium",
             "tags": "node,misconfig",
             "path": "misconfiguration/unauthorized-puppet-node-manager-detect.yaml"
+        },
+        {
+            "author": "RedTeamBrasil,ImNightmaree",
+            "id": "glpi-directory-listing",
+            "name": "GLPI Directory Listing",
+            "severity": "low",
+            "tags": "glpi,misconfig",
+            "path": "misconfiguration/glpi-directory-listing.yaml"
         },
         {
             "author": "pussycat0x",
@@ -5814,7 +5934,7 @@
             "id": "apache-tomcat-snoop",
             "name": "Apache Tomcat example page disclosure - snoop",
             "severity": "low",
-            "tags": "apache,misconfig",
+            "tags": "apache,misconfig,tomcat",
             "path": "misconfiguration/apache/apache-tomcat-snoop.yaml"
         },
         {
@@ -6218,14 +6338,6 @@
             "path": "exposed-panels/securityspy-detect.yaml"
         },
         {
-            "author": "pdteam",
-            "id": "cisco-secure-desktop",
-            "name": "Cisco Secure Desktop",
-            "severity": "info",
-            "tags": "cisco,panel",
-            "path": "exposed-panels/cisco-secure-desktop.yaml"
-        },
-        {
             "author": "pussycat0x",
             "id": "kenesto-login",
             "name": "Kenesto Login Detect",
@@ -6274,6 +6386,14 @@
             "path": "exposed-panels/xenmobile-login.yaml"
         },
         {
+            "author": "dhiyaneshDK",
+            "id": "user-control-panel",
+            "name": "User Control Panel",
+            "severity": "info",
+            "tags": "panel",
+            "path": "exposed-panels/user-control-panel.yaml"
+        },
+        {
             "author": "organiccrap",
             "id": "citrix-adc-gateway-panel",
             "name": "Citrix ADC Gateway detect",
@@ -6288,14 +6408,6 @@
             "severity": "info",
             "tags": "oracle,login,panel",
             "path": "exposed-panels/oracle-people-enterprise.yaml"
-        },
-        {
-            "author": "organiccrap",
-            "id": "cisco-asa-panel-detect",
-            "name": "Cisco ASA VPN panel detect",
-            "severity": "info",
-            "tags": "cisco,panel",
-            "path": "exposed-panels/cisco-asa-panel.yaml"
         },
         {
             "author": "Ganofins",
@@ -6354,6 +6466,14 @@
             "path": "exposed-panels/terramaster-login.yaml"
         },
         {
+            "author": "geeknik,daffainfo",
+            "id": "cacti-panel",
+            "name": "Cacti Login Panel",
+            "severity": "info",
+            "tags": "tech,cacti",
+            "path": "exposed-panels/cacti-panel.yaml"
+        },
+        {
             "author": "pdteam",
             "id": "druid-console-exposure",
             "name": "Alibaba Druid Console Exposure",
@@ -6386,6 +6506,14 @@
             "path": "exposed-panels/openerp-database.yaml"
         },
         {
+            "author": "pikpikcu,daffainfo",
+            "id": "avantfax-panel",
+            "name": "AvantFAX Login Panel",
+            "severity": "info",
+            "tags": "panel,avantfax",
+            "path": "exposed-panels/avantfax-panel.yaml"
+        },
+        {
             "author": "binaryfigments",
             "id": "hivemanager-login-panel",
             "name": "HiveManager Login panel",
@@ -6408,6 +6536,14 @@
             "severity": "info",
             "tags": "panel,soar",
             "path": "exposed-panels/cortex-xsoar-login.yaml"
+        },
+        {
+            "author": "cyllective,daffainfo",
+            "id": "bolt-cms-panel",
+            "name": "bolt CMS Login Panel",
+            "severity": "info",
+            "tags": "panel,bolt,cms",
+            "path": "exposed-panels/bolt-cms-panel.yaml"
         },
         {
             "author": "dhiyaneshDk",
@@ -6442,6 +6578,14 @@
             "path": "exposed-panels/luci-login-detection.yaml"
         },
         {
+            "author": "ffffffff0x",
+            "id": "panabit-panel",
+            "name": "Panabit Panel Detect",
+            "severity": "info",
+            "tags": "panabit,panel",
+            "path": "exposed-panels/panabit-panel.yaml"
+        },
+        {
             "author": "dhiyaneshDK",
             "id": "lacie-panel",
             "name": "LaCie Login Panel",
@@ -6458,12 +6602,44 @@
             "path": "exposed-panels/synology-rackstation-login.yaml"
         },
         {
+            "author": "pikpikcu,daffainfo",
+            "id": "daybyday-panel",
+            "name": "DaybydayCRM Panel Login",
+            "severity": "info",
+            "tags": "panel,daybyday",
+            "path": "exposed-panels/daybyday-panel.yaml"
+        },
+        {
             "author": "pdteam",
             "id": "ambari-exposure",
             "name": "Apache Ambari Exposure / Unauthenticated Access",
             "severity": "medium",
             "tags": "panel",
             "path": "exposed-panels/ambari-exposure.yaml"
+        },
+        {
+            "author": "pikpikcu,daffainfo",
+            "id": "bedita-panel",
+            "name": "BEdita Panel Login",
+            "severity": "info",
+            "tags": "panel,bedita",
+            "path": "exposed-panels/bedita-panel.yaml"
+        },
+        {
+            "author": "YanYun",
+            "id": "landrayoa-panel",
+            "name": "LandrayOA Panel Login",
+            "severity": "info",
+            "tags": "panel,landrayoa",
+            "path": "exposed-panels/landrayoa-panel.yaml"
+        },
+        {
+            "author": "pikpikcu,daffainfo",
+            "id": "fortinet-panel",
+            "name": "Fortinet Panel Login",
+            "severity": "info",
+            "tags": "panel,fotinet",
+            "path": "exposed-panels/fortinet-panel.yaml"
         },
         {
             "author": "pussycat0x",
@@ -6488,6 +6664,14 @@
             "severity": "info",
             "tags": "panel,login",
             "path": "exposed-panels/iptime-router.yaml"
+        },
+        {
+            "author": "ffffffff0x",
+            "id": "adminset-panel",
+            "name": "Adminset Panel",
+            "severity": "info",
+            "tags": "adminset,panel",
+            "path": "exposed-panels/adminset-panel.yaml"
         },
         {
             "author": "pdteam",
@@ -6568,6 +6752,14 @@
             "severity": "info",
             "tags": "panel",
             "path": "exposed-panels/zte-panel.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "securepoint-utm",
+            "name": "Securepoint UTM Admin Panel",
+            "severity": "info",
+            "tags": "securepoint,panel",
+            "path": "exposed-panels/securepoint-utm.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -6690,14 +6882,6 @@
             "path": "exposed-panels/webmin-panel.yaml"
         },
         {
-            "author": "z3bd",
-            "id": "cisco-sd-wan",
-            "name": "Cisco SD-WAN panel",
-            "severity": "info",
-            "tags": "panel,cisco",
-            "path": "exposed-panels/cisco-sd-wan.yaml"
-        },
-        {
             "author": "joanbono",
             "id": "checkmarx-panel-detect",
             "name": "Checkmarx WebClient detector",
@@ -6782,7 +6966,7 @@
             "id": "identityguard-selfservice-entrust",
             "name": "IdentityGuard Self-Service by Entrust",
             "severity": "info",
-            "tags": "panel",
+            "tags": "panel,identityguard",
             "path": "exposed-panels/entrust-identityguard.yaml"
         },
         {
@@ -6818,6 +7002,14 @@
             "path": "exposed-panels/yarn-manager-exposure.yaml"
         },
         {
+            "author": "koti2,daffainfo",
+            "id": "jaspersoft-panel",
+            "name": "Jaspersoft Panel Login",
+            "severity": "info",
+            "tags": "panel,jaspersoft",
+            "path": "exposed-panels/jaspersoft-panel.yaml"
+        },
+        {
             "author": "dhiyaneshDK",
             "id": "azkaban-web-client",
             "name": "Azkaban Web Client",
@@ -6826,12 +7018,12 @@
             "path": "exposed-panels/azkaban-web-client.yaml"
         },
         {
-            "author": "dhiyaneshDK",
-            "id": "ibm-service-assistant",
-            "name": "IBM Service Assistant",
+            "author": "cyllective,daffainfo",
+            "id": "bookstack-panel",
+            "name": "BookStack Panel Login",
             "severity": "info",
-            "tags": "panel",
-            "path": "exposed-panels/ibm-service-assistant.yaml"
+            "tags": "panel,bookstack",
+            "path": "exposed-panels/bookstack-panel.yaml"
         },
         {
             "author": "dhiyaneshDk",
@@ -7018,14 +7210,6 @@
             "path": "exposed-panels/sophos-fw-version-detect.yaml"
         },
         {
-            "author": "organiccrap",
-            "id": "tomcat-manager-pathnormalization",
-            "name": "Tomcat Manager Path Normalization",
-            "severity": "info",
-            "tags": "panel",
-            "path": "exposed-panels/tomcat-pathnormalization.yaml"
-        },
-        {
             "author": "dhiyaneshDK",
             "id": "server-backup-manager-se",
             "name": "Server Backup Manager SE",
@@ -7040,22 +7224,6 @@
             "severity": "info",
             "tags": "panel",
             "path": "exposed-panels/r-webserver-login.yaml"
-        },
-        {
-            "author": "dhiyaneshDK",
-            "id": "cisco-sendgrid",
-            "name": "Cisco ServiceGrid",
-            "severity": "info",
-            "tags": "panel,cisco",
-            "path": "exposed-panels/cisco-sendgrid.yaml"
-        },
-        {
-            "author": "Ahmed Sherif,geeknik",
-            "id": "public-tomcat-manager",
-            "name": "tomcat manager disclosure",
-            "severity": "info",
-            "tags": "panel",
-            "path": "exposed-panels/public-tomcat-manager.yaml"
         },
         {
             "author": "geeknik",
@@ -7106,6 +7274,14 @@
             "path": "exposed-panels/nutanix-web-console-login.yaml"
         },
         {
+            "author": "pussycat0x",
+            "id": "tableau-panel",
+            "name": "Tableau Python Server Default Page Detect",
+            "severity": "info",
+            "tags": "tableau,panel,python",
+            "path": "exposed-panels/tableau-panel.yaml"
+        },
+        {
             "author": "righettod",
             "id": "jenkins-api-panel",
             "name": "Jenkins API Instance Detection Template",
@@ -7130,6 +7306,14 @@
             "path": "exposed-panels/wso2-management-console.yaml"
         },
         {
+            "author": "cyllective,daffainfo",
+            "id": "mautic-crm-panel",
+            "name": "Mautic CRM Panel Login",
+            "severity": "info",
+            "tags": "tech,mautic,crm",
+            "path": "exposed-panels/mautic-crm-panel.yaml"
+        },
+        {
             "author": "pdteam",
             "id": "solr-exposure",
             "name": "Apache Solr Exposure",
@@ -7144,14 +7328,6 @@
             "severity": "info",
             "tags": "panel,camera",
             "path": "exposed-panels/amcrest-login.yaml"
-        },
-        {
-            "author": "dhiyaneshDK",
-            "id": "cisco-finesse-login",
-            "name": "Cisco Finesse Login",
-            "severity": "info",
-            "tags": "panel,cisco",
-            "path": "exposed-panels/cisco-finesse-login.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -7176,6 +7352,14 @@
             "severity": "low",
             "tags": "dvr,exposure,avtech",
             "path": "exposed-panels/avtech-dvr-exposure.yaml"
+        },
+        {
+            "author": "pikpikcu,daffainfo",
+            "id": "dotclear-panel",
+            "name": "Dotclear Panel Login",
+            "severity": "info",
+            "tags": "panel,dotclear",
+            "path": "exposed-panels/dotclear-panel.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -7234,6 +7418,14 @@
             "path": "exposed-panels/casemanager-panel.yaml"
         },
         {
+            "author": "pikpikcu,daffainfo",
+            "id": "druid-panel",
+            "name": "Druid monitor Panel Login",
+            "severity": "info",
+            "tags": "panel,druid",
+            "path": "exposed-panels/druid-panel.yaml"
+        },
+        {
             "author": "princechaddha",
             "id": "skycaiji-admin-panel",
             "name": "SkyCaiji Admin Panel",
@@ -7258,12 +7450,12 @@
             "path": "exposed-panels/ametys-admin-login.yaml"
         },
         {
-            "author": "dhiyaneshDK,r3naissance",
-            "id": "cisco-meraki-exposure",
-            "name": "Cisco Meraki cloud & security Appliances Information Disclosure",
+            "author": "Adam Crosser,daffainfo",
+            "id": "argocd-detect",
+            "name": "Argo CD Login Panel",
             "severity": "info",
-            "tags": "panel,cisco,meraki,disclosure",
-            "path": "exposed-panels/cisco-meraki-exposure.yaml"
+            "tags": "panel,argocd",
+            "path": "exposed-panels/argocd-login.yaml"
         },
         {
             "author": "pdteam",
@@ -7322,6 +7514,14 @@
             "path": "exposed-panels/identity-services-engine.yaml"
         },
         {
+            "author": "dhiyaneshDK",
+            "id": "hp-virtual-connect-manager",
+            "name": "HP Virtual Connect Manager",
+            "severity": "info",
+            "tags": "panel",
+            "path": "exposed-panels/hp-virtual-connect-manager.yaml"
+        },
+        {
             "author": "ahmetpergamum",
             "id": "watchguard-panel",
             "name": "Watchguard Panel",
@@ -7344,6 +7544,14 @@
             "severity": "info",
             "tags": "panel,emessage",
             "path": "exposed-panels/emessage-panel.yaml"
+        },
+        {
+            "author": "petruknisme,daffainfo",
+            "id": "kibana-panel",
+            "name": "Kibana Panel Login",
+            "severity": "info",
+            "tags": "panel,kibana",
+            "path": "exposed-panels/kibana-panel.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -7376,6 +7584,14 @@
             "severity": "info",
             "tags": "panel,router,netgear",
             "path": "exposed-panels/netgear-version-detect.yaml"
+        },
+        {
+            "author": "pdteam",
+            "id": "cas-login",
+            "name": "CAS Login Panel",
+            "severity": "info",
+            "tags": "apereo,cas,panel",
+            "path": "exposed-panels/cas-login.yaml"
         },
         {
             "author": "e_schultze_",
@@ -7416,6 +7632,14 @@
             "severity": "info",
             "tags": "panel",
             "path": "exposed-panels/glpi-login.yaml"
+        },
+        {
+            "author": "revblock,daffainfo",
+            "id": "metabase-panel",
+            "name": "Metabase Login Panel",
+            "severity": "info",
+            "tags": "panel,metabase",
+            "path": "exposed-panels/metabase-panel.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -7496,6 +7720,14 @@
             "severity": "info",
             "tags": "panel",
             "path": "exposed-panels/total-web.yaml"
+        },
+        {
+            "author": "ffffffff0x",
+            "id": "acrolinx-dashboard",
+            "name": "Acrolinx Dashboard",
+            "severity": "info",
+            "tags": "acrolinx,panel",
+            "path": "exposed-panels/acrolinx-dashboard.yaml"
         },
         {
             "author": "__Fazal",
@@ -7718,7 +7950,7 @@
             "id": "acemanager-login",
             "name": "ACEmanager detect",
             "severity": "info",
-            "tags": "login,tech,acemanager",
+            "tags": "panel,login,tech,acemanager",
             "path": "exposed-panels/acemanager-login.yaml"
         },
         {
@@ -7778,6 +8010,22 @@
             "path": "exposed-panels/fortiweb-panel.yaml"
         },
         {
+            "author": "pikpikcu,daffainfo",
+            "id": "centreon-panel",
+            "name": "Centreon Login Panel",
+            "severity": "info",
+            "tags": "panel,centreon",
+            "path": "exposed-panels/centreon-panel.yaml"
+        },
+        {
+            "author": "dogasantos,daffainfo",
+            "id": "glpi-panel",
+            "name": "GLPI Panel Login",
+            "severity": "info",
+            "tags": "panel,glpi",
+            "path": "exposed-panels/glpi-panel.yaml"
+        },
+        {
             "author": "dhiyaneshDK",
             "id": "gocd-login",
             "name": "GoCD Login",
@@ -7792,14 +8040,6 @@
             "severity": "info",
             "tags": "panel",
             "path": "exposed-panels/samba-swat-panel.yaml"
-        },
-        {
-            "author": "dhiyaneshDK",
-            "id": "cisco-integrated-login",
-            "name": "Cisco Integrated Management Controller Login",
-            "severity": "info",
-            "tags": "panel,cisco",
-            "path": "exposed-panels/cisco-integrated-login.yaml"
         },
         {
             "author": "nodauf",
@@ -7842,6 +8082,14 @@
             "path": "exposed-panels/supervpn-panel.yaml"
         },
         {
+            "author": "dhiyaneshDK",
+            "id": "secure-login-panel",
+            "name": "Secure Login Service Detector",
+            "severity": "info",
+            "tags": "panel",
+            "path": "exposed-panels/secure-login-panel.yaml"
+        },
+        {
             "author": "dhiyaneshDk",
             "id": "netscaler-aaa-login",
             "name": "NetScaler AAA Login Panel",
@@ -7856,6 +8104,14 @@
             "severity": "info",
             "tags": "panel,sitecore",
             "path": "exposed-panels/sitecore-login.yaml"
+        },
+        {
+            "author": "cyllective,daffainfo",
+            "id": "opencast-panel",
+            "name": "Opencast Panel Login",
+            "severity": "info",
+            "tags": "panel,opencast",
+            "path": "exposed-panels/opencast-detect.yaml"
         },
         {
             "author": "princechaddha",
@@ -7880,6 +8136,14 @@
             "severity": "info",
             "tags": "lansweeper,tech,panel",
             "path": "exposed-panels/lansweeper-login.yaml"
+        },
+        {
+            "author": "pikpikcu",
+            "id": "bmc-panel-detect",
+            "name": "BMC Discovery Outpost Panel Detect",
+            "severity": "info",
+            "tags": "panel,bmc",
+            "path": "exposed-panels/bmc-panel-detect.yaml"
         },
         {
             "author": "organiccrap",
@@ -7920,6 +8184,14 @@
             "severity": "info",
             "tags": "panel",
             "path": "exposed-panels/blue-iris-login.yaml"
+        },
+        {
+            "author": "pikpikcu,daffainfo",
+            "id": "jeedom-panel",
+            "name": "Jeedom Login Panel",
+            "severity": "info",
+            "tags": "panel,jeedom",
+            "path": "exposed-panels/jeedom-panel.yaml"
         },
         {
             "author": "johnk3r",
@@ -7968,6 +8240,14 @@
             "severity": "info",
             "tags": "panel,itop",
             "path": "exposed-panels/itop-panel.yaml"
+        },
+        {
+            "author": "pikpikcu,daffainfo",
+            "id": "dolibarr-panel",
+            "name": "Dolibarr Panel Login",
+            "severity": "info",
+            "tags": "panel,dolibarr",
+            "path": "exposed-panels/dolibarr-panel.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -8338,20 +8618,20 @@
             "path": "exposed-panels/oracle-integrated-manager.yaml"
         },
         {
-            "author": "dhiyaneshDK",
-            "id": "ibm-advanced-system-management",
-            "name": "IBM Advanced System Management",
-            "severity": "info",
-            "tags": "panel",
-            "path": "exposed-panels/ibm-advanced-system-management.yaml"
-        },
-        {
             "author": "princechaddha",
             "id": "emerson-power-panel",
             "name": "Emerson Network Power IntelliSlot Web Card Panel",
             "severity": "info",
             "tags": "panel,intellislot,emerson",
             "path": "exposed-panels/emerson-power-panel.yaml"
+        },
+        {
+            "author": "pikpikcu,philippedelteil,daffainfo",
+            "id": "aviatrix-panel",
+            "name": "Aviatrix Panel Login",
+            "severity": "info",
+            "tags": "panel,aviatrix",
+            "path": "exposed-panels/aviatrix-panel.yaml"
         },
         {
             "author": "impramodsargar",
@@ -8394,12 +8674,36 @@
             "path": "exposed-panels/netis-router.yaml"
         },
         {
+            "author": "pussycat0x,daffainfo",
+            "id": "ems-webclient-panel",
+            "name": "EMS Web Client Panel Login",
+            "severity": "info",
+            "tags": "panel,ems",
+            "path": "exposed-panels/ems-webclient-panel.yaml"
+        },
+        {
             "author": "ffffffff0x",
             "id": "opengear-login",
             "name": "Opengear Console Detect",
             "severity": "info",
             "tags": "opengear,panel,tech",
             "path": "exposed-panels/opengear-login.yaml"
+        },
+        {
+            "author": "dhiyaneshDK",
+            "id": "veeam-backup-azure-panel",
+            "name": "Veeam Backup for Microsoft Azure",
+            "severity": "info",
+            "tags": "azure,panel,backup",
+            "path": "exposed-panels/veeam-backup-azure-panel.yaml"
+        },
+        {
+            "author": "ffffffff0x",
+            "id": "ixcache-panel",
+            "name": "iXCache Panel Detect",
+            "severity": "info",
+            "tags": "ixcache,panel",
+            "path": "exposed-panels/ixcache-panel.yaml"
         },
         {
             "author": "deFr0ggy",
@@ -8480,6 +8784,14 @@
             "severity": "info",
             "tags": "panel",
             "path": "exposed-panels/intelbras-login.yaml"
+        },
+        {
+            "author": "pikpikcu,daffainfo",
+            "id": "gespage-panel",
+            "name": "Gespage Panel Login",
+            "severity": "info",
+            "tags": "panel,gespage",
+            "path": "exposed-panels/gespage-panel.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -8586,12 +8898,36 @@
             "path": "exposed-panels/adobe/adobe-component-login.yaml"
         },
         {
+            "author": "pdteam",
+            "id": "cisco-secure-desktop",
+            "name": "Cisco Secure Desktop",
+            "severity": "info",
+            "tags": "cisco,panel",
+            "path": "exposed-panels/cisco/cisco-secure-desktop.yaml"
+        },
+        {
+            "author": "organiccrap",
+            "id": "cisco-asa-panel-detect",
+            "name": "Cisco ASA VPN panel detect",
+            "severity": "info",
+            "tags": "cisco,panel",
+            "path": "exposed-panels/cisco/cisco-asa-panel.yaml"
+        },
+        {
             "author": "dhiyaneshDk",
             "id": "cisco-systems-login",
             "name": "Cisco Systems Login",
             "severity": "info",
             "tags": "panel,cisco",
             "path": "exposed-panels/cisco/cisco-systems-login.yaml"
+        },
+        {
+            "author": "z3bd",
+            "id": "cisco-sd-wan",
+            "name": "Cisco SD-WAN panel",
+            "severity": "info",
+            "tags": "panel,cisco",
+            "path": "exposed-panels/cisco/cisco-sd-wan.yaml"
         },
         {
             "author": "dhiyaneshDk",
@@ -8602,6 +8938,14 @@
             "path": "exposed-panels/cisco/cisco-telepresence.yaml"
         },
         {
+            "author": "dhiyaneshDK",
+            "id": "cisco-sendgrid",
+            "name": "Cisco ServiceGrid",
+            "severity": "info",
+            "tags": "panel,cisco",
+            "path": "exposed-panels/cisco/cisco-sendgrid.yaml"
+        },
+        {
             "author": "dhiyaneshDk",
             "id": "cisco-secure-cn",
             "name": "Cisco Secure CN",
@@ -8610,12 +8954,36 @@
             "path": "exposed-panels/cisco/cisco-secure-cn.yaml"
         },
         {
+            "author": "dhiyaneshDK",
+            "id": "cisco-finesse-login",
+            "name": "Cisco Finesse Login",
+            "severity": "info",
+            "tags": "panel,cisco",
+            "path": "exposed-panels/cisco/cisco-finesse-login.yaml"
+        },
+        {
+            "author": "dhiyaneshDK,r3naissance",
+            "id": "cisco-meraki-exposure",
+            "name": "Cisco Meraki cloud & security Appliances Information Disclosure",
+            "severity": "info",
+            "tags": "panel,cisco,meraki,disclosure",
+            "path": "exposed-panels/cisco/cisco-meraki-exposure.yaml"
+        },
+        {
             "author": "dhiyaneshDk",
             "id": "cisco-prime-infrastructure",
             "name": "Cisco Prime Infrastructure",
             "severity": "info",
             "tags": "panel,cisco",
             "path": "exposed-panels/cisco/cisco-prime-infrastructure.yaml"
+        },
+        {
+            "author": "dhiyaneshDK",
+            "id": "cisco-integrated-login",
+            "name": "Cisco Integrated Management Controller Login",
+            "severity": "info",
+            "tags": "panel,cisco",
+            "path": "exposed-panels/cisco/cisco-integrated-login.yaml"
         },
         {
             "author": "dhiyaneshDk",
@@ -8666,6 +9034,22 @@
             "path": "exposed-panels/symantec/symantec-pgp-global-directory.yaml"
         },
         {
+            "author": "dhiyaneshDK",
+            "id": "ibm-service-assistant",
+            "name": "IBM Service Assistant",
+            "severity": "info",
+            "tags": "panel,ibm",
+            "path": "exposed-panels/ibm/ibm-service-assistant.yaml"
+        },
+        {
+            "author": "pdteam",
+            "id": "ibm-websphere-panel",
+            "name": "IBM WebSphere Panel",
+            "severity": "info",
+            "tags": "ibm,websphere,panel",
+            "path": "exposed-panels/ibm/ibm-websphere-panel.yaml"
+        },
+        {
             "author": "righettod",
             "id": "ibm-mqseries-web-console",
             "name": "IBM MQSeries web console",
@@ -8683,11 +9067,43 @@
         },
         {
             "author": "dhiyaneshDK",
+            "id": "ibm-advanced-system-management",
+            "name": "IBM Advanced System Management",
+            "severity": "info",
+            "tags": "panel,ibm",
+            "path": "exposed-panels/ibm/ibm-advanced-system-management.yaml"
+        },
+        {
+            "author": "dhiyaneshDK",
             "id": "ibm-note-login",
             "name": "IBM iNotes Login",
             "severity": "info",
             "tags": "panel,ibm",
             "path": "exposed-panels/ibm/ibm-note-login.yaml"
+        },
+        {
+            "author": "organiccrap",
+            "id": "tomcat-manager-pathnormalization",
+            "name": "Tomcat Manager Path Normalization",
+            "severity": "info",
+            "tags": "panel,tomcat,apache",
+            "path": "exposed-panels/apache/tomcat-pathnormalization.yaml"
+        },
+        {
+            "author": "Ahmed Sherif,geeknik",
+            "id": "public-tomcat-manager",
+            "name": "tomcat manager disclosure",
+            "severity": "info",
+            "tags": "panel,tomcat,apache",
+            "path": "exposed-panels/apache/public-tomcat-manager.yaml"
+        },
+        {
+            "author": "pikpikcu",
+            "id": "apache-apisix-panel",
+            "name": "Apache APISIX Panel detect",
+            "severity": "info",
+            "tags": "apache,apisix,panel",
+            "path": "exposed-panels/apache/apache-apisix-panel.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -8912,6 +9328,14 @@
             "severity": "info",
             "tags": "misc",
             "path": "miscellaneous/xml-schema-detect.yaml"
+        },
+        {
+            "author": "dhiyaneshDK",
+            "id": "microsoft-azure-error",
+            "name": "Microsoft Azure Web App - Error 404",
+            "severity": "info",
+            "tags": "error,azure",
+            "path": "miscellaneous/microsoft-azure-error.yaml"
         },
         {
             "author": "oppsec",
@@ -9250,6 +9674,14 @@
             "path": "default-logins/ibm/ibm-storage-default-credential.yaml"
         },
         {
+            "author": "princechaddha",
+            "id": "rseenet-default-login",
+            "name": "Advantech R-SeeNet Default Login",
+            "severity": "high",
+            "tags": "rseenet,default-login",
+            "path": "default-logins/rseenet/rseenet-default-login.yaml"
+        },
+        {
             "author": "pikpikcu",
             "id": "flir-default-login",
             "name": "Flir Default Login",
@@ -9280,6 +9712,14 @@
             "severity": "high",
             "tags": "visionhub,default-login",
             "path": "default-logins/visionhub/visionhub-default-login.yaml"
+        },
+        {
+            "author": "pdteam",
+            "id": "apisix-default-login",
+            "name": "Apache Apisix Default Login",
+            "severity": "critical",
+            "tags": "apisix,apache,default-login",
+            "path": "default-logins/apache/apisix-default-login.yaml"
         },
         {
             "author": "pdteam",
@@ -9568,6 +10008,14 @@
             "severity": "info",
             "tags": "fuzz,adminer",
             "path": "fuzzing/adminer-panel-fuzz.yaml"
+        },
+        {
+            "author": "dwisiswant0",
+            "id": "cache-poisoning-fuzz",
+            "name": "Cache Poison Fuzzing",
+            "severity": "info",
+            "tags": "cache,fuzz",
+            "path": "fuzzing/cache-poisoning-fuzz.yaml"
         },
         {
             "author": "pdteam",
@@ -9986,6 +10434,14 @@
             "path": "vulnerabilities/netsweeper/netsweeper-open-redirect.yaml"
         },
         {
+            "author": "pdteam",
+            "id": "ibm-websphere-ssrf",
+            "name": "IBM WebSphere Portal SSRF",
+            "severity": "high",
+            "tags": "ibm,ssrf,websphere",
+            "path": "vulnerabilities/ibm/ibm-websphere-ssrf.yaml"
+        },
+        {
             "author": "harshbothra_",
             "id": "ibm-infoprint-lfi",
             "name": "IBM InfoPrint 4247-Z03 Impact Matrix Printer - Directory Traversal",
@@ -10000,6 +10456,14 @@
             "severity": "medium",
             "tags": "ibm,xss",
             "path": "vulnerabilities/ibm/eclipse-help-system-xss.yaml"
+        },
+        {
+            "author": "dudez",
+            "id": "linkerd-service-detect",
+            "name": "Linkerd Service detection",
+            "severity": "info",
+            "tags": "tech,linkerd",
+            "path": "vulnerabilities/linkerd/linkerd-ssrf.yaml"
         },
         {
             "author": "meme-lord",
@@ -10890,6 +11354,14 @@
             "path": "vulnerabilities/wordpress/aspose-words-file-download.yaml"
         },
         {
+            "author": "Exid",
+            "id": "wordpress-xmlrpc-brute-force",
+            "name": "Wordpress XMLRPC.php username and password Bruteforcer",
+            "severity": "high",
+            "tags": "wordpress,php,xmlrpc,fuzz",
+            "path": "vulnerabilities/wordpress/wp-xmlrpc-brute-force.yaml"
+        },
+        {
             "author": "randomrobbie",
             "id": "wordpress-social-metrics-tracker",
             "name": "Social Metrics Tracker <= 1.6.8 - Unauthorised Data Export",
@@ -11128,6 +11600,14 @@
             "severity": "high",
             "tags": "myucms,lfi",
             "path": "vulnerabilities/other/myucms-lfr.yaml"
+        },
+        {
+            "author": "0x_akoko",
+            "id": "dicoogle-pacs-lfi",
+            "name": "Dicoogle PACS 2.5.0 - Directory Traversal",
+            "severity": "high",
+            "tags": "windows,lfi,dicoogle",
+            "path": "vulnerabilities/other/dicoogle-pacs-lfi.yaml"
         },
         {
             "author": "princechaddha",
@@ -11672,6 +12152,14 @@
             "severity": "critical",
             "tags": "rce,unauth,maian",
             "path": "vulnerabilities/other/maian-cart-preauth-rce.yaml"
+        },
+        {
+            "author": "0x_Akoko",
+            "id": "sl-studio-lfi",
+            "name": "Webbdesign SL-Studio Directory Traversal",
+            "severity": "high",
+            "tags": "slstudio,lfi",
+            "path": "vulnerabilities/other/sl-studio-lfi.yaml"
         },
         {
             "author": "princechaddha",
@@ -12746,6 +13234,14 @@
             "path": "cves/2021/CVE-2021-26475.yaml"
         },
         {
+            "author": "pdteam",
+            "id": "CVE-2021-27358",
+            "name": "Grafana unauthenticated snapshot creation",
+            "severity": "high",
+            "tags": "cve,cve2021,grafana,unauth",
+            "path": "cves/2021/CVE-2021-27358.yaml"
+        },
+        {
             "author": "melbadry9,dhiyaneshDK,daffainfo,anon-artist,0xceba,Tea",
             "id": "CVE-2021-44228",
             "name": "Remote code injection in Log4j",
@@ -12872,6 +13368,14 @@
             "severity": "medium",
             "tags": "cve,cve2021,rstudio,traversal",
             "path": "cves/2021/CVE-2021-3374.yaml"
+        },
+        {
+            "author": "pdteam",
+            "id": "CVE-2021-42567",
+            "name": "Apereo CAS Reflected XSS",
+            "severity": "medium",
+            "tags": "cve,cve2021,apereo,xss,cas",
+            "path": "cves/2021/CVE-2021-42567.yaml"
         },
         {
             "author": "z0ne,dhiyaneshDk",
@@ -13148,9 +13652,9 @@
         {
             "author": "pussycat0x",
             "id": "CVE-2021-40859",
-            "name": "CVE-2021-40859",
+            "name": "Auerswald COMpact 5500R 7.8A and 8.0B devices Backdoor",
             "severity": "critical",
-            "tags": "cve,cve2021,iot,unauth,voip",
+            "tags": "cve,cve2021,iot,unauth,voip,auerswald",
             "path": "cves/2021/CVE-2021-40859.yaml"
         },
         {
@@ -13688,6 +14192,14 @@
             "severity": "medium",
             "tags": "cve,cve2021,xss,wordpress,wp-plugin",
             "path": "cves/2021/CVE-2021-24498.yaml"
+        },
+        {
+            "author": "Mr-xn",
+            "id": "CVE-2021-45232",
+            "name": "Apache APISIX Dashboard api unauth access",
+            "severity": "high",
+            "tags": "cve,cve2021,apache,unauth,apisix",
+            "path": "cves/2021/CVE-2021-45232.yaml"
         },
         {
             "author": "gy741",
@@ -15302,7 +15814,7 @@
             "id": "CVE-2018-11759",
             "name": "Apache Tomcat JK Status Manager Access",
             "severity": "high",
-            "tags": "cve,cve2018,apache",
+            "tags": "cve,cve2018,apache,tomcat",
             "path": "cves/2018/CVE-2018-11759.yaml"
         },
         {
@@ -15480,6 +15992,14 @@
             "severity": "critical",
             "tags": "cve,cve2018,scada,circontrol,circarlife,logs",
             "path": "cves/2018/CVE-2018-12634.yaml"
+        },
+        {
+            "author": "0x_Akoko",
+            "id": "CVE-2018-14912",
+            "name": "cgit < 1.2.1 Directory Traversal",
+            "severity": "critical",
+            "tags": "cve,cve2018,cgit,lfi",
+            "path": "cves/2018/CVE-2018-14912.yaml"
         },
         {
             "author": "daffainfo",
@@ -15670,7 +16190,7 @@
             "id": "CVE-2017-12615",
             "name": "Apache Tomcat RCE",
             "severity": "high",
-            "tags": "cve,cve2017,apache,rce",
+            "tags": "cve,cve2017,apache,rce,tomcat",
             "path": "cves/2017/CVE-2017-12615.yaml"
         },
         {
@@ -15710,7 +16230,7 @@
             "id": "CVE-2017-12149",
             "name": "Java/Jboss Deserialization [RCE]",
             "severity": "critical",
-            "tags": "cve,cve2017,java,rce,deserialization",
+            "tags": "cve,cve2017,jboss,java,rce,deserialization",
             "path": "cves/2017/CVE-2017-12149.yaml"
         },
         {
@@ -15780,7 +16300,7 @@
         {
             "author": "Random_Robbie,pikpikcu",
             "id": "CVE-2017-9841",
-            "name": "CVE-2017-9841",
+            "name": "PHPUnit < 4.8.28 and 5.x - 5.63 Arbitrary Code Execution",
             "severity": "critical",
             "tags": "cve,cve2017,php,phpunit,rce",
             "path": "cves/2017/CVE-2017-9841.yaml"
@@ -17398,7 +17918,7 @@
             "id": "CVE-2020-9484",
             "name": "Apache Tomcat RCE by deserialization",
             "severity": "high",
-            "tags": "cve,cve2020,apache",
+            "tags": "cve,cve2020,apache,tomcat",
             "path": "cves/2020/CVE-2020-9484.yaml"
         },
         {
@@ -17408,6 +17928,14 @@
             "severity": "high",
             "tags": "cve,cve2020,magmi,magento",
             "path": "cves/2020/CVE-2020-5776.yaml"
+        },
+        {
+            "author": "Official_BlackHat13",
+            "id": "CVE-2020-11546",
+            "name": "SuperWebmailer Remote Code Execution",
+            "severity": "critical",
+            "tags": "cve,cve2020,rce,superwebmailer",
+            "path": "cves/2020/CVE-2020-11546.yaml"
         },
         {
             "author": "lethargynavigator",
@@ -18198,7 +18726,7 @@
             "id": "CVE-2019-0221",
             "name": "Apache Tomcat XSS",
             "severity": "medium",
-            "tags": "cve,cve2019,apache,xss",
+            "tags": "cve,cve2019,apache,xss,tomcat",
             "path": "cves/2019/CVE-2019-0221.yaml"
         },
         {
@@ -20178,6 +20706,14 @@
             "path": "technologies/cockpit-detect.yaml"
         },
         {
+            "author": "dudez",
+            "id": "linkerd-badrule-detect",
+            "name": "Linkerd detection via bad rule",
+            "severity": "info",
+            "tags": "tech,linkerd",
+            "path": "technologies/linkerd-detect.yaml"
+        },
+        {
             "author": "cyllective",
             "id": "octobercms-detect",
             "name": "OctoberCMS detect",
@@ -20224,14 +20760,6 @@
             "severity": "info",
             "tags": "tech,wuzhicms",
             "path": "technologies/wuzhicms-detect.yaml"
-        },
-        {
-            "author": "pussycat0x",
-            "id": "crush-ftp-detect",
-            "name": "Crush FTP",
-            "severity": "info",
-            "tags": "tech,ftp",
-            "path": "technologies/crush-ftp-detect.yaml"
         },
         {
             "author": "ffffffff0x",
@@ -20314,12 +20842,12 @@
             "path": "technologies/b2b-builder-detect.yaml"
         },
         {
-            "author": "cyllective",
-            "id": "bolt-cms-detect",
-            "name": "bolt CMS detect",
+            "author": "dhiyaneshDK",
+            "id": "jitsi-meet-detect",
+            "name": "Jitsi Meet Page Detect",
             "severity": "info",
-            "tags": "tech,bolt,cms",
-            "path": "technologies/bolt-cms-detect.yaml"
+            "tags": "tech,jitsi",
+            "path": "technologies/jitsi-meet-detect.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -20336,14 +20864,6 @@
             "severity": "low",
             "tags": "tech,misconfig,dwr",
             "path": "technologies/dwr-index-detect.yaml"
-        },
-        {
-            "author": "pikpikcu",
-            "id": "druid-detect",
-            "name": "Druid monitor Detect",
-            "severity": "info",
-            "tags": "tech,druid",
-            "path": "technologies/druid-detect.yaml"
         },
         {
             "author": "pikpikcu",
@@ -20392,14 +20912,6 @@
             "severity": "info",
             "tags": "tech,hp",
             "path": "technologies/hp-media-vault-detect.yaml"
-        },
-        {
-            "author": "philippedelteil",
-            "id": "openam-detection",
-            "name": "Detect OpenAM and OpenSSO",
-            "severity": "info",
-            "tags": "tech,openam",
-            "path": "technologies/openam-detection.yaml"
         },
         {
             "author": "Sicksec",
@@ -20474,22 +20986,6 @@
             "path": "technologies/maian-cart-detect.yaml"
         },
         {
-            "author": "pikpikcu",
-            "id": "centreon-detect",
-            "name": "Centreon Detect",
-            "severity": "info",
-            "tags": "tech,centreon",
-            "path": "technologies/centreon-detect.yaml"
-        },
-        {
-            "author": "pikpikcu",
-            "id": "gespage-detect",
-            "name": "Gespage Detect",
-            "severity": "info",
-            "tags": "tech,gespage",
-            "path": "technologies/gespage-detect.yaml"
-        },
-        {
             "author": "DhiyaneshDK",
             "id": "sitecore-default-page",
             "name": "Sitecore Default Page",
@@ -20498,7 +20994,7 @@
             "path": "technologies/sitecore-default-page.yaml"
         },
         {
-            "author": "philippdelteil",
+            "author": "philippdelteil,daffainfo",
             "id": "jenkins-detect",
             "name": "Jenkins detect (version)",
             "severity": "info",
@@ -20530,6 +21026,14 @@
             "path": "technologies/eg-manager-detect.yaml"
         },
         {
+            "author": "pdteam",
+            "id": "rseenet-detect",
+            "name": "Advantech R-SeeNet Detection",
+            "severity": "info",
+            "tags": "tech,rseenet",
+            "path": "technologies/rseenet-detect.yaml"
+        },
+        {
             "author": "dhiyaneshDk",
             "id": "default-lucee-page",
             "name": "Lucee Default Page",
@@ -20538,12 +21042,12 @@
             "path": "technologies/default-lucee-page.yaml"
         },
         {
-            "author": "pikpikcu",
-            "id": "dolibarr-detect",
-            "name": "Dolibarr detect",
+            "author": "daffainfo",
+            "id": "jboss-detect",
+            "name": "JBoss detected",
             "severity": "info",
-            "tags": "tech,dolibarr",
-            "path": "technologies/dolibarr-detect.yaml"
+            "tags": "tech,jboss",
+            "path": "technologies/jboss-detect.yaml"
         },
         {
             "author": "dhiyaneshDk",
@@ -20554,22 +21058,6 @@
             "path": "technologies/default-jetty-page.yaml"
         },
         {
-            "author": "pikpikcu,philippedelteil",
-            "id": "aviatrix-detect",
-            "name": "Aviatrix Detect",
-            "severity": "info",
-            "tags": "tech,aviatrix",
-            "path": "technologies/aviatrix-detect.yaml"
-        },
-        {
-            "author": "petruknisme",
-            "id": "kibana-detect",
-            "name": "Kibana Service Detection",
-            "severity": "info",
-            "tags": "tech,kibana",
-            "path": "technologies/kibana-detect.yaml"
-        },
-        {
             "author": "pikpikcu",
             "id": "yapi-detect",
             "name": "YApi Detect",
@@ -20578,20 +21066,20 @@
             "path": "technologies/yapi-detect.yaml"
         },
         {
+            "author": "mavericknerd,dwisiswant0",
+            "id": "jolokia-detect",
+            "name": "Jolokia Version Disclosure",
+            "severity": "info",
+            "tags": "tech,jolokia",
+            "path": "technologies/jolokia-detect.yaml"
+        },
+        {
             "author": "geeknik",
             "id": "redmine-cli-detect",
             "name": "Detect Redmine CLI Configuration File",
             "severity": "info",
             "tags": "tech,redmine",
             "path": "technologies/redmine-cli-detect.yaml"
-        },
-        {
-            "author": "geeknik",
-            "id": "cacti-detect",
-            "name": "Detect Cacti",
-            "severity": "info",
-            "tags": "tech,cacti",
-            "path": "technologies/cacti-detect.yaml"
         },
         {
             "author": "dhiyaneshDk",
@@ -20608,14 +21096,6 @@
             "severity": "info",
             "tags": "tech,terraform",
             "path": "technologies/terraform-detect.yaml"
-        },
-        {
-            "author": "koti2",
-            "id": "jaspersoft-detect",
-            "name": "Jaspersoft detected",
-            "severity": "info",
-            "tags": "tech,jaspersoft",
-            "path": "technologies/jaspersoft-detect.yaml"
         },
         {
             "author": "pikpikcu",
@@ -20648,22 +21128,6 @@
             "severity": "info",
             "tags": "bigip,tech",
             "path": "technologies/bigip-detection.yaml"
-        },
-        {
-            "author": "dhiyaneshDK",
-            "id": "lighttpd-default",
-            "name": "lighttpd Default Page",
-            "severity": "info",
-            "tags": "tech",
-            "path": "technologies/lighttpd-default.yaml"
-        },
-        {
-            "author": "pikpikcu",
-            "id": "jeedom-detect",
-            "name": "Jeedom Detect",
-            "severity": "info",
-            "tags": "tech,jeedom",
-            "path": "technologies/jeedom-detect.yaml"
         },
         {
             "author": "alifathi-h1",
@@ -20706,20 +21170,12 @@
             "path": "technologies/csrfguard-detect.yaml"
         },
         {
-            "author": "pikpikcu",
-            "id": "bedita-detect",
-            "name": "BEdita detect",
+            "author": "dhiyaneshDK",
+            "id": "geo-webserver",
+            "name": "GeoWebServer Detector",
             "severity": "info",
-            "tags": "tech,bedita",
-            "path": "technologies/bedita-detect.yaml"
-        },
-        {
-            "author": "pikpikcu",
-            "id": "itop-detect",
-            "name": "iTop Detect",
-            "severity": "info",
-            "tags": "tech,itop",
-            "path": "technologies/itop-detect.yaml"
+            "tags": "panel",
+            "path": "technologies/geo-webserver.yaml"
         },
         {
             "author": "pikpikcu",
@@ -20786,14 +21242,6 @@
             "path": "technologies/bigbluebutton-detect.yaml"
         },
         {
-            "author": "revblock",
-            "id": "metabase-version-detect",
-            "name": "Detect Metabase Version",
-            "severity": "info",
-            "tags": "tech,metabase",
-            "path": "technologies/metabase-detect.yaml"
-        },
-        {
             "author": "righettod",
             "id": "wso2-apimanager-detect",
             "name": "WSO2 API Manager detect",
@@ -20834,15 +21282,23 @@
             "path": "technologies/olivetti-crf-detect.yaml"
         },
         {
-            "author": "fabaff",
-            "id": "home-assistant",
-            "name": "Detect Home Assistant",
+            "author": "dhiyaneshDK",
+            "id": "lighttpd-default",
+            "name": "lighttpd Default Page",
             "severity": "info",
-            "tags": "tech,iot",
-            "path": "technologies/home-assistant.yaml"
+            "tags": "tech",
+            "path": "technologies/default-lighttpd-page.yaml"
         },
         {
-            "author": "pikpikcu",
+            "author": "ffffffff0x",
+            "id": "kodexplorer-detect",
+            "name": "KodExplorer-detect",
+            "severity": "info",
+            "tags": "kodexplorer,tech",
+            "path": "technologies/kodexplorer-detect.yaml"
+        },
+        {
+            "author": "pikpikcu,daffainfo",
             "id": "oneblog-detect",
             "name": "OneBlog Detect",
             "severity": "info",
@@ -20938,6 +21394,14 @@
             "path": "technologies/default-payara-server-page.yaml"
         },
         {
+            "author": "dhiyaneshDk",
+            "id": "vmware-site-recovery-manager",
+            "name": "VMware Site Recovery Manager Detect",
+            "severity": "info",
+            "tags": "panel,vmware",
+            "path": "technologies/vmware-site-recovery-manager.yaml"
+        },
+        {
             "author": "that_juan_,dwisiswant0,wdahlenb",
             "id": "springboot-actuator",
             "name": "Detect Springboot Actuators",
@@ -20970,14 +21434,6 @@
             "path": "technologies/nextcloud-detect.yaml"
         },
         {
-            "author": "cyllective",
-            "id": "mautic-crm-detect",
-            "name": "mautic crm detect",
-            "severity": "info",
-            "tags": "tech,mautic,crm",
-            "path": "technologies/mautic-crm-detect.yaml"
-        },
-        {
             "author": "AresX",
             "id": "shiro-detect",
             "name": "Detect Shiro Framework",
@@ -20992,14 +21448,6 @@
             "severity": "info",
             "tags": "oa,tech,dotnet,fanruan",
             "path": "technologies/fanruanoa-detect.yaml"
-        },
-        {
-            "author": "organiccrap",
-            "id": "clockwork-php-page",
-            "name": "Clockwork PHP page exposure",
-            "severity": "high",
-            "tags": "tech,clockwork",
-            "path": "technologies/clockwork-php-page.yaml"
         },
         {
             "author": "philippedelteil,retr0",
@@ -21018,14 +21466,6 @@
             "path": "technologies/default-movable-page.yaml"
         },
         {
-            "author": "pikpikcu",
-            "id": "daybyday-detect",
-            "name": "DaybydayCRM Detect",
-            "severity": "info",
-            "tags": "tech,daybyday",
-            "path": "technologies/daybyday-detect.yaml"
-        },
-        {
             "author": "pussycat0x",
             "id": "webmodule-ee-detection",
             "name": "Webmodule Detection",
@@ -21042,22 +21482,6 @@
             "path": "technologies/graphql-detect.yaml"
         },
         {
-            "author": "cyllective",
-            "id": "opencast-detect",
-            "name": "Opencast detect",
-            "severity": "info",
-            "tags": "tech,opencast",
-            "path": "technologies/opencast-detect.yaml"
-        },
-        {
-            "author": "dudez",
-            "id": "linkerd-service-detect",
-            "name": "Linkerd Service detection",
-            "severity": "info",
-            "tags": "tech,linkerd",
-            "path": "technologies/linkerd-service-detect.yaml"
-        },
-        {
             "author": "geeknik",
             "id": "prtg-detect",
             "name": "Detect PRTG",
@@ -21066,28 +21490,12 @@
             "path": "technologies/prtg-detect.yaml"
         },
         {
-            "author": "pussycat0x",
-            "id": "ems-webclient-detect",
-            "name": "EMS Web Client",
-            "severity": "info",
-            "tags": "tech,ems",
-            "path": "technologies/ems-webclient-detect.yaml"
-        },
-        {
             "author": "Adam Crosser",
             "id": "graphiql-detect",
             "name": "GraphiQL Detect",
             "severity": "info",
             "tags": "tech,graphiql,graphql",
             "path": "technologies/graphiql-detect.yaml"
-        },
-        {
-            "author": "pikpikcu",
-            "id": "avantfax-detect",
-            "name": "AvantFAX Detect",
-            "severity": "info",
-            "tags": "tech,avantfax",
-            "path": "technologies/avantfax-detect.yaml"
         },
         {
             "author": "geeknik",
@@ -21106,14 +21514,6 @@
             "path": "technologies/abyss-web-server.yaml"
         },
         {
-            "author": "mavericknerd,dwisiswant0",
-            "id": "jolokia-instance",
-            "name": "Jolokia Version Disclosure",
-            "severity": "info",
-            "tags": "tech,jolokia",
-            "path": "technologies/jolokia.yaml"
-        },
-        {
             "author": "pdteam",
             "id": "weblogic-detect",
             "name": "Detect Weblogic",
@@ -21130,20 +21530,20 @@
             "path": "technologies/basic-auth-detection.yaml"
         },
         {
-            "author": "YanYun",
-            "id": "landrayoa-detect",
-            "name": "LandrayOA detect",
-            "severity": "info",
-            "tags": "tech,landrayoa",
-            "path": "technologies/landrayoa-detect.yaml"
-        },
-        {
             "author": "cyllective",
             "id": "moinmoin-detect",
             "name": "MoinMoin wiki detect",
             "severity": "info",
             "tags": "tech,moin,moinmoin,wiki",
             "path": "technologies/moinmoin-detect.yaml"
+        },
+        {
+            "author": "elouhi",
+            "id": "vmware-detect",
+            "name": "VMware Detection",
+            "severity": "info",
+            "tags": "tech,vcenter,vmware",
+            "path": "technologies/vmware-detect.yaml"
         },
         {
             "author": "ffffffff0x",
@@ -21162,12 +21562,12 @@
             "path": "technologies/ilo-detect.yaml"
         },
         {
-            "author": "dogasantos",
-            "id": "glpi-cms-detect",
-            "name": "GLPI Cms Detection",
+            "author": "fabaff,daffainfo",
+            "id": "home-assistant-detect",
+            "name": "Home Assistant Detect",
             "severity": "info",
-            "tags": "glpi,cms,php",
-            "path": "technologies/glpi-cms-detect.yaml"
+            "tags": "tech,iot",
+            "path": "technologies/home-assistant-detect.yaml"
         },
         {
             "author": "jarijaas",
@@ -21200,14 +21600,6 @@
             "severity": "info",
             "tags": "oa,java,fanruan,tech",
             "path": "technologies/fanruanoa2012-detect.yaml"
-        },
-        {
-            "author": "dudez",
-            "id": "linkerd-badrule-detect",
-            "name": "Linkerd detection via bad rule",
-            "severity": "info",
-            "tags": "tech,linkerd",
-            "path": "technologies/linkerd-badrule-detect.yaml"
         },
         {
             "author": "righettod",
@@ -21370,14 +21762,6 @@
             "path": "technologies/tableau-server-detect.yaml"
         },
         {
-            "author": "cyllective",
-            "id": "bookstack-detect",
-            "name": "BookStack detect",
-            "severity": "info",
-            "tags": "tech,bookstack",
-            "path": "technologies/bookstack-detect.yaml"
-        },
-        {
             "author": "skeltavik",
             "id": "craft-cms-detect",
             "name": "Craft CMS Detect",
@@ -21392,14 +21776,6 @@
             "severity": "info",
             "tags": "tech,fedora",
             "path": "technologies/default-fedora-page.yaml"
-        },
-        {
-            "author": "dhiyaneshDK",
-            "id": "jitsi-meet",
-            "name": "Jitsi Meet Page",
-            "severity": "info",
-            "tags": "tech",
-            "path": "technologies/jitsi-meet.yaml"
         },
         {
             "author": "pikpikcu",
@@ -21426,12 +21802,12 @@
             "path": "technologies/oauth2-detect.yaml"
         },
         {
-            "author": "pikpikcu",
-            "id": "dotclear-detect",
-            "name": "Dotclear Detect",
+            "author": "philippedelteil",
+            "id": "openam-detect",
+            "name": "Detect OpenAM and OpenSSO",
             "severity": "info",
-            "tags": "tech,dotclear",
-            "path": "technologies/dotclear-detect.yaml"
+            "tags": "tech,openam",
+            "path": "technologies/openam-detect.yaml"
         },
         {
             "author": "princechaddha",
@@ -21450,14 +21826,6 @@
             "path": "technologies/hashicorp-vault-detect.yaml"
         },
         {
-            "author": "elouhi",
-            "id": "vmware-version-detect",
-            "name": "vmware-version-detect",
-            "severity": "info",
-            "tags": "tech,vcenter,vmware",
-            "path": "technologies/vmware-version-detect.yaml"
-        },
-        {
             "author": "k11h-de",
             "id": "neos-detect",
             "name": "Neos CMS detection",
@@ -21466,12 +21834,12 @@
             "path": "technologies/neos-detect.yaml"
         },
         {
-            "author": "vsh00t",
-            "id": "wordpress-gotmls-detect",
-            "name": "Detect WordPress Plugin Anti-Malware Security and Bruteforce Firewall",
+            "author": "dhiyaneshDK",
+            "id": "microsoft-iis-8",
+            "name": "Microsoft Internet Information Services 8",
             "severity": "info",
-            "tags": "wordpress,wp-plugin,gotmls",
-            "path": "technologies/wordpress-gotmls-detect.yaml"
+            "tags": "tech,iis",
+            "path": "technologies/microsoft-iis-8.yaml"
         },
         {
             "author": "DhiyaneshDK",
@@ -21480,14 +21848,6 @@
             "severity": "info",
             "tags": "tech",
             "path": "technologies/tileserver-gl.yaml"
-        },
-        {
-            "author": "Adam Crosser",
-            "id": "argocd-detect",
-            "name": "Argo CD Detect",
-            "severity": "info",
-            "tags": "tech,argocd",
-            "path": "technologies/argocd-detect.yaml"
         },
         {
             "author": "pdteam",
@@ -21746,6 +22106,14 @@
             "path": "technologies/apache/apache-axis-detect.yaml"
         },
         {
+            "author": "pikpikcu",
+            "id": "apache-zeppelin-detect",
+            "name": "Apache Zeppelin detect",
+            "severity": "info",
+            "tags": "apache,zeppelin,tech",
+            "path": "technologies/apache/apache-zeppelin-detect.yaml"
+        },
+        {
             "author": "ffffffff0x",
             "id": "apache-dubbo-detect",
             "name": "Apache dubbo detect",
@@ -21786,9 +22154,9 @@
             "path": "technologies/apache/default-apache-test-page.yaml"
         },
         {
-            "author": "philippedelteil",
+            "author": "philippedelteil,dhiyaneshDk",
             "id": "tomcat-detect",
-            "name": "Tomcat Version Detect",
+            "name": "Tomcat Detection",
             "severity": "info",
             "tags": "tech,tomcat,apache",
             "path": "technologies/apache/tomcat-detect.yaml"
@@ -21802,20 +22170,20 @@
             "path": "technologies/apache/apache-guacamole.yaml"
         },
         {
-            "author": "dhiyaneshDk",
-            "id": "default-tomcat-page",
-            "name": "Tomcat Default Page",
-            "severity": "info",
-            "tags": "tech,tomcat",
-            "path": "technologies/apache/default-tomcat-page.yaml"
-        },
-        {
             "author": "dhiyaneshDK",
             "id": "xampp-default-page",
             "name": "XAMPP Default Page",
             "severity": "info",
             "tags": "tech,php,xampp,apache",
             "path": "technologies/apache/xampp-default-page.yaml"
+        },
+        {
+            "author": "pikpikcu",
+            "id": "apache-tapestry-detect",
+            "name": "Apache Tapestry Framework detect",
+            "severity": "info",
+            "tags": "apache,tapestry,tech",
+            "path": "technologies/apache/apache-tapestry-detect.yaml"
         },
         {
             "author": "dhiyaneshDk",
