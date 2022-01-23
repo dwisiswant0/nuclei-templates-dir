@@ -1,0 +1,12 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+	<link type="text/css" rel="stylesheet" id="dark-mode-custom-link"/>
+	<link type="text/css" rel="stylesheet" id="dark-mode-general-link"/>
+	<style lang="en" type="text/css" id="dark-mode-custom-style"/>
+	<style lang="en" type="text/css" id="dark-mode-native-style"/>
+	<ShortName>Nuclei Templates</ShortName>
+	<Description>Search Nuclei Templates</Description>
+	<InputEncoding>UTF-8</InputEncoding>
+	<Image width="16" height="16" type="image/png">https://nuclei.projectdiscovery.io/static/logo.png</Image>
+	<Url type="text/html" method="get" template="https://nuclei-templates.netlify.app/#q={searchTerms}"/>
+	<moz:SearchForm>https://nuclei-templates.netlify.app</moz:SearchForm>
+</OpenSearchDescription>
