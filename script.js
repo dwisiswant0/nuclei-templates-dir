@@ -1,4 +1,8 @@
-var blob = "https://github.com/projectdiscovery/nuclei-templates/blob/master";
+var blob = "https://github.com/projectdiscovery/nuclei-templates/blob/master",
+	cmd = document.getElementById("command"),
+	cmdDialog = document.getElementById("command-dialog"),
+	cmdTitle = document.getElementById("command-title"),
+	cmdURL = document.getElementById("command-url");
 	contributors = document.getElementById("contributors"),
 	count = document.getElementById("count"),
 	dialog = document.getElementById("dialog"),
@@ -9,15 +13,11 @@ var blob = "https://github.com/projectdiscovery/nuclei-templates/blob/master";
 	octocat = document.getElementsByClassName("github-link")[0],
 	result = document.getElementById("result"),
 	search = document.getElementById("search"),
+	shrug = document.getElementById("shrug"),
 	suggest = document.getElementById("suggest"),
 	top10 = document.getElementById("top-10"),
 	version = document.getElementById("version"),
 	versionBadge = document.getElementById("version-badge"),
-	shrug = document.getElementById("shrug"),
-	cmd = document.getElementById("command"),
-	cmdDialog = document.getElementById("command-dialog"),
-	cmdTitle = document.getElementById("command-title"),
-	cmdURL = document.getElementById("command-url");
 
 String.prototype.toHtmlEntities = function() {	
 	return this.replace(/./gm, function(s) {
