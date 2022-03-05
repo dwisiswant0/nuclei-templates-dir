@@ -116,6 +116,26 @@
         </div>
       </section>
 
+      <section class="topic">        
+        <h3><a href="#search-issue">#</a> Search Issue</h3>
+        <p>
+          Search through issues and/or pull requests.
+        </p>
+        <div class="nes-field">
+          <input type="text" autocomplete="off" id="search-issue" class="nes-input" placeholder="Create CVE...">
+        </div>
+      </section>
+
+      <section class="nes-container with-title" id="result-issue" style="display: none;">
+        <h3 class="title"><span id="count-issue"></span> results of <span class="nes-text is-error" id="keyword-issue"></span></h3>
+        <center id="shrug-issue" style="display: none;"><h1>¯\_(ツ)_/¯</h1></center>
+        <center id="rate-limited-issue" style="display: none;"><p>Ups! GitHub REST API rate-limit exceeded, try again in a few minutes.</p></center>
+        <div class="lists">
+          <ul class="nes-list" id="list-issue" style="padding-inline-start: 10px !important;">
+          </ul>
+        </div>
+      </section>
+
       <section class="topic">
         <p>
           <h2><a href="#contributing">#</a>Contributing</h2>
