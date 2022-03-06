@@ -1,5 +1,5 @@
 {
-    "version": "v8.8.7",
+    "version": "v8.8.8",
     "data": [
         {
             "author": "dwisiswant0",
@@ -9720,6 +9720,14 @@
             "severity": "critical",
             "tags": "cve,cve2021,apache,solr,ssrf",
             "path": "cves/2021/CVE-2021-27905.yaml"
+        },
+        {
+            "author": "zsusac",
+            "id": "CVE-2021-4191",
+            "name": "GitLab GraphQL API User Enumeration",
+            "severity": "medium",
+            "tags": "cve,cve2021,gitlab,api,graphql,enum,unauth",
+            "path": "cves/2021/CVE-2021-4191.yaml"
         },
         {
             "author": "daffainfo",
