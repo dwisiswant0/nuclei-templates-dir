@@ -1,5 +1,5 @@
 {
-    "version": "v8.8.8",
+    "version": "v8.9.0",
     "data": [
         {
             "author": "dwisiswant0",
@@ -1500,7 +1500,7 @@
         {
             "author": "melbadry9",
             "id": "ec2-detection",
-            "name": "AWS EC2 detection",
+            "name": "AWS EC2 Detection",
             "severity": "info",
             "tags": "dns,ec2,aws",
             "path": "dns/ec2-detection.yaml"
@@ -1508,7 +1508,7 @@
         {
             "author": "pdteam",
             "id": "cname-service-detection",
-            "name": "cname service detection",
+            "name": "CNAME Service Detection",
             "severity": "info",
             "tags": "dns,service",
             "path": "dns/cname-service-detection.yaml"
@@ -1563,6 +1563,14 @@
         },
         {
             "author": "pdteam",
+            "id": "caa-fingerprint",
+            "name": "CAA Fingerprint",
+            "severity": "info",
+            "tags": "dns,caa",
+            "path": "dns/caa-fingerprint.yaml"
+        },
+        {
+            "author": "pdteam",
             "id": "servfail-refused-hosts",
             "name": "Servfail Host Finder",
             "severity": "info",
@@ -1588,7 +1596,7 @@
         {
             "author": "pdteam",
             "id": "azure-takeover-detection",
-            "name": "Azure takeover detection",
+            "name": "Microsoft Azure Takeover Detection",
             "severity": "high",
             "tags": "dns,takeover,azure",
             "path": "dns/azure-takeover-detection.yaml"
@@ -1596,7 +1604,7 @@
         {
             "author": "pdteam,nytr0gen",
             "id": "detect-dangling-cname",
-            "name": "Detect Dangling cname",
+            "name": "CNAME Detect Dangling",
             "severity": "info",
             "tags": "dns,takeover",
             "path": "dns/detect-dangling-cname.yaml"
@@ -3314,7 +3322,7 @@
             "path": "misconfiguration/airflow/unauthenticated-airflow.yaml"
         },
         {
-            "author": "DhiyaneshDk",
+            "author": "dhiyaneshDk,prettyboyaaditya",
             "id": "aem-gql-servlet",
             "name": "AEM GQLServlet",
             "severity": "low",
@@ -3334,7 +3342,7 @@
             "id": "aem-default-get-servlet",
             "name": "AEM DefaultGetServlet",
             "severity": "low",
-            "tags": "aem",
+            "tags": "aem,adobe",
             "path": "misconfiguration/aem/aem-default-get-servlet.yaml"
         },
         {
@@ -3366,7 +3374,7 @@
             "id": "aem-login-status",
             "name": "AEM Login Status",
             "severity": "info",
-            "tags": "aem",
+            "tags": "aem,adobe",
             "path": "misconfiguration/aem/aem-login-status.yaml"
         },
         {
@@ -3398,7 +3406,7 @@
             "id": "aem-querybuilder-json-servlet",
             "name": "AEM QueryBuilder Json Servlet",
             "severity": "info",
-            "tags": "aem",
+            "tags": "aem,adobe",
             "path": "misconfiguration/aem/aem-querybuilder-json-servlet.yaml"
         },
         {
@@ -3672,6 +3680,14 @@
             "severity": "info",
             "tags": "tech,jitsi",
             "path": "technologies/jitsi-meet-detect.yaml"
+        },
+        {
+            "author": "c-sh0",
+            "id": "puppetserver-detect",
+            "name": "Puppetserver Detection",
+            "severity": "info",
+            "tags": "tech,puppet,exposure",
+            "path": "technologies/puppetserver-detect.yaml"
         },
         {
             "author": "cyllective",
@@ -4930,6 +4946,14 @@
             "path": "technologies/neos-detect.yaml"
         },
         {
+            "author": "c-sh0",
+            "id": "puppetdb-detect",
+            "name": "PuppetDB Detection",
+            "severity": "info",
+            "tags": "puppet,tech,exposure",
+            "path": "technologies/puppetdb-detect.yaml"
+        },
+        {
             "author": "alifathi-h1",
             "id": "herokuapp-detect",
             "name": "Detect websites using Herokuapp endpoints",
@@ -5468,7 +5492,7 @@
         {
             "author": "pdteam",
             "id": "gitlab-rce",
-            "name": "GitLab CE/EE Unauthenticated RCE using ExifTool",
+            "name": "GitLab CE/EE Unauthenticated RCE Using ExifTool",
             "severity": "critical",
             "tags": "cve,cve2021,gitlab,rce,oast,intrusive",
             "path": "vulnerabilities/gitlab/gitlab-rce.yaml"
@@ -6962,6 +6986,14 @@
             "path": "vulnerabilities/vmware/vmware-vcenter-log4j-jndi-rce.yaml"
         },
         {
+            "author": "bughuntersurya",
+            "id": "vrealize-operations-log4j-rce",
+            "name": "vRealize Operations Tenant App Log4j JNDI RCE",
+            "severity": "critical",
+            "tags": "rce,log4j,vmware,vrealize",
+            "path": "vulnerabilities/vmware/vrealize-operations-log4j-rce.yaml"
+        },
+        {
             "author": "pdteam",
             "id": "vmware-vcenter-ssrf",
             "name": "VMware vCenter SSRF/LFI/XSS",
@@ -7296,6 +7328,14 @@
             "severity": "high",
             "tags": "mcafee,rce",
             "path": "vulnerabilities/other/mcafee-epo-rce.yaml"
+        },
+        {
+            "author": "act1on3",
+            "id": "kiwitcms-json-rpc",
+            "name": "Kiwi TCMS Information Disclosure",
+            "severity": "high",
+            "tags": "kiwitcms,exposure,misconfig",
+            "path": "vulnerabilities/other/tikiwiki-json-rpc.yaml"
         },
         {
             "author": "0x_Akoko",
@@ -8306,6 +8346,14 @@
             "path": "vulnerabilities/other/netgear-wnap320-rce.yaml"
         },
         {
+            "author": "hackerarpan",
+            "id": "laravel-filemanager-lfi",
+            "name": "UniSharp Laravel File Manager 2.0.0 - Arbitrary File Read",
+            "severity": "high",
+            "tags": "lfi,unisharp,laravel,filemanager,fileupload,lfr",
+            "path": "vulnerabilities/other/laravel-filemanager-lfi.yaml"
+        },
+        {
             "author": "gy741",
             "id": "goip-1-lfi",
             "name": "GoIP-1 GSM - Local File Inclusion",
@@ -8696,6 +8744,14 @@
             "severity": "critical",
             "tags": "rce,sangfor",
             "path": "vulnerabilities/other/sangfor-edr-rce.yaml"
+        },
+        {
+            "author": "hackerarpan",
+            "id": "dixell-xweb500-filewrite",
+            "name": "Dixell XWEB-500 - Arbitrary File Write",
+            "severity": "critical",
+            "tags": "lfw,iot,dixell,xweb500",
+            "path": "vulnerabilities/other/dixell-xweb500-filewrite.yaml"
         },
         {
             "author": "gy741",
@@ -9162,6 +9218,14 @@
             "path": "cves/2021/CVE-2021-21315.yaml"
         },
         {
+            "author": "edoardottt",
+            "id": "CVE-2021-3002",
+            "name": "Seo Panel 4.8.0 - Post based Reflected XSS",
+            "severity": "medium",
+            "tags": "cve,cve2021,seopanel,xss",
+            "path": "cves/2021/CVE-2021-3002.yaml"
+        },
+        {
             "author": "daffainfo",
             "id": "CVE-2021-23241",
             "name": "Mercury Router Web Server Directory Traversal",
@@ -9244,7 +9308,7 @@
         {
             "author": "daffainfo",
             "id": "CVE-2021-41649",
-            "name": "PuneethReddyHC online-shopping-system-advanced SQL Injection homeaction.php",
+            "name": "PuneethReddyHC Online Shopping System homeaction.php SQL Injection",
             "severity": "critical",
             "tags": "cve,cve2021,sqli,injection",
             "path": "cves/2021/CVE-2021-41649.yaml"
@@ -9356,7 +9420,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2021-40978",
-            "name": "mkdocs 1.2.2 built-in dev-server allows directory traversal",
+            "name": "MKdocs 1.2.2 Directory Traversal",
             "severity": "high",
             "tags": "cve,cve2021,mkdocs,lfi",
             "path": "cves/2021/CVE-2021-40978.yaml"
@@ -9533,7 +9597,7 @@
             "author": "geeknik",
             "id": "CVE-2021-3654",
             "name": "noVNC Open Redirect",
-            "severity": "low",
+            "severity": "medium",
             "tags": "redirect,novnc,cve,cve2021",
             "path": "cves/2021/CVE-2021-3654.yaml"
         },
@@ -9636,7 +9700,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2021-40870",
-            "name": "Aviatrix Controller 6.x before 6.5-1804.1922. RCE",
+            "name": "Aviatrix Controller 6.x before 6.5-1804.1922 Remote Command Execution",
             "severity": "critical",
             "tags": "cve,cve2021,rce,aviatrix",
             "path": "cves/2021/CVE-2021-40870.yaml"
@@ -9644,7 +9708,7 @@
         {
             "author": "rootxharsh,iamnoooob",
             "id": "CVE-2021-41349",
-            "name": "Pre-Auth POST Based Reflected XSS in Microsoft Exchange",
+            "name": "Microsoft Exchange Server Pre-Auth POST Based Reflected Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,xss,microsoft,exchange",
             "path": "cves/2021/CVE-2021-41349.yaml"
@@ -9876,7 +9940,7 @@
         {
             "author": "daffainfo",
             "id": "CVE-2021-41648",
-            "name": "PuneethReddyHC online-shopping-system-advanced SQL Injection action.php",
+            "name": "PuneethReddyHC action.php SQL Injection",
             "severity": "high",
             "tags": "cve,cve2021,sqli,injection",
             "path": "cves/2021/CVE-2021-41648.yaml"
@@ -9892,7 +9956,7 @@
         {
             "author": "oscarintherocks",
             "id": "CVE-2021-40875",
-            "name": "Gurock TestRail Application files.md5 exposure",
+            "name": "Gurock TestRail Application files.md5 Exposure",
             "severity": "medium",
             "tags": "cve,cve2021,exposure,gurock,testrail",
             "path": "cves/2021/CVE-2021-40875.yaml"
@@ -10204,7 +10268,7 @@
         {
             "author": "0x_Akoko",
             "id": "CVE-2021-41293",
-            "name": "ECOA Building Automation System - LFD",
+            "name": "ECOA Building Automation System - Local File Disclosure",
             "severity": "high",
             "tags": "cve,cve2021,ecoa,lfi,disclosure",
             "path": "cves/2021/CVE-2021-41293.yaml"
@@ -10380,7 +10444,7 @@
         {
             "author": "daffainfo",
             "id": "CVE-2021-40868",
-            "name": "Cloudron 6.2 Cross Site Scripting",
+            "name": "Cloudron 6.2 Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,xss,cloudron",
             "path": "cves/2021/CVE-2021-40868.yaml"
@@ -10596,7 +10660,7 @@
         {
             "author": "pdteam",
             "id": "CVE-2021-41174",
-            "name": "Grafana 8.0.0 <= v.8.2.2 Angularjs Rendering XSS",
+            "name": "Grafana 8.0.0 <= v.8.2.2 Angularjs Rendering Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,grafana,xss",
             "path": "cves/2021/CVE-2021-41174.yaml"
@@ -10628,7 +10692,7 @@
         {
             "author": "madrobot",
             "id": "CVE-2021-41467",
-            "name": "JustWriting  -  Reflected XSS",
+            "name": "JustWriting  -  Reflected Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,justwriting,xss",
             "path": "cves/2021/CVE-2021-41467.yaml"
@@ -11312,6 +11376,14 @@
             "severity": "high",
             "tags": "cve,cve2017,mantisbt",
             "path": "cves/2017/CVE-2017-7615.yaml"
+        },
+        {
+            "author": "0x_Akoko",
+            "id": "CVE-2017-9833",
+            "name": "BOA Web Server 0.94.14 - Access to arbitrary files as privileges",
+            "severity": "high",
+            "tags": "boa,lfr,lfi,cve,cve2017",
+            "path": "cves/2017/CVE-2017-9833.yaml"
         },
         {
             "author": "madrobot",
@@ -13378,6 +13450,14 @@
             "path": "cves/2018/CVE-2018-1207.yaml"
         },
         {
+            "author": "0x_Akoko",
+            "id": "CVE-2018-12300",
+            "name": "Seagate NAS OS 4.3.15.1 - Open redirect",
+            "severity": "medium",
+            "tags": "cve,cve2018,redirect,seagate,nasos",
+            "path": "cves/2018/CVE-2018-12300.yaml"
+        },
+        {
             "author": "princechaddha",
             "id": "CVE-2018-17246",
             "name": "Kibana Local File Inclusion",
@@ -13552,6 +13632,14 @@
             "severity": "medium",
             "tags": "cve,cve2018,wordpress,xss,wp-plugin",
             "path": "cves/2018/CVE-2018-11709.yaml"
+        },
+        {
+            "author": "princechaddha",
+            "id": "CVE-2018-12296",
+            "name": "Seagate NAS OS 4.3.15.1 - Server Information Disclosure",
+            "severity": "high",
+            "tags": "cve,cve2018,seagate,nasos,disclosure,unauth",
+            "path": "cves/2018/CVE-2018-12296.yaml"
         },
         {
             "author": "0x_Akoko",
@@ -14370,7 +14458,7 @@
             "path": "cves/2019/CVE-2019-19824.yaml"
         },
         {
-            "author": "dwisiswant0",
+            "author": "dwisiswant0,akincibor",
             "id": "CVE-2019-12725",
             "name": "Zeroshell 3.9.0 Remote Command Execution",
             "severity": "critical",
@@ -16306,12 +16394,28 @@
             "path": "cves/2020/CVE-2020-11546.yaml"
         },
         {
+            "author": "c-sh0",
+            "id": "CVE-2020-7943",
+            "name": "Puppet Server and PuppetDB sensitive information disclosure",
+            "severity": "high",
+            "tags": "cve,cve2020,puppet,exposure",
+            "path": "cves/2020/CVE-2020-7943.yaml"
+        },
+        {
             "author": "dwisiswant0",
             "id": "CVE-2020-7961",
             "name": "Liferay Portal Unauthenticated RCE",
             "severity": "critical",
             "tags": "cve,cve2020,rce,liferay",
             "path": "cves/2020/CVE-2020-7961.yaml"
+        },
+        {
+            "author": "gy741",
+            "id": "CVE-2020-15050",
+            "name": "Suprema BioStar2 - Local File Inclusion (LFI)",
+            "severity": "high",
+            "tags": "cve,cve2020,lfi,suprema,biostar2",
+            "path": "cves/2020/CVE-2020-15050.yaml"
         },
         {
             "author": "geeknik",
@@ -16464,6 +16568,14 @@
             "severity": "high",
             "tags": "cve,cve2020,apache,tomcat,rce",
             "path": "cves/2020/CVE-2020-9484.yaml"
+        },
+        {
+            "author": "0x_Akoko",
+            "id": "CVE-2020-13158",
+            "name": "Artica Proxy before 4.30.000000 Community Edition - Directory Traversal",
+            "severity": "high",
+            "tags": "cve,cve2020,artica,lfi",
+            "path": "cves/2020/CVE-2020-13158.yaml"
         },
         {
             "author": "madrobot",
@@ -16980,7 +17092,7 @@
         {
             "author": "gy741",
             "id": "CVE-2022-24260",
-            "name": "VoipMonitor - Pre-Auth SQL injection",
+            "name": "VoipMonitor - Pre-Auth SQL Injection",
             "severity": "critical",
             "tags": "cve,cve2022,voipmonitor,sqli,unauth",
             "path": "cves/2022/CVE-2022-24260.yaml"
@@ -16996,7 +17108,7 @@
         {
             "author": "Mr-xn",
             "id": "CVE-2022-24112",
-            "name": "Apache APISIX apisix/batch-requests RCE",
+            "name": "Apache APISIX apisix/batch-requests Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2022,apache,rce,apisix,oast",
             "path": "cves/2022/CVE-2022-24112.yaml"
@@ -17020,7 +17132,7 @@
         {
             "author": "paradessia,narluin",
             "id": "CVE-2022-21371",
-            "name": "Oracle WebLogic Server LFI",
+            "name": "Oracle WebLogic Server Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2022,lfi,weblogic,oracle",
             "path": "cves/2022/CVE-2022-21371.yaml"
@@ -17034,12 +17146,28 @@
             "path": "cves/2022/CVE-2022-25369.yaml"
         },
         {
+            "author": "dwisiswant0",
+            "id": "CVE-2022-24990",
+            "name": "TerraMaster TOS < 4.2.30 - Server Information Disclosure",
+            "severity": "medium",
+            "tags": "cve,cve2022,terramaster,exposure",
+            "path": "cves/2022/CVE-2022-24990.yaml"
+        },
+        {
             "author": "pikpikcu",
             "id": "CVE-2022-0378",
             "name": "Microweber Reflected Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2022,microweber,xss",
             "path": "cves/2022/CVE-2022-0378.yaml"
+        },
+        {
+            "author": "cckuailong",
+            "id": "CVE-2022-23779",
+            "name": "Zoho ManageEngine - Internal Hostname Disclosure",
+            "severity": "medium",
+            "tags": "cve,cve2022,zoho,exposure",
+            "path": "cves/2022/CVE-2022-23779.yaml"
         },
         {
             "author": "dhiyaneshDk",
@@ -17068,7 +17196,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2022-25323",
-            "name": "ZEROF Web Server 2.0 XSS",
+            "name": "ZEROF Web Server 2.0 Cross-Site Scripting",
             "severity": "medium",
             "tags": "xss,cve,cve2022,zerof",
             "path": "cves/2022/CVE-2022-25323.yaml"
@@ -17076,7 +17204,7 @@
         {
             "author": "bananabr",
             "id": "CVE-2022-23134",
-            "name": "Zabbix Setup Configuration - Unauthenticated Access",
+            "name": "Zabbix Setup Configuration Authentication Bypass",
             "severity": "medium",
             "tags": "cve,cve2022,zabbix,auth-bypass",
             "path": "cves/2022/CVE-2022-23134.yaml"
@@ -17098,9 +17226,17 @@
             "path": "cves/2022/CVE-2022-0218.yaml"
         },
         {
+            "author": "edoardottt",
+            "id": "CVE-2022-0381",
+            "name": "WordPress Plugin Embed Swagger 1.0.0 - Reflected XSS",
+            "severity": "medium",
+            "tags": "cve,cve2022,swagger,xss,wordpress",
+            "path": "cves/2022/CVE-2022-0381.yaml"
+        },
+        {
             "author": "cckuailong",
             "id": "CVE-2022-24124",
-            "name": "Casdoor 1.13.0 - SQL Injection (Unauthenticated)",
+            "name": "Casdoor 1.13.0 - Unauthenticated SQL Injection",
             "severity": "high",
             "tags": "cve,cve2022,casdoor,sqli,unauth",
             "path": "cves/2022/CVE-2022-24124.yaml"
@@ -17108,15 +17244,15 @@
         {
             "author": "pdteam",
             "id": "CVE-2022-22536",
-            "name": "SAP Memory Pipes(MPI) Desynchronization",
+            "name": "SAP Memory Pipes (MPI) Desynchronization",
             "severity": "critical",
-            "tags": "cve,cve2022,sap,smuggling",
+            "tags": "cve,cve2022,sap,smuggling,netweaver,web-dispatcher,memory-pipes",
             "path": "cves/2022/CVE-2022-22536.yaml"
         },
         {
             "author": "cckuakilong",
             "id": "CVE-2022-23944",
-            "name": "ShenYu Admin Unauth Access",
+            "name": "Apache ShenYu Admin Unauth Access",
             "severity": "medium",
             "tags": "cve,cve2022,shenyu,unauth,apache",
             "path": "cves/2022/CVE-2022-23944.yaml"
@@ -17394,7 +17530,7 @@
             "path": "exposures/apis/couchbase-buckets-api.yaml"
         },
         {
-            "author": "pdteam",
+            "author": "pdteam,c-sh0",
             "id": "swagger-api",
             "name": "Public Swagger API",
             "severity": "info",
@@ -18261,7 +18397,7 @@
             "author": "Ice3man",
             "id": "jdbc-connection-string",
             "name": "JDBC Connection String Disclosure",
-            "severity": "info",
+            "severity": "unknown",
             "tags": "exposure,token",
             "path": "exposures/tokens/generic/jdbc-connection-string.yaml"
         },
@@ -18269,7 +18405,7 @@
             "author": "philippedelteil",
             "id": "shoppable-token",
             "name": "Shoppable Service Auth Token",
-            "severity": "info",
+            "severity": "unknown",
             "tags": "exposure,shoppable,token,auth,service",
             "path": "exposures/tokens/generic/shoppable-token.yaml"
         },
@@ -18277,7 +18413,7 @@
             "author": "Ice3man",
             "id": "jwt-token",
             "name": "JWT Token Disclosure",
-            "severity": "info",
+            "severity": "unknown",
             "tags": "exposure,token",
             "path": "exposures/tokens/generic/jwt-token.yaml"
         },
@@ -18285,7 +18421,7 @@
             "author": "Sy3Omda,forgedhallpass,geeknik",
             "id": "credentials-disclosure",
             "name": "Credentials Disclosure Check",
-            "severity": "info",
+            "severity": "unknown",
             "tags": "exposure,token,key,api,secret,password",
             "path": "exposures/tokens/generic/credentials-disclosure.yaml"
         },
@@ -18293,7 +18429,7 @@
             "author": "nadino,geeknik",
             "id": "generic-tokens",
             "name": "Generic Tokens",
-            "severity": "info",
+            "severity": "unknown",
             "tags": "exposure,token,generic",
             "path": "exposures/tokens/generic/general-tokens.yaml"
         },
@@ -19410,6 +19546,14 @@
             "path": "exposed-panels/fiorilaunchpad-logon.yaml"
         },
         {
+            "author": "princechaddha",
+            "id": "xweb500-panel",
+            "name": "Xweb500 Login Panel",
+            "severity": "info",
+            "tags": "panel,xweb500",
+            "path": "exposed-panels/xweb500-panel.yaml"
+        },
+        {
             "author": "dhiyaneshDK",
             "id": "oki-data-corporation",
             "name": "Oki Data Corporation",
@@ -19536,6 +19680,14 @@
             "severity": "info",
             "tags": "panel,sonarqube",
             "path": "exposed-panels/sonarqube-login.yaml"
+        },
+        {
+            "author": "c-sh0",
+            "id": "puppetboard-panel",
+            "name": "Puppetlabs Puppetboard",
+            "severity": "info",
+            "tags": "panel,puppet,exposure",
+            "path": "exposed-panels/puppetboard-panel.yaml"
         },
         {
             "author": "impramodsargar",
@@ -20386,6 +20538,14 @@
             "path": "exposed-panels/fireware-xtm-user-authentication.yaml"
         },
         {
+            "author": "d4vy",
+            "id": "kentico-login",
+            "name": "Kentico Login Panel",
+            "severity": "info",
+            "tags": "panel,login,kentico",
+            "path": "exposed-panels/kentico-login.yaml"
+        },
+        {
             "author": "YanYun",
             "id": "landrayoa-panel",
             "name": "LandrayOA Panel Login",
@@ -20722,7 +20882,7 @@
             "path": "exposed-panels/kerio-connect-client.yaml"
         },
         {
-            "author": "pdteam",
+            "author": "pdteam,idealphase",
             "id": "jamf-panel",
             "name": "JAMF MDM Panel",
             "severity": "info",
@@ -20770,7 +20930,7 @@
             "path": "exposed-panels/dotclear-panel.yaml"
         },
         {
-            "author": "dhiyaneshDk",
+            "author": "dhiyaneshDk,idealphase",
             "id": "axigen-webmail",
             "name": "Axigen WebMail",
             "severity": "info",
@@ -21202,6 +21362,14 @@
             "path": "exposed-panels/icinga-web-login.yaml"
         },
         {
+            "author": "princechaddha",
+            "id": "laravel-filemanager",
+            "name": "Laravel FileManager Panel Detect",
+            "severity": "info",
+            "tags": "laravel,filemanager,fileupload",
+            "path": "exposed-panels/laravel-filemanager.yaml"
+        },
+        {
             "author": "bsysop",
             "id": "fortinet-fortigate-panel",
             "name": "Fortinet FortiGate SSL VPN Panel",
@@ -21240,6 +21408,14 @@
             "severity": "info",
             "tags": "webserver,netflix,conductor,panel",
             "path": "exposed-panels/netflix-conductor-ui.yaml"
+        },
+        {
+            "author": "Arr0way",
+            "id": "matomo-login-portal",
+            "name": "Matomo Login Portal",
+            "severity": "info",
+            "tags": "panel,matomo",
+            "path": "exposed-panels/matomo-login-portal.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -21498,7 +21674,7 @@
             "path": "exposed-panels/argocd-login.yaml"
         },
         {
-            "author": "petruknisme,daffainfo",
+            "author": "petruknisme,daffainfo,c-sh0",
             "id": "kibana-panel",
             "name": "Kibana Panel Login",
             "severity": "info",
@@ -21864,6 +22040,14 @@
             "severity": "info",
             "tags": "panel,kronos",
             "path": "exposed-panels/kronos-workforce-central.yaml"
+        },
+        {
+            "author": "pdteam",
+            "id": "kiwitcms-login",
+            "name": "Kiwi TCMS Login",
+            "severity": "info",
+            "tags": "kiwitcms,panel",
+            "path": "exposed-panels/kiwitcms-login.yaml"
         },
         {
             "author": "r3dg33k",
@@ -22501,7 +22685,7 @@
             "author": "Sy3Omda,geeknik,forgedhallpass",
             "id": "credentials-disclosure-file",
             "name": "Credentials Disclosure Check",
-            "severity": "info",
+            "severity": "unknown",
             "tags": "exposure,token,file,disclosure",
             "path": "file/keys/credential-exposure.yaml"
         },
@@ -24988,7 +25172,7 @@
         {
             "author": "dhiyaneshDK",
             "id": "kafka-center-default-login",
-            "name": "Kafka Center Default Login",
+            "name": "Apache Kafka Center Default Login",
             "severity": "high",
             "tags": "kafka,default-login",
             "path": "default-logins/kafka-center-default-login.yaml"
@@ -24996,7 +25180,7 @@
         {
             "author": "pussycat0x",
             "id": "hp-switch-default-login",
-            "name": "HP 1820-8G Switch J9979A Default Credential",
+            "name": "HP 1820-8G Switch J9979A Default Login",
             "severity": "high",
             "tags": "default-login,hp",
             "path": "default-logins/hp/hp-switch-default-login.yaml"
@@ -25004,7 +25188,7 @@
         {
             "author": "socketz",
             "id": "cs141-default-login",
-            "name": "CS141 SNMP Module Default Login",
+            "name": "UPS Adapter CS141 SNMP Module Default Login",
             "severity": "medium",
             "tags": "hiawatha,iot,default-login",
             "path": "default-logins/abb/cs141-default-login.yaml"
@@ -25045,14 +25229,14 @@
             "author": "pikpikcu",
             "id": "szhe-default-login",
             "name": "Szhe Default Login",
-            "severity": "low",
+            "severity": "medium",
             "tags": "szhe,default-login",
             "path": "default-logins/szhe/szhe-default-login.yaml"
         },
         {
             "author": "Zandros0",
             "id": "jenkins-weak-password",
-            "name": "Jenkins Weak Password",
+            "name": "Jenkins Default Login",
             "severity": "high",
             "tags": "jenkins,default-login",
             "path": "default-logins/jenkins/jenkins-default.yaml"
@@ -25060,7 +25244,7 @@
         {
             "author": "righettod",
             "id": "ibm-mqseries-default-login",
-            "name": "IBM MQSeries web console default login",
+            "name": "IBM MQSeries Web Console Default Login",
             "severity": "high",
             "tags": "ibm,default-login",
             "path": "default-logins/ibm/ibm-mqseries-default-login.yaml"
@@ -25069,7 +25253,7 @@
             "author": "madrobot",
             "id": "ibm-storage-default-login",
             "name": "IBM Storage Management Default Login",
-            "severity": "medium",
+            "severity": "high",
             "tags": "default-login,ibm,storage",
             "path": "default-logins/ibm/ibm-storage-default-credential.yaml"
         },
@@ -25077,7 +25261,7 @@
             "author": "Techryptic (@Tech)",
             "id": "idemia-biometrics-default-login",
             "name": "IDEMIA BIOMetrics Default Login",
-            "severity": "high",
+            "severity": "medium",
             "tags": "idemia,biometrics,default-login",
             "path": "default-logins/idemia/idemia-biometrics-default-login.yaml"
         },
@@ -25085,7 +25269,7 @@
             "author": "pdteam",
             "id": "zabbix-default-login",
             "name": "Zabbix Default Login",
-            "severity": "critical",
+            "severity": "high",
             "tags": "zabbix,default-login",
             "path": "default-logins/zabbix/zabbix-default-login.yaml"
         },
@@ -25100,7 +25284,7 @@
         {
             "author": "Suman_Kar,dwisiswant0",
             "id": "gitlab-weak-login",
-            "name": "Gitlab Weak Login",
+            "name": "Gitlab Default Login",
             "severity": "high",
             "tags": "gitlab,default-login",
             "path": "default-logins/gitlab/gitlab-weak-login.yaml"
@@ -25141,7 +25325,7 @@
             "author": "pikpikcu",
             "id": "mofi4500-default-login",
             "name": "MOFI4500-4GXeLTE-V2 Default Login",
-            "severity": "critical",
+            "severity": "high",
             "tags": "mofi,default-login",
             "path": "default-logins/mofi/mofi4500-default-login.yaml"
         },
@@ -25156,7 +25340,7 @@
         {
             "author": "MiroslavSotak",
             "id": "xerox7-default-login",
-            "name": "Xerox WorkCentre 7xxx - Default Login",
+            "name": "Xerox WorkCentre 7xxx Printer Default Login",
             "severity": "high",
             "tags": "xerox,default-login",
             "path": "default-logins/xerox/xerox7-default-login.yaml"
@@ -25164,7 +25348,7 @@
         {
             "author": "pikpikcu",
             "id": "druid-default-login",
-            "name": "Druid Default Login",
+            "name": "Apache Druid Default Login",
             "severity": "high",
             "tags": "druid,default-login",
             "path": "default-logins/druid/druid-default-login.yaml"
@@ -25173,7 +25357,7 @@
             "author": "madrobot",
             "id": "spectracom-default-login",
             "name": "Spectracom Default Login",
-            "severity": "medium",
+            "severity": "high",
             "tags": "spectracom,default-login",
             "path": "default-logins/spectracom/spectracom-default-login.yaml"
         },
@@ -25236,7 +25420,7 @@
         {
             "author": "paradessia",
             "id": "jmx-default-login",
-            "name": "JBoss JMX Console Weak Credential",
+            "name": "JBoss JMX Console Weak Credential Discovery",
             "severity": "high",
             "tags": "jboss,jmx,default-login",
             "path": "default-logins/jboss/jmx-default-login.yaml"
@@ -25260,10 +25444,18 @@
         {
             "author": "dwisiswant0",
             "id": "ucmdb-default-login",
-            "name": "Micro Focus UCMDB Default Login",
+            "name": "Micro Focus Universal CMDB Default Login",
             "severity": "high",
             "tags": "ucmdb,default-login",
             "path": "default-logins/UCMDB/ucmdb-default-login.yaml"
+        },
+        {
+            "author": "PaperPen",
+            "id": "apollo-default-login",
+            "name": "Apollo Default Login",
+            "severity": "high",
+            "tags": "apollo,default-login",
+            "path": "default-logins/apollo/apollo-default-login.yaml"
         },
         {
             "author": "gy741",
@@ -25272,6 +25464,14 @@
             "severity": "high",
             "tags": "hongdian,default-login",
             "path": "default-logins/hongdian/hongdian-default-login.yaml"
+        },
+        {
+            "author": "PaperPen",
+            "id": "stackstorm-default-login",
+            "name": "StackStorm Default Login",
+            "severity": "high",
+            "tags": "stackstorm,default-login",
+            "path": "default-logins/stackstorm/stackstorm-default-login.yaml"
         },
         {
             "author": "pdteam",
@@ -25292,7 +25492,7 @@
         {
             "author": "pdteam",
             "id": "tomcat-default-login",
-            "name": "Tomcat Manager Default Login",
+            "name": "ApahceTomcat Manager Default Login",
             "severity": "high",
             "tags": "tomcat,apache,default-login",
             "path": "default-logins/apache/tomcat-default-login.yaml"
@@ -25340,7 +25540,7 @@
         {
             "author": "fyoorer,dwisiswant0",
             "id": "rabbitmq-default-login",
-            "name": "RabbitMQ admin Default Login",
+            "name": "RabbitMQ Default Login",
             "severity": "high",
             "tags": "rabbitmq,default-login",
             "path": "default-logins/rabbitmq/rabbitmq-default-login.yaml"
@@ -25364,7 +25564,7 @@
         {
             "author": "alifathi-h1",
             "id": "seeddms-default-login",
-            "name": "SeedDMS Default Credential",
+            "name": "SeedDMS Default Login",
             "severity": "high",
             "tags": "default-login,seeddms",
             "path": "default-logins/seeddms/seeddms-default-login.yaml"
@@ -25460,7 +25660,7 @@
         {
             "author": "pikpikcu",
             "id": "frp-default-login",
-            "name": "Frp Default Login",
+            "name": "FRP Default Login",
             "severity": "high",
             "tags": "frp,default-login",
             "path": "default-logins/frps/frp-default-login.yaml"
@@ -25470,7 +25670,7 @@
             "id": "google-earth-dlogin",
             "name": "Google Earth Enterprise Default Login",
             "severity": "high",
-            "tags": "default-login,google",
+            "tags": "default-login,google-earth",
             "path": "default-logins/google/google-earth-dlogin.yaml"
         },
         {
@@ -25506,9 +25706,17 @@
             "path": "default-logins/huawei/huawei-HG532e-default-router-login.yaml"
         },
         {
+            "author": "c-sh0",
+            "id": "digitalrebar-default-login",
+            "name": "RackN Digital Rebar provision default login",
+            "severity": "high",
+            "tags": "rackn,digitalrebar,default-login",
+            "path": "default-logins/digitalrebar/digitalrebar-default-login.yaml"
+        },
+        {
             "author": "gy741",
-            "id": "ricoh-weak-password",
-            "name": "Ricoh Weak Password",
+            "id": "ricoh-default-login",
+            "name": "Ricoh Default Login",
             "severity": "high",
             "tags": "ricoh,default-login",
             "path": "default-logins/ricoh/ricoh-weak-password.yaml"
@@ -25540,7 +25748,7 @@
         {
             "author": "arcc,dhiyaneshDK",
             "id": "gophish-default-login",
-            "name": "Gophish < v0.10.1 default credentials",
+            "name": "Gophish < v0.10.1 Default Credentials",
             "severity": "high",
             "tags": "gophish,default-login",
             "path": "default-logins/gophish/gophish-default-login.yaml"
@@ -25564,7 +25772,7 @@
         {
             "author": "pdteam",
             "id": "weblogic-weak-login",
-            "name": "WebLogic weak login",
+            "name": "WebLogic Default Login",
             "severity": "high",
             "tags": "default-login,weblogic",
             "path": "default-logins/weblogic/weblogic-weak-login.yaml"
