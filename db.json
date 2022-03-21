@@ -1,5 +1,5 @@
 {
-    "version": "v8.9.0",
+    "version": "v8.9.1",
     "data": [
         {
             "author": "dwisiswant0",
@@ -1484,7 +1484,7 @@
         {
             "author": "philippedelteil,rotemreiss",
             "id": "elasticbeantalk-takeover",
-            "name": "ElasticBeanTalk takeover detection",
+            "name": "ElasticBeanTalk Subdomain Takeover Detection",
             "severity": "high",
             "tags": "dns,takeover,aws",
             "path": "dns/elasticbeantalk-takeover.yaml"
@@ -1492,7 +1492,7 @@
         {
             "author": "binaryfigments",
             "id": "mx-service-detector",
-            "name": "E-mail service detector",
+            "name": "Email Service Detector",
             "severity": "info",
             "tags": "dns,service",
             "path": "dns/mx-service-detector.yaml"
@@ -1532,7 +1532,7 @@
         {
             "author": "melbadry9",
             "id": "detect-worksites",
-            "name": "worksites.net service detection",
+            "name": "Worksites.net Service Detection",
             "severity": "info",
             "tags": "dns,service",
             "path": "dns/worksites-detection.yaml"
@@ -1540,7 +1540,7 @@
         {
             "author": "pdteam",
             "id": "ptr-fingerprint",
-            "name": "PTR Fingerprint",
+            "name": "PTR Detected",
             "severity": "info",
             "tags": "dns,ptr",
             "path": "dns/ptr-fingerprint.yaml"
@@ -1548,7 +1548,7 @@
         {
             "author": "pdteam",
             "id": "txt-fingerprint",
-            "name": "TXT Fingerprint",
+            "name": "DNS TXT Record Detected",
             "severity": "info",
             "tags": "dns,txt",
             "path": "dns/txt-fingerprint.yaml"
@@ -1556,7 +1556,7 @@
         {
             "author": "pdteam",
             "id": "nameserver-fingerprint",
-            "name": "NS Fingerprint",
+            "name": "NS Record Detection",
             "severity": "info",
             "tags": "dns,ns",
             "path": "dns/nameserver-fingerprint.yaml"
@@ -1572,7 +1572,7 @@
         {
             "author": "pdteam",
             "id": "servfail-refused-hosts",
-            "name": "Servfail Host Finder",
+            "name": "DNS Servfail Host Finder",
             "severity": "info",
             "tags": "dns,takeover",
             "path": "dns/servfail-refused-hosts.yaml"
@@ -1580,7 +1580,7 @@
         {
             "author": "pdteam",
             "id": "mx-fingerprint",
-            "name": "MX Fingerprint",
+            "name": "MX Record Detection",
             "severity": "info",
             "tags": "dns,mx",
             "path": "dns/mx-fingerprint.yaml"
@@ -1588,7 +1588,7 @@
         {
             "author": "binaryfigments",
             "id": "spoofable-spf-records-ptr",
-            "name": "Find spoofable SPF records containing the PTR mechanism",
+            "name": "Spoofable SPF Records with PTR Mechanism",
             "severity": "info",
             "tags": "dns,spf",
             "path": "dns/spoofable-spf-records-ptr.yaml"
@@ -1912,6 +1912,14 @@
             "severity": "high",
             "tags": "stem,config,exposure,iot",
             "path": "iot/stem-audio-table-private-keys.yaml"
+        },
+        {
+            "author": "Matthew Nickerson (b0than) @ Layer 8 Security",
+            "id": "octoprint-3dprinter",
+            "name": "Octoprint 3D Printer Detection",
+            "severity": "info",
+            "tags": "iot,octoprint,panel",
+            "path": "iot/octoprint-3dprinter-detect.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -3074,6 +3082,38 @@
             "path": "misconfiguration/kubernetes/kubernetes-pods.yaml"
         },
         {
+            "author": "Dolev Farhi",
+            "id": "graphql-field-suggestion",
+            "name": "GraphQL Field Suggestion Information Disclosure",
+            "severity": "info",
+            "tags": "graphql",
+            "path": "misconfiguration/graphql/graphql-field-suggestion.yaml"
+        },
+        {
+            "author": "Dolev Farhi",
+            "id": "graphql-get-method",
+            "name": "GraphQL CSRF / GET method",
+            "severity": "info",
+            "tags": "graphql",
+            "path": "misconfiguration/graphql/graphql-get-method.yaml"
+        },
+        {
+            "author": "Dolev Farhi",
+            "id": "graphql-array-batching",
+            "name": "GraphQL Array-based Batching",
+            "severity": "low",
+            "tags": "graphql",
+            "path": "misconfiguration/graphql/graphql-array-batching.yaml"
+        },
+        {
+            "author": "Dolev Farhi",
+            "id": "graphql-alias-batching",
+            "name": "GraphQL Alias-based Batching",
+            "severity": "low",
+            "tags": "graphql",
+            "path": "misconfiguration/graphql/graphql-alias-batching.yaml"
+        },
+        {
             "author": "Cristi vlad (@cristivlad25)",
             "id": "pma-server-import",
             "name": "PhpMyAdmin Server Import",
@@ -3352,6 +3392,14 @@
             "severity": "medium",
             "tags": "aem,xss",
             "path": "misconfiguration/aem/aem-setpreferences-xss.yaml"
+        },
+        {
+            "author": "dhiyaneshDk",
+            "id": "aem-xss-childlist-selector",
+            "name": "XSS in childlist selector",
+            "severity": "medium",
+            "tags": "xss,aem,adobe",
+            "path": "misconfiguration/aem/aem-xss-childlist-selector.yaml"
         },
         {
             "author": "hetroublemakr",
@@ -4290,7 +4338,7 @@
             "path": "technologies/puppet-node-manager-detect.yaml"
         },
         {
-            "author": "daffainfo",
+            "author": "daffainfo,idealphase",
             "id": "jboss-detect",
             "name": "JBoss detected",
             "severity": "info",
@@ -4318,7 +4366,7 @@
             "id": "smartstore-detect",
             "name": "SmartStore Detect",
             "severity": "info",
-            "tags": "tech,smartstore,oos",
+            "tags": "tech,smartstore,oss",
             "path": "technologies/smartstore-detect.yaml"
         },
         {
@@ -4706,11 +4754,11 @@
             "path": "technologies/achecker-detect.yaml"
         },
         {
-            "author": "NkxxkN,ELSFA7110,OFJAAAH",
+            "author": "nkxxkn,elsfa7110,ofjaaah,exceed",
             "id": "graphql-detect",
             "name": "GraphQL API Detection",
             "severity": "info",
-            "tags": "tech,graphql,fuzz",
+            "tags": "tech,graphql",
             "path": "technologies/graphql-detect.yaml"
         },
         {
@@ -4978,7 +5026,7 @@
             "path": "technologies/ibm/ibm-sterling-detect.yaml"
         },
         {
-            "author": "raesene",
+            "author": "raesene,idealphase",
             "id": "kubernetes-version",
             "name": "Kubernetes Version Exposure",
             "severity": "info",
@@ -5402,6 +5450,14 @@
             "path": "technologies/google/firebase-urls.yaml"
         },
         {
+            "author": "Adam Crosser",
+            "id": "code42-log4j-rce",
+            "name": "Log4j Code42 RCE",
+            "severity": "critical",
+            "tags": "jndi,log4j,rce,cve,cve2021,oast,code42",
+            "path": "vulnerabilities/code42/code42-log4j-rce.yaml"
+        },
+        {
             "author": "daffainfo",
             "id": "netsweeper-rxss",
             "name": "Netsweeper 4.0.9 - Cross Site Scripting Injection",
@@ -5514,10 +5570,10 @@
             "path": "vulnerabilities/generic/generic-linux-lfi.yaml"
         },
         {
-            "author": "melbadry9,xelkomy",
+            "author": "melbadry9,xelkomy,akincibor",
             "id": "cache-poisoning",
             "name": "Cache Poisoning",
-            "severity": "info",
+            "severity": "low",
             "tags": "cache,generic",
             "path": "vulnerabilities/generic/cache-poisoning.yaml"
         },
@@ -5770,6 +5826,22 @@
             "path": "vulnerabilities/magento/magento-2-exposed-api.yaml"
         },
         {
+            "author": "Adam Crosser",
+            "id": "httpbin-xss",
+            "name": "HTTPBin - Cross Site Scripting",
+            "severity": "medium",
+            "tags": "xss,httpbin,oss",
+            "path": "vulnerabilities/httpbin/httpbin-xss.yaml"
+        },
+        {
+            "author": "Adam Crosser",
+            "id": "httpbin-open-redirect",
+            "name": "HTTPBin - Open Redirect",
+            "severity": "low",
+            "tags": "redirect,httpbin,oss",
+            "path": "vulnerabilities/httpbin/httpbin-open-redirect.yaml"
+        },
+        {
             "author": "pdteam",
             "id": "jamf-blind-xxe",
             "name": "JAMF Blind XXE / SSRF",
@@ -5894,7 +5966,7 @@
             "id": "confluence-ssrf-sharelinks",
             "name": "Confluence SSRF in sharelinks",
             "severity": "medium",
-            "tags": "confluence,atlassian,ssrf,jira,oast",
+            "tags": "confluence,atlassian,ssrf,oast",
             "path": "vulnerabilities/confluence/confluence-ssrf-sharelinks.yaml"
         },
         {
@@ -6676,9 +6748,9 @@
         {
             "author": "Random_Robbie",
             "id": "sassy-social-share-xss",
-            "name": "Sassy Social Share XSS",
+            "name": "Sassy Social Share <= 3.3.3 - Cross-Site Scripting",
             "severity": "medium",
-            "tags": "wordpress,wp-plugin",
+            "tags": "wordpress,wp-plugin,sassy,xss",
             "path": "vulnerabilities/wordpress/sassy-social-share.yaml"
         },
         {
@@ -7232,22 +7304,6 @@
             "severity": "info",
             "tags": "exposure,resin,caucho",
             "path": "vulnerabilities/other/caucho-resin-info-disclosure.yaml"
-        },
-        {
-            "author": "pikpikcu",
-            "id": "landray-oa-fileread",
-            "name": "Landray-OA Fileread",
-            "severity": "high",
-            "tags": "landray,lfi",
-            "path": "vulnerabilities/other/landray-oa-fileread.yaml"
-        },
-        {
-            "author": "0xelkomy",
-            "id": "rce-user-agent-shell-shock",
-            "name": "Remote Code Execution Via (User-Agent)",
-            "severity": "high",
-            "tags": "shellshock,rce",
-            "path": "vulnerabilities/other/rce-shellshock-user-agent.yaml"
         },
         {
             "author": "pikpikcu",
@@ -8798,7 +8854,7 @@
             "id": "CVE-2021-24838",
             "name": "AnyComment <= 0.2.21 - Open Redirect",
             "severity": "medium",
-            "tags": "wordpress,wp-plugin,open-redirect",
+            "tags": "cve,cve2021,wordpress,wp-plugin,open-redirect",
             "path": "cves/2021/CVE-2021-24838.yaml"
         },
         {
@@ -9083,6 +9139,14 @@
         },
         {
             "author": "dwisiswant0",
+            "id": "CVE-2021-45967",
+            "name": "Pascom CPS SSRF",
+            "severity": "high",
+            "tags": "cve,cve2021,pascom,lfi",
+            "path": "cves/2021/CVE-2021-45967.yaml"
+        },
+        {
+            "author": "dwisiswant0",
             "id": "CVE-2021-38751",
             "name": "ExponentCMS <= 2.6 Host Header Injection",
             "severity": "medium",
@@ -9234,6 +9298,14 @@
             "path": "cves/2021/CVE-2021-23241.yaml"
         },
         {
+            "author": "cckuailong",
+            "id": "CVE-2021-35587",
+            "name": "Pre-auth RCE in Oracle Access Manager",
+            "severity": "critical",
+            "tags": "cve,cve2021,oam,rce,java,unauth,oracle",
+            "path": "cves/2021/CVE-2021-35587.yaml"
+        },
+        {
             "author": "z0ne,dhiyaneshDk",
             "id": "CVE-2021-43798",
             "name": "Grafana v8.x Arbitrary File Read",
@@ -9338,6 +9410,14 @@
             "path": "cves/2021/CVE-2021-31249.yaml"
         },
         {
+            "author": "duty_1g,phyr3wall,Tirtha",
+            "id": "CVE-2021-44529",
+            "name": "Ivanti EPM Cloud Services Appliance code injection",
+            "severity": "critical",
+            "tags": "cve,cve2021,ivanti,epm,csa",
+            "path": "cves/2021/CVE-2021-44529.yaml"
+        },
+        {
             "author": "Evan Rubinstein",
             "id": "CVE-2021-24997",
             "name": "CVE-2021-24997",
@@ -9372,7 +9452,7 @@
         {
             "author": "alph4byt3",
             "id": "CVE-2021-40542",
-            "name": "Opensis-Classic 8.0 Reflected XSS",
+            "name": "Opensis-Classic 8.0 Reflected Cross-Site Scripting",
             "severity": "medium",
             "tags": "xss,cve,cve2021,opensis",
             "path": "cves/2021/CVE-2021-40542.yaml"
@@ -9406,7 +9486,7 @@
             "id": "CVE-2021-42237",
             "name": "Sitecore Experience Platform Pre-Auth RCE",
             "severity": "critical",
-            "tags": "rce,sitecore,deserialization,oast",
+            "tags": "cve,cve2021,rce,sitecore,deserialization,oast",
             "path": "cves/2021/CVE-2021-42237.yaml"
         },
         {
@@ -9450,6 +9530,14 @@
             "path": "cves/2021/CVE-2021-24762.yaml"
         },
         {
+            "author": "dwisiswant0",
+            "id": "CVE-2021-45968",
+            "name": "Pascom CPS Path Traversal",
+            "severity": "high",
+            "tags": "cve,cve2021,pascom,lfi",
+            "path": "cves/2021/CVE-2021-45968.yaml"
+        },
+        {
             "author": "smaranchand",
             "id": "CVE-2021-32682",
             "name": "elFinder - Multiple vulnerabilities leading to RCE",
@@ -9484,7 +9572,7 @@
         {
             "author": "daffainfo,pdteam",
             "id": "CVE-2021-40539",
-            "name": "ManageEngine ADSelfService Plus version 6113 Unauthenticated RCE",
+            "name": "Zoho ManageEngine ADSelfService Plus version 6113 Unauthenticated RCE",
             "severity": "critical",
             "tags": "cve,cve2021,rce,ad,intrusive,manageengine",
             "path": "cves/2021/CVE-2021-40539.yaml"
@@ -9682,6 +9770,14 @@
             "path": "cves/2021/CVE-2021-27310.yaml"
         },
         {
+            "author": "cckuailong",
+            "id": "CVE-2021-41282",
+            "name": "pfSense Arbitrary File Write to RCE",
+            "severity": "high",
+            "tags": "cve,cve2021,pfsense,rce,authenticated",
+            "path": "cves/2021/CVE-2021-41282.yaml"
+        },
+        {
             "author": "dhiyaneshDk",
             "id": "CVE-2021-25063",
             "name": "Contact Form 7 Skins <= 2.5.0 - Reflected Cross-Site Scripting (XSS)",
@@ -9732,7 +9828,7 @@
         {
             "author": "pussycat0x",
             "id": "CVE-2021-40859",
-            "name": "Auerswald COMpact 5500R 7.8A and 8.0B devices Backdoor",
+            "name": "Auerswald COMpact 5500R 7.8A and 8.0B Devices Backdoor",
             "severity": "critical",
             "tags": "cve,cve2021,iot,unauth,voip,auerswald",
             "path": "cves/2021/CVE-2021-40859.yaml"
@@ -10634,6 +10730,14 @@
             "path": "cves/2021/CVE-2021-22986.yaml"
         },
         {
+            "author": "0x_Akoko",
+            "id": "CVE-2021-34805",
+            "name": "FAUST iServer 9.0.018.018.4 - Local File Inclusion",
+            "severity": "high",
+            "tags": "cve,cve2021,faust,iserver,lfi",
+            "path": "cves/2021/CVE-2021-34805.yaml"
+        },
+        {
             "author": "D0rkerDevil",
             "id": "CVE-2021-21985",
             "name": "VMware vSphere Client (HTML5) RCE",
@@ -10684,7 +10788,7 @@
         {
             "author": "c-sh0",
             "id": "CVE-2021-40323",
-            "name": "Cobbler before 3.3.0 allows log poisoning, and resultant Remote Code Execution, via an XMLRPC method",
+            "name": "Cobbler <3.3.0 Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2021,cobbler,rce",
             "path": "cves/2021/CVE-2021-40323.yaml"
@@ -11122,11 +11226,11 @@
             "path": "cves/2014/CVE-2014-4561.yaml"
         },
         {
-            "author": "pentest_swissky",
+            "author": "pentest_swissky,0xelkomy",
             "id": "CVE-2014-6271",
-            "name": "ShellShock",
+            "name": "ShellShock - Remote Code Execution",
             "severity": "critical",
-            "tags": "cve,cve2014,rce",
+            "tags": "cve,cve2014,rce,shellshock",
             "path": "cves/2014/CVE-2014-6271.yaml"
         },
         {
@@ -12518,7 +12622,7 @@
             "id": "CVE-2010-1870",
             "name": "ListSERV Maestro <= 9.0-8 RCE",
             "severity": "info",
-            "tags": "rce,listserv,ognl,cves,cve2010",
+            "tags": "cve,cve2010,rce,listserv,ognl",
             "path": "cves/2010/CVE-2010-1870.yaml"
         },
         {
@@ -12958,7 +13062,7 @@
             "id": "CVE-2016-4975",
             "name": "Apache mod_userdir CRLF injection",
             "severity": "medium",
-            "tags": "crlf,generic,cves,cve2016,apache",
+            "tags": "cve,cve2016,crlf,generic,apache",
             "path": "cves/2016/CVE-2016-4975.yaml"
         },
         {
@@ -13038,7 +13142,7 @@
             "id": "CVE-2016-6210",
             "name": "OpenSSH username enumeration < v7.3",
             "severity": "medium",
-            "tags": "network,openssh",
+            "tags": "cve,cve2016,network,openssh",
             "path": "cves/2016/CVE-2016-6210.yaml"
         },
         {
@@ -15900,7 +16004,7 @@
         {
             "author": "geeknik",
             "id": "CVE-2020-23517",
-            "name": "Aryanic HighMail (High CMS) XSS",
+            "name": "Aryanic HighMail (High CMS) Cross-Site Scripting",
             "severity": "medium",
             "tags": "xss,cve,cve2020",
             "path": "cves/2020/CVE-2020-23517.yaml"
@@ -17054,7 +17158,7 @@
             "id": "CVE-2001-1473",
             "name": "Deprecated SSHv1 Protocol Detection",
             "severity": "high",
-            "tags": "network,ssh,openssh,cves,cves2001",
+            "tags": "cve,cve2001,network,ssh,openssh",
             "path": "cves/2001/CVE-2001-1473.yaml"
         },
         {
@@ -17146,12 +17250,28 @@
             "path": "cves/2022/CVE-2022-25369.yaml"
         },
         {
+            "author": "Remi Gascou (podalirius)",
+            "id": "CVE-2022-26159",
+            "name": "Ametys CMS - Unauthenticated information disclosure",
+            "severity": "medium",
+            "tags": "cve,cve2022,plugin,ametys,cms",
+            "path": "cves/2022/CVE-2022-26159.yaml"
+        },
+        {
             "author": "dwisiswant0",
             "id": "CVE-2022-24990",
             "name": "TerraMaster TOS < 4.2.30 - Server Information Disclosure",
             "severity": "medium",
             "tags": "cve,cve2022,terramaster,exposure",
             "path": "cves/2022/CVE-2022-24990.yaml"
+        },
+        {
+            "author": "xeldax",
+            "id": "CVE-2022-24288",
+            "name": "Apache Airflow CVE-2022-24288 OS Command Injection",
+            "severity": "critical",
+            "tags": "cve,cve2022,airflow,rce",
+            "path": "cves/2022/CVE-2022-24288.yaml"
         },
         {
             "author": "pikpikcu",
@@ -18996,7 +19116,7 @@
         {
             "author": "pussycat0x",
             "id": "acemanager-login",
-            "name": "ACEmanager detect",
+            "name": "ACEmanager Detection",
             "severity": "info",
             "tags": "panel,login,tech,acemanager",
             "path": "exposed-panels/acemanager-login.yaml"
@@ -19072,6 +19192,14 @@
             "severity": "info",
             "tags": "panel,wordpress",
             "path": "exposed-panels/wordpress-login.yaml"
+        },
+        {
+            "author": "Yuzhe-zhang-0",
+            "id": "ansible-semaphore-panel",
+            "name": "Ansible Semaphore Panel Detect",
+            "severity": "info",
+            "tags": "panel,ansible,semaphore,cicd,oss",
+            "path": "exposed-panels/ansible-semaphore-panel.yaml"
         },
         {
             "author": "idealphase",
@@ -19322,6 +19450,14 @@
             "path": "exposed-panels/getsimple-installation.yaml"
         },
         {
+            "author": "Adam Crosser",
+            "id": "sophos-mobile-panel",
+            "name": "Sophos Mobile Panel Detect",
+            "severity": "info",
+            "tags": "panel,sophos",
+            "path": "exposed-panels/sophos-mobile-panel.yaml"
+        },
+        {
             "author": "pikpikcu",
             "id": "librenms-login",
             "name": "LibreNMS Login Panel",
@@ -19420,7 +19556,7 @@
         {
             "author": "pathtaga",
             "id": "ametys-admin-login",
-            "name": "Ametys Admin Login",
+            "name": "Ametys Admin Login Panel",
             "severity": "info",
             "tags": "panel,ametys,cms",
             "path": "exposed-panels/ametys-admin-login.yaml"
@@ -19488,6 +19624,14 @@
             "severity": "info",
             "tags": "panel,bolt,cms,login",
             "path": "exposed-panels/bolt-cms-panel.yaml"
+        },
+        {
+            "author": "thardt-praetorian",
+            "id": "buddy-panel",
+            "name": "Buddy Panel Detect",
+            "severity": "info",
+            "tags": "panel,buddy,cicd",
+            "path": "exposed-panels/buddy-panel.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -19744,6 +19888,14 @@
             "severity": "low",
             "tags": "panel,jmx",
             "path": "exposed-panels/jmx-console.yaml"
+        },
+        {
+            "author": "Adam Crosser",
+            "id": "flowci-panel",
+            "name": "FlowCI Panel Detect",
+            "severity": "info",
+            "tags": "panel,flowci",
+            "path": "exposed-panels/flowci-panel.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -20180,7 +20332,7 @@
         {
             "author": "pussycat0x",
             "id": "3g-wireless-gateway",
-            "name": "3G wireless gateway",
+            "name": "3G Wireless Gateway Detection",
             "severity": "info",
             "tags": "panel,router",
             "path": "exposed-panels/3g-wireless-gateway.yaml"
@@ -20240,6 +20392,14 @@
             "severity": "info",
             "tags": "panel,lacie,login",
             "path": "exposed-panels/lacie-panel.yaml"
+        },
+        {
+            "author": "Higor Melga\u00e7o (eremit4)",
+            "id": "aws-opensearch-login",
+            "name": "AWS OpenSearch Default Login",
+            "severity": "medium",
+            "tags": "panel,opensearch,aws",
+            "path": "exposed-panels/aws-opensearch-login.yaml"
         },
         {
             "author": "princechaddha",
@@ -20376,6 +20536,14 @@
             "severity": "low",
             "tags": "panel",
             "path": "exposed-panels/polycom-admin-detect.yaml"
+        },
+        {
+            "author": "praetorian-thendrickson",
+            "id": "concourse-ci-panel",
+            "name": "Concourse CI Panel Detect",
+            "severity": "info",
+            "tags": "panel,concourse,oss",
+            "path": "exposed-panels/concourse-ci-panel.yaml"
         },
         {
             "author": "princechaddha",
@@ -20586,6 +20754,14 @@
             "path": "exposed-panels/pypicloud-panel.yaml"
         },
         {
+            "author": "praetorian-thendrickson",
+            "id": "avatier-password-management",
+            "name": "Avatier Password Management Panel Detect",
+            "severity": "info",
+            "tags": "panel,avatier",
+            "path": "exposed-panels/avatier-password-management.yaml"
+        },
+        {
             "author": "alifathi-h1",
             "id": "camunda-login-panel",
             "name": "Camunda Login panel",
@@ -20596,7 +20772,7 @@
         {
             "author": "pdteam",
             "id": "ambari-exposure",
-            "name": "Apache Ambari Exposure / Unauthenticated Access",
+            "name": "Apache Ambari Exposure Admin Login Panel",
             "severity": "medium",
             "tags": "panel,apache,ambari,exposure",
             "path": "exposed-panels/ambari-exposure.yaml"
@@ -20608,6 +20784,14 @@
             "severity": "info",
             "tags": "panel",
             "path": "exposed-panels/iomega-emc-shared-nas.yaml"
+        },
+        {
+            "author": "Yuzhe-zhang-0",
+            "id": "zuul-panel",
+            "name": "Zuul Panel Detect",
+            "severity": "info",
+            "tags": "panel,zuul,cicd,oss",
+            "path": "exposed-panels/zuul-panel.yaml"
         },
         {
             "author": "dadevel",
@@ -20650,12 +20834,28 @@
             "path": "exposed-panels/plesk-onyx.yaml"
         },
         {
+            "author": "Adam Crosser",
+            "id": "cofense-vision-panel",
+            "name": "Cofense Vision Panel Detect",
+            "severity": "info",
+            "tags": "panel,cofense,vision",
+            "path": "exposed-panels/cofense-vision-panel.yaml"
+        },
+        {
             "author": "pdteam",
             "id": "metersphere-login",
             "name": "Metersphere Login",
             "severity": "info",
             "tags": "panel,metersphere",
             "path": "exposed-panels/metersphere-login.yaml"
+        },
+        {
+            "author": "thardt-praetorian",
+            "id": "buildbot-panel",
+            "name": "Buildbot Panel Detect",
+            "severity": "info",
+            "tags": "panel,buildbot,cicd",
+            "path": "exposed-panels/buildbot-panel.yaml"
         },
         {
             "author": "github.com/its0x08",
@@ -20778,6 +20978,14 @@
             "path": "exposed-panels/opencast-detect.yaml"
         },
         {
+            "author": "Adam Crosser",
+            "id": "zentral-panel",
+            "name": "Zentral pANEL Detect",
+            "severity": "info",
+            "tags": "panel,zentral,oss",
+            "path": "exposed-panels/zentral-panel.yaml"
+        },
+        {
             "author": "idealphase",
             "id": "strapi-documentation",
             "name": "Strapi Documentation",
@@ -20832,6 +21040,14 @@
             "severity": "info",
             "tags": "panel,labtech",
             "path": "exposed-panels/labtech-panel.yaml"
+        },
+        {
+            "author": "praetorian-thendrickson",
+            "id": "leostream-panel",
+            "name": "Leostream Panel Detect",
+            "severity": "info",
+            "tags": "panel,leostream",
+            "path": "exposed-panels/leostream-panel.yaml"
         },
         {
             "author": "0x240x23elu",
@@ -21090,6 +21306,14 @@
             "path": "exposed-panels/cwp-webpanel.yaml"
         },
         {
+            "author": "praetorian-thendrickson",
+            "id": "splunk-enterprise-panel",
+            "name": "Splunk Enterprise Panel Detect",
+            "severity": "info",
+            "tags": "panel,splunk",
+            "path": "exposed-panels/splunk-enterprise-panel.yaml"
+        },
+        {
             "author": "gy741",
             "id": "iptime-router",
             "name": "ipTIME Router Login",
@@ -21210,6 +21434,14 @@
             "path": "exposed-panels/netis-router.yaml"
         },
         {
+            "author": "Adam Crosser",
+            "id": "stridercd-panel",
+            "name": "StriderCD Panel",
+            "severity": "info",
+            "tags": "panel,cicd,oss,stridercd,strider",
+            "path": "exposed-panels/stridercd-panel.yaml"
+        },
+        {
             "author": "PR3R00T",
             "id": "fortiweb-login",
             "name": "Fortinet FortiWeb Login Panel",
@@ -21240,6 +21472,14 @@
             "severity": "low",
             "tags": "pagespeed",
             "path": "exposed-panels/pagespeed-global-admin.yaml"
+        },
+        {
+            "author": "Adam Crosser",
+            "id": "httpbin-panel",
+            "name": "HTTPBin Panel Detect",
+            "severity": "info",
+            "tags": "panel,httpbin,oss",
+            "path": "exposed-panels/httpbin-panel.yaml"
         },
         {
             "author": "pathtaga",
@@ -21388,10 +21628,18 @@
         {
             "author": "dhiyaneshDK",
             "id": "alienVault-usm",
-            "name": "AlienVault USM",
+            "name": "AlienVault USM Login Panel",
             "severity": "info",
             "tags": "panel,alienvault",
             "path": "exposed-panels/alienvault-usm.yaml"
+        },
+        {
+            "author": "idealphase",
+            "id": "huawei-hg532e-panel",
+            "name": "Huawei HG532e Detection",
+            "severity": "info",
+            "tags": "huawei,panel",
+            "path": "exposed-panels/huawei-hg532e-panel.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -21452,7 +21700,7 @@
         {
             "author": "pdteam",
             "id": "airflow-panel",
-            "name": "Airflow Admin login",
+            "name": "Apache Airflow Admin Login Panel",
             "severity": "info",
             "tags": "panel,apache,airflow",
             "path": "exposed-panels/airflow-panel.yaml"
@@ -21474,11 +21722,11 @@
             "path": "exposed-panels/fatpipe-mpvpn-panel.yaml"
         },
         {
-            "author": "pdteam",
+            "author": "pdteam,idealphase",
             "id": "ansible-tower-exposure",
             "name": "Ansible Tower Exposure",
             "severity": "low",
-            "tags": "panel",
+            "tags": "panel,ansible",
             "path": "exposed-panels/ansible-tower-exposure.yaml"
         },
         {
@@ -21974,7 +22222,7 @@
             "id": "submitty-login",
             "name": "Submitty Login Panel",
             "severity": "info",
-            "tags": "panel,submitty,oos",
+            "tags": "panel,submitty,oss",
             "path": "exposed-panels/submitty-login.yaml"
         },
         {
@@ -22032,6 +22280,14 @@
             "severity": "info",
             "tags": "iot,panel,samsung,printer",
             "path": "exposed-panels/samsung-printer-detect.yaml"
+        },
+        {
+            "author": "Yuzhe-zhang-0",
+            "id": "drone-ci-panel",
+            "name": "Drone CI Panel Detect",
+            "severity": "info",
+            "tags": "panel,droneci,cicd",
+            "path": "exposed-panels/drone-ci-panel.yaml"
         },
         {
             "author": "emadshanab",
@@ -22154,6 +22410,14 @@
             "path": "exposed-panels/zoho/manageengine-apex-helpdesk.yaml"
         },
         {
+            "author": "Podalirius",
+            "id": "tomcat-exposed-docs",
+            "name": "Tomcat exposed docs",
+            "severity": "info",
+            "tags": "version,tomcat,docs",
+            "path": "exposed-panels/tomcat/tomcat-exposed-docs.yaml"
+        },
+        {
             "author": "geeknik",
             "id": "ibm-security-access-manager",
             "name": "Detects IBM Security Access Manager",
@@ -22202,6 +22466,22 @@
             "path": "exposed-panels/ibm/ibm-websphere-panel.yaml"
         },
         {
+            "author": "Adam Crosser",
+            "id": "gradle-enterprise-panel",
+            "name": "Gradle Enterprise Panel Detect",
+            "severity": "info",
+            "tags": "panel,gradle",
+            "path": "exposed-panels/gradle/gradle-enterprise-panel.yaml"
+        },
+        {
+            "author": "Adam Crosser",
+            "id": "gradle-cache-node-detect",
+            "name": "Gradle Enterprise Build Cache Node Detect",
+            "severity": "info",
+            "tags": "panel,gradle,cache",
+            "path": "exposed-panels/gradle/gradle-cache-node-detect.yaml"
+        },
+        {
             "author": "dhiyaneshDK",
             "id": "adobe-experience-manager-login",
             "name": "Adobe-Experience-Manager",
@@ -22234,6 +22514,22 @@
             "path": "exposed-panels/adobe/adobe-component-login.yaml"
         },
         {
+            "author": "Podalirius",
+            "id": "arcgis-panel",
+            "name": "ArcGIS Enterprise Panel",
+            "severity": "info",
+            "tags": "docs,arcgis,cms,panel",
+            "path": "exposed-panels/arcgis/arcgis-panel.yaml"
+        },
+        {
+            "author": "Podalirius",
+            "id": "arcgis-rest-api",
+            "name": "ArcGIS exposed docs",
+            "severity": "info",
+            "tags": "api,arcgis,cms",
+            "path": "exposed-panels/arcgis/arcgis-rest-api.yaml"
+        },
+        {
             "author": "organiccrap",
             "id": "tomcat-manager-pathnormalization",
             "name": "Tomcat Manager Path Normalization",
@@ -22244,7 +22540,7 @@
         {
             "author": "Ahmed Sherif,geeknik",
             "id": "public-tomcat-manager",
-            "name": "tomcat manager disclosure",
+            "name": "Apache Tomcat Manager Disclosure",
             "severity": "info",
             "tags": "panel,tomcat,apache",
             "path": "exposed-panels/apache/public-tomcat-manager.yaml"
@@ -22252,10 +22548,18 @@
         {
             "author": "pikpikcu",
             "id": "apache-apisix-panel",
-            "name": "Apache APISIX Panel detect",
+            "name": "Apache APISIX Login Panel",
             "severity": "info",
             "tags": "apache,apisix,panel",
             "path": "exposed-panels/apache/apache-apisix-panel.yaml"
+        },
+        {
+            "author": "Podalirius",
+            "id": "joget-panel",
+            "name": "JoGet Login Panel",
+            "severity": "info",
+            "tags": "panel,joget",
+            "path": "exposed-panels/joget/joget-panel.yaml"
         },
         {
             "author": "organiccrap",
@@ -22424,6 +22728,14 @@
             "severity": "info",
             "tags": "symantec,panel,login",
             "path": "exposed-panels/symantec/symantec-dlp-login.yaml"
+        },
+        {
+            "author": "Podalirius",
+            "id": "ixbusweb-panel",
+            "name": "iXBusWeb Panel Detect",
+            "severity": "info",
+            "tags": "panel,ixbusweb,cms",
+            "path": "exposed-panels/ixbus/ixbusweb-version.yaml"
         },
         {
             "author": "dwisiswant0",
@@ -23634,6 +23946,14 @@
             "path": "token-spray/api-lokalise.yaml"
         },
         {
+            "author": "Adam Crosser",
+            "id": "api-gitlab",
+            "name": "Gitlab API Test",
+            "severity": "info",
+            "tags": "token-spray,gitlab",
+            "path": "token-spray/api-gitlab.yaml"
+        },
+        {
             "author": "zzeitlin",
             "id": "api-npm",
             "name": "NPM API Test",
@@ -23696,6 +24016,14 @@
             "severity": "info",
             "tags": "token-spray,binance",
             "path": "token-spray/api-binance.yaml"
+        },
+        {
+            "author": "Adam Crosser",
+            "id": "api-fastly",
+            "name": "Fastly API Test",
+            "severity": "info",
+            "tags": "token-spray,fastly",
+            "path": "token-spray/api-fastly.yaml"
         },
         {
             "author": "daffainfo",
@@ -24693,7 +25021,7 @@
             "author": "pikpikcu",
             "id": "CNVD-2021-17369",
             "name": "Ruijie Smartweb Management System Password Information Disclosure",
-            "severity": "medium",
+            "severity": "high",
             "tags": "ruijie,disclosure,cnvd,cnvd2021",
             "path": "cnvd/2021/CNVD-2021-17369.yaml"
         },
@@ -24706,12 +25034,28 @@
             "path": "cnvd/2021/CNVD-2021-49104.yaml"
         },
         {
+            "author": "pikpikcu,daffainfo",
+            "id": "CNVD-2021-28277",
+            "name": "Landray-OA Arbitrary File Download",
+            "severity": "high",
+            "tags": "landray,lfi,cnvd,cnvd2021",
+            "path": "cnvd/2021/CNVD-2021-28277.yaml"
+        },
+        {
             "author": "daffainfo",
             "id": "CNVD-2021-09650",
             "name": "Ruijie EWEB Gateway Platform Command Execution",
             "severity": "critical",
             "tags": "ruijie,cnvd,cnvd2021,rce",
             "path": "cnvd/2021/CNVD-2021-09650.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "CNVD-2021-26422",
+            "name": "eYouMail - Remote Code Execution",
+            "severity": "critical",
+            "tags": "eyoumail,rce,cnvd,cnvd2021",
+            "path": "cnvd/2021/CNVD-2021-26422.yaml"
         },
         {
             "author": "pikpikcu",
@@ -25576,6 +25920,14 @@
             "severity": "high",
             "tags": "default-login,sequoiadb",
             "path": "default-logins/sequoiadb/sequoiadb-default-login.yaml"
+        },
+        {
+            "author": "For3stCo1d",
+            "id": "mantisbt-default-credential",
+            "name": "MantisBT Default Credential",
+            "severity": "high",
+            "tags": "mantisbt,default-login",
+            "path": "default-logins/mantisbt/mantisbt-default-credential.yaml"
         },
         {
             "author": "pikpikcu",
