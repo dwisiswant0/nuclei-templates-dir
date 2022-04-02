@@ -1,5 +1,5 @@
 {
-    "version": "v8.9.3",
+    "version": "v8.9.4",
     "data": [
         {
             "author": "iamthefrogy",
@@ -1132,7 +1132,7 @@
         {
             "author": "daffainfo",
             "id": "CVE-2018-11709",
-            "name": "wpForo Forum <= 1.4.11 - Reflected Cross-Site Scripting (XSS)",
+            "name": "WordPress wpForo Forum <= 1.4.11 - Reflected Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2018,wordpress,xss,wp-plugin",
             "path": "cves/2018/CVE-2018-11709.yaml"
@@ -2012,7 +2012,7 @@
         {
             "author": "geeknik",
             "id": "CVE-2019-15859",
-            "name": "Socomec DIRIS Password Disclosure",
+            "name": "Socomec DIRIS A-40 Devices Password Disclosure",
             "severity": "critical",
             "tags": "cve,cve2019,disclosure,socomec,diris,iot",
             "path": "cves/2019/CVE-2019-15859.yaml"
@@ -2028,7 +2028,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2019-16313",
-            "name": "ifw8 Router ROM v4.31 allows credential disclosure",
+            "name": "ifw8 Router ROM v4.31 Credential Discovery",
             "severity": "high",
             "tags": "cve,cve2019,exposure,router,iot",
             "path": "cves/2019/CVE-2019-16313.yaml"
@@ -2156,7 +2156,7 @@
         {
             "author": "Suman_Kar",
             "id": "CVE-2019-13101",
-            "name": "D-Link DIR-600M - Authentication Bypass",
+            "name": "D-Link DIR-600M Authentication Bypass",
             "severity": "critical",
             "tags": "cve,cve2019,dlink,router,iot",
             "path": "cves/2019/CVE-2019-13101.yaml"
@@ -2172,7 +2172,7 @@
         {
             "author": "davidmckennirey",
             "id": "CVE-2019-10068",
-            "name": "Kentico CMS Insecure Deserialization RCE",
+            "name": "Kentico CMS Insecure Deserialization Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2019,rce,deserialization,kentico,iis",
             "path": "cves/2019/CVE-2019-10068.yaml"
@@ -2236,7 +2236,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2019-11580",
-            "name": "Atlassian Crowd & Crowd Data Center - Unauthenticated RCE",
+            "name": "Atlassian Crowd and Crowd Data Center Unauthenticated Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2019,atlassian,rce",
             "path": "cves/2019/CVE-2019-11580.yaml"
@@ -2284,7 +2284,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2019-16662",
-            "name": "rConfig 3.9.2 - Remote Code Execution",
+            "name": "rConfig 3.9.2 Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2019,rce,intrusive,rconfig",
             "path": "cves/2019/CVE-2019-16662.yaml"
@@ -2308,7 +2308,7 @@
         {
             "author": "princechaddha",
             "id": "CVE-2019-10758",
-            "name": "Mongo-Express Remote Code Execution - CVE-2019-10758",
+            "name": "mongo-express Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2019,mongo,mongo-express",
             "path": "cves/2019/CVE-2019-10758.yaml"
@@ -2372,7 +2372,7 @@
         {
             "author": "ree4pwn",
             "id": "CVE-2019-11581",
-            "name": "Atlassian Jira template injection",
+            "name": "Atlassian Jira Server-Side Template Injection",
             "severity": "critical",
             "tags": "cve,cve2019,atlassian,jira,ssti,rce",
             "path": "cves/2019/CVE-2019-11581.yaml"
@@ -2564,7 +2564,7 @@
         {
             "author": "organiccrap",
             "id": "CVE-2019-11510",
-            "name": "Pulse Connect Secure SSL VPN arbitrary file read vulnerability",
+            "name": "Pulse Connect Secure SSL VPN Arbitrary File Read",
             "severity": "critical",
             "tags": "cve,cve2019,pulsesecure,lfi",
             "path": "cves/2019/CVE-2019-11510.yaml"
@@ -2572,7 +2572,7 @@
         {
             "author": "madrobot",
             "id": "CVE-2019-12314",
-            "name": "Deltek Maconomy 2.2.5 LFIl",
+            "name": "Deltek Maconomy 2.2.5 Local File Inclusion",
             "severity": "critical",
             "tags": "cve,cve2019,lfi",
             "path": "cves/2019/CVE-2019-12314.yaml"
@@ -2740,7 +2740,7 @@
         {
             "author": "madrobot",
             "id": "CVE-2019-16759",
-            "name": "RCE in vBulletin v5.0.0-v5.5.4 fix bypass",
+            "name": "vBulletin v5.0.0-v5.5.4 Remote Command Execution",
             "severity": "critical",
             "tags": "cve,cve2019,vbulletin,rce",
             "path": "cves/2019/CVE-2019-16759.yaml"
@@ -2796,7 +2796,7 @@
         {
             "author": "RedTeamBrasil",
             "id": "CVE-2019-10232",
-            "name": "Pre-authenticated SQL injection in GLPI <= 9.3.3",
+            "name": "Teclib GLPI <= 9.3.3 Unauthenticated SQL Injection",
             "severity": "critical",
             "tags": "cve,cve2019,glpi,sqli,injection",
             "path": "cves/2019/CVE-2019-10232.yaml"
@@ -3348,7 +3348,7 @@
         {
             "author": "whoever",
             "id": "CVE-2021-37704",
-            "name": "phpfastcache phpinfo exposure",
+            "name": "phpinfo Resource Exposure",
             "severity": "medium",
             "tags": "cve,cve2021,exposure,phpfastcache,phpinfo",
             "path": "cves/2021/CVE-2021-37704.yaml"
@@ -3388,7 +3388,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2021-3017",
-            "name": "Intelbras WIN 300/WRN 342 Disclosure",
+            "name": "Intelbras WIN 300/WRN 342 Credential Disclosure",
             "severity": "high",
             "tags": "cve,cve2021,exposure,router",
             "path": "cves/2021/CVE-2021-3017.yaml"
@@ -4026,6 +4026,14 @@
             "path": "cves/2021/CVE-2021-41649.yaml"
         },
         {
+            "author": "Adam Crosser",
+            "id": "CVE-2021-21311",
+            "name": "Adminer SSRF Using Verbose Error Messages",
+            "severity": "high",
+            "tags": "cve,cve2021,adminer,ssrf",
+            "path": "cves/2021/CVE-2021-21311.yaml"
+        },
+        {
             "author": "gy741",
             "id": "CVE-2021-21816",
             "name": "D-LINK DIR-3040 - Syslog Information Disclosure",
@@ -4292,7 +4300,7 @@
         {
             "author": "geeknik",
             "id": "CVE-2021-37573",
-            "name": "Tiny Java Web Server - Reflected XSS",
+            "name": "Tiny Java Web Server - Reflected Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,xss,tjws,java",
             "path": "cves/2021/CVE-2021-37573.yaml"
@@ -5224,6 +5232,14 @@
             "severity": "medium",
             "tags": "cve,cve2021,chiyu,xss,iot",
             "path": "cves/2021/CVE-2021-31250.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "CVE-2021-46387",
+            "name": "Zyxel ZyWALL 2 Plus Internet Security Appliance - Cross-Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2021,xss,zyxel",
+            "path": "cves/2021/CVE-2021-46387.yaml"
         },
         {
             "author": "_0xf4n9x_",
@@ -8426,7 +8442,7 @@
             "path": "cves/2022/CVE-2022-0148.yaml"
         },
         {
-            "author": "Mr-xn",
+            "author": "Mr-xn,Adam Crosser",
             "id": "CVE-2022-22963",
             "name": "Spring Cloud Function SPEL RCE",
             "severity": "critical",
@@ -8448,6 +8464,14 @@
             "severity": "medium",
             "tags": "cve,cve2022,shenyu,unauth,apache",
             "path": "cves/2022/CVE-2022-23944.yaml"
+        },
+        {
+            "author": "justmumu,arall,dhiyaneshDK,akincibor",
+            "id": "CVE-2022-22965",
+            "name": "Spring Framework RCE via Data Binding on JDK 9+ (Spring4Shell)",
+            "severity": "critical",
+            "tags": "cve,cve2022,rce,spring,injection,intrusive",
+            "path": "cves/2022/CVE-2022-22965.yaml"
         },
         {
             "author": "gy741",
@@ -13498,6 +13522,14 @@
             "path": "technologies/pega-detect.yaml"
         },
         {
+            "author": "Adam Crosser",
+            "id": "spring-detect",
+            "name": "Java Spring Detection",
+            "severity": "info",
+            "tags": "tech,java,spring",
+            "path": "technologies/spring-detect.yaml"
+        },
+        {
             "author": "idealphase",
             "id": "apollo-server-detect",
             "name": "Apollo Server GraphQL introspection detection",
@@ -14330,20 +14362,116 @@
             "path": "technologies/kubernetes/kubernetes-version.yaml"
         },
         {
-            "author": "pussycat0x",
-            "id": "kubernetes-enterprise-manager",
-            "name": "Detect Kubernetes Enterprise Manager",
+            "author": "sharath",
+            "id": "etcd-keys",
+            "name": "Etcd Keys",
             "severity": "info",
-            "tags": "tech,kubernetes",
-            "path": "technologies/kubernetes/kubernetes-enterprise-manager.yaml"
+            "tags": "tech,k8s,kubernetes,devops,etcd",
+            "path": "technologies/kubernetes/etcd/etcd-keys.yaml"
         },
         {
-            "author": "pussycat0x",
-            "id": "kubernetes-mirantis",
-            "name": "Detect Mirantis Kubernetes Engine",
+            "author": "sharath",
+            "id": "kube-api-nodes",
+            "name": "Kube API Nodes",
             "severity": "info",
-            "tags": "tech,kubernetes",
-            "path": "technologies/kubernetes/kubernetes-mirantis.yaml"
+            "tags": "tech,k8s,kubernetes,devops,kube",
+            "path": "technologies/kubernetes/kube-api/kube-api-nodes.yaml"
+        },
+        {
+            "author": "sharath",
+            "id": "kube-api-secrets",
+            "name": "Kube API Secrets",
+            "severity": "info",
+            "tags": "tech,k8s,kubernetes,devops,kube",
+            "path": "technologies/kubernetes/kube-api/kube-api-secrets.yaml"
+        },
+        {
+            "author": "sharath",
+            "id": "kube-api-pods",
+            "name": "Kube API Pods",
+            "severity": "info",
+            "tags": "tech,k8s,kubernetes,devops,kube",
+            "path": "technologies/kubernetes/kube-api/kube-api-pods.yaml"
+        },
+        {
+            "author": "sharath",
+            "id": "kube-api-roles",
+            "name": "Kube API Roles",
+            "severity": "info",
+            "tags": "tech,k8s,kubernetes,devops,kube",
+            "path": "technologies/kubernetes/kube-api/kube-api-roles.yaml"
+        },
+        {
+            "author": "sharath,raesene",
+            "id": "kube-api-version",
+            "name": "Kube API Version",
+            "severity": "info",
+            "tags": "tech,k8s,kubernetes,devops,kube",
+            "path": "technologies/kubernetes/kube-api/kube-api-version.yaml"
+        },
+        {
+            "author": "sharath",
+            "id": "kube-api-deployments",
+            "name": "Kube API Deployments",
+            "severity": "info",
+            "tags": "tech,k8s,kubernetes,devops,kube",
+            "path": "technologies/kubernetes/kube-api/kube-api-deployments.yaml"
+        },
+        {
+            "author": "sharath",
+            "id": "kube-api-services",
+            "name": "Kube API Services",
+            "severity": "info",
+            "tags": "tech,k8s,kubernetes,devops,kube",
+            "path": "technologies/kubernetes/kube-api/kube-api-services.yaml"
+        },
+        {
+            "author": "sharath",
+            "id": "kube-api-namespaces",
+            "name": "Kube API Namespaces",
+            "severity": "info",
+            "tags": "tech,k8s,kubernetes,devops,kube",
+            "path": "technologies/kubernetes/kube-api/kube-api-namespaces.yaml"
+        },
+        {
+            "author": "sharath",
+            "id": "kubelet-metrics",
+            "name": "Kubelet Metrics",
+            "severity": "info",
+            "tags": "tech,k8s,kubernetes,devops,kubelet",
+            "path": "technologies/kubernetes/kubelet/kubelet-metrics.yaml"
+        },
+        {
+            "author": "sharath",
+            "id": "kubelet-scan",
+            "name": "Kubelet Running Pods",
+            "severity": "info",
+            "tags": "tech,k8s,kubernetes,devops,kubelet",
+            "path": "technologies/kubernetes/kubelet/kubelet-runningpods.yaml"
+        },
+        {
+            "author": "sharath",
+            "id": "kubelet-healthz",
+            "name": "Kubelet Healthz",
+            "severity": "info",
+            "tags": "tech,k8s,kubernetes,devops,kubelet",
+            "path": "technologies/kubernetes/kubelet/kubelet-healthz.yaml"
+        },
+        {
+            "author": "sharath",
+            "id": "kubelet-pods",
+            "name": "Kubelet Scan",
+            "severity": "info",
+            "tags": "tech,k8s,kubernetes,devops,kubelet,pods",
+            "path": "technologies/kubernetes/kubelet/kubelet-pods.yaml"
+        },
+        {
+            "author": "sharath",
+            "id": "kubelet-stats",
+            "name": "Kubelet Stats",
+            "severity": "info",
+            "tags": "tech,k8s,kubernetes,devops,kubelet",
+            "path": "technologies/kubernetes/kubelet/kubelet-stats.yaml"
         },
         {
             "author": "dhiyaneshDK,pussycat0x",
@@ -16162,6 +16290,14 @@
             "path": "exposed-panels/sap-hana-xsengine-panel.yaml"
         },
         {
+            "author": "idealphase",
+            "id": "3cx-phone-webclient-management-panel",
+            "name": "3CX Phone System Webclient Management Console",
+            "severity": "info",
+            "tags": "panel,3cx",
+            "path": "exposed-panels/3cx-phone-webclient-management-panel.yaml"
+        },
+        {
             "author": "ffffffff0x",
             "id": "gocron-panel",
             "name": "Gocron Panel Detect",
@@ -16208,6 +16344,14 @@
             "severity": "info",
             "tags": "openbmcs,detect",
             "path": "exposed-panels/openbmcs-detect.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "kubernetes-enterprise-manager",
+            "name": "Detect Kubernetes Enterprise Manager",
+            "severity": "info",
+            "tags": "tech,kubernetes",
+            "path": "exposed-panels/kubernetes-enterprise-manager.yaml"
         },
         {
             "author": "gy741",
@@ -16558,7 +16702,7 @@
             "id": "adminer-panel",
             "name": "Adminer Login Panel",
             "severity": "info",
-            "tags": "panel,adminer,login",
+            "tags": "panel,adminer",
             "path": "exposed-panels/adminer-panel.yaml"
         },
         {
@@ -18130,6 +18274,14 @@
             "path": "exposed-panels/openx-panel.yaml"
         },
         {
+            "author": "pussycat0x",
+            "id": "kubernetes-mirantis",
+            "name": "Detect Mirantis Kubernetes Engine",
+            "severity": "info",
+            "tags": "tech,kubernetes",
+            "path": "exposed-panels/kubernetes-mirantis.yaml"
+        },
+        {
             "author": "e_schultze_",
             "id": "weave-scope-dashboard",
             "name": "Weave Scope Dashboard",
@@ -18528,6 +18680,14 @@
             "severity": "info",
             "tags": "panel,phoronix",
             "path": "exposed-panels/phoronix-pane;.yaml"
+        },
+        {
+            "author": "idealphase",
+            "id": "3cx-phone-management-panel",
+            "name": "3CX Phone System Management Console Detect",
+            "severity": "info",
+            "tags": "panel,3cx",
+            "path": "exposed-panels/3cx-phone-management-panel.yaml"
         },
         {
             "author": "ehsahil",
@@ -19572,7 +19732,7 @@
         {
             "author": "geeknik",
             "id": "simple-crm-sql-injection",
-            "name": "Simple CRM 3.0 - 'email' SQL injection & Authentication Bypass",
+            "name": "Simple CRM 3.0 SQL Injection and Authentication Bypass",
             "severity": "high",
             "tags": "sqli,simplecrm,auth-bypass,injection",
             "path": "vulnerabilities/simplecrm/simple-crm-sql-injection.yaml"
@@ -19725,8 +19885,8 @@
             "author": "dhiyaneshDK",
             "id": "oracle-siebel-xss",
             "name": "Oracle Siebel Loyalty 8.1 - Cross-Site Scripting",
-            "severity": "medium",
-            "tags": "xss,oracle",
+            "severity": "high",
+            "tags": "xss,oracle,siebel",
             "path": "vulnerabilities/oracle/oracle-siebel-xss.yaml"
         },
         {
@@ -20380,7 +20540,7 @@
         {
             "author": "ffffffff0x",
             "id": "antsword-backdoor",
-            "name": "Antsword backdook",
+            "name": "Antsword Backdoor Identified",
             "severity": "critical",
             "tags": "backdoor,antsword",
             "path": "vulnerabilities/other/antsword-backdoor.yaml"
@@ -20404,8 +20564,8 @@
         {
             "author": "gy741",
             "id": "microweber-xss",
-            "name": "Microweber XSS",
-            "severity": "medium",
+            "name": "Microweber Cross-Site Scripting",
+            "severity": "high",
             "tags": "microweber,xss,oss",
             "path": "vulnerabilities/other/microweber-xss.yaml"
         },
@@ -22388,7 +22548,7 @@
         {
             "author": "dhiyaneshDK",
             "id": "hide-security-enhancer-lfi",
-            "name": "WP Hide Security Enhancer 1.3.9.2 - Arbitrary File Download Vulnerability",
+            "name": "WordPress Hide Security Enhancer 1.3.9.2 Local File Inclusion",
             "severity": "high",
             "tags": "wordpress,wp-plugin,lfi,wp",
             "path": "vulnerabilities/wordpress/hide-security-enhancer-lfi.yaml"
@@ -22564,7 +22724,7 @@
         {
             "author": "0x_Akoko",
             "id": "issuu-panel-lfi",
-            "name": "Wordpress Plugin Issuu Panel - RFI & LFI",
+            "name": "Wordpress Plugin Issuu Panel Remote/Local File Inclusion",
             "severity": "high",
             "tags": "wp-plugin,wordpress,lfi,rfi",
             "path": "vulnerabilities/wordpress/issuu-panel-lfi.yaml"
