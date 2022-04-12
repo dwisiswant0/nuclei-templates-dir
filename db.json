@@ -1,5 +1,5 @@
 {
-    "version": "v8.9.5",
+    "version": "v8.9.6",
     "data": [
         {
             "author": "xElkomy",
@@ -4044,7 +4044,7 @@
         {
             "author": "idealphase",
             "id": "open-virtualization-manager-panel",
-            "name": "Open Virtualization Userportal & Webadmin Panel",
+            "name": "Open Virtualization Userportal & Webadmin Panel Detection",
             "severity": "info",
             "tags": "panel,ovirt,oss",
             "path": "exposed-panels/open-virtualization-manager-panel.yaml"
@@ -6562,6 +6562,14 @@
             "path": "default-logins/apache/apisix-default-login.yaml"
         },
         {
+            "author": "ritikchaddha",
+            "id": "dubbo-admin-default-login",
+            "name": "Dubbo Admin Default Login",
+            "severity": "high",
+            "tags": "dubbo,apache,default-login",
+            "path": "default-logins/apache/dubbo-admin-default-login.yaml"
+        },
+        {
             "author": "For3stCo1d",
             "id": "mantisbt-default-credential",
             "name": "MantisBT Default Admin Login",
@@ -8426,6 +8434,14 @@
             "path": "vulnerabilities/other/webui-rce.yaml"
         },
         {
+            "author": "ritikchaddha",
+            "id": "hanming-lfr",
+            "name": "Hanming Video Conferencing File Read",
+            "severity": "high",
+            "tags": "lfr,hanming,lfi",
+            "path": "vulnerabilities/other/hanming-lfr.yaml"
+        },
+        {
             "author": "infosecsanyam",
             "id": "ms-exchange-server-reflected-xss",
             "name": "MS Exchange Server XSS",
@@ -8440,6 +8456,14 @@
             "severity": "high",
             "tags": "fatpipe,auth-bypass,router",
             "path": "vulnerabilities/other/fatpipe-auth-bypass.yaml"
+        },
+        {
+            "author": "Akincibor",
+            "id": "unauth-rlm",
+            "name": "Unauthenticated Reprise License Manager",
+            "severity": "critical",
+            "tags": "unauth,rlm",
+            "path": "vulnerabilities/other/unauth-rlm.yaml"
         },
         {
             "author": "pikpikcu",
@@ -8572,8 +8596,8 @@
         {
             "author": "geeknik",
             "id": "chamilo-lms-xss",
-            "name": "Chamilo LMS Cross Site Scripting",
-            "severity": "medium",
+            "name": "Chamilo LMS 1.11.14 Cross-Site Scripting",
+            "severity": "high",
             "tags": "xss,chamilo",
             "path": "vulnerabilities/other/chamilo-lms-xss.yaml"
         },
@@ -8888,6 +8912,14 @@
             "severity": "critical",
             "tags": "commax,exposure,camera,iot",
             "path": "vulnerabilities/other/commax-credentials-disclosure.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "tongda-session-disclosure",
+            "name": "Tongda User Session Disclosure",
+            "severity": "medium",
+            "tags": "tongda,disclosure",
+            "path": "vulnerabilities/other/tongda-session-disclosure.yaml"
         },
         {
             "author": "Gal Nagli",
@@ -9560,6 +9592,14 @@
             "severity": "medium",
             "tags": "empirecms,xss",
             "path": "vulnerabilities/other/empirecms-xss.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "yongyou-u8-oa-sqli",
+            "name": "Yongyou U8 OA Sqli",
+            "severity": "high",
+            "tags": "yongyou,u8,oa,sqli",
+            "path": "vulnerabilities/other/yongyou-u8-oa-sqli.yaml"
         },
         {
             "author": "gy741",
@@ -12572,7 +12612,7 @@
         {
             "author": "idealphase",
             "id": "open-virtualization-manager-detect",
-            "name": "Open Virtualization Manager Detect",
+            "name": "Open Virtualization Manager Detection",
             "severity": "info",
             "tags": "tech,ovirt",
             "path": "technologies/open-virtualization-manager-detect.yaml"
@@ -16962,14 +17002,6 @@
             "path": "cves/2017/CVE-2017-18638.yaml"
         },
         {
-            "author": "0x_Akoko",
-            "id": "CVE-2021-28377",
-            "name": "ChronoForums 2.0.11 - Directory Traversal",
-            "severity": "high",
-            "tags": "cve,cve2021,chronoforums,lfi,joomla",
-            "path": "cves/2017/CVE-2021-28377.yaml"
-        },
-        {
             "author": "dwisiswant0",
             "id": "CVE-2017-3881",
             "name": "Cisco IOS 12.2(55)SE11 Remote Code Execution",
@@ -17386,6 +17418,22 @@
             "path": "cves/2022/CVE-2022-23808.yaml"
         },
         {
+            "author": "Akincibor",
+            "id": "CVE-2022-28365",
+            "name": "Reprise License Manager 14.2 - Information Disclosure",
+            "severity": "low",
+            "tags": "cve,cve2022,exposure,rlm",
+            "path": "cves/2022/CVE-2022-28365.yaml"
+        },
+        {
+            "author": "sherlocksecurity",
+            "id": "CVE-2022-22954",
+            "name": "VMware Workspace ONE Access - Freemarker SSTI",
+            "severity": "critical",
+            "tags": "cve,cve2022,vmware,ssti,workspaceone",
+            "path": "cves/2022/CVE-2022-22954.yaml"
+        },
+        {
             "author": "cckuakilong",
             "id": "CVE-2022-23944",
             "name": "Apache ShenYu Admin Unauth Access",
@@ -17600,6 +17648,14 @@
             "severity": "medium",
             "tags": "cve,cve2022,mastodon,prototype",
             "path": "cves/2022/CVE-2022-0432.yaml"
+        },
+        {
+            "author": "Akincibor",
+            "id": "CVE-2022-28363",
+            "name": "Reprise License Manager 14.2 - Reflected Cross-Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2022,xss,rlm",
+            "path": "cves/2022/CVE-2022-28363.yaml"
         },
         {
             "author": "pikpikcu",
@@ -18920,6 +18976,14 @@
             "severity": "high",
             "tags": "cve,cve2015,pirelli,router,disclosure",
             "path": "cves/2015/CVE-2015-0554.yaml"
+        },
+        {
+            "author": "0x_Akoko",
+            "id": "CVE-2015-3897",
+            "name": "Bonita BPM 6.5.1 - Unauthenticated Directory Traversal",
+            "severity": "high",
+            "tags": "cve,cve2015,bonita,lfi,unauth",
+            "path": "cves/2015/CVE-2015-3897.yaml"
         },
         {
             "author": "princechaddha",
@@ -20642,6 +20706,14 @@
             "path": "cves/2021/CVE-2021-43778.yaml"
         },
         {
+            "author": "0x_Akoko",
+            "id": "CVE-2021-28377",
+            "name": "ChronoForums 2.0.11 - Directory Traversal",
+            "severity": "high",
+            "tags": "cve,cve2021,chronoforums,lfi,joomla",
+            "path": "cves/2021/CVE-2021-28377.yaml"
+        },
+        {
             "author": "dhiyaneshDK",
             "id": "CVE-2021-39320",
             "name": "WordPress underConstruction Plugin< 1.19 - Reflected Cross-Site Scripting",
@@ -21764,7 +21836,7 @@
         {
             "author": "madrobot",
             "id": "CVE-2020-10546",
-            "name": "rConfig 3.9.4 SQLi",
+            "name": "rConfig 3.9.4 SQL Injection",
             "severity": "critical",
             "tags": "cve,cve2020,rconfig,sqli",
             "path": "cves/2020/CVE-2020-10546.yaml"
@@ -22012,7 +22084,7 @@
         {
             "author": "madrobot",
             "id": "CVE-2020-10548",
-            "name": "rConfig 3.9.4 SQLi",
+            "name": "rConfig 3.9.4 - SQL Injection",
             "severity": "critical",
             "tags": "cve,cve2020,rconfig,sqli",
             "path": "cves/2020/CVE-2020-10548.yaml"
@@ -22148,7 +22220,7 @@
         {
             "author": "madrobot",
             "id": "CVE-2020-10547",
-            "name": "rConfig 3.9.4 SQLi",
+            "name": "rConfig 3.9.4 SQL Injection",
             "severity": "critical",
             "tags": "cve,cve2020,rconfig,sqli",
             "path": "cves/2020/CVE-2020-10547.yaml"
@@ -22564,7 +22636,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2020-6637",
-            "name": "OpenSIS v7.3 unauthenticated SQL injection",
+            "name": "OpenSIS v7.3 unauthenticated SQL Injection",
             "severity": "critical",
             "tags": "cve,cve2020,sqli,opensis",
             "path": "cves/2020/CVE-2020-6637.yaml"
@@ -22700,7 +22772,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2020-35848",
-            "name": "Cockpit prior to 0.12.0 NoSQL injection in /auth/newpassword",
+            "name": "Cockpit <0.12.0 NoSQL Injection",
             "severity": "critical",
             "tags": "cve,cve2020,nosqli,sqli,cockpit,injection",
             "path": "cves/2020/CVE-2020-35848.yaml"
@@ -23692,7 +23764,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2018-1000533",
-            "name": "GitList < 0.6.0 RCE",
+            "name": "GitList < 0.6.0 Remote Code Execution",
             "severity": "critical",
             "tags": "rce,git,cve,cve2018,gitlist",
             "path": "cves/2018/CVE-2018-1000533.yaml"
@@ -23988,7 +24060,7 @@
         {
             "author": "nadino",
             "id": "CVE-2018-18069",
-            "name": "Wordpress unauthenticated stored xss",
+            "name": "WordPress sitepress-multilingual-cms 3.6.3 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2018,wordpress,xss,plugin",
             "path": "cves/2018/CVE-2018-18069.yaml"
@@ -24436,7 +24508,7 @@
         {
             "author": "Mubassirpatel",
             "id": "ioncube-loader-wizard",
-            "name": "Ioncube Loader Wizard disclosure",
+            "name": "ioncube Loader Wizard Disclosure",
             "severity": "medium",
             "tags": "ioncube,disclosure,exposure",
             "path": "exposures/files/ioncube-loader-wizard.yaml"
@@ -26756,7 +26828,7 @@
         {
             "author": "oppsec",
             "id": "joomla-manifest-file",
-            "name": "Joomla manifest file disclosure",
+            "name": "Joomla Manifest File Disclosure",
             "severity": "info",
             "tags": "misc,joomla",
             "path": "miscellaneous/joomla-manifest-file.yaml"
