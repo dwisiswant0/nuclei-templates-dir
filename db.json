@@ -1,5 +1,5 @@
 {
-    "version": "v8.9.8",
+    "version": "v8.9.9",
     "data": [
         {
             "author": "princechaddha",
@@ -632,6 +632,14 @@
             "severity": "info",
             "tags": "tech,erxes",
             "path": "technologies/erxes-detect.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "sucuri-firewall",
+            "name": "Sucuri Website Firewall - Not Configured",
+            "severity": "info",
+            "tags": "tech,sucuri,firewall",
+            "path": "technologies/sucuri-firewall.yaml"
         },
         {
             "author": "pikpikcu",
@@ -1466,9 +1474,9 @@
             "path": "technologies/nginx/default-nginx-page.yaml"
         },
         {
-            "author": "philippedelteil",
+            "author": "philippedelteil,daffainfo",
             "id": "nginx-version",
-            "name": "nginx version detect",
+            "name": "Nginx version detect",
             "severity": "info",
             "tags": "tech,nginx",
             "path": "technologies/nginx/nginx-version.yaml"
@@ -1882,6 +1890,14 @@
             "path": "technologies/microsoft/microsoft-sharepoint-detect.yaml"
         },
         {
+            "author": "pikpikcu,dhiyaneshDK",
+            "id": "ms-exchange-server",
+            "name": "Microsoft Exchange Server Detect",
+            "severity": "info",
+            "tags": "microsoft,exchange,tech",
+            "path": "technologies/microsoft/ms-exchange-server.yaml"
+        },
+        {
             "author": "dhiyaneshDk",
             "id": "default-iis7-page",
             "name": "IIS-7 Default Page",
@@ -1904,14 +1920,6 @@
             "severity": "info",
             "tags": "tech,microsoft",
             "path": "technologies/microsoft/sql-server-reporting.yaml"
-        },
-        {
-            "author": "pikpikcu,dhiyaneshDK",
-            "id": "microsoft-exchange-server-detect",
-            "name": "Microsoft Exchange Server Detect",
-            "severity": "info",
-            "tags": "microsoft,exchange,tech",
-            "path": "technologies/microsoft/microsoft-exchange-server-detect.yaml"
         },
         {
             "author": "dhiyaneshDk",
@@ -2872,6 +2880,14 @@
             "severity": "info",
             "tags": "dwsync,exposure,dreamweaver",
             "path": "exposures/files/dwsync-exposure.yaml"
+        },
+        {
+            "author": "dhiyaneshDk",
+            "id": "desktop-ini-exposure",
+            "name": "desktop.ini exposure",
+            "severity": "info",
+            "tags": "exposure,config",
+            "path": "exposures/files/desktop-ini-exposure.yaml"
         },
         {
             "author": "dhiyaneshDk",
@@ -4096,6 +4112,70 @@
             "severity": "critical",
             "tags": "electron,file,nodejs",
             "path": "file/electron/node-integration-enabled.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "inactivity-timeout",
+            "name": "Inactivity Timeout Not Implemented",
+            "severity": "info",
+            "tags": "fortigate,config,audit,firewall",
+            "path": "file/audit/fortigate/inactivity-timeout.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "scp-admin",
+            "name": "Admin-SCP Disabled",
+            "severity": "info",
+            "tags": "fortigate,config,audit,firewall",
+            "path": "file/audit/fortigate/scp-admin.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "auto-usb-install",
+            "name": "Auto USB Installation Enabled",
+            "severity": "info",
+            "tags": "fortigate,config,audit,firewall",
+            "path": "file/audit/fortigate/auto-usb-install.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "password-policy",
+            "name": "Password Policy not Set",
+            "severity": "info",
+            "tags": "fortigate,config,audit,firewall",
+            "path": "file/audit/fortigate/password-policy.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "strong-ciphers",
+            "name": "HTTPS/SSH Strong Ciphers Not Enabled",
+            "severity": "info",
+            "tags": "fortigate,config,audit,firewall",
+            "path": "file/audit/fortigate/strong-ciphers.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "heuristic-scan",
+            "name": "Heuristic scanning is not configured",
+            "severity": "info",
+            "tags": "fortigate,config,audit,firewall",
+            "path": "file/audit/fortigate/heuristic-scan.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "maintainer-account",
+            "name": "Maintainer Account Not Implemented",
+            "severity": "info",
+            "tags": "fortigate,config,audit,firewall",
+            "path": "file/audit/fortigate/maintainer-account.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "remote-auth-timeout",
+            "name": "Remote Authentication timeout not set",
+            "severity": "info",
+            "tags": "fortigate,config,audit,firewall",
+            "path": "file/audit/fortigate/remote-auth-timeout.yaml"
         },
         {
             "author": "ritikchaddha",
@@ -5523,6 +5603,14 @@
         },
         {
             "author": "ritikchaddha",
+            "id": "telecom-gateway-default-login",
+            "name": "Telecom Gateway Default Login",
+            "severity": "high",
+            "tags": "telecom,default-login,gateway",
+            "path": "default-logins/others/telecom-gateway-default-login.yaml"
+        },
+        {
+            "author": "ritikchaddha",
             "id": "secnet-ac-default-password",
             "name": "secnet-ac-default-password",
             "severity": "high",
@@ -6410,7 +6498,7 @@
             "path": "token-spray/api-apigee-edge.yaml"
         },
         {
-            "author": "zzeitlin",
+            "author": "zzeitlin,geeknik",
             "id": "api-bitly",
             "name": "Bitly API Test",
             "severity": "info",
@@ -7650,6 +7738,14 @@
             "path": "fuzzing/header-command-injection.yaml"
         },
         {
+            "author": "dievus,dwisiswant0",
+            "id": "valid-gmail-checker",
+            "name": "Valid Google Mail Checker",
+            "severity": "info",
+            "tags": "",
+            "path": "fuzzing/valid-gmail-check.yaml"
+        },
+        {
             "author": "meme-lord",
             "id": "prestashop-module-fuzz",
             "name": "Prestashop Modules Enumeration",
@@ -8050,6 +8146,14 @@
             "path": "exposed-panels/fortiweb-panel.yaml"
         },
         {
+            "author": "dogasantos",
+            "id": "oracle-containers-panel",
+            "name": "Oracle Containers for J2EE 10g Panel",
+            "severity": "info",
+            "tags": "panel,oracle,containers",
+            "path": "exposed-panels/oracle-containers-panel.yaml"
+        },
+        {
             "author": "Adam Crosser",
             "id": "yopass-panel",
             "name": "Yopass Application Exposure",
@@ -8088,6 +8192,14 @@
             "severity": "info",
             "tags": "panel,ivanti,incapptic-connect",
             "path": "exposed-panels/incapptic-connect-panel.yaml"
+        },
+        {
+            "author": "idealphase",
+            "id": "cyberoam-ssl-vpn-panel",
+            "name": "Cyberoam SSL VPN Panel",
+            "severity": "info",
+            "tags": "panel,cyberoam,vpn",
+            "path": "exposed-panels/cyberoam-ssl-vpn-panel.yaml"
         },
         {
             "author": "johnk3r",
@@ -8272,6 +8384,14 @@
             "severity": "info",
             "tags": "panel,netsus,login",
             "path": "exposed-panels/netsus-server-login.yaml"
+        },
+        {
+            "author": "dogasantos",
+            "id": "oracle-enterprise-manager-login",
+            "name": "Oracle Enterprise Manager login",
+            "severity": "info",
+            "tags": "panel,oracle,manager,login",
+            "path": "exposed-panels/oracle-enterprise-manager-login.yaml"
         },
         {
             "author": "ffffffff0x",
@@ -9410,6 +9530,14 @@
             "path": "exposed-panels/open-game-panel.yaml"
         },
         {
+            "author": "princechaddha",
+            "id": "zoneminder-login",
+            "name": "ZoneMinder Login Detect",
+            "severity": "info",
+            "tags": "panel,zoneminder",
+            "path": "exposed-panels/zoneminder-login.yaml"
+        },
+        {
             "author": "pdteam",
             "id": "citrix-vpn-detect",
             "name": "Citrix VPN Detection",
@@ -10474,6 +10602,14 @@
             "path": "exposed-panels/kafka-monitoring.yaml"
         },
         {
+            "author": "idealphase",
+            "id": "supermicro-bmc-panel",
+            "name": "Supermicro BMC Login Panel",
+            "severity": "info",
+            "tags": "panel,supermicro,bmc",
+            "path": "exposed-panels/supermicro-bmc-panel.yaml"
+        },
+        {
             "author": "e_schultze_",
             "id": "polycom-admin-detect",
             "name": "Polycom Admin Panel",
@@ -10560,6 +10696,14 @@
             "severity": "info",
             "tags": "panel,nutanix,login",
             "path": "exposed-panels/nutanix-web-console-login.yaml"
+        },
+        {
+            "author": "MrCl0wnLab",
+            "id": "bigip-icontrol-rest",
+            "name": "F5 BIG-IP iControl REST Panel",
+            "severity": "info",
+            "tags": "panel,bigip,f5",
+            "path": "exposed-panels/bigip-rest-panel.yaml"
         },
         {
             "author": "organiccrap",
@@ -11012,7 +11156,7 @@
         {
             "author": "idealphase",
             "id": "tenda-11n-wireless-router-panel",
-            "name": "Tenda 11n Wireless Router Panel",
+            "name": "Tenda 11n Wireless Router - Admin Panel",
             "severity": "info",
             "tags": "panel,tenda",
             "path": "exposed-panels/tenda-11n-wireless-router-login.yaml"
@@ -11346,6 +11490,14 @@
             "path": "exposed-panels/joget/joget-panel.yaml"
         },
         {
+            "author": "princechaddha",
+            "id": "rg-uac-panel",
+            "name": "RG-UAC Ruijie Login Panel",
+            "severity": "info",
+            "tags": "panel,ruijie,router,firewall",
+            "path": "exposed-panels/ruijie/rg-uac-panel.yaml"
+        },
+        {
             "author": "dhiyaneshDK",
             "id": "adobe-experience-manager-login",
             "name": "Adobe Experience Manager Login Panel",
@@ -11392,6 +11544,14 @@
             "severity": "info",
             "tags": "panel,avaya",
             "path": "exposed-panels/avaya/avayaaura-system-manager-panel.yaml"
+        },
+        {
+            "author": "princechaddha",
+            "id": "xoops-installation-wizard",
+            "name": "XOOPS Installation wizard",
+            "severity": "low",
+            "tags": "panel,xoops",
+            "path": "exposed-panels/xoops/xoops-installation-wizard.yaml"
         },
         {
             "author": "dhiyaneshDK,righettod",
@@ -12176,6 +12336,14 @@
             "severity": "low",
             "tags": "misconfig,concrete,cms",
             "path": "misconfiguration/misconfigured-concrete5.yaml"
+        },
+        {
+            "author": "BibekSapkota (sar00n)",
+            "id": "unauthenticated-nginx-dashboard",
+            "name": "Nginx Dashboard",
+            "severity": "low",
+            "tags": "misconfig,nginx",
+            "path": "misconfiguration/unauthenticated-nginx-dashboard.yaml"
         },
         {
             "author": "pussycat0x",
@@ -13168,6 +13336,14 @@
             "severity": "medium",
             "tags": "ssrf,umbraco,oast",
             "path": "misconfiguration/vulnerabilities/other/umbraco-base-ssrf.yaml"
+        },
+        {
+            "author": "rafaelwdornelas",
+            "id": "insecure-firebase-database",
+            "name": "Insecure Firebase Database",
+            "severity": "high",
+            "tags": "firebase,google,misconfig",
+            "path": "misconfiguration/google/insecure-firebase-database.yaml"
         },
         {
             "author": "DhiyaneshDk",
@@ -14572,7 +14748,7 @@
         {
             "author": "gy741",
             "id": "CVE-2018-10818",
-            "name": "LG NAS Devices - Remote Code Execution (Unauthenticated)",
+            "name": "LG NAS Devices - Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2018,lg-nas,rce,oast,injection",
             "path": "cves/2018/CVE-2018-10818.yaml"
@@ -14800,6 +14976,14 @@
             "severity": "high",
             "tags": "cve,cve2018,jolokia,rce,jndi,proxy",
             "path": "cves/2018/CVE-2018-1000130.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "CVE-2018-11231",
+            "name": "Opencart Divido plugin - Sql Injection",
+            "severity": "high",
+            "tags": "opencart,sqli,cve,cve2018",
+            "path": "cves/2018/CVE-2018-11231.yaml"
         },
         {
             "author": "r3dg33k,daffainfo,forgedhallpass",
@@ -15348,7 +15532,7 @@
         {
             "author": "0x_akoko",
             "id": "CVE-2018-10201",
-            "name": "Ncomputing vSPace Pro 10 and 11 Directory Traversal",
+            "name": "Ncomputing vSPace Pro 10 and 11 - Directory Traversal",
             "severity": "high",
             "tags": "cve,cve2018,ncomputing,lfi",
             "path": "cves/2018/CVE-2018-10201.yaml"
@@ -15460,7 +15644,7 @@
         {
             "author": "geeknik",
             "id": "CVE-2018-11784",
-            "name": "Apache Tomcat Open Redirect",
+            "name": "Apache Tomcat - Open Redirect",
             "severity": "medium",
             "tags": "tomcat,redirect,cve,cve2018,apache",
             "path": "cves/2018/CVE-2018-11784.yaml"
@@ -16794,14 +16978,6 @@
             "path": "cves/2019/CVE-2019-3799.yaml"
         },
         {
-            "author": "bing0o",
-            "id": "CVE-2019-15043",
-            "name": "Grafana unauthenticated API",
-            "severity": "high",
-            "tags": "cve,cve2019,grafana",
-            "path": "cves/2019/CVE-2019-15043.yaml"
-        },
-        {
             "author": "daffainfo",
             "id": "CVE-2019-12276",
             "name": "GrandNode 4.40 - Path Traversal",
@@ -16878,13 +17054,13 @@
             "id": "CVE-2019-14223",
             "name": "Alfresco Share Open Redirect",
             "severity": "medium",
-            "tags": "cve,cve2019,redirect",
+            "tags": "cve,cve2019,redirect,alfresco",
             "path": "cves/2019/CVE-2019-14223.yaml"
         },
         {
             "author": "pikpikcu,madrobot",
             "id": "CVE-2019-17558",
-            "name": "Apache Solr 8.3.0 - Remote Code Execution via Velocity Template",
+            "name": "Apache Solr <=8.3.1 - Remote Code Execution",
             "severity": "high",
             "tags": "cve,cve2019,apache,rce,solr,oast",
             "path": "cves/2019/CVE-2019-17558.yaml"
@@ -17004,7 +17180,7 @@
         {
             "author": "Pratik Khalane",
             "id": "CVE-2021-35336",
-            "name": "Unauthorised Remote Access of Internal Panel",
+            "name": "Tieline IP Audio Gateway <=2.6.4.8 - Unauthorized Remote Admin Panel Access",
             "severity": "critical",
             "tags": "cve,cve2021,tieline,default-login",
             "path": "cves/2021/CVE-2021-35336.yaml"
@@ -17106,6 +17282,14 @@
             "path": "cves/2021/CVE-2021-26084.yaml"
         },
         {
+            "author": "DhiyaneshDK",
+            "id": "CVE-2021-39312",
+            "name": "True Ranker < 2.2.4 - Unauthenticated Arbitrary File Access via Path Traversal",
+            "severity": "high",
+            "tags": "lfi,wp,wordpress,wp-plugin,unauth,lfr,cve,cve2021",
+            "path": "cves/2021/CVE-2021-39312.yaml"
+        },
+        {
             "author": "For3stCo1d",
             "id": "CVE-2021-46417",
             "name": "Franklin Fueling Systems Colibri Controller Module - Local File Inclusion",
@@ -17156,7 +17340,7 @@
         {
             "author": "0xsapra",
             "id": "CVE-2021-34621",
-            "name": "WordPress ProfilePress wp-user-avatar plugin make admin users",
+            "name": "WordPress ProfilePress  3.0.0-3.1.3 - Admin User Creation Weakness",
             "severity": "critical",
             "tags": "cve,cve2021,wordpress,wp-plugin",
             "path": "cves/2021/CVE-2021-34621.yaml"
@@ -17164,7 +17348,7 @@
         {
             "author": "dwisiswant0, jbaines-r7",
             "id": "CVE-2021-20038",
-            "name": "SonicWall SMA100 Stack BoF to Unauthenticated RCE",
+            "name": "SonicWall SMA100 Stack - Buffer Overflow/Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2021,overflow,rce,sonicwall",
             "path": "cves/2021/CVE-2021-20038.yaml"
@@ -17332,7 +17516,7 @@
         {
             "author": "gy741",
             "id": "CVE-2021-3577",
-            "name": "Motorola Baby Monitors Unauthenticated RCE",
+            "name": "Motorola Baby Monitors - Remote Command Execution",
             "severity": "critical",
             "tags": "cve,cve2021,rce,oast,motorola,iot",
             "path": "cves/2021/CVE-2021-3577.yaml"
@@ -17536,6 +17720,14 @@
             "severity": "high",
             "tags": "wordpress,cve,cve2021,wp-plugin",
             "path": "cves/2021/CVE-2021-24226.yaml"
+        },
+        {
+            "author": "akincibor",
+            "id": "CVE-2021-25111",
+            "name": "English WordPress Admin < 1.5.2 - Unauthenticated Open Redirect",
+            "severity": "medium",
+            "tags": "wp-plugin,redirect,wordpress,wp,cve,cve2021,unauth",
+            "path": "cves/2021/CVE-2021-25111.yaml"
         },
         {
             "author": "pikpikcu",
@@ -17798,7 +17990,7 @@
             "id": "CVE-2021-20158",
             "name": "Trendnet AC2600 TEW-827DRU - Unauthenticated Admin Password Change",
             "severity": "critical",
-            "tags": "cve,cve2021,trendnet,disclosure,router,intrusive,dos",
+            "tags": "cve,cve2021,trendnet,disclosure,router,intrusive",
             "path": "cves/2021/CVE-2021-20158.yaml"
         },
         {
@@ -18060,7 +18252,7 @@
         {
             "author": "gy741",
             "id": "CVE-2021-1497",
-            "name": "Cisco HyperFlex HX Data Platform RCE",
+            "name": "Cisco HyperFlex HX Data Platform - Remote Command Execution",
             "severity": "critical",
             "tags": "cve,cve2021,cisco,rce,oast",
             "path": "cves/2021/CVE-2021-1497.yaml"
@@ -18092,7 +18284,7 @@
         {
             "author": "pdteam",
             "id": "CVE-2021-37580",
-            "name": "Apache ShenYu Admin JWT authentication bypass",
+            "name": "Apache ShenYu Admin JWT - Authentication Bypass",
             "severity": "critical",
             "tags": "cve,cve2021,apache,jwt,shenyu",
             "path": "cves/2021/CVE-2021-37580.yaml"
@@ -18186,9 +18378,17 @@
             "path": "cves/2021/CVE-2021-42237.yaml"
         },
         {
+            "author": "gy741",
+            "id": "CVE-2021-36356",
+            "name": "Kramer VIAware RCE",
+            "severity": "critical",
+            "tags": "rce,viaware,cve,cve2021,kramer",
+            "path": "cves/2021/CVE-2021-36356.yaml"
+        },
+        {
             "author": "whoever",
             "id": "CVE-2021-37538",
-            "name": "PrestaShop SmartBlog SQL Injection",
+            "name": "PrestaShop SmartBlog <4.0.6- SQL Injection",
             "severity": "critical",
             "tags": "cve,cve2021,prestashop,smartblog,sqli",
             "path": "cves/2021/CVE-2021-37538.yaml"
@@ -18346,6 +18546,14 @@
             "path": "cves/2021/CVE-2021-41174.yaml"
         },
         {
+            "author": "DhiyaneshDK",
+            "id": "CVE-2021-25118",
+            "name": "Yoast SEO < 17.3 - Unauthenticated Full Path Disclosure",
+            "severity": "medium",
+            "tags": "wordpress,cve2021,wp-plugin,fpd,cve,wp",
+            "path": "cves/2021/CVE-2021-25118.yaml"
+        },
+        {
             "author": "melbadry9,xelkomy",
             "id": "CVE-2021-29156",
             "name": "LDAP Injection In OpenAM",
@@ -18396,7 +18604,7 @@
         {
             "author": "c-sh0",
             "id": "CVE-2021-40323",
-            "name": "Cobbler <3.3.0 Remote Code Execution",
+            "name": "Cobbler <3.3.0 - Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2021,cobbler,rce",
             "path": "cves/2021/CVE-2021-40323.yaml"
@@ -18460,7 +18668,7 @@
         {
             "author": "madrobot",
             "id": "CVE-2021-35464",
-            "name": "Pre-auth RCE in ForgeRock OpenAM",
+            "name": "ForgeRock OpenAM <7.0 - Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2021,openam,rce,java",
             "path": "cves/2021/CVE-2021-35464.yaml"
@@ -18556,7 +18764,7 @@
         {
             "author": "pdteam,gy741",
             "id": "CVE-2021-36260",
-            "name": "Hikvision IP camera/NVR - Unauthenticated RCE",
+            "name": "Hikvision IP camera/NVR - Remote Command Execution",
             "severity": "critical",
             "tags": "cve,cve2021,hikvision,rce,iot,intrusive",
             "path": "cves/2021/CVE-2021-36260.yaml"
@@ -18676,7 +18884,7 @@
         {
             "author": "gy741",
             "id": "CVE-2021-36380",
-            "name": "Sunhillo SureLine - Unauthenticated OS Command Injection",
+            "name": "Sunhillo SureLine <8.7.0.1.1 - Unauthenticated OS Command Injection",
             "severity": "critical",
             "tags": "cve,cve2021,sureline,rce,oast",
             "path": "cves/2021/CVE-2021-36380.yaml"
@@ -18708,7 +18916,7 @@
         {
             "author": "arcc,intx0x80,dwisiswant0,r3dg33k",
             "id": "CVE-2021-34473",
-            "name": "Exchange Server SSRF (ProxyShell)",
+            "name": "Exchange Server - Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2021,ssrf,rce,exchange",
             "path": "cves/2021/CVE-2021-34473.yaml"
@@ -18740,7 +18948,7 @@
         {
             "author": "daffainfo,xstp",
             "id": "CVE-2021-38647",
-            "name": "Microsoft Open Management Infrastructure Remote Code Execution",
+            "name": "Microsoft Open Management Infrastructure - Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2021,rce,omi,microsoft",
             "path": "cves/2021/CVE-2021-38647.yaml"
@@ -18916,7 +19124,7 @@
         {
             "author": "Evan Rubinstein",
             "id": "CVE-2021-39226",
-            "name": "Grafana Snapshot Authentication Bypass",
+            "name": "Grafana Snapshot - Authentication Bypass",
             "severity": "critical",
             "tags": "cve,cve2021,grafana",
             "path": "cves/2021/CVE-2021-39226.yaml"
@@ -18980,7 +19188,7 @@
         {
             "author": "cckuailong",
             "id": "CVE-2021-35587",
-            "name": "Pre-auth RCE in Oracle Access Manager",
+            "name": "Oracle Access Manager - Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2021,oam,rce,java,unauth,oracle",
             "path": "cves/2021/CVE-2021-35587.yaml"
@@ -19122,7 +19330,7 @@
             "path": "cves/2021/CVE-2021-24499.yaml"
         },
         {
-            "author": "pdteam",
+            "author": "pdteam,bing0o",
             "id": "CVE-2021-27358",
             "name": "Grafana Unauthenticated Snapshot Creation",
             "severity": "high",
@@ -19156,7 +19364,7 @@
         {
             "author": "gy741",
             "id": "CVE-2021-1498",
-            "name": "Cisco HyperFlex HX Data Platform RCE",
+            "name": "Cisco HyperFlex HX Data Platform - Remote Command Execution",
             "severity": "critical",
             "tags": "cve,cve2021,cisco,rce,oast,mirai",
             "path": "cves/2021/CVE-2021-1498.yaml"
@@ -19164,7 +19372,7 @@
         {
             "author": "alph4byt3",
             "id": "CVE-2021-40542",
-            "name": "Opensis-Classic 8.0 Reflected Cross-Site Scripting",
+            "name": "Opensis-Classic 8.0 - Reflected Cross-Site Scripting",
             "severity": "medium",
             "tags": "xss,cve,cve2021,opensis",
             "path": "cves/2021/CVE-2021-40542.yaml"
@@ -19268,7 +19476,7 @@
         {
             "author": "dhiyaneshDK,daffainfo",
             "id": "CVE-2014-8682",
-            "name": "Gogs - 'users'/'repos' '?q' SQL Injection",
+            "name": "Gogs (Go Git Service) - SQL Injection",
             "severity": "high",
             "tags": "cve,cve2014,sqli,gogs",
             "path": "cves/2014/CVE-2014-8682.yaml"
@@ -19612,7 +19820,7 @@
         {
             "author": "madrobot",
             "id": "CVE-2020-5847",
-            "name": "UnRaid Remote Code Execution",
+            "name": "UnRaid <=6.80 - Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2020,rce",
             "path": "cves/2020/CVE-2020-5847.yaml"
@@ -19628,7 +19836,7 @@
         {
             "author": "KareemSe1im",
             "id": "CVE-2020-3187",
-            "name": "CVE-2020-3187",
+            "name": "Cisco Adaptive Security Appliance Software/Cisco Firepower Threat Defense - Directory Traversal",
             "severity": "critical",
             "tags": "cve,cve2020,cisco",
             "path": "cves/2020/CVE-2020-3187.yaml"
@@ -19676,7 +19884,7 @@
         {
             "author": "soyelmago",
             "id": "CVE-2020-35489",
-            "name": "WordPress Contact Form 7 Plugin - Unrestricted File Upload",
+            "name": "WordPress Contact Form 7 - Unrestricted File Upload",
             "severity": "critical",
             "tags": "cve,cve2020,wordpress,wp-plugin,rce,upload",
             "path": "cves/2020/CVE-2020-35489.yaml"
@@ -19724,7 +19932,7 @@
         {
             "author": "_generic_human_",
             "id": "CVE-2020-6207",
-            "name": "SAP Solution Manager remote unauthorized OS commands execution",
+            "name": "SAP Solution Manager 7.2 - Remote Command Execution",
             "severity": "critical",
             "tags": "cve,cve2020,sap,solman,rce",
             "path": "cves/2020/CVE-2020-6207.yaml"
@@ -19772,7 +19980,7 @@
         {
             "author": "ritikchaddha",
             "id": "CVE-2020-7980",
-            "name": "Satellian Intellian Aptus Web <= 1.24 RCE",
+            "name": "Satellian Intellian Aptus Web <= 1.24 - Remote Command Execution",
             "severity": "critical",
             "tags": "satellian,rce,cve,cve2020,intellian,aptus",
             "path": "cves/2020/CVE-2020-7980.yaml"
@@ -19812,7 +20020,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2020-35846",
-            "name": "Cockpit prior to 0.12.0 NoSQL injection in /auth/check",
+            "name": "Agentejo Cockpit < 0.11.2 NoSQL Injection",
             "severity": "critical",
             "tags": "cve,cve2020,nosqli,sqli,cockpit,injection",
             "path": "cves/2020/CVE-2020-35846.yaml"
@@ -19900,7 +20108,7 @@
         {
             "author": "gy741,edoardottt",
             "id": "CVE-2020-17456",
-            "name": "Seowon SLC-130 And SLR-120S - Unauthenticated Remote Code Execution",
+            "name": "SEOWON INTECH SLC-130 & SLR-120S - Unauthenticated Remote Code Execution",
             "severity": "critical",
             "tags": "rce,seowon,router,unauth,iot,cve,cve2020,oast",
             "path": "cves/2020/CVE-2020-17456.yaml"
@@ -19916,7 +20124,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2020-7209",
-            "name": "LinuxKI Toolset 6.01 Remote Command Execution",
+            "name": "LinuxKI Toolset <= 6.01 - Remote Command Execution",
             "severity": "critical",
             "tags": "cve,cve2020,rce",
             "path": "cves/2020/CVE-2020-7209.yaml"
@@ -19948,7 +20156,7 @@
         {
             "author": "madrobot,dwisiswant0,ringo",
             "id": "CVE-2020-5902",
-            "name": "F5 BIG-IP TMUI RCE",
+            "name": "F5 BIG-IP TMUI - Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2020,bigip,rce",
             "path": "cves/2020/CVE-2020-5902.yaml"
@@ -19980,7 +20188,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2020-6287",
-            "name": "SAP NetWeaver - Remote Admin addition",
+            "name": "SAP NetWeaver AS JAVA 7.30-7.50 - Remote Admin Addition",
             "severity": "critical",
             "tags": "cve,cve2020,sap",
             "path": "cves/2020/CVE-2020-6287.yaml"
@@ -19988,7 +20196,7 @@
         {
             "author": "princechaddha",
             "id": "CVE-2020-14092",
-            "name": "WordPress Payment Form For Paypal Pro Unauthenticated SQL Injection",
+            "name": "WordPress PayPal Pro <1.1.65- SQL Injection",
             "severity": "critical",
             "tags": "cve,cve2020,wordpress,wp-plugin,sqli,paypal",
             "path": "cves/2020/CVE-2020-14092.yaml"
@@ -20028,7 +20236,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2020-15505",
-            "name": "RCE in MobileIron Core & Connector <= v10.6 & Sentry <= v9.8",
+            "name": "MobileIron Core & Connector <= v10.6 & Sentry <= v9.8 - Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2020,mobileiron,rce,sentry",
             "path": "cves/2020/CVE-2020-15505.yaml"
@@ -20076,7 +20284,7 @@
         {
             "author": "gy741",
             "id": "CVE-2020-35713",
-            "name": "Linksys RE6500 Pre-Auth RCE",
+            "name": "Belkin Linksys RE6500 <1.0.012.001 - Remote Command Execution",
             "severity": "critical",
             "tags": "cve,cve2020,linksys,rce,oast,router",
             "path": "cves/2020/CVE-2020-35713.yaml"
@@ -20084,7 +20292,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2020-17530",
-            "name": "Apache Struts RCE",
+            "name": "Apache Struts 2.0.0-2.5.25 - Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2020,apache,rce,struts",
             "path": "cves/2020/CVE-2020-17530.yaml"
@@ -20100,7 +20308,7 @@
         {
             "author": "milo2012",
             "id": "CVE-2020-1938",
-            "name": "Ghostcat - Apache Tomcat AJP File Read/Inclusion Vulnerability",
+            "name": "Ghostcat - Apache Tomcat - AJP File Read/Inclusion Vulnerability",
             "severity": "critical",
             "tags": "cve,cve2020,apache,tomcat,lfi,network",
             "path": "cves/2020/CVE-2020-1938.yaml"
@@ -20108,7 +20316,7 @@
         {
             "author": "gy741",
             "id": "CVE-2020-5307",
-            "name": "Dairy Farm Shop Management System - SQL Injection",
+            "name": "PHPGurukul Dairy Farm Shop Management System 1.0 - SQL Injection",
             "severity": "critical",
             "tags": "cve,cve2020,sqli",
             "path": "cves/2020/CVE-2020-5307.yaml"
@@ -20204,7 +20412,7 @@
         {
             "author": "princechaddha",
             "id": "CVE-2020-7247",
-            "name": "OpenSMTPD 6.4.0 - 6.6.1 Remote Code Execution",
+            "name": "OpenSMTPD 6.4.0-6.6.1 - Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2020,smtp,opensmtpd,network,rce,oast",
             "path": "cves/2020/CVE-2020-7247.yaml"
@@ -20212,7 +20420,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2020-35729",
-            "name": "Klog Server Unauthenticated Command Injection",
+            "name": "Klog Server <=2.41- Unauthenticated Command Injection",
             "severity": "critical",
             "tags": "cve,cve2020,klog,rce",
             "path": "cves/2020/CVE-2020-35729.yaml"
@@ -20236,7 +20444,7 @@
         {
             "author": "geeknik",
             "id": "CVE-2020-19625",
-            "name": "Gridx 1.3 RCE",
+            "name": "Gridx 1.3 - Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2020,gridx,rce",
             "path": "cves/2020/CVE-2020-19625.yaml"
@@ -20244,7 +20452,7 @@
         {
             "author": "gy741",
             "id": "CVE-2020-7136",
-            "name": "HPE Smart Update Manager - Remote Unauthorized Access",
+            "name": "HPE Smart Update Manager < 8.5.6 - Remote Unauthorized Access",
             "severity": "critical",
             "tags": "cve,cve2020,hp,auth-bypass,hpe",
             "path": "cves/2020/CVE-2020-7136.yaml"
@@ -20260,7 +20468,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2020-35848",
-            "name": "Cockpit <0.12.0 NoSQL Injection",
+            "name": "Agentejo Cockpit <0.12.0 - NoSQL Injection",
             "severity": "critical",
             "tags": "cve,cve2020,nosqli,sqli,cockpit,injection",
             "path": "cves/2020/CVE-2020-35848.yaml"
@@ -20300,7 +20508,7 @@
         {
             "author": "pussycat0x",
             "id": "CVE-2020-17496",
-            "name": "vBulletin Pre-Auth Remote Command Execution",
+            "name": "vBulletin 5.5.4 - 5.6.2- Remote Command Execution",
             "severity": "critical",
             "tags": "cve,cve2020,vbulletin,rce",
             "path": "cves/2020/CVE-2020-17496.yaml"
@@ -20316,7 +20524,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2020-7961",
-            "name": "Liferay Portal Unauthenticated RCE",
+            "name": "Liferay Portal Unauthenticated < 7.2.1 CE GA2 - Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2020,rce,liferay",
             "path": "cves/2020/CVE-2020-7961.yaml"
@@ -20428,7 +20636,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2020-8515",
-            "name": "DrayTek pre-auth RCE",
+            "name": "DrayTek - Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2020,rce",
             "path": "cves/2020/CVE-2020-8515.yaml"
@@ -20460,7 +20668,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2020-5777",
-            "name": "Remote Auth Bypass in MAGMI (Magento Mass Importer) Plugin <= v0.7.23",
+            "name": "Magento Mass Importer  <0.7.24 - Remote Auth Bypass",
             "severity": "critical",
             "tags": "cve,cve2020,magmi,magento,auth,bypass,plugin",
             "path": "cves/2020/CVE-2020-5777.yaml"
@@ -20596,7 +20804,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2020-15568",
-            "name": "TerraMaster TOS v4.1.24 RCE",
+            "name": "TerraMaster TOS <.1.29 - Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2020,terramaster,rce",
             "path": "cves/2020/CVE-2020-15568.yaml"
@@ -20612,7 +20820,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2020-17506",
-            "name": "Artica Web Proxy 4.30 Authentication Bypass",
+            "name": "Artica Web Proxy 4.30 - Authentication Bypass/SQL Injection",
             "severity": "critical",
             "tags": "cve,cve2020,artica,proxy",
             "path": "cves/2020/CVE-2020-17506.yaml"
@@ -20660,7 +20868,7 @@
         {
             "author": "dhiyaneshDk",
             "id": "CVE-2020-9054",
-            "name": "ZyXEL NAS RCE",
+            "name": "ZyXEL NAS Firmware 5.21- Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2020,rce,zyxel,injection",
             "path": "cves/2020/CVE-2020-9054.yaml"
@@ -20668,7 +20876,7 @@
         {
             "author": "princechaddha",
             "id": "CVE-2020-8771",
-            "name": "WordPress WP Time Capsule Authentication Bypass",
+            "name": "WordPress Time Capsule < 1.21.16 - Authentication Bypass",
             "severity": "critical",
             "tags": "cve,cve2020,wordpress,wp-plugin",
             "path": "cves/2020/CVE-2020-8771.yaml"
@@ -20716,7 +20924,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2020-21224",
-            "name": "Inspur ClusterEngine V4.0 Remote Code Execution",
+            "name": "Inspur ClusterEngine 4.0 - Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2020,clusterengine,rce",
             "path": "cves/2020/CVE-2020-21224.yaml"
@@ -20724,7 +20932,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2020-35847",
-            "name": "Cockpit prior to 0.12.0 NoSQL injection in /auth/resetpassword",
+            "name": "Agentejo Cockpit <0.11.2 NoSQL Injection",
             "severity": "critical",
             "tags": "cve,cve2020,nosqli,sqli,cockpit,injection",
             "path": "cves/2020/CVE-2020-35847.yaml"
@@ -20812,7 +21020,7 @@
         {
             "author": "becivells",
             "id": "CVE-2020-15227",
-            "name": "Nette Framework RCE",
+            "name": "Nette Framework - Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2020,nette,rce",
             "path": "cves/2020/CVE-2020-15227.yaml"
@@ -20820,7 +21028,7 @@
         {
             "author": "geeknik",
             "id": "CVE-2020-36112",
-            "name": "CSE Bookstore 1.0 SQL Injection",
+            "name": "CSE Bookstore 1.0 - SQL Injection",
             "severity": "critical",
             "tags": "cve,cve2020,sqli,cse",
             "path": "cves/2020/CVE-2020-36112.yaml"
@@ -20836,7 +21044,7 @@
         {
             "author": "Jeya Seelan",
             "id": "CVE-2020-35338",
-            "name": "Default Credentials of WMT Server",
+            "name": "Wireless Multiplex Terminal Playout Server <=20.2.8 - Default Credential Detection",
             "severity": "critical",
             "tags": "cve,cve2020,wmt,default-login",
             "path": "cves/2020/CVE-2020-35338.yaml"
@@ -20860,7 +21068,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2020-6637",
-            "name": "OpenSIS v7.3 unauthenticated SQL Injection",
+            "name": "OpenSIS 7.3 - SQL Injection",
             "severity": "critical",
             "tags": "cve,cve2020,sqli,opensis",
             "path": "cves/2020/CVE-2020-6637.yaml"
@@ -20908,7 +21116,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2020-16846",
-            "name": "SaltStack Shell Injection",
+            "name": "SaltStack <=3002 - Shell Injection",
             "severity": "critical",
             "tags": "cve,cve2020,saltstack",
             "path": "cves/2020/CVE-2020-16846.yaml"
@@ -20924,7 +21132,7 @@
         {
             "author": "gy741",
             "id": "CVE-2020-7796",
-            "name": "Zimbra Collaboration Suite (ZCS) - Server-Side Request Forgery",
+            "name": "Zimbra Collaboration Suite < 8.8.15 Patch 7 - Server-Side Request Forgery",
             "severity": "critical",
             "tags": "cve,cve2020,zimbra,ssrf,oast",
             "path": "cves/2020/CVE-2020-7796.yaml"
@@ -20932,7 +21140,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2020-35476",
-            "name": "OpenTSDB 2.4.0 Remote Code Execution",
+            "name": "OpenTSDB <= 2.4.0 - Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2020,opentsdb,rce",
             "path": "cves/2020/CVE-2020-35476.yaml"
@@ -20940,7 +21148,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2020-20982",
-            "name": "Shadoweb Wdja v1.5.1 xss",
+            "name": "shadoweb wdja v1.5.1 - Cross-Site Scripting",
             "severity": "critical",
             "tags": "cve,cve2020,xss,wdja,shadoweb",
             "path": "cves/2020/CVE-2020-20982.yaml"
@@ -20972,7 +21180,7 @@
         {
             "author": "princechaddha",
             "id": "CVE-2020-35951",
-            "name": "Wordpress Quiz and Survey Master Arbitrary File Deletion",
+            "name": "Wordpress Quiz and Survey Master <7.0.1 - Arbitrary File Deletion",
             "severity": "critical",
             "tags": "cve,cve2020,wordpress,wp-plugin",
             "path": "cves/2020/CVE-2020-35951.yaml"
@@ -21052,7 +21260,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2020-14882",
-            "name": "Oracle Weblogic Pre-Auth Remote Command Execution",
+            "name": "Oracle Weblogic Server - Remote Command Execution",
             "severity": "critical",
             "tags": "cve,cve2020,oracle,rce,weblogic,oast",
             "path": "cves/2020/CVE-2020-14882.yaml"
@@ -21724,7 +21932,7 @@
         {
             "author": "milo2012",
             "id": "CVE-2017-9822",
-            "name": "DotNetNuke Cookie Deserialization Remote Code Execution (RCE)",
+            "name": "DotNetNuke 5.0.0 - 9.3.0 - Cookie Deserialization Remote Code Execution",
             "severity": "high",
             "tags": "cve,cve2017,dotnetnuke,bypass,rce,deserialization",
             "path": "cves/2017/CVE-2017-9822.yaml"
@@ -21764,7 +21972,7 @@
         {
             "author": "emadshanab,milo2012",
             "id": "CVE-2017-15944",
-            "name": "PreAuth RCE on Palo Alto GlobalProtect",
+            "name": "Palo Alto Network PAN-OS - Remote Code Execution",
             "severity": "critical",
             "tags": "cve,cve2017,rce,vpn,panos,globalprotect",
             "path": "cves/2017/CVE-2017-15944.yaml"
@@ -21852,7 +22060,7 @@
         {
             "author": "Random_Robbie",
             "id": "CVE-2017-5638",
-            "name": "Apache Struts2 RCE",
+            "name": "Apache Struts 2 - Remote Command Execution",
             "severity": "critical",
             "tags": "cve,cve2017,struts,rce,apache",
             "path": "cves/2017/CVE-2017-5638.yaml"
@@ -21948,7 +22156,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2017-15287",
-            "name": "Dreambox WebControl Reflected XSS",
+            "name": "Dreambox WebControl 2.0.0 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2017,xss,dreambox",
             "path": "cves/2017/CVE-2017-15287.yaml"
@@ -21972,7 +22180,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2017-12794",
-            "name": "Django debug page XSS",
+            "name": "Django Debug Page - Cross-Site Scripting",
             "severity": "medium",
             "tags": "xss,django,cve,cve2017",
             "path": "cves/2017/CVE-2017-12794.yaml"
@@ -21980,7 +22188,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2017-12629",
-            "name": "Apache Solr <= 7.1 XML entity injection",
+            "name": "Apache Solr <= 7.1 - XML Entity Injection",
             "severity": "critical",
             "tags": "cve,cve2017,solr,apache,oast,xxe",
             "path": "cves/2017/CVE-2017-12629.yaml"
@@ -21988,7 +22196,7 @@
         {
             "author": "princechaddha",
             "id": "CVE-2017-7921",
-            "name": "Hikvision Authentication Bypass",
+            "name": "Hikvision - Authentication Bypass",
             "severity": "critical",
             "tags": "cve,cve2017,auth-bypass,hikvision",
             "path": "cves/2017/CVE-2017-7921.yaml"
@@ -21996,7 +22204,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2017-14537",
-            "name": "Trixbox 2.8.0 Path Traversal",
+            "name": "Trixbox 2.8.0 - Path Traversal",
             "severity": "medium",
             "tags": "cve,cve2017,trixbox,lfi",
             "path": "cves/2017/CVE-2017-14537.yaml"
@@ -22034,12 +22242,36 @@
             "path": "cves/2022/CVE-2022-23881.yaml"
         },
         {
+            "author": "random-robbie",
+            "id": "CVE-2022-0422",
+            "name": "WordPress White Label MS < 2.2.9 - Reflected Cross-Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2022,wordpress,xss,wp-plugin",
+            "path": "cves/2022/CVE-2022-0422.yaml"
+        },
+        {
+            "author": "dwisiswant0",
+            "id": "CVE-2022-0543",
+            "name": "Redis Sandbox Escape RCE",
+            "severity": "critical",
+            "tags": "cve,cve2022,network,redis,unauth,rce",
+            "path": "cves/2022/CVE-2022-0543.yaml"
+        },
+        {
             "author": "Akincibor",
             "id": "CVE-2022-28363",
             "name": "Reprise License Manager 14.2 - Reflected Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2022,xss,rlm",
             "path": "cves/2022/CVE-2022-28363.yaml"
+        },
+        {
+            "author": "akincibor",
+            "id": "CVE-2022-0165",
+            "name": "WordPress Page Builder KingComposer <= 2.9.6 - Open Redirect",
+            "severity": "high",
+            "tags": "cve,cve2022,wp-plugin,redirect,wordpress",
+            "path": "cves/2022/CVE-2022-0165.yaml"
         },
         {
             "author": "0x_Akoko",
@@ -22056,6 +22288,14 @@
             "severity": "medium",
             "tags": "wp,wordpress,wp-plugin,cve,cve2022,disclosure",
             "path": "cves/2022/CVE-2022-27849.yaml"
+        },
+        {
+            "author": "Akincibor",
+            "id": "CVE-2022-0591",
+            "name": "Formcraft3 < 3.8.28 - Unauthenticated SSRF",
+            "severity": "critical",
+            "tags": "ssrf,wp,wp-plugin,wordpress,cve,cve2022,unauth,formcraft3",
+            "path": "cves/2022/CVE-2022-0591.yaml"
         },
         {
             "author": "edoardottt",
@@ -22080,6 +22320,22 @@
             "severity": "medium",
             "tags": "wordpress,wp-plugin,xss,cve,cve2022",
             "path": "cves/2022/CVE-2022-0218.yaml"
+        },
+        {
+            "author": "h1ei1",
+            "id": "CVE-2022-26352",
+            "name": "DotCMS Arbitrary File Upload",
+            "severity": "critical",
+            "tags": "cve,cve2022,rce,dotcms",
+            "path": "cves/2022/CVE-2022-26352.yaml"
+        },
+        {
+            "author": "pikpikcu",
+            "id": "CVE-2022-1439",
+            "name": "Microweber Reflected Cross-Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2022,microweber,xss",
+            "path": "cves/2022/CVE-2022-1439.yaml"
         },
         {
             "author": "cckuailong",
@@ -22122,6 +22378,14 @@
             "path": "cves/2022/CVE-2022-24990.yaml"
         },
         {
+            "author": "DhiyaneshDK",
+            "id": "CVE-2022-0288",
+            "name": "Ad Inserter < 2.7.10 - Reflected Cross-Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2022,wordpress,xss",
+            "path": "cves/2022/CVE-2022-0288.yaml"
+        },
+        {
             "author": "For3stCo1d",
             "id": "CVE-2022-23131",
             "name": "Zabbix - SAML SSO Authentication Bypass",
@@ -22136,6 +22400,14 @@
             "severity": "medium",
             "tags": "cve,cve2022,zoho,exposure",
             "path": "cves/2022/CVE-2022-23779.yaml"
+        },
+        {
+            "author": "0x_Akoko",
+            "id": "CVE-2022-26233",
+            "name": "Barco Control Room Management Suite - Directory Traversal",
+            "severity": "high",
+            "tags": "cve,cve2022,barco,lfi",
+            "path": "cves/2022/CVE-2022-26233.yaml"
         },
         {
             "author": "paradessia,narluin",
@@ -22202,6 +22474,14 @@
             "path": "cves/2022/CVE-2022-23178.yaml"
         },
         {
+            "author": "DhiyaneshDK",
+            "id": "CVE-2022-0540",
+            "name": "Atlassian Jira - Authentication bypass in Seraph",
+            "severity": "critical",
+            "tags": "cve,cve2022,atlassian,jira,exposure,auth-bypass",
+            "path": "cves/2022/CVE-2022-0540.yaml"
+        },
+        {
             "author": "random-robbie",
             "id": "CVE-2022-1119",
             "name": "WordPress Simple File List < 3.2.8 - Unauthenticated Arbitrary File Download",
@@ -22256,6 +22536,14 @@
             "severity": "critical",
             "tags": "cve,cve2022,rce,spring,injection,oast,intrusive",
             "path": "cves/2022/CVE-2022-22965.yaml"
+        },
+        {
+            "author": "alexrydzak",
+            "id": "CVE-2022-26564",
+            "name": "HotelDruid Hotel Management Software 3.0.3 XSS",
+            "severity": "medium",
+            "tags": "cve,cve2022,hoteldruid,xss",
+            "path": "cves/2022/CVE-2022-26564.yaml"
         },
         {
             "author": "pikpikcu",
@@ -22328,6 +22616,14 @@
             "severity": "high",
             "tags": "wp,wp-plugin,wordpress,cve,cve2022,unauth",
             "path": "cves/2022/CVE-2022-1020.yaml"
+        },
+        {
+            "author": "Akincibor",
+            "id": "CVE-2022-0201",
+            "name": "WordPress Permalink Manager < 2.2.15 - Reflected Cross-Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2022,xss,wordpress,wp-plugin",
+            "path": "cves/2022/CVE-2022-0201.yaml"
         },
         {
             "author": "Akincibor",
@@ -22624,6 +22920,38 @@
             "severity": "info",
             "tags": "jolokia,disclosure,java",
             "path": "vulnerabilities/jolokia/jolokia-heap-info-disclosure.yaml"
+        },
+        {
+            "author": "pikpikcu",
+            "id": "ruijie-eg-rce",
+            "name": "Ruijie EG cli.php RCE",
+            "severity": "critical",
+            "tags": "ruijie,rce",
+            "path": "vulnerabilities/ruijie/ruijie-eg-rce.yaml"
+        },
+        {
+            "author": "pikpikcu",
+            "id": "ruijie-networks-rce",
+            "name": "Ruijie Networks-EWEB Network Management System RCE",
+            "severity": "critical",
+            "tags": "ruijie,rce,network",
+            "path": "vulnerabilities/ruijie/ruijie-networks-rce.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "ruijie-password-leak",
+            "name": "RG-UAC Ruijie Password Leak",
+            "severity": "high",
+            "tags": "password,leak,ruijie,exposure,firewall,router",
+            "path": "vulnerabilities/ruijie/ruijie-password-leak.yaml"
+        },
+        {
+            "author": "pikpikcu",
+            "id": "ruijie-networks-lfi",
+            "name": "Ruijie Networks Switch eWeb S29_RGOS 11.4 LFI",
+            "severity": "high",
+            "tags": "ruijie,lfi",
+            "path": "vulnerabilities/ruijie/ruijie-networks-lfi.yaml"
         },
         {
             "author": "dudez",
@@ -22978,14 +23306,6 @@
             "path": "vulnerabilities/other/blue-ocean-excellence-lfi.yaml"
         },
         {
-            "author": "pikpikcu",
-            "id": "ruijie-eg-rce",
-            "name": "Ruijie EG cli.php RCE",
-            "severity": "critical",
-            "tags": "ruijie,rce",
-            "path": "vulnerabilities/other/ruijie-eg-rce.yaml"
-        },
-        {
             "author": "geeknik",
             "id": "chamilo-lms-xss",
             "name": "Chamilo LMS 1.11.14 Cross-Site Scripting",
@@ -23176,14 +23496,6 @@
             "severity": "medium",
             "tags": "zhiyuan,leak,disclosure",
             "path": "vulnerabilities/other/zhiyuan-oa-session-leak.yaml"
-        },
-        {
-            "author": "pikpikcu",
-            "id": "ruijie-networks-rce",
-            "name": "Ruijie Networks-EWEB Network Management System RCE",
-            "severity": "critical",
-            "tags": "ruijie,rce,network",
-            "path": "vulnerabilities/other/ruijie-networks-rce.yaml"
         },
         {
             "author": "gy741",
@@ -23808,14 +24120,6 @@
             "severity": "medium",
             "tags": "lfi,messaging,symantec",
             "path": "vulnerabilities/other/symantec-messaging-gateway.yaml"
-        },
-        {
-            "author": "pikpikcu",
-            "id": "ruijie-networks-lfi",
-            "name": "Ruijie Networks Switch eWeb S29_RGOS 11.4 LFI",
-            "severity": "high",
-            "tags": "ruijie,lfi",
-            "path": "vulnerabilities/other/ruijie-networks-lfi.yaml"
         },
         {
             "author": "gy741",
@@ -25232,6 +25536,14 @@
             "severity": "medium",
             "tags": "wordpress,xss",
             "path": "vulnerabilities/wordpress/wordpress-zebra-form-xss.yaml"
+        },
+        {
+            "author": "DhiyaneshDK",
+            "id": "health-check-lfi",
+            "name": "Health Check & Troubleshooting <= 1.2.3 - Authenticated Path Traversal",
+            "severity": "high",
+            "tags": "lfi,wp,wordpress,wp-plugin,authenticated,lfr",
+            "path": "vulnerabilities/wordpress/health-check-lfi.yaml"
         },
         {
             "author": "daffainfo",
