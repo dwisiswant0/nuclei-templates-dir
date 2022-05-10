@@ -1,5 +1,5 @@
 {
-    "version": "v8.9.9",
+    "version": "v9.0.0",
     "data": [
         {
             "author": "princechaddha",
@@ -5584,6 +5584,14 @@
             "severity": "high",
             "tags": "grafana,default-login",
             "path": "default-logins/grafana/grafana-default-login.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "panabit-ixcache-default-login",
+            "name": "Panabit iXCache Default Login",
+            "severity": "high",
+            "tags": "ixcache,default-login,panabit",
+            "path": "default-logins/others/panabit-ixcache-default-login.yaml"
         },
         {
             "author": "ritikchaddha",
@@ -16986,6 +16994,14 @@
             "path": "cves/2019/CVE-2019-12276.yaml"
         },
         {
+            "author": "Clment Cruchet",
+            "id": "CVE-2019-12962",
+            "name": "LiveZilla Server 8.0.1.0 - Cross Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2019,livezilla,xss",
+            "path": "cves/2019/CVE-2019-12962.yaml"
+        },
+        {
             "author": "pikpikcu",
             "id": "CVE-2019-5127",
             "name": "YouPHPTube Encoder RCE",
@@ -17840,6 +17856,14 @@
             "severity": "critical",
             "tags": "cve,cve2021,rce,ad,intrusive,manageengine",
             "path": "cves/2021/CVE-2021-40539.yaml"
+        },
+        {
+            "author": "edoardottt",
+            "id": "CVE-2021-37416",
+            "name": "Zoho ManageEngine ADSelfService Plus - Reflected XSS",
+            "severity": "medium",
+            "tags": "cve,cve2021,zoho,xss",
+            "path": "cves/2021/CVE-2021-37416.yaml"
         },
         {
             "author": "dwisiswant0",
@@ -21762,6 +21786,14 @@
             "path": "cves/2017/CVE-2017-17043.yaml"
         },
         {
+            "author": "0x_Akoko",
+            "id": "CVE-2017-11512",
+            "name": "ManageEngine ServiceDesk - Unauthenticated Arbitrary File Download",
+            "severity": "high",
+            "tags": "cve,cve2017,manageengine,lfr,unauth",
+            "path": "cves/2017/CVE-2017-11512.yaml"
+        },
+        {
             "author": "Random_Robbie",
             "id": "CVE-2017-14849",
             "name": "Node.js 8.5.0 >=< 8.6.0 Directory Traversal",
@@ -22640,6 +22672,14 @@
             "severity": "critical",
             "tags": "cve,cve2022,grafana,zabbix",
             "path": "cves/2022/CVE-2022-26148.yaml"
+        },
+        {
+            "author": "dwisiswant0",
+            "id": "CVE-2022-1388",
+            "name": "F5 BIG-IP iControl REST Auth Bypass RCE",
+            "severity": "critical",
+            "tags": "bigip,cve,cve2022,rce,mirai",
+            "path": "cves/2022/CVE-2022-1388.yaml"
         },
         {
             "author": "DhiyaneshDK",
@@ -24714,7 +24754,7 @@
             "path": "vulnerabilities/other/global-domains-lfi.yaml"
         },
         {
-            "author": "princechaddha",
+            "author": "princechaddha,ritikchaddha",
             "id": "huijietong-cloud-fileread",
             "name": "Huijietong Cloud File Read",
             "severity": "high",
