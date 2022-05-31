@@ -1,5 +1,5 @@
 {
-    "version": "v9.0.3",
+    "version": "v9.0.4",
     "data": [
         {
             "author": "dhiyaneshDk",
@@ -2138,6 +2138,14 @@
             "path": "technologies/puppet-node-manager-detect.yaml"
         },
         {
+            "author": "dr0pd34d",
+            "id": "phppgadmin-version",
+            "name": "phpPgAdmin version detect",
+            "severity": "info",
+            "tags": "tech,phppgadmin",
+            "path": "technologies/phppgadmin-version.yaml"
+        },
+        {
             "author": "dhiyaneshDk",
             "id": "couchbase-sync-gateway",
             "name": "Couchbase Sync Gateway",
@@ -3050,7 +3058,7 @@
             "path": "technologies/livehelperchat-detect.yaml"
         },
         {
-            "author": "that_juan_,dwisiswant0,wdahlenb",
+            "author": "that_juan_,dwisiswant0,wdahlenb,dr0pd34d",
             "id": "springboot-actuator",
             "name": "Detect Springboot Actuators",
             "severity": "info",
@@ -5290,6 +5298,14 @@
             "path": "exposed-panels/prometheus-exposed-panel.yaml"
         },
         {
+            "author": "TechbrunchFR",
+            "id": "seafile-panel",
+            "name": "Seafile Panel",
+            "severity": "info",
+            "tags": "sefile,panel",
+            "path": "exposed-panels/seafile-panel.yaml"
+        },
+        {
             "author": "e_schultze_",
             "id": "polycom-admin-detect",
             "name": "Polycom Admin Panel",
@@ -5426,11 +5442,11 @@
             "path": "exposed-panels/couchdb-exposure.yaml"
         },
         {
-            "author": "For3stCo1d",
+            "author": "For3stCo1d,TechbrunchFR",
             "id": "openwrt-login",
-            "name": "Opentwrt Login Detect",
+            "name": "Opentwrt Login / Configuration Interface",
             "severity": "info",
-            "tags": "openwrt,default-login,router",
+            "tags": "openwrt,router",
             "path": "exposed-panels/openwrt-login.yaml"
         },
         {
@@ -7928,6 +7944,14 @@
             "severity": "info",
             "tags": "panel,glpi",
             "path": "exposed-panels/glpi-login.yaml"
+        },
+        {
+            "author": "TechbrunchFR",
+            "id": "unifi-panel",
+            "name": "Unifi Network Panel",
+            "severity": "info",
+            "tags": "unifi,ubnt,panel",
+            "path": "exposed-panels/unifi-panel.yaml"
         },
         {
             "author": "pdteam",
@@ -13578,6 +13602,14 @@
             "path": "cves/2022/CVE-2022-21705.yaml"
         },
         {
+            "author": "veshraj",
+            "id": "CVE-2022-1598",
+            "name": "WordPress Plugin WPQA < 5.5 - Unauthenticated Private Message Disclosure",
+            "severity": "high",
+            "tags": "cve,cve2022,wordpress,wp-plugin,wpqa,idor",
+            "path": "cves/2022/CVE-2022-1598.yaml"
+        },
+        {
             "author": "pikpikcu",
             "id": "CVE-2022-0437",
             "name": "karma-runner DOM-based Cross-Site Scripting",
@@ -13600,6 +13632,14 @@
             "severity": "medium",
             "tags": "cve,cve2022,mappress,xss,wordpress,wp-plugin",
             "path": "cves/2022/CVE-2022-0208.yaml"
+        },
+        {
+            "author": "LogicalHunter",
+            "id": "CVE-2022-0776",
+            "name": "RevealJS postMessage XSS",
+            "severity": "medium",
+            "tags": "cve,cve2022,headless,postmessage,revealjs",
+            "path": "cves/2022/CVE-2022-0776.yaml"
         },
         {
             "author": "For3stCo1d",
@@ -13698,6 +13738,14 @@
             "path": "cves/2022/CVE-2022-0149.yaml"
         },
         {
+            "author": "0x_Akoko",
+            "id": "CVE-2022-24900",
+            "name": "Piano LED Visualizer 1.3 - Directory traversal",
+            "severity": "high",
+            "tags": "lfi,cve2022,cve,piano,iot,oss",
+            "path": "cves/2022/CVE-2022-24900.yaml"
+        },
+        {
             "author": "Akincibor",
             "id": "CVE-2022-28365",
             "name": "Reprise License Manager 14.2 - Information Disclosure",
@@ -13733,7 +13781,7 @@
             "author": "Akincibor",
             "id": "CVE-2022-0346",
             "name": "Google XML Sitemap Generator < 2.0.4 - Reflected Cross-Site Scripting & RCE",
-            "severity": "high",
+            "severity": "medium",
             "tags": "xss,wp,wordpress,wp-plugin,cve,cve2022",
             "path": "cves/2022/CVE-2022-0346.yaml"
         },
@@ -14064,6 +14112,14 @@
             "severity": "critical",
             "tags": "cve,cve2022,zabbix,auth-bypass,saml,sso",
             "path": "cves/2022/CVE-2022-23131.yaml"
+        },
+        {
+            "author": "For3stCo1d,princechaddha",
+            "id": "CVE-2022-22972",
+            "name": "Vmware Access,vIDM,vRA - Authentication Bypass",
+            "severity": "critical",
+            "tags": "cve,cve2022,vmware,auth-bypass,oast",
+            "path": "cves/2022/CVE-2022-22972.yaml"
         },
         {
             "author": "hexcat",
@@ -21522,6 +21578,14 @@
             "path": "cves/2019/CVE-2019-2578.yaml"
         },
         {
+            "author": "n-thumann",
+            "id": "CVE-2019-12581",
+            "name": "Zyxel ZyWall / USG / UAG - Reflected Cross-site scripting",
+            "severity": "medium",
+            "tags": "cve,cve2019,zyxel,zywall,xss",
+            "path": "cves/2019/CVE-2019-12581.yaml"
+        },
+        {
             "author": "dwisiswant0",
             "id": "CVE-2019-7609",
             "name": "Kibana Timelion - Arbitrary Code Execution",
@@ -21680,6 +21744,14 @@
             "severity": "critical",
             "tags": "cve,cve2019,nexus,rce",
             "path": "cves/2019/CVE-2019-7238.yaml"
+        },
+        {
+            "author": "n-thumann",
+            "id": "CVE-2019-12583",
+            "name": "Zyxel ZyWall UAG/USG - Missing ACL Guest Account Generator",
+            "severity": "critical",
+            "tags": "cve,cve2019,zyxel,zywall",
+            "path": "cves/2019/CVE-2019-12583.yaml"
         },
         {
             "author": "madrobot",
@@ -25597,7 +25669,7 @@
             "author": "c-sh0",
             "id": "digitalrebar-traversal",
             "name": "Digital Rebar - Directory traversal",
-            "severity": "critical",
+            "severity": "high",
             "tags": "lfi,rackn,digitalrebar",
             "path": "vulnerabilities/other/digitalrebar-traversal.yaml"
         },
@@ -25672,6 +25744,14 @@
             "severity": "high",
             "tags": "jeewms,lfi",
             "path": "vulnerabilities/other/jeewms-lfi.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "dotnetcms-sqli",
+            "name": "DotnetCMS SQLi",
+            "severity": "high",
+            "tags": "dotnetcms,dotnet,sqli",
+            "path": "vulnerabilities/other/dotnetcms-sqli.yaml"
         },
         {
             "author": "geeknik",
