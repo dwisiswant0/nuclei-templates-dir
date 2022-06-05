@@ -1,5 +1,5 @@
 {
-    "version": "v9.0.5",
+    "version": "v9.0.6",
     "data": [
         {
             "author": "dhiyaneshDk",
@@ -22810,7 +22810,7 @@
             "path": "cves/2022/CVE-2022-0543.yaml"
         },
         {
-            "author": "pdteam",
+            "author": "pdteam,jbertman",
             "id": "CVE-2022-26134",
             "name": "Confluence - Remote Code Execution via OGNL template injection",
             "severity": "critical",
