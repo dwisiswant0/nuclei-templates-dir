@@ -1,5 +1,5 @@
 {
-    "version": "v9.1.2",
+    "version": "v9.1.3",
     "data": [
         {
             "author": "righettod,pdteam",
@@ -34,7 +34,7 @@
             "path": "ssl/ssl-dns-names.yaml"
         },
         {
-            "author": "righettod",
+            "author": "righettod,forgedhallpass",
             "id": "deprecated-tls",
             "name": "Deprecated TLS Detection (TLS 1.1 or SSLv3)",
             "severity": "info",
@@ -260,7 +260,7 @@
         {
             "author": "dhiyaneshDK",
             "id": "unauthenticated-alert-manager",
-            "name": "Unauthenticated Alert Manager",
+            "name": "Alert Manager - Unauthenticated Access",
             "severity": "high",
             "tags": "unauth,alertmanager",
             "path": "misconfiguration/unauthenticated-alert-manager.yaml"
@@ -316,7 +316,7 @@
         {
             "author": "princechaddha",
             "id": "unauth-wavink-panel",
-            "name": "Unauthenticated Wavlink Panel",
+            "name": "Wavlink Panel - Unauthenticated Access",
             "severity": "high",
             "tags": "exposure,wavlink,unauth,misconfig,router",
             "path": "misconfiguration/unauth-wavink-panel.yaml"
@@ -380,7 +380,7 @@
         {
             "author": "pikpikcu",
             "id": "skycaiji-install",
-            "name": "SkyCaiji Exposed Installation",
+            "name": "SkyCaiji - Exposed Installation",
             "severity": "high",
             "tags": "tech,skycaiji,exposure,misconfig",
             "path": "misconfiguration/skycaiji-install.yaml"
@@ -476,7 +476,7 @@
         {
             "author": "w0Tx",
             "id": "selenium-exposure",
-            "name": "Selenium Node exposure",
+            "name": "Selenium - Node Exposure",
             "severity": "high",
             "tags": "selenium,misconfiguration,rce,chromium",
             "path": "misconfiguration/selenium-exposure.yaml"
@@ -508,7 +508,7 @@
         {
             "author": "dhiyaneshDK",
             "id": "unauthenticated-prtg",
-            "name": "Unauthenticated PRTG Traffic Grapher",
+            "name": "PRTG Traffic Grapher - Unauthenticated Access",
             "severity": "high",
             "tags": "config,unauth,prtg",
             "path": "misconfiguration/unauthenticated-prtg.yaml"
@@ -636,7 +636,7 @@
         {
             "author": "vzamanillo",
             "id": "rack-mini-profiler",
-            "name": "rack-mini-profiler environment information disclosure",
+            "name": "rack-mini-profiler - Environment Information Disclosure",
             "severity": "high",
             "tags": "config,debug,rails",
             "path": "misconfiguration/rack-mini-profiler.yaml"
@@ -732,7 +732,7 @@
         {
             "author": "geeknik",
             "id": "spidercontrol-scada-server-info",
-            "name": "SpiderControl SCADA Web Server Info Exposure",
+            "name": "SpiderControl SCADA Web Server - Sensitive Information Exposure",
             "severity": "high",
             "tags": "spidercontrol,scada,exposure",
             "path": "misconfiguration/spidercontrol-scada-server-info.yaml"
@@ -804,7 +804,7 @@
         {
             "author": "dhiyaneshDk",
             "id": "unauthenticated-tensorboard",
-            "name": "Unauthenticated Tensorboard by Tensorflow",
+            "name": "Tensorflow Tensorboard - Unauthenticated Access",
             "severity": "high",
             "tags": "tensorflow,tensorboard,unauth",
             "path": "misconfiguration/unauthenticated-tensorboard.yaml"
@@ -836,7 +836,7 @@
         {
             "author": "dhiyaneshDK",
             "id": "solr-admin-query",
-            "name": "Solr Admin Query Page",
+            "name": "Solr - Admin Page Access",
             "severity": "high",
             "tags": "solr,unauth",
             "path": "misconfiguration/solr-query-dashboard.yaml"
@@ -868,7 +868,7 @@
         {
             "author": "dhiyaneshDK,b0rn2r00t",
             "id": "unauthenticated-mongo-express",
-            "name": "Mongo Express Unauthenticated",
+            "name": "Mongo Express - Unauthenticated Access",
             "severity": "high",
             "tags": "mongo,unauth",
             "path": "misconfiguration/unauthenticated-mongo-express.yaml"
@@ -884,7 +884,7 @@
         {
             "author": "pussycat0x",
             "id": "service-pwd",
-            "name": "Service password file",
+            "name": "service.pwd - Sensitive Information Disclosure",
             "severity": "high",
             "tags": "exposure,listing,service",
             "path": "misconfiguration/service-pwd.yaml"
@@ -980,7 +980,7 @@
         {
             "author": "ritikchaddha",
             "id": "unauthorized-h3csecparh-login",
-            "name": "Unauthorized H3C Secparh Login",
+            "name": "H3C Server - Unauthenticated Access",
             "severity": "high",
             "tags": "h3c,default-login,unauth",
             "path": "misconfiguration/unauthorized-h3csecparh-login.yaml"
@@ -1146,6 +1146,14 @@
             "path": "misconfiguration/tcpconfig.yaml"
         },
         {
+            "author": "ELSFA7110",
+            "id": "springboot-flyway",
+            "name": "Springboot Flyway API",
+            "severity": "low",
+            "tags": "misconfig,springboot,exposure,flyway",
+            "path": "misconfiguration/springboot/springboot-flyway.yaml"
+        },
+        {
             "author": "that_juan_,dwisiswant0,wdahlenb",
             "id": "springboot-loggers",
             "name": "Detect Springboot Loggers",
@@ -1176,6 +1184,14 @@
             "severity": "low",
             "tags": "springboot",
             "path": "misconfiguration/springboot/springboot-threaddump.yaml"
+        },
+        {
+            "author": "ELSFA7110",
+            "id": "springboot-scheduledtasks",
+            "name": "Springboot Scheduledtasks Actuator",
+            "severity": "info",
+            "tags": "misconfig,springboot,exposure",
+            "path": "misconfiguration/springboot/springboot-scheduledtasks.yaml"
         },
         {
             "author": "philippedelteil",
@@ -1218,6 +1234,14 @@
             "path": "misconfiguration/springboot/springboot-configprops.yaml"
         },
         {
+            "author": "ELSFA7110",
+            "id": "springboot-caches",
+            "name": "Springboot Actuator Caches",
+            "severity": "low",
+            "tags": "misconfig,springboot,exposure",
+            "path": "misconfiguration/springboot/springboot-caches.yaml"
+        },
+        {
             "author": "that_juan_,dwisiswant0,wdahlenb",
             "id": "springboot-httptrace",
             "name": "Detect Springboot httptrace",
@@ -1254,7 +1278,7 @@
             "id": "springboot-trace",
             "name": "Detect Springboot Trace Actuator",
             "severity": "low",
-            "tags": "springboot,exposure",
+            "tags": "misconfig,springboot,exposure",
             "path": "misconfiguration/springboot/springboot-trace.yaml"
         },
         {
@@ -1306,7 +1330,7 @@
             "path": "misconfiguration/phpmyadmin/phpmyadmin-sql.php-server.yaml"
         },
         {
-            "author": "sheikhrishad,thevillagehacker,Kr1shna4garwal",
+            "author": "sheikhrishad,thevillagehacker,Kr1shna4garwal,ArjunChandarana",
             "id": "phpmyadmin-setup",
             "name": "Publicly Accessible Phpmyadmin Setup",
             "severity": "medium",
@@ -1789,7 +1813,7 @@
             "author": "Dolev Farhi",
             "id": "graphql-array-batching",
             "name": "GraphQL Array-based Batching",
-            "severity": "low",
+            "severity": "info",
             "tags": "graphql",
             "path": "misconfiguration/graphql/graphql-array-batching.yaml"
         },
@@ -1805,7 +1829,7 @@
             "author": "Dolev Farhi",
             "id": "graphql-alias-batching",
             "name": "GraphQL Alias-based Batching",
-            "severity": "low",
+            "severity": "info",
             "tags": "graphql",
             "path": "misconfiguration/graphql/graphql-alias-batching.yaml"
         },
@@ -1844,9 +1868,9 @@
         {
             "author": "0w4ys",
             "id": "drupal-user-enum-redirect",
-            "name": "Drupal User Enumration [Redirect]",
+            "name": "Drupal User Enumeration [Redirect]",
             "severity": "info",
-            "tags": "drupal",
+            "tags": "drupal,misconfig",
             "path": "misconfiguration/drupal/drupal-user-enum-redirect.yaml"
         },
         {
@@ -2532,7 +2556,7 @@
         {
             "author": "pdteam",
             "id": "mongodb-unauth",
-            "name": "Unauth MongoDB Disclosure",
+            "name": "MongoDB - Unauthenticated Access",
             "severity": "high",
             "tags": "network,mongodb,unauth",
             "path": "network/mongodb-unauth.yaml"
@@ -2612,7 +2636,7 @@
         {
             "author": "lu4nx",
             "id": "tidb-unauth",
-            "name": "Unauth TiDB Disclosure",
+            "name": "TiDB - Unauthenticated Access",
             "severity": "high",
             "tags": "network,tidb,unauth",
             "path": "network/tidb-unauth.yaml"
@@ -2620,7 +2644,7 @@
         {
             "author": "pdteam",
             "id": "exposed-zookeeper",
-            "name": "ZooKeeper Unauth Server",
+            "name": "Apache ZooKeeper - Unauthenticated Access",
             "severity": "high",
             "tags": "network,zookeeper,unauth",
             "path": "network/exposed-zookeeper.yaml"
@@ -2660,7 +2684,7 @@
         {
             "author": "lu4nx",
             "id": "clickhouse-unauth",
-            "name": "Unauth ClickHouse Disclosure",
+            "name": "ClickHouse - Unauthorized Access",
             "severity": "high",
             "tags": "network,clickhouse,unauth",
             "path": "network/clickhouse-unauth.yaml"
@@ -2684,7 +2708,7 @@
         {
             "author": "pdteam",
             "id": "exposed-redis",
-            "name": "Redis Unauth Server",
+            "name": "Redis Server - Unauthenticated Access",
             "severity": "high",
             "tags": "network,redis,unauth",
             "path": "network/exposed-redis.yaml"
@@ -2836,7 +2860,7 @@
         {
             "author": "0x_Akoko",
             "id": "CVE-2018-18777",
-            "name": "Path traversal vulnerability in Microstrategy Web version 7",
+            "name": "Microstrategy Web 7 - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2018,microstrategy,lfi,traversal",
             "path": "cves/2018/CVE-2018-18777.yaml"
@@ -2868,7 +2892,7 @@
         {
             "author": "0x_Akoko",
             "id": "CVE-2018-16133",
-            "name": "Cybrotech CyBroHttpServer 1.0.3 Directory Traversal",
+            "name": "Cybrotech CyBroHttpServer 1.0.3 - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2018,cybrotech,lfi",
             "path": "cves/2018/CVE-2018-16133.yaml"
@@ -2912,6 +2936,14 @@
             "severity": "high",
             "tags": "cve,cve2018,nuxeo,ssti,rce,bypass",
             "path": "cves/2018/CVE-2018-16341.yaml"
+        },
+        {
+            "author": "0x_Akoko",
+            "id": "CVE-2018-1000671",
+            "name": "Sympa version 6.2.16 - Open redirect and XSS",
+            "severity": "medium",
+            "tags": "cve,cve2018,redirect,sympa,debian",
+            "path": "cves/2018/CVE-2018-1000671.yaml"
         },
         {
             "author": "0x_Akoko",
@@ -3148,7 +3180,7 @@
         {
             "author": "daffainfo",
             "id": "CVE-2018-6008",
-            "name": "Joomla! Component Jtag Members Directory 5.3.7 - Arbitrary File Retrieval",
+            "name": "Joomla! Jtag Members Directory 5.3.7 - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2018,joomla,lfi",
             "path": "cves/2018/CVE-2018-6008.yaml"
@@ -3188,7 +3220,7 @@
         {
             "author": "_generic_human_",
             "id": "CVE-2018-2392",
-            "name": "SAP Internet Graphics Server (IGS) XML External Entity",
+            "name": "SAP Internet Graphics Server (IGS) - XML External Entity Injection",
             "severity": "high",
             "tags": "cve,cve2018,sap,igs,xxe,xmlchart",
             "path": "cves/2018/CVE-2018-2392.yaml"
@@ -3284,7 +3316,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2018-6910",
-            "name": "DedeCMS 5.7 path disclosure",
+            "name": "DedeCMS 5.7 - Path Disclosure",
             "severity": "high",
             "tags": "cve,cve2018,dedecms",
             "path": "cves/2018/CVE-2018-6910.yaml"
@@ -3388,7 +3420,7 @@
         {
             "author": "0xrudra,pikpikcu",
             "id": "CVE-2018-3760",
-            "name": "Ruby On Rails Path Traversal",
+            "name": "Ruby On Rails - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2018,rails,lfi,ruby",
             "path": "cves/2018/CVE-2018-3760.yaml"
@@ -3516,7 +3548,7 @@
         {
             "author": "wisnupramoedya",
             "id": "CVE-2018-13980",
-            "name": "Zeta Producer Desktop CMS 14.2.0 - Arbitrary File Retrieval",
+            "name": "Zeta Producer Desktop CMS <14.2.1 - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2018,lfi",
             "path": "cves/2018/CVE-2018-13980.yaml"
@@ -3636,7 +3668,7 @@
         {
             "author": "hetroublemakr",
             "id": "CVE-2018-1271",
-            "name": "Spring MVC Directory Traversal Vulnerability",
+            "name": "Spring MVC Framework - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2018,spring,lfi,traversal",
             "path": "cves/2018/CVE-2018-1271.yaml"
@@ -3676,7 +3708,7 @@
         {
             "author": "madrobot",
             "id": "CVE-2018-3714",
-            "name": "node-srv Path Traversal",
+            "name": "node-srv - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2018,nodejs,lfi",
             "path": "cves/2018/CVE-2018-3714.yaml"
@@ -3700,7 +3732,7 @@
         {
             "author": "dhiyaneshDK",
             "id": "CVE-2018-18778",
-            "name": "mini_httpd Path Traversal",
+            "name": "ACME mini_httpd <1.30 - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2018,lfi,mini_httpd",
             "path": "cves/2018/CVE-2018-18778.yaml"
@@ -3740,7 +3772,7 @@
         {
             "author": "0x_Akoko",
             "id": "CVE-2018-18775",
-            "name": "Cross Site Scripting in Microstrategy Web version 7",
+            "name": "Microstrategy Web 7 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2018,microstrategy,xss",
             "path": "cves/2018/CVE-2018-18775.yaml"
@@ -3772,7 +3804,7 @@
         {
             "author": "daffainfo",
             "id": "CVE-2018-16059",
-            "name": "WirelessHART Fieldgate SWG70 3.0 - Directory Traversal",
+            "name": "WirelessHART Fieldgate SWG70 3.0 - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2018,iot,lfi",
             "path": "cves/2018/CVE-2018-16059.yaml"
@@ -4828,7 +4860,7 @@
         {
             "author": "0x_Akoko",
             "id": "CVE-2015-4666",
-            "name": "Xceedium Xsuite 2.4.4.5 - Directory Traversal",
+            "name": "Xceedium Xsuite <=2.4.4.5 - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2015,xceedium,xsuite,lfi",
             "path": "cves/2015/CVE-2015-4666.yaml"
@@ -4924,7 +4956,7 @@
         {
             "author": "daffainfo",
             "id": "CVE-2015-7780",
-            "name": "ManageEngine Firewall Analyzer 8.0 - Directory Traversal",
+            "name": "ManageEngine Firewall Analyzer <8.0 - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2015,lfi,manageengine",
             "path": "cves/2015/CVE-2015-7780.yaml"
@@ -5180,7 +5212,7 @@
         {
             "author": "dhiyaneshDK",
             "id": "CVE-2008-5587",
-            "name": "phpPgAdmin 4.2.1 - '_language' Local File Inclusion",
+            "name": "phpPgAdmin <=4.2.1 - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2008,lfi,phppgadmin",
             "path": "cves/2008/CVE-2008-5587.yaml"
@@ -5380,7 +5412,7 @@
         {
             "author": "0x_Akoko",
             "id": "CVE-2021-28377",
-            "name": "ChronoForums 2.0.11 - Directory Traversal",
+            "name": "Joomla! ChronoForums 2.0.11 - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2021,chronoforums,lfi,joomla",
             "path": "cves/2021/CVE-2021-28377.yaml"
@@ -5492,9 +5524,9 @@
         {
             "author": "gy741",
             "id": "CVE-2021-30497",
-            "name": "Ivanti Avalanche Directory Traversal",
+            "name": "Ivanti Avalanche 6.3.2 - Local File Inclusion",
             "severity": "high",
-            "tags": "cve,cve2021,avalanche,traversal",
+            "tags": "cve,cve2021,avalanche,traversal,lfi",
             "path": "cves/2021/CVE-2021-30497.yaml"
         },
         {
@@ -5932,7 +5964,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2021-21402",
-            "name": "Jellyfin prior to 10.7.0 Unauthenticated Arbitrary File Read",
+            "name": "Jellyfin <10.7.0 - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2021,jellyfin,lfi",
             "path": "cves/2021/CVE-2021-21402.yaml"
@@ -5989,7 +6021,7 @@
             "author": "For3stCo1d",
             "id": "CVE-2021-40150",
             "name": "Reolink E1 Zoom Camera - Information Disclosure",
-            "severity": "medium",
+            "severity": "high",
             "tags": "cve,cve2021,reolink,camera,exposure,iot",
             "path": "cves/2021/CVE-2021-40150.yaml"
         },
@@ -6028,7 +6060,7 @@
         {
             "author": "gy741,pikpikcu",
             "id": "CVE-2021-3223",
-            "name": "Node RED Dashboard - Directory Traversal",
+            "name": "Node RED Dashboard <2.26.2 - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2021,node-red-dashboard,lfi",
             "path": "cves/2021/CVE-2021-3223.yaml"
@@ -6356,7 +6388,7 @@
         {
             "author": "gy741",
             "id": "CVE-2021-28151",
-            "name": "Hongdian Command Injection",
+            "name": "Hongdian H8922 3.0.5 - Remote Command Injection",
             "severity": "high",
             "tags": "cve,cve2021,hongdian,rce,injection",
             "path": "cves/2021/CVE-2021-28151.yaml"
@@ -6516,7 +6548,7 @@
         {
             "author": "geeknik",
             "id": "CVE-2021-28937",
-            "name": "Acexy Wireless-N WiFi Repeater Password Disclosure",
+            "name": "Acexy Wireless-N WiFi Repeater REV 1.0 - Repeater Password Disclosure",
             "severity": "high",
             "tags": "cve,cve2021,acexy,disclosure,iot",
             "path": "cves/2021/CVE-2021-28937.yaml"
@@ -6540,7 +6572,7 @@
         {
             "author": "_0xf4n9x_",
             "id": "CVE-2021-36749",
-            "name": "Apache Druid Authentication Restrictions Bypass",
+            "name": "Apache Druid - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2021,apache,lfi,auth-bypass,druid",
             "path": "cves/2021/CVE-2021-36749.yaml"
@@ -6732,7 +6764,7 @@
         {
             "author": "gy741",
             "id": "CVE-2021-28149",
-            "name": "Hongdian Directory Traversal",
+            "name": "Hongdian H8922 3.0.5 Devices - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2021,hongdian,traversal",
             "path": "cves/2021/CVE-2021-28149.yaml"
@@ -6804,7 +6836,7 @@
         {
             "author": "geeknik",
             "id": "CVE-2021-3374",
-            "name": "Rstudio Shiny Server Directory Traversal",
+            "name": "Rstudio Shiny Server <1.5.16 - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2021,rstudio,traversal",
             "path": "cves/2021/CVE-2021-3374.yaml"
@@ -6949,7 +6981,7 @@
             "author": "For3stCo1d",
             "id": "CVE-2021-40149",
             "name": "Reolink E1 Zoom Camera <=3.0.0.716 - Private Key Disclosure",
-            "severity": "high",
+            "severity": "medium",
             "tags": "cve,cve2021,reolink,camera,iot,exposure,unauth",
             "path": "cves/2021/CVE-2021-40149.yaml"
         },
@@ -6972,7 +7004,7 @@
         {
             "author": "princechaddha",
             "id": "CVE-2021-26085",
-            "name": "Confluence Pre-Authorization Arbitrary File Read in /s/ endpoint - CVE-2021-26085",
+            "name": "Atlassian Confluence Server - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2021,confluence,atlassian,lfi,kev",
             "path": "cves/2021/CVE-2021-26085.yaml"
@@ -7012,7 +7044,7 @@
         {
             "author": "pussycat0x",
             "id": "CVE-2021-31602",
-            "name": "Pentaho <= 9.1 Authentication Bypass of Spring APIs",
+            "name": "Hitachi Vantara Pentaho/Business Intelligence Server - Authentication Bypass",
             "severity": "high",
             "tags": "cve,cve2021,pentaho,auth-bypass,spring",
             "path": "cves/2021/CVE-2021-31602.yaml"
@@ -7284,7 +7316,7 @@
         {
             "author": "cocxanh",
             "id": "CVE-2021-26086",
-            "name": "Jira Limited Local File Read",
+            "name": "Atlassian Jira Limited -  Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2021,jira,lfi",
             "path": "cves/2021/CVE-2021-26086.yaml"
@@ -7436,7 +7468,7 @@
         {
             "author": "0x_Akoko",
             "id": "CVE-2021-41569",
-            "name": "SAS 9.4 build 1520 - Local File Inclusion",
+            "name": "SAS/Internet 9.4 1520 - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2021,sas,lfi",
             "path": "cves/2021/CVE-2021-41569.yaml"
@@ -7476,7 +7508,7 @@
         {
             "author": "daffainfo",
             "id": "CVE-2021-23241",
-            "name": "Mercury Router Web Server Directory Traversal",
+            "name": "MERCUSYS Mercury X18G 1.0.5 Router - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2021,iot,lfi,router",
             "path": "cves/2021/CVE-2021-23241.yaml"
@@ -7556,7 +7588,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2021-29442",
-            "name": "Nacos prior to 1.4.1 Missing Authentication Check",
+            "name": "Nacos <1.4.1 - Authentication Bypass",
             "severity": "high",
             "tags": "nacos,auth-bypass,cve,cve2021",
             "path": "cves/2021/CVE-2021-29442.yaml"
@@ -7852,7 +7884,7 @@
         {
             "author": "0x_Akoko",
             "id": "CVE-2020-13158",
-            "name": "Artica Proxy < 4.30.000000 Community Edition - Directory Traversal",
+            "name": "Artica Proxy Community Edition <4.30.000000 - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2020,artica,lfi",
             "path": "cves/2020/CVE-2020-13158.yaml"
@@ -7860,7 +7892,7 @@
         {
             "author": "pdteam",
             "id": "CVE-2020-25780",
-            "name": "Commvault CommCell Directory Traversal",
+            "name": "Commvault CommCell - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2020,commvault,lfi",
             "path": "cves/2020/CVE-2020-25780.yaml"
@@ -7988,7 +8020,7 @@
         {
             "author": "geeknik",
             "id": "CVE-2020-24949",
-            "name": "PHPFusion 9.03.50 Remote Code Execution",
+            "name": "PHP-Fusion 9.03.50 - Remote Code Execution",
             "severity": "high",
             "tags": "cve,cve2020,phpfusion,rce,php",
             "path": "cves/2020/CVE-2020-24949.yaml"
@@ -8028,7 +8060,7 @@
         {
             "author": "gy741",
             "id": "CVE-2020-15050",
-            "name": "Suprema BioStar2 - Local File Inclusion (LFI)",
+            "name": "Suprema BioStar <2.8.2 - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2020,lfi,suprema,biostar2",
             "path": "cves/2020/CVE-2020-15050.yaml"
@@ -8100,7 +8132,7 @@
         {
             "author": "madrobot",
             "id": "CVE-2020-26073",
-            "name": "Cisco SD-WAN vManage Software Directory Traversal",
+            "name": "Cisco SD-WAN vManage Software - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2020,cisco,lfi",
             "path": "cves/2020/CVE-2020-26073.yaml"
@@ -8132,7 +8164,7 @@
         {
             "author": "0x_Akoko",
             "id": "CVE-2020-27467",
-            "name": "Processwire CMS < 2.7.1 - Directory Traversal",
+            "name": "Processwire CMS <2.7.1 - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2020,processwire,lfi,cms,oss",
             "path": "cves/2020/CVE-2020-27467.yaml"
@@ -8140,7 +8172,7 @@
         {
             "author": "gy741",
             "id": "CVE-2020-27866",
-            "name": "NETGEAR Authentication Bypass vulnerability",
+            "name": "NETGEAR - Authentication Bypass",
             "severity": "high",
             "tags": "cve,cve2020,netgear,auth-bypass",
             "path": "cves/2020/CVE-2020-27866.yaml"
@@ -8188,7 +8220,7 @@
         {
             "author": "pdteam",
             "id": "CVE-2020-11978",
-            "name": "Apache Airflow <= 1.10.10 - 'Example Dag' Remote Code Execution",
+            "name": "Apache Airflow <=1.10.10 - Remote Code Execution",
             "severity": "high",
             "tags": "cve,cve2020,apache,airflow,rce,kev",
             "path": "cves/2020/CVE-2020-11978.yaml"
@@ -8228,7 +8260,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2020-24571",
-            "name": "NexusDB v4.50.22 Path Traversal",
+            "name": "NexusDB <4.50.23 - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2020,nexusdb,lfi",
             "path": "cves/2020/CVE-2020-24571.yaml"
@@ -8260,7 +8292,7 @@
         {
             "author": "0x_Akoko",
             "id": "CVE-2020-27191",
-            "name": "LionWiki 3.2.11 - LFI",
+            "name": "LionWiki <3.2.12 - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2020,lionwiki,lfi,oss",
             "path": "cves/2020/CVE-2020-27191.yaml"
@@ -8388,7 +8420,7 @@
         {
             "author": "pdteam",
             "id": "CVE-2020-3452",
-            "name": "Cisco Adaptive Security Appliance (ASA) and Firepower Threat Defense (FTD) - Arbitrary File Retrieval",
+            "name": "Cisco Adaptive Security Appliance (ASA)/Firepower Threat Defense (FTD) - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2020,cisco,lfi,kev",
             "path": "cves/2020/CVE-2020-3452.yaml"
@@ -8468,7 +8500,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2020-11738",
-            "name": "WordPress Duplicator plugin Directory Traversal",
+            "name": "WordPress Duplicator 1.3.24 & 1.3.26 - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2020,wordpress,wp-plugin,lfi,kev",
             "path": "cves/2020/CVE-2020-11738.yaml"
@@ -8532,7 +8564,7 @@
         {
             "author": "geeknik",
             "id": "CVE-2020-25540",
-            "name": "ThinkAdmin 6 - Arbitrarily File Read (CVE-2020-25540)",
+            "name": "ThinkAdmin 6 - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2020,thinkadmin,lfi",
             "path": "cves/2020/CVE-2020-25540.yaml"
@@ -8676,7 +8708,7 @@
         {
             "author": "pdteam",
             "id": "CVE-2020-17519",
-            "name": "Apache Flink directory traversal",
+            "name": "Apache Flink - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2020,apache,lfi,flink",
             "path": "cves/2020/CVE-2020-17519.yaml"
@@ -8738,6 +8770,14 @@
             "path": "cves/2020/CVE-2020-35234.yaml"
         },
         {
+            "author": "scent2d",
+            "id": "CVE-2020-9043",
+            "name": "WordPress wpCentral < 1.5.1 - Improper Access Control to Privilege Escalation",
+            "severity": "high",
+            "tags": "cve,cve2020,wordpress,wp-plugin,wpcentral,authenticated,wp",
+            "path": "cves/2020/CVE-2020-9043.yaml"
+        },
+        {
             "author": "dwisiswant0",
             "id": "CVE-2020-8191",
             "name": "Citrix ADC & NetScaler Gateway Reflected XSS",
@@ -8756,7 +8796,7 @@
         {
             "author": "pdteam",
             "id": "CVE-2020-17518",
-            "name": "Apache Flink Upload Path Traversal",
+            "name": "Apache Flink 1.5.1 - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2020,apache,lfi,flink,upload",
             "path": "cves/2020/CVE-2020-17518.yaml"
@@ -8796,7 +8836,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2020-27986",
-            "name": "SonarQube unauth",
+            "name": "SonarQube - Authentication Bypass",
             "severity": "high",
             "tags": "cve,cve2020,sonarqube",
             "path": "cves/2020/CVE-2020-27986.yaml"
@@ -8812,7 +8852,7 @@
         {
             "author": "gy741",
             "id": "CVE-2020-27361",
-            "name": "Akkadian Provisioning Manager - Files Listing",
+            "name": "Akkadian Provisioning Manager 4.50.02 - Sensitive Information Disclosure",
             "severity": "high",
             "tags": "cve,cve2020,akkadian,listing,exposure",
             "path": "cves/2020/CVE-2020-27361.yaml"
@@ -8852,7 +8892,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2020-24579",
-            "name": "D-Link DSL 2888a - Remote Command Execution",
+            "name": "D-Link DSL 2888a - Authentication Bypass/Remote Command Execution",
             "severity": "high",
             "tags": "cve,cve2020,dlink,rce",
             "path": "cves/2020/CVE-2020-24579.yaml"
@@ -8876,7 +8916,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2020-16952",
-            "name": "Microsoft SharePoint Server-Side Include (SSI) and ViewState RCE",
+            "name": "Microsoft SharePoint - Remote Code Execution",
             "severity": "high",
             "tags": "cve,cve2020,sharepoint,iis,microsoft,ssi,rce",
             "path": "cves/2020/CVE-2020-16952.yaml"
@@ -8884,7 +8924,7 @@
         {
             "author": "daffainfo",
             "id": "CVE-2020-11455",
-            "name": "LimeSurvey 4.1.11 - Path Traversal",
+            "name": "LimeSurvey 4.1.11 - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2020,lfi",
             "path": "cves/2020/CVE-2020-11455.yaml"
@@ -8892,7 +8932,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2020-23972",
-            "name": "Joomla! Component GMapFP 3.5 - Unauthenticated Arbitrary File Upload",
+            "name": "Joomla! Component GMapFP 3.5 - Arbitrary File Upload",
             "severity": "high",
             "tags": "cve,cve2020,joomla",
             "path": "cves/2020/CVE-2020-23972.yaml"
@@ -8964,7 +9004,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2020-13700",
-            "name": "acf-to-rest-api wordpress plugin IDOR",
+            "name": "WordPresss acf-to-rest-api <=3.1.0- Insecure Direct Object Reference",
             "severity": "high",
             "tags": "cve,cve2020,wordpress,plugin",
             "path": "cves/2020/CVE-2020-13700.yaml"
@@ -9004,7 +9044,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2020-17505",
-            "name": "Artica Web Proxy 4.30 OS Command Injection",
+            "name": "Artica Web Proxy 4.30 - OS Command Injection",
             "severity": "high",
             "tags": "cve,cve2020,rce,artica,proxy",
             "path": "cves/2020/CVE-2020-17505.yaml"
@@ -9020,7 +9060,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2020-25078",
-            "name": "D-Link DCS-2530L Administrator password disclosure",
+            "name": "D-Link DCS-2530L/DCS-2670L  - Administrator Password Disclosure",
             "severity": "high",
             "tags": "cve,cve2020,dlink",
             "path": "cves/2020/CVE-2020-25078.yaml"
@@ -9028,7 +9068,7 @@
         {
             "author": "Ivo Palazzolo (@palaziv)",
             "id": "CVE-2020-14864",
-            "name": "Oracle Fusion - \"getPreviewImage\" Directory Traversal/Local File Inclusion",
+            "name": "Oracle Fusion - Directory Traversal/Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2020,oracle,lfi,kev",
             "path": "cves/2020/CVE-2020-14864.yaml"
@@ -9044,7 +9084,7 @@
         {
             "author": "rootxharsh,iamnoooob,dwisiswant0",
             "id": "CVE-2020-5284",
-            "name": "Next.js .next/ limited path traversal",
+            "name": "Next.js <9.3.2 - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2020,nextjs,lfi",
             "path": "cves/2020/CVE-2020-5284.yaml"
@@ -9052,7 +9092,7 @@
         {
             "author": "madrobot",
             "id": "CVE-2020-2036",
-            "name": "Palo Alto Networks Reflected XSS",
+            "name": "Palo Alto Networks PAN-OS Web Interface - Cross Site-Scripting",
             "severity": "high",
             "tags": "cve,cve2020,vpn,xss",
             "path": "cves/2020/CVE-2020-2036.yaml"
@@ -9098,6 +9138,14 @@
             "path": "cves/2020/CVE-2020-24186.yaml"
         },
         {
+            "author": "ritikchaddha,amit-jd",
+            "id": "CVE-2020-13405",
+            "name": "MicroWeber - Unauthenticated User Database Disclosure",
+            "severity": "high",
+            "tags": "cve,cve2020,microweber,unauth,disclosure",
+            "path": "cves/2020/CVE-2020-13405.yaml"
+        },
+        {
             "author": "dwisiswant0",
             "id": "CVE-2020-9757",
             "name": "Craft CMS < 3.3.0 - Server-Side Template Injection",
@@ -9132,7 +9180,7 @@
         {
             "author": "pdteam",
             "id": "CVE-2020-8193",
-            "name": "Citrix unauthenticated LFI",
+            "name": "Citrix  - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2020,citrix,lfi,kev",
             "path": "cves/2020/CVE-2020-8193.yaml"
@@ -9148,7 +9196,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2020-16139",
-            "name": "Cisco 7937G Denial-of-Service Reboot Attack",
+            "name": "Cisco Unified IP Conference Station 7937G - Denial-of-Service",
             "severity": "high",
             "tags": "cve,cve2020,dos,cisco",
             "path": "cves/2020/CVE-2020-16139.yaml"
@@ -9212,7 +9260,7 @@
         {
             "author": "harshbothra_",
             "id": "CVE-2020-5405",
-            "name": "Spring Cloud Directory Traversal",
+            "name": "Spring Cloud Config - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2020,lfi,springcloud",
             "path": "cves/2020/CVE-2020-5405.yaml"
@@ -9252,7 +9300,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2020-11853",
-            "name": "Micro Focus Operation Bridge Manager RCE",
+            "name": "Micro Focus Operations Bridge Manager <=2020.05 - Remote Code Execution",
             "severity": "high",
             "tags": "cve,cve2020,opm,rce",
             "path": "cves/2020/CVE-2020-11853.yaml"
@@ -9884,7 +9932,7 @@
         {
             "author": "0x_Akoko,daffainfo",
             "id": "CVE-2019-13396",
-            "name": "FlightPath Local File Inclusion",
+            "name": "FlightPath - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2019,flightpath,lfi",
             "path": "cves/2019/CVE-2019-13396.yaml"
@@ -9908,7 +9956,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2019-18393",
-            "name": "Openfire LFI",
+            "name": "Ignite Realtime Openfire <4.42 - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2019,openfire,lfi",
             "path": "cves/2019/CVE-2019-18393.yaml"
@@ -9932,7 +9980,7 @@
         {
             "author": "0x_Akoko",
             "id": "CVE-2019-9922",
-            "name": "JE Messenger 1.2.2 Joomla - Directory Traversal",
+            "name": "Joomla! Harmis Messenger 1.2.2 - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2019,joomla,messenger,lfi",
             "path": "cves/2019/CVE-2019-9922.yaml"
@@ -10068,7 +10116,7 @@
         {
             "author": "Kishore Krishna (siLLyDaddy)",
             "id": "CVE-2019-8442",
-            "name": "JIRA Directory Traversal",
+            "name": "Jira - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2019,atlassian,jira,lfi",
             "path": "cves/2019/CVE-2019-8442.yaml"
@@ -10148,7 +10196,7 @@
         {
             "author": "0x_Akoko",
             "id": "CVE-2019-11013",
-            "name": "Nimble Streamer 3.0.2-2 to 3.5.4-9 - Path Traversal",
+            "name": "Nimble Streamer <=3.5.4-9 - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2019,lfi,nimble",
             "path": "cves/2019/CVE-2019-11013.yaml"
@@ -10276,7 +10324,7 @@
         {
             "author": "madrobot",
             "id": "CVE-2019-2767",
-            "name": "Oracle Business Intelligence - Publisher XXE",
+            "name": "Oracle Business Intelligence Publisher - XML External Entity Injection",
             "severity": "high",
             "tags": "cve,cve2019,oracle,xxe,oast",
             "path": "cves/2019/CVE-2019-2767.yaml"
@@ -10396,7 +10444,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2019-9041",
-            "name": "ZZZCMS 1.6.1 RCE",
+            "name": "ZZZCMS 1.6.1 - Remote Code Execution",
             "severity": "high",
             "tags": "cve,cve2019,zzzcms,rce",
             "path": "cves/2019/CVE-2019-9041.yaml"
@@ -10476,7 +10524,7 @@
         {
             "author": "madrobot",
             "id": "CVE-2019-6340",
-            "name": "Drupal 8 core RESTful Web Services RCE",
+            "name": "Drupal - Remote Code Execution",
             "severity": "high",
             "tags": "cve,cve2019,drupal,rce,kev",
             "path": "cves/2019/CVE-2019-6340.yaml"
@@ -10556,7 +10604,7 @@
         {
             "author": "0x_Akoko",
             "id": "CVE-2019-7315",
-            "name": "Genie Access WIP3BVAF IP Camera - Directory Traversal",
+            "name": "Genie Access WIP3BVAF IP Camera - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2019,camera,genie,lfi,iot",
             "path": "cves/2019/CVE-2019-7315.yaml"
@@ -10660,7 +10708,7 @@
         {
             "author": "madrobot",
             "id": "CVE-2019-3799",
-            "name": "Spring-Cloud-Config-Server Directory Traversal",
+            "name": "Spring Cloud Config Server - Local File Inclusion",
             "severity": "medium",
             "tags": "cve,cve2019,lfi",
             "path": "cves/2019/CVE-2019-3799.yaml"
@@ -10668,7 +10716,7 @@
         {
             "author": "0x_Akoko",
             "id": "CVE-2019-14251",
-            "name": "T24 in TEMENOS Channels R15.01 - Pre Authenticated Path Traversal",
+            "name": "T24 Web Server - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2019,temenos,lfi,unauth",
             "path": "cves/2019/CVE-2019-14251.yaml"
@@ -10684,7 +10732,7 @@
         {
             "author": "0x_Akoko",
             "id": "CVE-2019-18665",
-            "name": "DOMOS 5.5 - Directory Traversal",
+            "name": "DOMOS 5.5 - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2019,domos,lfi",
             "path": "cves/2019/CVE-2019-18665.yaml"
@@ -10740,7 +10788,7 @@
         {
             "author": "pdteam",
             "id": "CVE-2019-2616",
-            "name": "XXE in Oracle Business Intelligence and XML Publisher",
+            "name": "Oracle Business Intelligence/XML Publisher - XML External Entity Injection",
             "severity": "high",
             "tags": "cve,cve2019,oracle,xxe,oast,kev",
             "path": "cves/2019/CVE-2019-2616.yaml"
@@ -10788,7 +10836,7 @@
         {
             "author": "madrobot",
             "id": "CVE-2019-8903",
-            "name": "Totaljs - Unauthenticated Directory Traversal",
+            "name": "Totaljs <3.2.3 - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2019,totaljs,lfi",
             "path": "cves/2019/CVE-2019-8903.yaml"
@@ -10860,7 +10908,7 @@
         {
             "author": "0x_Akoko",
             "id": "CVE-2019-7254",
-            "name": "eMerge E3 1.00-06 - Unauthenticated Directory Traversal",
+            "name": "eMerge E3 1.00-06 - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2019,emerge,lfi",
             "path": "cves/2019/CVE-2019-7254.yaml"
@@ -11226,6 +11274,14 @@
             "path": "cves/2022/CVE-2022-34047.yaml"
         },
         {
+            "author": "amit-jd",
+            "id": "CVE-2022-0954",
+            "name": "Microweber - Cross-site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2022,xss,microweber",
+            "path": "cves/2022/CVE-2022-0921.yaml"
+        },
+        {
             "author": "veshraj",
             "id": "CVE-2022-1598",
             "name": "WordPress Plugin WPQA < 5.5 - Unauthenticated Private Message Disclosure",
@@ -11236,7 +11292,7 @@
         {
             "author": "0x_Akoko",
             "id": "CVE-2022-24129",
-            "name": "Shibboleth OIDC OP plugin <3.0.4 - Server-Side Request Forgery",
+            "name": "Shibboleth OIDC OP <3.0.4 - Server-Side Request Forgery",
             "severity": "high",
             "tags": "cve,cve2022,ssrf,oidc,shibboleth",
             "path": "cves/2022/CVE-2022-24129.yaml"
@@ -11258,6 +11314,22 @@
             "path": "cves/2022/CVE-2022-0189.yaml"
         },
         {
+            "author": "Akincibor",
+            "id": "CVE-2022-0870",
+            "name": "Gogs - SSRF",
+            "severity": "medium",
+            "tags": "cve,cve2022,ssrf,gogs",
+            "path": "cves/2022/CVE-2022-0870.yaml"
+        },
+        {
+            "author": "For3stCo1d",
+            "id": "CVE-2022-34049",
+            "name": "Wavlink Exportlogs.sh - Configuration Exposure",
+            "severity": "medium",
+            "tags": "cve,cve2022,wavlink,router,exposure",
+            "path": "cves/2022/CVE-2022-34049.yaml"
+        },
+        {
             "author": "cckuailong",
             "id": "CVE-2022-24124",
             "name": "Casdoor 1.13.0 - Unauthenticated SQL Injection",
@@ -11268,7 +11340,7 @@
         {
             "author": "edoardottt",
             "id": "CVE-2022-29014",
-            "name": "Razer Sila Gaming Router v2.0.441_api-2.0.418 - LFI",
+            "name": "Razer Sila Gaming Router 2.0.441_api-2.0.418 - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2022,razer,lfi,router",
             "path": "cves/2022/CVE-2022-29014.yaml"
@@ -11428,7 +11500,7 @@
         {
             "author": "0x_Akoko",
             "id": "CVE-2022-31268",
-            "name": "Gitblit 1.9.3 - Path traversal",
+            "name": "Gitblit 1.9.3 - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2022,lfi,gitblit",
             "path": "cves/2022/CVE-2022-31268.yaml"
@@ -11436,7 +11508,7 @@
         {
             "author": "ritikchaddha",
             "id": "CVE-2022-29298",
-            "name": "SolarView Compact 6.00 - Directory Traversal",
+            "name": "SolarView Compact 6.00 - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2022,lfi,solarview",
             "path": "cves/2022/CVE-2022-29298.yaml"
@@ -11460,7 +11532,7 @@
         {
             "author": "akincibor",
             "id": "CVE-2022-0656",
-            "name": "uDraw < 3.3.3 - Unauthenticated Arbitrary File Access",
+            "name": "uDraw <3.3.3 - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2022,wp,wordpress,lfi,udraw,wp-plugin,unauth",
             "path": "cves/2022/CVE-2022-0656.yaml"
@@ -11516,7 +11588,7 @@
         {
             "author": "ritikchaddha",
             "id": "CVE-2022-28079",
-            "name": "College Management System - SQL Injection",
+            "name": "College Management System 1.0 - SQL Injection",
             "severity": "high",
             "tags": "cve,cve2022,sqli,cms,collegemanagement",
             "path": "cves/2022/CVE-2022-28079.yaml"
@@ -11658,6 +11730,14 @@
             "path": "cves/2022/CVE-2022-22972.yaml"
         },
         {
+            "author": "For3stCo1d",
+            "id": "CVE-2022-2487",
+            "name": "Wavlink Nightled.cgi - Remote Code Execution",
+            "severity": "critical",
+            "tags": "cve,cve2022,iot,wavlink,router,rce,oast",
+            "path": "cves/2022/CVE-2022-2487.yaml"
+        },
+        {
             "author": "pikpikcu",
             "id": "CVE-2022-1713",
             "name": "Drawio <18.0.4 - Server-Side Request Forgery",
@@ -11696,6 +11776,14 @@
             "severity": "high",
             "tags": "cve,cve2022,sqli",
             "path": "cves/2022/CVE-2022-32018.yaml"
+        },
+        {
+            "author": "amit-jd",
+            "id": "CVE-2022-0963",
+            "name": "Microweber > 1.2.12 - Cross-Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2022,xss,microweber,cms,authenticated",
+            "path": "cves/2022/CVE-2022-0963.yaml"
         },
         {
             "author": "pikpikcu",
@@ -11756,7 +11844,7 @@
         {
             "author": "random-robbie",
             "id": "CVE-2022-27849",
-            "name": "WordPress Simple Ajax Chat plugin <= 20220115 - Sensitive Information Disclosure vulnerability",
+            "name": "WordPress Simple Ajax Chat <20220116 - Sensitive Information Disclosure vulnerability",
             "severity": "high",
             "tags": "wp,wordpress,wp-plugin,cve,cve2022,disclosure",
             "path": "cves/2022/CVE-2022-27849.yaml"
@@ -11778,9 +11866,17 @@
             "path": "cves/2022/CVE-2022-31373.yaml"
         },
         {
+            "author": "For3stCo1d",
+            "id": "CVE-2022-2486",
+            "name": "Wavlink Mesh.cgi - Remote Code Execution",
+            "severity": "critical",
+            "tags": "cve,cve2022,iot,wavlink,router,rce,oast",
+            "path": "cves/2022/CVE-2022-2486.yaml"
+        },
+        {
             "author": "pikpikcu",
             "id": "CVE-2022-33174",
-            "name": "Powertek Firmware - Authorization Bypass",
+            "name": "Powertek Firmware <3.30.30 - Authorization Bypass",
             "severity": "high",
             "tags": "cve,cve2022,powertek,auth-bypass",
             "path": "cves/2022/CVE-2022-33174.yaml"
@@ -11842,6 +11938,14 @@
             "path": "cves/2022/CVE-2022-26148.yaml"
         },
         {
+            "author": "arafatansari",
+            "id": "CVE-2022-30073",
+            "name": "WBCE CMS v1.5.2 XSS Stored",
+            "severity": "medium",
+            "tags": "cve,cve2022,wbcecms,xss",
+            "path": "cves/2022/CVE-2022-30073.yaml"
+        },
+        {
             "author": "lucasljm2001,ekrause,ritikchaddha",
             "id": "CVE-2022-28080",
             "name": "Royal Event - SQL Injection",
@@ -11892,7 +11996,7 @@
         {
             "author": "0x_Akoko",
             "id": "CVE-2022-26233",
-            "name": "Barco Control Room Management Suite - Directory Traversal",
+            "name": "Barco Control Room Management Suite <=2.9 Build 0275 - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2022,barco,lfi",
             "path": "cves/2022/CVE-2022-26233.yaml"
@@ -11970,6 +12074,30 @@
             "path": "cves/2022/CVE-2022-22965.yaml"
         },
         {
+            "author": "akincibor,MantisSTS,calumjelrick",
+            "id": "CVE-2022-1386",
+            "name": "WordPress Fusion Builder < 3.6.2 - Unauthenticated SSRF",
+            "severity": "critical",
+            "tags": "cve,cve2022,wp,wordpress,ssrf,fusion,themefusion,avada",
+            "path": "cves/2022/CVE-2022-1386.yaml"
+        },
+        {
+            "author": "Akincibor,DhiyaneshDK",
+            "id": "CVE-2022-1937",
+            "name": "Awin Data Feed <= 1.6 - Reflected Cross-Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2022,wp-plugin,xss,wp,wordpress,authenticated,awin",
+            "path": "cves/2022/CVE-2022-1937.yaml"
+        },
+        {
+            "author": "For3stCo1d",
+            "id": "CVE-2022-2488",
+            "name": "Wavlink Touchlist_sync.cgi - Remote Code Execution",
+            "severity": "critical",
+            "tags": "cve,cve2022,iot,wavlink,router,rce,oast",
+            "path": "cves/2022/CVE-2022-2488.yaml"
+        },
+        {
             "author": "dhiyaneshDk",
             "id": "CVE-2022-0149",
             "name": "WooCommerce Stored Exporter WordPress Plugin < 2.7.1 - Reflected Cross-Site Scripting",
@@ -11984,6 +12112,14 @@
             "severity": "critical",
             "tags": "ssrf,wp,wp-plugin,wordpress,cve,cve2022,unauth,formcraft3",
             "path": "cves/2022/CVE-2022-0591.yaml"
+        },
+        {
+            "author": "random-robbie",
+            "id": "CVE-2022-0952",
+            "name": "Sitemap by click5 < 1.0.36 - Unauthenticated Arbitrary Options Update",
+            "severity": "high",
+            "tags": "cve,cve2022,wordpress,wp,wp-plugin,sitemap",
+            "path": "cves/2022/CVE-2022-0952.yaml"
         },
         {
             "author": "Veshraj",
@@ -12028,7 +12164,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2022-32409",
-            "name": "i3geo - Directory Traversal",
+            "name": "Portal do Software Publico Brasileiro i3geo 7.0.5 - Local File Inclusion",
             "severity": "critical",
             "tags": "cve,cve2022,i3geo,lfi",
             "path": "cves/2022/CVE-2022-32409.yaml"
@@ -13108,15 +13244,15 @@
         {
             "author": "geeknik",
             "id": "dbeaver-credentials",
-            "name": "DBeaver Credential Exposure",
-            "severity": "high",
+            "name": "DBeaver - Credentials Discovery",
+            "severity": "medium",
             "tags": "exposure,dbeaver",
             "path": "exposures/configs/dbeaver-credentials.yaml"
         },
         {
             "author": "pikpikcu",
             "id": "lvmeng-uts-disclosure",
-            "name": "Lvmeng UTS Disclosure",
+            "name": "Lvmeng - UTS Disclosure",
             "severity": "high",
             "tags": "config,exposure",
             "path": "exposures/configs/lvmeng-uts-disclosure.yaml"
@@ -13140,7 +13276,7 @@
         {
             "author": "geeknik",
             "id": "esmtprc-config",
-            "name": "eSMTP config disclosure",
+            "name": "eSMTP - Config Discovery",
             "severity": "high",
             "tags": "esmtp,config",
             "path": "exposures/configs/esmtprc-config.yaml"
@@ -13172,7 +13308,7 @@
         {
             "author": "emenalf",
             "id": "codeigniter-env",
-            "name": "Codeigniter .env file",
+            "name": "Codeigniter - .env File Discovery",
             "severity": "high",
             "tags": "config,exposure,codeigniter",
             "path": "exposures/configs/codeigniter-env.yaml"
@@ -13268,7 +13404,7 @@
         {
             "author": "organiccrap",
             "id": "git-config-nginxoffbyslash",
-            "name": "Nginx off-by-slash exposes Git config",
+            "name": "Nginx - Git Configuration Exposure",
             "severity": "medium",
             "tags": "config,exposure,nginx",
             "path": "exposures/configs/git-config-nginxoffbyslash.yaml"
@@ -13324,7 +13460,7 @@
         {
             "author": "philippedelteil",
             "id": "phalcon-framework-source",
-            "name": "Phalcon Framework Source Code leakage",
+            "name": "Phalcon Framework - Source Code Leakage",
             "severity": "high",
             "tags": "exposure,debug,phalcon",
             "path": "exposures/configs/phalcon-framework-source.yaml"
@@ -13380,7 +13516,7 @@
         {
             "author": "geeknik",
             "id": "detect-drone-config",
-            "name": "Detect Drone Configuration",
+            "name": "Drone - Configuration Detection",
             "severity": "high",
             "tags": "config,exposure,drone",
             "path": "exposures/configs/detect-drone-config.yaml"
@@ -13420,7 +13556,7 @@
         {
             "author": "princechaddha",
             "id": "coremail-config-disclosure",
-            "name": "Coremail Config Disclosure",
+            "name": "Coremail - Config Discovery",
             "severity": "high",
             "tags": "config,exposure",
             "path": "exposures/configs/coremail-config-disclosure.yaml"
@@ -13532,7 +13668,7 @@
         {
             "author": "geeknik",
             "id": "netrc",
-            "name": "netrc config file",
+            "name": "Netrc - Config File Discovery",
             "severity": "high",
             "tags": "netrc,config,exposure",
             "path": "exposures/configs/netrc.yaml"
@@ -13564,7 +13700,7 @@
         {
             "author": "geeknik",
             "id": "msmtp-config",
-            "name": "Msmtp Config Exposure",
+            "name": "Msmtp - Config Exposure",
             "severity": "high",
             "tags": "exposure,generic,msmtp",
             "path": "exposures/configs/msmtp-config.yaml"
@@ -13692,7 +13828,7 @@
         {
             "author": "DhiyaneshDK",
             "id": "parameters-config",
-            "name": "Parameters.yml - File Disclosure",
+            "name": "Parameters.yml - File Discovery",
             "severity": "high",
             "tags": "exposure,cloud,devops",
             "path": "exposures/configs/parameters-config.yaml"
@@ -13844,7 +13980,7 @@
         {
             "author": "gy741",
             "id": "qdpm-info-leak",
-            "name": "qdPM 9.2 - DB Connection String and Password Exposure (Unauthenticated)",
+            "name": "qdPM 9.2 - DB Credentials Exposure",
             "severity": "high",
             "tags": "qdpm,exposure",
             "path": "exposures/configs/qdpm-info-leak.yaml"
@@ -14162,7 +14298,7 @@
             "path": "exposures/logs/darkstat-detect.yaml"
         },
         {
-            "author": "geeknik,dwisiswant0",
+            "author": "geeknik,dwisiswant0,ELSFA7110",
             "id": "default-sql-dump",
             "name": "MySQL Dump Files",
             "severity": "medium",
@@ -14792,6 +14928,14 @@
             "severity": "info",
             "tags": "exposure,api",
             "path": "exposures/apis/wsdl-api.yaml"
+        },
+        {
+            "author": "lixts",
+            "id": "drupal-jsonapi-user-listing",
+            "name": "Drupal JSON:API User Listing",
+            "severity": "medium",
+            "tags": "drupal,exposure",
+            "path": "exposures/apis/drupal-jsonapi-user-listing.yaml"
         },
         {
             "author": "0xrudra,manuelbua",
@@ -16636,7 +16780,7 @@
         {
             "author": "gy741",
             "id": "targa-camera-lfi",
-            "name": "Selea Targa IP OCR-ANPR Camera - Unauthenticated Directory Traversal",
+            "name": "Selea Targa IP OCR-ANPR Camera - Local File Inclusion",
             "severity": "high",
             "tags": "targa,lfi,iot,camera,selea",
             "path": "iot/targa-camera-lfi.yaml"
@@ -17244,8 +17388,8 @@
         {
             "author": "idealphase",
             "id": "elfinder-version",
-            "name": "elFinder version extractor",
-            "severity": "info",
+            "name": "elFinder 2.1.58 - Remote Code Execution",
+            "severity": "critical",
             "tags": "tech,elfinder,oss",
             "path": "technologies/elfinder-version.yaml"
         },
@@ -18176,6 +18320,14 @@
             "severity": "info",
             "tags": "tech,default",
             "path": "technologies/operations-automation-default-page.yaml"
+        },
+        {
+            "author": "myztique",
+            "id": "owncloud-status-page",
+            "name": "Owncloud StatusPage detection",
+            "severity": "info",
+            "tags": "tech,owncloud,status",
+            "path": "technologies/nextcloud-owncloud-detect.yaml"
         },
         {
             "author": "dhiyaneshDk",
@@ -20156,7 +20308,7 @@
         {
             "author": "Techryptic (@Tech)",
             "id": "codemeter-webadmin-panel",
-            "name": "CodeMeter WebAdmin Panel",
+            "name": "CodeMeter - WebAdmin Panel Access",
             "severity": "high",
             "tags": "codemeter,webadmin,panel",
             "path": "exposed-panels/codemeter-webadmin-panel.yaml"
@@ -20388,7 +20540,7 @@
         {
             "author": "princechaddha",
             "id": "portainer-init-deploy",
-            "name": "Portainer Init Deploy",
+            "name": "Portainer - Init Deploy Discovery",
             "severity": "high",
             "tags": "portainer,exposure,docker,devops,panel",
             "path": "exposed-panels/portainer-init-deploy.yaml"
@@ -20658,6 +20810,14 @@
             "path": "exposed-panels/start-element-manager-panel.yaml"
         },
         {
+            "author": "ritikchaddha",
+            "id": "goanywhere-mft-login",
+            "name": "GoAnywhere Managed File Transfer Login Panel",
+            "severity": "info",
+            "tags": "panel,goanywhere,login,filetransfer",
+            "path": "exposed-panels/goanywhere-mft-login.yaml"
+        },
+        {
             "author": "Adam Crosser",
             "id": "fuelcms-panel",
             "name": "Fuel CMS Panel",
@@ -20908,7 +21068,7 @@
         {
             "author": "idealphase",
             "id": "avtech-avn801-camera-panel",
-            "name": "Avtech AVN801 Network Camera Panel Detect",
+            "name": "Avtech AVN801 Network Camera - Admin Panel Detection",
             "severity": "info",
             "tags": "panel,avtech,iot,camera",
             "path": "exposed-panels/avtech-avn801-camera-panel.yaml"
@@ -21876,7 +22036,7 @@
         {
             "author": "__Fazal,R3dg33k",
             "id": "odoo-database-manager",
-            "name": "Odoo-Database-Manager",
+            "name": "Odoo - Database Manager Discovery",
             "severity": "high",
             "tags": "panel,odoo",
             "path": "exposed-panels/odoo-database-manager.yaml"
@@ -22156,8 +22316,8 @@
         {
             "author": "pdteam",
             "id": "exposed-nomad",
-            "name": "Exposed Nomad Jobs",
-            "severity": "high",
+            "name": "Nomad - Exposed Jobs",
+            "severity": "medium",
             "tags": "nomad,devops,hashicorp,panel",
             "path": "exposed-panels/exposed-nomad.yaml"
         },
@@ -22280,6 +22440,14 @@
             "severity": "info",
             "tags": "panel,zuul,cicd,oss",
             "path": "exposed-panels/zuul-panel.yaml"
+        },
+        {
+            "author": "oppsec",
+            "id": "mailwatch-login",
+            "name": "MailWatch Login Page",
+            "severity": "info",
+            "tags": "panel,mailwatch",
+            "path": "exposed-panels/mailwatch-login.yaml"
         },
         {
             "author": "DhiyaneshDk",
@@ -23460,7 +23628,7 @@
         {
             "author": "idealphase",
             "id": "qnap-qts-panel",
-            "name": "QNAP QTS Panel",
+            "name": "QNAP - QTS Panel Discovery",
             "severity": "info",
             "tags": "panel,qnap,qts",
             "path": "exposed-panels/qnap/qnap-qts-panel.yaml"
@@ -23842,6 +24010,22 @@
             "path": "exposed-panels/xoops/xoops-installation-wizard.yaml"
         },
         {
+            "author": "Ricardo Maia (Brainfork)",
+            "id": "scriptcase-prod-login",
+            "name": "ScriptCase Production Environment Login",
+            "severity": "info",
+            "tags": "panel,scriptcase",
+            "path": "exposed-panels/scriptcase/scriptcase-prod-login.yaml"
+        },
+        {
+            "author": "Ricardo Maia (Brainfork)",
+            "id": "scriptcase-panel",
+            "name": "ScriptCase Panel Detect",
+            "severity": "info",
+            "tags": "panel,scriptcase",
+            "path": "exposed-panels/scriptcase/scriptcase-panel.yaml"
+        },
+        {
             "author": "Podalirius",
             "id": "joget-panel",
             "name": "JoGet Login Panel",
@@ -24028,7 +24212,7 @@
         {
             "author": "princechaddha",
             "id": "CNVD-2020-23735",
-            "name": "Xxunchi Local File read",
+            "name": "Xxunchi CMS - Local File Inclusion",
             "severity": "medium",
             "tags": "xunchi,lfi,cnvd,cnvd2020",
             "path": "cnvd/2020/CNVD-2020-23735.yaml"
@@ -24060,7 +24244,7 @@
         {
             "author": "pikpikcu",
             "id": "CNVD-2020-62422",
-            "name": "Seeyon - Arbitrary File Retrieval",
+            "name": "Seeyon - Local File Inclusion",
             "severity": "medium",
             "tags": "lfi,cnvd,cnvd2020,seeyon",
             "path": "cnvd/2020/CNVD-2020-62422.yaml"
@@ -24260,7 +24444,7 @@
         {
             "author": "z0ne,dhiyaneshDk,jeya.seelan,dwisiswant0",
             "id": "grafana-file-read",
-            "name": "Grafana v8.x Arbitrary File Read",
+            "name": "Grafana 8.x - Local File Inclusion",
             "severity": "high",
             "tags": "grafana,lfi,fuzz",
             "path": "vulnerabilities/grafana/grafana-file-read.yaml"
@@ -24312,6 +24496,14 @@
             "severity": "critical",
             "tags": "cve,cve2021,rce,jndi,log4j,horizon,vmware,oast",
             "path": "vulnerabilities/vmware/vmware-horizon-log4j-jndi-rce.yaml"
+        },
+        {
+            "author": "UnkL4b",
+            "id": "jexboss-backdoor",
+            "name": "Jexboss Backdoor Webshell",
+            "severity": "critical",
+            "tags": "backdoor,jboss,rce",
+            "path": "vulnerabilities/backdoor/jexboss-backdoor.yaml"
         },
         {
             "author": "daffainfo",
@@ -24387,19 +24579,19 @@
         },
         {
             "author": "TechbrunchFR",
-            "id": "jira-service-desk-signup",
-            "name": "Jira Service Desk Signup",
-            "severity": "medium",
-            "tags": "jira,atlassian,service",
-            "path": "vulnerabilities/jira/jira-service-desk-signup.yaml"
-        },
-        {
-            "author": "TechbrunchFR",
             "id": "jira-unauthenticated-projects",
             "name": "Jira Unauthenticated Projects",
             "severity": "info",
             "tags": "atlassian,jira",
             "path": "vulnerabilities/jira/jira-unauthenticated-projects.yaml"
+        },
+        {
+            "author": "TechbrunchFR",
+            "id": "jira-servicedesk-signup",
+            "name": "Atlassian Jira Service Desk Signup",
+            "severity": "medium",
+            "tags": "atlassian,servicedesk,jira,confluence",
+            "path": "vulnerabilities/jira/jira-servicedesk-signup.yaml"
         },
         {
             "author": "meme-lord",
@@ -24428,7 +24620,7 @@
         {
             "author": "melbadry9,nadino,xElkomy",
             "id": "crlf-injection",
-            "name": "CRLF injection",
+            "name": "CRLF - Injection Detection",
             "severity": "low",
             "tags": "crlf,generic",
             "path": "vulnerabilities/generic/crlf-injection.yaml"
@@ -24444,7 +24636,7 @@
         {
             "author": "geeknik,unstabl3,pentest_swissky,sushantkamble,0xSmiley",
             "id": "generic-linux-lfi",
-            "name": "Generic Linux based LFI Test",
+            "name": "Generic Linux - Local File Inclusion",
             "severity": "high",
             "tags": "linux,lfi,generic",
             "path": "vulnerabilities/generic/generic-linux-lfi.yaml"
@@ -24516,7 +24708,7 @@
         {
             "author": "mesaglio,sushantkamble",
             "id": "generic-windows-lfi",
-            "name": "Generic Windows based LFI Test",
+            "name": "Windows - Local File Inclusion",
             "severity": "high",
             "tags": "azure,windows,lfi,generic",
             "path": "vulnerabilities/generic/generic-windows-lfi.yaml"
@@ -24716,7 +24908,7 @@
         {
             "author": "DhiyaneshDk",
             "id": "apache-solr-file-read",
-            "name": "Apache Solr <= 8.8.1 Arbitrary File Read",
+            "name": "Apache Solr <= 8.8.1 - Local File Inclusion",
             "severity": "high",
             "tags": "apache,solr,lfi",
             "path": "vulnerabilities/apache/apache-solr-file-read.yaml"
@@ -24756,7 +24948,7 @@
         {
             "author": "harshbothra_",
             "id": "ibm-infoprint-lfi",
-            "name": "IBM InfoPrint 4247-Z03 Impact Matrix Printer - Directory Traversal",
+            "name": "IBM InfoPrint 4247-Z03 Impact Matrix Printer - Local File Inclusion",
             "severity": "medium",
             "tags": "ibm,lfi,matrix,printer",
             "path": "vulnerabilities/ibm/ibm-infoprint-lfi.yaml"
@@ -24828,7 +25020,7 @@
         {
             "author": "0x_Akoko",
             "id": "cs-cart-unauthenticated-lfi",
-            "name": "CS-Cart unauthenticated LFI",
+            "name": "CS-Cart - Local File Inclusion",
             "severity": "high",
             "tags": "cscart,lfi",
             "path": "vulnerabilities/other/cs-cart-unauthenticated-lfi.yaml"
@@ -24948,7 +25140,7 @@
         {
             "author": "gy741",
             "id": "carel-bacnet-gateway-traversal",
-            "name": "Carel pCOWeb HVAC BACnet Gateway 2.1.0 - Unauthenticated Directory Traversal",
+            "name": "Carel pCOWeb HVAC BACnet Gateway 2.1.0 - Local File Inclusion",
             "severity": "medium",
             "tags": "carel,lfi,traversal,unauth,bacnet,unauth",
             "path": "vulnerabilities/other/carel-bacnet-gateway-traversal.yaml"
@@ -25012,7 +25204,7 @@
         {
             "author": "pikpikcu",
             "id": "hjtcloud-arbitrary-file-read",
-            "name": "HJTcloud Arbitrary File Read",
+            "name": "HJTcloud - Local File Inclusion",
             "severity": "high",
             "tags": "hjtcloud,lfi",
             "path": "vulnerabilities/other/hjtcloud-arbitrary-file-read.yaml"
@@ -25180,7 +25372,7 @@
         {
             "author": "pikpikcu",
             "id": "natshell-path-traversal",
-            "name": "NatShell Path Traversal",
+            "name": "NatShell - Local File Inclusion",
             "severity": "high",
             "tags": "natshell,lfi",
             "path": "vulnerabilities/other/natshell-path-traversal.yaml"
@@ -25188,7 +25380,7 @@
         {
             "author": "0x_Akoko",
             "id": "groupoffice-lfi",
-            "name": "Groupoffice 3.4.21 Directory Traversal Vulnerability",
+            "name": "Groupoffice 3.4.21 - Local File Inclusion",
             "severity": "high",
             "tags": "groupoffice,lfi,traversal",
             "path": "vulnerabilities/other/groupoffice-lfi.yaml"
@@ -25236,9 +25428,9 @@
         {
             "author": "dwisiswant0",
             "id": "mcafee-epo-rce",
-            "name": "McAfee ePolicy Orchestrator RCE",
+            "name": "McAfee ePolicy Orchestrator - Arbitrary File Upload",
             "severity": "high",
-            "tags": "mcafee,rce",
+            "tags": "mcafee,rce,",
             "path": "vulnerabilities/other/mcafee-epo-rce.yaml"
         },
         {
@@ -25372,7 +25564,7 @@
         {
             "author": "0x_akoko",
             "id": "dicoogle-pacs-lfi",
-            "name": "Dicoogle PACS 2.5.0 - Directory Traversal",
+            "name": "Dicoogle PACS 2.5.0 - Local File Inclusion",
             "severity": "high",
             "tags": "windows,lfi,dicoogle",
             "path": "vulnerabilities/other/dicoogle-pacs-lfi.yaml"
@@ -25440,6 +25632,14 @@
             "severity": "medium",
             "tags": "concrete,xss,cms",
             "path": "vulnerabilities/other/concrete-xss.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "loancms-sqli",
+            "name": "Loan Management System 1.0 - SQLi Authentication Bypass",
+            "severity": "high",
+            "tags": "loancms,sqli,auth-bypass,cms",
+            "path": "vulnerabilities/other/loancms-sqli.yaml"
         },
         {
             "author": "ritikchaddha",
@@ -25524,7 +25724,7 @@
         {
             "author": "pikpikcu",
             "id": "bullwark-momentum-lfi",
-            "name": "Bullwark Momentum Series JAWS 1.0 - Directory Traversal",
+            "name": "Bullwark Momentum Series JAWS 1.0 - Local File Inclusion",
             "severity": "high",
             "tags": "bullwark,lfi",
             "path": "vulnerabilities/other/bullwark-momentum-lfi.yaml"
@@ -25556,7 +25756,7 @@
         {
             "author": "0x_Akoko",
             "id": "minimouse-lfi",
-            "name": "Mini Mouse 9.2.0 - Path Traversal",
+            "name": "Mini Mouse 9.2.0 - Local File Inclusion",
             "severity": "high",
             "tags": "minimouse,lfi",
             "path": "vulnerabilities/other/minimouse-lfi.yaml"
@@ -25612,7 +25812,7 @@
         {
             "author": "pikpikcu",
             "id": "ewebs-arbitrary-file-reading",
-            "name": "EWEBS casmain.xgi arbitrary file reading vulnerability",
+            "name": "EWEBS - Local File Inclusion",
             "severity": "high",
             "tags": "ewebs,lfi",
             "path": "vulnerabilities/other/ewebs-arbitrary-file-reading.yaml"
@@ -25644,7 +25844,7 @@
         {
             "author": "ritikchaddha",
             "id": "hanming-lfr",
-            "name": "Hanming Video Conferencing File Read",
+            "name": "Hanming Video Conferencing - Local File Inclusion",
             "severity": "high",
             "tags": "lfr,hanming,lfi",
             "path": "vulnerabilities/other/hanming-lfr.yaml"
@@ -25652,7 +25852,7 @@
         {
             "author": "pikpikcu",
             "id": "flir-path-traversal",
-            "name": "Flir Path Traversal",
+            "name": "Flir - Local File Inclusion",
             "severity": "high",
             "tags": "flir,lfi",
             "path": "vulnerabilities/other/flir-path-traversal.yaml"
@@ -25748,7 +25948,7 @@
         {
             "author": "0x_Akoko",
             "id": "gsoap-lfi",
-            "name": "gSOAP 2.8 - Directory Traversal",
+            "name": "gSOAP 2.8 - Local File Inclusion",
             "severity": "high",
             "tags": "gsoap,lfi",
             "path": "vulnerabilities/other/gsoap-lfi.yaml"
@@ -25780,7 +25980,7 @@
         {
             "author": "pikpikcu",
             "id": "blue-ocean-excellence-lfi",
-            "name": "Blue Ocean Excellence LFI",
+            "name": "Blue Ocean Excellence - Local File Inclusion",
             "severity": "high",
             "tags": "blue-ocean,lfi",
             "path": "vulnerabilities/other/blue-ocean-excellence-lfi.yaml"
@@ -25820,7 +26020,7 @@
         {
             "author": "random-robbie",
             "id": "3cx-management-console",
-            "name": "3CX Management Console - Directory Traversal",
+            "name": "3CX Management Console - Local File Inclusion",
             "severity": "high",
             "tags": "3cx,lfi,voip",
             "path": "vulnerabilities/other/3cx-management-console.yaml"
@@ -25852,7 +26052,7 @@
         {
             "author": "0x_Akoko",
             "id": "global-domains-lfi",
-            "name": "Global Domains International Directory traversal Vulnerability",
+            "name": "Global Domains International - Local File Inclusion",
             "severity": "high",
             "tags": "globaldomains,lfi,traversal",
             "path": "vulnerabilities/other/global-domains-lfi.yaml"
@@ -25872,6 +26072,14 @@
             "severity": "critical",
             "tags": "icewarp,rce",
             "path": "vulnerabilities/other/icewarp-webclient-rce.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "cvms-sqli",
+            "name": "Company Visitor Management System (CVMS) 1.0 - SQLi Authentication Bypass",
+            "severity": "high",
+            "tags": "cvms,sqli,auth-bypass,cms",
+            "path": "vulnerabilities/other/cvms-sqli.yaml"
         },
         {
             "author": "ok_bye_now",
@@ -25948,7 +26156,7 @@
         {
             "author": "0x_Akoko",
             "id": "asanhamayesh-lfi",
-            "name": "Asanhamayesh CMS 3.4.6 Directory traversal Vulnerability",
+            "name": "Asanhamayesh CMS 3.4.6 - Local File Inclusion",
             "severity": "high",
             "tags": "asanhamayesh,lfi,traversal",
             "path": "vulnerabilities/other/asanhamayesh-lfi.yaml"
@@ -25972,7 +26180,7 @@
         {
             "author": "pikpikcu",
             "id": "mpsec-lfi",
-            "name": "MPSec ISG1000 Local File Read",
+            "name": "MPSec ISG1000 - Local File Inclusion",
             "severity": "high",
             "tags": "mpsec,lfi",
             "path": "vulnerabilities/other/mpsec-lfi.yaml"
@@ -25996,7 +26204,7 @@
         {
             "author": "0x_akoko",
             "id": "eibiz-lfi",
-            "name": "Eibiz i-Media Server Digital Signage 3.8.0 File Path Traversal",
+            "name": "Eibiz i-Media Server Digital Signage 3.8.0 - Local File Inclusion",
             "severity": "high",
             "tags": "windows,lfi,eibiz",
             "path": "vulnerabilities/other/eibiz-lfi.yaml"
@@ -26012,15 +26220,23 @@
         {
             "author": "princechaddha",
             "id": "myucms-lfr",
-            "name": "MyuCMS Local File Read",
+            "name": "MyuCMS - Local File Inclusion",
             "severity": "high",
             "tags": "myucms,lfi",
             "path": "vulnerabilities/other/myucms-lfr.yaml"
         },
         {
             "author": "pikpikcu",
+            "id": "weiphp-sql-injection",
+            "name": "WeiPHP 5.0 SQLI",
+            "severity": "high",
+            "tags": "weiphp,sql",
+            "path": "vulnerabilities/other/weiphp-sql-injection.yaml"
+        },
+        {
+            "author": "pikpikcu",
             "id": "metinfo-lfi",
-            "name": "MetInfo 6.0.0/6.1.0 LFI",
+            "name": "MetInfo <=6.1.0 - Local File Inclusion",
             "severity": "high",
             "tags": "metinfo,lfi",
             "path": "vulnerabilities/other/metinfo-lfi.yaml"
@@ -26060,7 +26276,7 @@
         {
             "author": "gy741",
             "id": "bems-api-lfi",
-            "name": "Longjing Technology BEMS API 1.21 - Arbitrary File Retrieval",
+            "name": "Longjing Technology BEMS API 1.21 - Local File Inclusion",
             "severity": "high",
             "tags": "lfi",
             "path": "vulnerabilities/other/bems-api-lfi.yaml"
@@ -26212,7 +26428,7 @@
         {
             "author": "dhiyaneshDk",
             "id": "nginx-merge-slashes-path-traversal",
-            "name": "Nginx Merge Slashes Path Traversal",
+            "name": "Nginx Server - Local File Inclusion",
             "severity": "medium",
             "tags": "exposure,config,lfi,nginx",
             "path": "vulnerabilities/other/nginx-merge-slashes-path-traversal.yaml"
@@ -26244,7 +26460,7 @@
         {
             "author": "madrobot",
             "id": "geowebserver-xss",
-            "name": "GeoVision Geowebserver 5.3.3 - XSS",
+            "name": "GeoVision Geowebserver 5.3.3 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "geowebserver,xss",
             "path": "vulnerabilities/other/geovision-geowebserver-xss.yaml"
@@ -26264,6 +26480,14 @@
             "severity": "high",
             "tags": "qihang,lfi,disclosure",
             "path": "vulnerabilities/other/qihang-media-lfi.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "zzcms-xss",
+            "name": "ZZCMS - Cross-Site Scripting",
+            "severity": "medium",
+            "tags": "zzcms,xss,authenticated",
+            "path": "vulnerabilities/other/zzcms-xss.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -26300,7 +26524,7 @@
         {
             "author": "ritikchaddha",
             "id": "dss-download-fileread",
-            "name": "DSS Download File Read",
+            "name": "DSS Download - Local File Inclusion",
             "severity": "high",
             "tags": "lfi,dss,lfr",
             "path": "vulnerabilities/other/dss-download-fileread.yaml"
@@ -26348,7 +26572,7 @@
         {
             "author": "madrobot",
             "id": "geowebserver-lfi",
-            "name": "GeoVision Geowebserver 5.3.3 - LFI",
+            "name": "GeoVision Geowebserver 5.3.3 - Local File Inclusion",
             "severity": "high",
             "tags": "geowebserver,lfi",
             "path": "vulnerabilities/other/geovision-geowebserver-lfi.yaml"
@@ -26396,7 +26620,7 @@
         {
             "author": "ritikchaddha",
             "id": "elFinder-path-traversal",
-            "name": "elFinder - Path Traversal",
+            "name": "elFinder  <=2.1.12 - Local File Inclusion",
             "severity": "high",
             "tags": "lfi,elfinder",
             "path": "vulnerabilities/other/elFinder-path-traversal.yaml"
@@ -26426,9 +26650,17 @@
             "path": "vulnerabilities/other/fatpipe-backdoor.yaml"
         },
         {
+            "author": "arafatansari",
+            "id": "zms-sqli",
+            "name": "Zoo Management System (ZMS) 1.0 - SQLi Authentication Bypass",
+            "severity": "high",
+            "tags": "zms,sqli,auth-bypass,cms",
+            "path": "vulnerabilities/other/zms-sqli.yaml"
+        },
+        {
             "author": "c-sh0",
             "id": "digitalrebar-traversal",
-            "name": "Digital Rebar - Directory traversal",
+            "name": "Digital Rebar - Local File Inclusion",
             "severity": "high",
             "tags": "lfi,rackn,digitalrebar",
             "path": "vulnerabilities/other/digitalrebar-traversal.yaml"
@@ -26436,7 +26668,7 @@
         {
             "author": "pikpikcu",
             "id": "finereport-path-traversal",
-            "name": "FineReport 8.0 Path Traversal",
+            "name": "FineReport 8.0 - Local File Inclusion",
             "severity": "medium",
             "tags": "finereport,lfi",
             "path": "vulnerabilities/other/finereport-path-traversal.yaml"
@@ -26468,7 +26700,7 @@
         {
             "author": "princechaddha",
             "id": "feifeicms-lfr",
-            "name": "FeiFeiCms Local File Read",
+            "name": "FeiFeiCms - Local File Inclusion",
             "severity": "high",
             "tags": "feifeicms,lfi",
             "path": "vulnerabilities/other/feifeicms-lfr.yaml"
@@ -27234,6 +27466,14 @@
             "path": "vulnerabilities/wordpress/my-chatbot-xss.yaml"
         },
         {
+            "author": "Akincibor",
+            "id": "analytify-plugin-xss",
+            "name": "Analytify < 4.2.1 - Cross-Site Scripting",
+            "severity": "medium",
+            "tags": "wp-plugin,xss,wp,wordpress,analytify",
+            "path": "vulnerabilities/wordpress/analytify-plugin-xss.yaml"
+        },
+        {
             "author": "nerrorsec",
             "id": "wordpress-git-config",
             "name": "Wordpress Git Config",
@@ -27844,7 +28084,7 @@
         {
             "author": "0x_Akoko",
             "id": "huawei-hg255s-lfi",
-            "name": "Huawei HG255s - Directory Traversal",
+            "name": "Huawei HG255s - Local File Inclusion",
             "severity": "high",
             "tags": "huawei,lfi,router",
             "path": "vulnerabilities/huawei/huawei-hg255s-lfi.yaml"
@@ -27988,7 +28228,7 @@
         {
             "author": "madrobot",
             "id": "moodle-filter-jmol-lfi",
-            "name": "Moodle filter_jmol - LFI",
+            "name": "Moodle Jmol Filter 6.1 - Local File Inclusion",
             "severity": "high",
             "tags": "moodle,lfi",
             "path": "vulnerabilities/moodle/moodle-filter-jmol-lfi.yaml"
@@ -28218,6 +28458,14 @@
             "path": "token-spray/api-exchangerateapi.yaml"
         },
         {
+            "author": "daffainfo",
+            "id": "api-craftmypdf",
+            "name": "CraftMyPDF API Test",
+            "severity": "info",
+            "tags": "token-spray,craftmypdf",
+            "path": "token-spray/api-craftmypdf.yaml"
+        },
+        {
             "author": "0ri2N",
             "id": "api-debounce",
             "name": "DeBounce API Test",
@@ -28242,6 +28490,14 @@
             "path": "token-spray/api-buttercms.yaml"
         },
         {
+            "author": "daffainfo",
+            "id": "api-clickup",
+            "name": "ClickUp API Test",
+            "severity": "info",
+            "tags": "token-spray,clickup",
+            "path": "token-spray/api-clickup.yaml"
+        },
+        {
             "author": "zzeitlin",
             "id": "api-travisci",
             "name": "Travis CI API Test",
@@ -28264,6 +28520,14 @@
             "severity": "info",
             "tags": "token-spray,wordnik",
             "path": "token-spray/api-wordnik.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "api-monday",
+            "name": "Monday API Test",
+            "severity": "info",
+            "tags": "token-spray,monday",
+            "path": "token-spray/api-monday.yaml"
         },
         {
             "author": "0ri2N",
@@ -28379,6 +28643,14 @@
         },
         {
             "author": "daffainfo",
+            "id": "api-cloudconvert",
+            "name": "CloudConvert API Test",
+            "severity": "info",
+            "tags": "token-spray,cloudconvert",
+            "path": "token-spray/api-cloudconvert.yaml"
+        },
+        {
+            "author": "daffainfo",
             "id": "api-currencylayer",
             "name": "Currencylayer API Test",
             "severity": "info",
@@ -28408,6 +28680,14 @@
             "severity": "info",
             "tags": "token-spray,onelogin",
             "path": "token-spray/api-onelogin.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "api-pdflayer",
+            "name": "pdflayer API Test",
+            "severity": "info",
+            "tags": "token-spray,pdflayer",
+            "path": "token-spray/api-pdflayer.yaml"
         },
         {
             "author": "daffainfo",
@@ -29003,6 +29283,14 @@
         },
         {
             "author": "daffainfo",
+            "id": "api-html2pdf",
+            "name": "Html2PDF API Test",
+            "severity": "info",
+            "tags": "token-spray,html2pdf",
+            "path": "token-spray/api-html2pdf.yaml"
+        },
+        {
+            "author": "daffainfo",
             "id": "api-etherscan",
             "name": "Etherscan API Test",
             "severity": "info",
@@ -29032,6 +29320,14 @@
             "severity": "info",
             "tags": "token-spray,fortinet",
             "path": "token-spray/api-fortitoken-cloud.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "api-clockify",
+            "name": "Clockify API Test",
+            "severity": "info",
+            "tags": "token-spray,clockify",
+            "path": "token-spray/api-clockify.yaml"
         },
         {
             "author": "daffainfo",
@@ -29378,6 +29674,14 @@
             "path": "token-spray/api-urlscan.yaml"
         },
         {
+            "author": "daffainfo",
+            "id": "api-codestats",
+            "name": "CodeStats API Test",
+            "severity": "info",
+            "tags": "token-spray,codestats",
+            "path": "token-spray/api-codestats.yaml"
+        },
+        {
             "author": "dwisiswant0",
             "id": "api-vercel",
             "name": "Vercel API Test",
@@ -29544,6 +29848,14 @@
             "severity": "info",
             "tags": "token-spray,blockfrost",
             "path": "token-spray/api-blockfrost.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "api-flowdash",
+            "name": "Flowdash API Test",
+            "severity": "info",
+            "tags": "token-spray,flowdash",
+            "path": "token-spray/api-flowdash.yaml"
         },
         {
             "author": "zzeitlin",
@@ -29852,7 +30164,7 @@
         {
             "author": "pdteam",
             "id": "aha-takeover",
-            "name": "Aha Takeover Detection",
+            "name": "Aha - Subdomain Takeover Detection",
             "severity": "high",
             "tags": "takeover",
             "path": "takeovers/aha-takeover.yaml"
@@ -30004,7 +30316,7 @@
         {
             "author": "pdteam",
             "id": "agilecrm-takeover",
-            "name": "agilecrm takeover detection",
+            "name": "agilecrm - Subdomain Takeover Detection",
             "severity": "high",
             "tags": "takeover",
             "path": "takeovers/agilecrm-takeover.yaml"
@@ -30212,7 +30524,7 @@
         {
             "author": "pdteam",
             "id": "aftership-takeover",
-            "name": "Aftership Takeover Detection",
+            "name": "Aftership - Subdomain Takeover Detection",
             "severity": "high",
             "tags": "takeover",
             "path": "takeovers/aftership-takeover.yaml"
@@ -30372,7 +30684,7 @@
         {
             "author": "princechaddha",
             "id": "octobercms-default-login",
-            "name": "OctoberCMS Default Login",
+            "name": "OctoberCMS - Default Admin Discovery",
             "severity": "high",
             "tags": "octobercms,default-login,oss",
             "path": "default-logins/octobercms-default-login.yaml"
@@ -30380,7 +30692,7 @@
         {
             "author": "ritikchaddha",
             "id": "jinher-oa-default-login",
-            "name": "Jinher oa C6 Default Password",
+            "name": "Jinher-OA C6 - Default Admin Discovery",
             "severity": "high",
             "tags": "jinher,default-login",
             "path": "default-logins/jinher-oa-default-login.yaml"
@@ -30604,7 +30916,7 @@
         {
             "author": "Geekby",
             "id": "openemr-default-login",
-            "name": "OpenEMR Default Login",
+            "name": "OpenEMR - Default Admin Discovery",
             "severity": "high",
             "tags": "openemr,default-login",
             "path": "default-logins/openemr/openemr-default-login.yaml"
@@ -30780,7 +31092,7 @@
         {
             "author": "Adam Crosser",
             "id": "fuelcms-default-login",
-            "name": "Fuel CMS Default Credentials",
+            "name": "Fuel CMS - Default Admin Discovery",
             "severity": "high",
             "tags": "fuelcms,default-login,oss",
             "path": "default-logins/fuelcms/fuelcms-default-login.yaml"
@@ -30852,7 +31164,7 @@
         {
             "author": "ritikchaddha",
             "id": "dubbo-admin-default-login",
-            "name": "Dubbo Admin Default Login",
+            "name": "Apache Dubbo - Default Admin Discovery",
             "severity": "high",
             "tags": "dubbo,apache,default-login",
             "path": "default-logins/apache/dubbo-admin-default-login.yaml"
@@ -31084,7 +31396,7 @@
         {
             "author": "For3stCo1d",
             "id": "jupyterhub-default-login",
-            "name": "Jupyterhub Default Login",
+            "name": "Jupyterhub - Default Admin Discovery",
             "severity": "high",
             "tags": "jupyterhub,default-login",
             "path": "default-logins/jupyterhub/jupyterhub-default-login.yaml"
