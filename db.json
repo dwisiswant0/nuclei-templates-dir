@@ -1,5 +1,5 @@
 {
-    "version": "v9.1.4",
+    "version": "v9.1.5",
     "data": [
         {
             "author": "righettod,pdteam",
@@ -452,7 +452,7 @@
         {
             "author": "dhiyaneshDK",
             "id": "dlink-file-read",
-            "name": "D-Link - Arbitrary File Retrieval",
+            "name": "D-Link - Local File Inclusion",
             "severity": "high",
             "tags": "dlink,lfi",
             "path": "misconfiguration/d-link-arbitary-fileread.yaml"
@@ -1579,6 +1579,14 @@
         },
         {
             "author": "DhiyaneshDk",
+            "id": "jenkins-openuser-register",
+            "name": "Jenkins Open User registration",
+            "severity": "medium",
+            "tags": "misconfig,jenkins,apache,tomcat",
+            "path": "misconfiguration/jenkins/jenkins-openuser-register.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
             "id": "aem-default-get-servlet",
             "name": "AEM DefaultGetServlet",
             "severity": "low",
@@ -1712,6 +1720,30 @@
             "severity": "critical",
             "tags": "aem,adobe",
             "path": "misconfiguration/aem/aem-crx-bypass.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "liferay-jsonws",
+            "name": "Liferay /api/jsonws - API Exposed",
+            "severity": "low",
+            "tags": "liferay,exposure,api",
+            "path": "misconfiguration/liferay/liferay-jsonws.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "liferay-axis",
+            "name": "Liferay /api/axis - API Exposed",
+            "severity": "info",
+            "tags": "misconfig,exposure,liferay,api",
+            "path": "misconfiguration/liferay/liferay-axis.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "liferay-api",
+            "name": "Liferay /api/liferay - API Exposed",
+            "severity": "info",
+            "tags": "liferay,exposure,api",
+            "path": "misconfiguration/liferay/liferay-api.yaml"
         },
         {
             "author": "geeknik",
@@ -1900,7 +1932,7 @@
         {
             "author": "dhiyaneshDk",
             "id": "jolokia-unauthenticated-lfi",
-            "name": "Jolokia - Unauthenticated Local File Read",
+            "name": "Jolokia - Local File Inclusion",
             "severity": "high",
             "tags": "jolokia,springboot,tomcat,lfi",
             "path": "misconfiguration/jolokia/jolokia-unauthenticated-lfi.yaml"
@@ -3270,7 +3302,7 @@
             "id": "CVE-2018-7600",
             "name": "Drupal - Remote Code Execution",
             "severity": "critical",
-            "tags": "cve,cve2018,drupal,rce,kev",
+            "tags": "cve,cve2018,drupal,rce,kev,cisa",
             "path": "cves/2018/CVE-2018-7600.yaml"
         },
         {
@@ -3542,7 +3574,7 @@
             "id": "CVE-2018-7602",
             "name": "Drupal - Remote Code Execution",
             "severity": "critical",
-            "tags": "cve,cve2018,drupal,authenticated,kev",
+            "tags": "cve,cve2018,drupal,authenticated,kev,cisa",
             "path": "cves/2018/CVE-2018-7602.yaml"
         },
         {
@@ -5522,6 +5554,14 @@
             "path": "cves/2021/CVE-2021-33904.yaml"
         },
         {
+            "author": "arafatansari",
+            "id": "CVE-2021-21800",
+            "name": "Advantech R-SeeNet v 2.4.12 - Cross Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2021,xss,r-seenet",
+            "path": "cves/2021/CVE-2021-21800.yaml"
+        },
+        {
             "author": "gy741",
             "id": "CVE-2021-30497",
             "name": "Ivanti Avalanche 6.3.2 - Local File Inclusion",
@@ -5536,6 +5576,14 @@
             "severity": "high",
             "tags": "cve,cve2021,exposure,router",
             "path": "cves/2021/CVE-2021-3017.yaml"
+        },
+        {
+            "author": "Screamy",
+            "id": "CVE-2021-24910",
+            "name": "Transposh WordPress < 1.0.7 - Reflected Cross-Site Scripting (XSS)",
+            "severity": "medium",
+            "tags": "cve,cve2021,wordpress,wp-plugin,xss,wp",
+            "path": "cves/2021/CVE-2021-24910.yaml"
         },
         {
             "author": "pussycat0x",
@@ -6102,7 +6150,7 @@
             "id": "CVE-2021-35464",
             "name": "ForgeRock OpenAM <7.0 - Remote Code Execution",
             "severity": "critical",
-            "tags": "cve,cve2021,openam,rce,java,kev",
+            "tags": "cve,cve2021,openam,rce,java,kev,cisa",
             "path": "cves/2021/CVE-2021-35464.yaml"
         },
         {
@@ -6224,6 +6272,14 @@
             "severity": "medium",
             "tags": "wordpress,cve,cve2021,wp-plugin,authenticated",
             "path": "cves/2021/CVE-2021-24510.yaml"
+        },
+        {
+            "author": "edoardottt",
+            "id": "CVE-2021-45422",
+            "name": "Reprise License Manager 14.2 - Reflected XSS",
+            "severity": "medium",
+            "tags": "cve,cve2021,reprise,xss",
+            "path": "cves/2021/CVE-2021-45422.yaml"
         },
         {
             "author": "pikpikcu,daffainfo",
@@ -6552,6 +6608,14 @@
             "severity": "medium",
             "tags": "cve,cve2021,wordpress,exposures",
             "path": "cves/2021/CVE-2021-39327.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "CVE-2021-21799",
+            "name": "Advantech R-SeeNet v 2.4.12 - Cross Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2021,xss,r-seenet",
+            "path": "cves/2021/CVE-2021-21799.yaml"
         },
         {
             "author": "geeknik",
@@ -7338,6 +7402,14 @@
             "path": "cves/2021/CVE-2021-45092.yaml"
         },
         {
+            "author": "Akincibor",
+            "id": "unauth-rlm",
+            "name": "Reprise License Manager 14.2 - Authentication Bypass",
+            "severity": "critical",
+            "tags": "unauth,rlm",
+            "path": "cves/2021/CVE-2021-44152.yaml"
+        },
+        {
             "author": "compr00t",
             "id": "CVE-2021-42551",
             "name": "NetBiblio WebOPAC - Reflected Cross-Site Scripting",
@@ -7392,6 +7464,14 @@
             "severity": "critical",
             "tags": "cve,cve2021,rce,ad,intrusive,manageengine,kev",
             "path": "cves/2021/CVE-2021-40539.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "CVE-2021-21805",
+            "name": "Advantech R-SeeNet v 2.4.12 - OS Command Injection",
+            "severity": "critical",
+            "tags": "cve,cve2021,rce,r-seenet",
+            "path": "cves/2021/CVE-2021-21805.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -7552,6 +7632,14 @@
             "severity": "medium",
             "tags": "cve,cve2021,wordpress,xss,wp-plugin",
             "path": "cves/2021/CVE-2021-24245.yaml"
+        },
+        {
+            "author": "pikpikcu",
+            "id": "CVE-2021-24370",
+            "name": "Fancy Product Designer WordPress plugin - Remote Code Execution (Detection)",
+            "severity": "critical",
+            "tags": "cve,cve2021,wordpress,rce,wp-plugin,wp,fancyproduct",
+            "path": "cves/2021/CVE-2021-24370.yaml"
         },
         {
             "author": "gy741,pdteam,parth",
@@ -7866,6 +7954,14 @@
             "path": "cves/2020/CVE-2020-19295.yaml"
         },
         {
+            "author": "princechaddha,scent2d",
+            "id": "CVE-2020-8772",
+            "name": "WordPress InfiniteWP Client < 1.9.4.5 - Authentication Bypass",
+            "severity": "critical",
+            "tags": "cve,cve2020,wordpress,wp-plugin,wp,infinitewp,auth-bypass",
+            "path": "cves/2020/CVE-2020-8772.yaml"
+        },
+        {
             "author": "pikpikcu",
             "id": "CVE-2020-28351",
             "name": "ShoreTel 19.46.1802.0 XSS",
@@ -7928,6 +8024,14 @@
             "severity": "critical",
             "tags": "cve,cve2020,gridx,rce",
             "path": "cves/2020/CVE-2020-19625.yaml"
+        },
+        {
+            "author": "princechaddha,DhiyaneshDk",
+            "id": "CVE-2020-14750",
+            "name": "Oracle WebLogic Server - Remote Code Execution",
+            "severity": "critical",
+            "tags": "cve,cve2020,rce,oracle,weblogic,unauth,kev",
+            "path": "cves/2020/CVE-2020-14750.yaml"
         },
         {
             "author": "madrobot",
@@ -8020,7 +8124,7 @@
         {
             "author": "dhiyaneshDk",
             "id": "CVE-2020-10770",
-            "name": "Keycloak 12.0.1 - 'request_uri ' Blind Server-Side Request Forgery (SSRF) (Unauthenticated)",
+            "name": "Keycloak 12.0.1 - request_uri  Blind Server-Side Request Forgery (SSRF)",
             "severity": "medium",
             "tags": "keycloak,ssrf,oast,cve,cve2020,blind",
             "path": "cves/2020/CVE-2020-10770.yaml"
@@ -8294,7 +8398,7 @@
             "id": "CVE-2020-1938",
             "name": "Ghostcat - Apache Tomcat - AJP File Read/Inclusion Vulnerability",
             "severity": "critical",
-            "tags": "cve,cve2020,apache,tomcat,lfi,network,kev",
+            "tags": "cve,cve2020,apache,tomcat,lfi,network,kev,cisa",
             "path": "cves/2020/CVE-2020-1938.yaml"
         },
         {
@@ -8446,7 +8550,7 @@
             "id": "CVE-2020-6287",
             "name": "SAP NetWeaver AS JAVA 7.30-7.50 - Remote Admin Addition",
             "severity": "critical",
-            "tags": "cve,cve2020,sap,kev",
+            "tags": "cve,cve2020,sap,kev,cisa",
             "path": "cves/2020/CVE-2020-6287.yaml"
         },
         {
@@ -9550,7 +9654,7 @@
             "id": "CVE-2017-12615",
             "name": "Apache Tomcat Servers - Remote Code Execution",
             "severity": "high",
-            "tags": "cve,cve2017,apache,rce,tomcat,kev",
+            "tags": "cve,cve2017,apache,rce,tomcat,kev,cisa",
             "path": "cves/2017/CVE-2017-12615.yaml"
         },
         {
@@ -10550,7 +10654,7 @@
             "id": "CVE-2019-6340",
             "name": "Drupal - Remote Code Execution",
             "severity": "high",
-            "tags": "cve,cve2019,drupal,rce,kev",
+            "tags": "cve,cve2019,drupal,rce,kev,cisa",
             "path": "cves/2019/CVE-2019-6340.yaml"
         },
         {
@@ -10566,7 +10670,7 @@
             "id": "CVE-2019-11580",
             "name": "Atlassian Crowd and Crowd Data Center Unauthenticated Remote Code Execution",
             "severity": "critical",
-            "tags": "cve,cve2019,atlassian,rce,kev",
+            "tags": "cve,cve2019,atlassian,rce,kev,cisa",
             "path": "cves/2019/CVE-2019-11580.yaml"
         },
         {
@@ -10774,7 +10878,7 @@
             "id": "CVE-2019-11581",
             "name": "Atlassian Jira Server-Side Template Injection",
             "severity": "critical",
-            "tags": "cve,cve2019,atlassian,jira,ssti,rce,kev",
+            "tags": "cve,cve2019,atlassian,jira,ssti,rce,kev,cisa",
             "path": "cves/2019/CVE-2019-11581.yaml"
         },
         {
@@ -10924,7 +11028,7 @@
         {
             "author": "arafatansari",
             "id": "CVE-2019-10717",
-            "name": "BlogEngine.NET 3.3.7.0 - Directory Traversal",
+            "name": "BlogEngine.NET 3.3.7.0 - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2019,blogengine,lfi,traversal",
             "path": "cves/2019/CVE-2019-10717.yaml"
@@ -11298,6 +11402,22 @@
             "path": "cves/2022/CVE-2022-23808.yaml"
         },
         {
+            "author": "arafatansari",
+            "id": "CVE-2022-35493",
+            "name": "eShop - Cross-site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2022,eshop,xss",
+            "path": "cves/2022/CVE-2022-35493.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "CVE-2022-34048",
+            "name": "Wavlink WN533A8 - Cross-Site Scripting (XSS)",
+            "severity": "medium",
+            "tags": "cve,cve2022,wavlink,xss,router",
+            "path": "cves/2022/CVE-2022-34048.yaml"
+        },
+        {
             "author": "For3stCo1d",
             "id": "CVE-2022-34047",
             "name": "Wavlink Set_safety.shtml - Password Exposure",
@@ -11306,12 +11426,28 @@
             "path": "cves/2022/CVE-2022-34047.yaml"
         },
         {
+            "author": "scent2d",
+            "id": "CVE-2022-0599",
+            "name": "Mapping Multiple URLs Redirect Same Page <= 5.8 - Reflected Cross-Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2022,wordpress,wp-plugin,xss,wp,authenticated",
+            "path": "cves/2022/CVE-2022-0599.yaml"
+        },
+        {
             "author": "veshraj",
             "id": "CVE-2022-1598",
             "name": "WordPress Plugin WPQA < 5.5 - Unauthenticated Private Message Disclosure",
             "severity": "medium",
             "tags": "cve,cve2022,wordpress,wp-plugin,wpqa,idor",
             "path": "cves/2022/CVE-2022-1598.yaml"
+        },
+        {
+            "author": "c-sh0",
+            "id": "CVE-2022-36883",
+            "name": "Git Plugin up to 4.11.3 on Jenkins Build Authorization",
+            "severity": "high",
+            "tags": "cve,cve2022,jenkins,plugin,git",
+            "path": "cves/2022/CVE-2022-36883.yaml"
         },
         {
             "author": "0x_Akoko",
@@ -11458,6 +11594,14 @@
             "path": "cves/2022/CVE-2022-26960.yaml"
         },
         {
+            "author": "amit-jd",
+            "id": "CVE-2022-0968",
+            "name": "Microweber < 1.2.12 - Integer Overflow (DOS)",
+            "severity": "medium",
+            "tags": "cve,cve2022,overflow,microweber,cms",
+            "path": "cves/2022/CVE-2022-0968.yaml"
+        },
+        {
             "author": "Akincibor",
             "id": "CVE-2022-1020",
             "name": "WordPress WooCommerce <3.1.2 - Arbitrary Function Call",
@@ -11528,6 +11672,14 @@
             "severity": "high",
             "tags": "cve,cve2022,sqli,jobsearch",
             "path": "cves/2022/CVE-2022-32015.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "CVE-2022-32159",
+            "name": "Open edX - Cross-site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2022,openedx,xss",
+            "path": "cves/2022/CVE-2022-32159.yaml"
         },
         {
             "author": "0x_Akoko",
@@ -11960,6 +12112,14 @@
             "severity": "high",
             "tags": "cve,cve2022,powertek,auth-bypass",
             "path": "cves/2022/CVE-2022-33174.yaml"
+        },
+        {
+            "author": "scent2d",
+            "id": "CVE-2022-31793",
+            "name": "muhttpd <= 1.1.5 - Path traversal",
+            "severity": "high",
+            "tags": "cve,cve2022,network,muhttpd,lfi,unauth",
+            "path": "cves/2022/CVE-2022-31793.yaml"
         },
         {
             "author": "veshraj",
@@ -12586,6 +12746,14 @@
             "path": "cves/2011/CVE-2011-4926.yaml"
         },
         {
+            "author": "pikpikcu",
+            "id": "CVE-2014-1203",
+            "name": "Eyou E-Mail <3.6 - Remote Code Execution",
+            "severity": "critical",
+            "tags": "rce,eyou",
+            "path": "cves/2014/CVE-2014-1203.yaml"
+        },
+        {
             "author": "daffainfo",
             "id": "CVE-2014-9617",
             "name": "Netsweeper 3.0.6 - Open Redirection",
@@ -12874,6 +13042,14 @@
             "path": "cves/2014/CVE-2014-8682.yaml"
         },
         {
+            "author": "DhiyaneshDk",
+            "id": "CVE-2014-4942",
+            "name": "WP EasyCart - Information Disclosure",
+            "severity": "low",
+            "tags": "cve,cve2014,wordpress,wp-plugin,wp,phpinfo,disclosure",
+            "path": "cves/2014/CVE-2014-4942.yaml"
+        },
+        {
             "author": "geeknik",
             "id": "CVE-2014-2323",
             "name": "Lighttpd 1.4.34 SQL Injection and Path Traversal",
@@ -13068,7 +13244,7 @@
         {
             "author": "0x_akoko",
             "id": "CVE-2016-10367",
-            "name": "Opsview Monitor Pro - Unauthenticated Directory Traversal",
+            "name": "Opsview Monitor Pro - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2016,opsview,lfi",
             "path": "cves/2016/CVE-2016-10367.yaml"
@@ -13480,6 +13656,14 @@
             "severity": "info",
             "tags": "amazon,config,exposure",
             "path": "exposures/configs/s3cmd-config.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "oracle-cgi-printenv",
+            "name": "Oracle CGI printenv - Information Disclosure",
+            "severity": "medium",
+            "tags": "exposure,oracle,config",
+            "path": "exposures/configs/oracle-cgi-printenv.yaml"
         },
         {
             "author": "ELSFA7110",
@@ -14066,6 +14250,14 @@
             "path": "exposures/configs/jetbrains-datasources.yaml"
         },
         {
+            "author": "DhiyaneshDK",
+            "id": "procfile-config",
+            "name": "Procfile Configuration File Exposure",
+            "severity": "info",
+            "tags": "devops,exposure,config",
+            "path": "exposures/configs/procfile-config.yaml"
+        },
+        {
             "author": "daffainfo",
             "id": "exposed-darcs",
             "name": "Exposed Darcs Config",
@@ -14458,6 +14650,14 @@
             "path": "exposures/files/keycloak-json.yaml"
         },
         {
+            "author": "DhiyaneshDk",
+            "id": "oracle-test-cgi",
+            "name": "Oracle Application Server test-cgi Page",
+            "severity": "info",
+            "tags": "oracle,exposure",
+            "path": "exposures/files/oracle-test-cgi.yaml"
+        },
+        {
             "author": "dhiyaneshDk",
             "id": "desktop-ini-exposure",
             "name": "desktop.ini exposure",
@@ -14826,12 +15026,36 @@
             "path": "exposures/files/shellscripts.yaml"
         },
         {
+            "author": "DhiyaneshDK",
+            "id": "pipeline-configuration",
+            "name": "Pipleline Configuration Exposure",
+            "severity": "info",
+            "tags": "devops,exposure,cicd",
+            "path": "exposures/files/pipeline-configuration.yaml"
+        },
+        {
             "author": "DhiyaneshDk",
             "id": "styleci-yml-disclosure",
             "name": "StyleCi Yaml File Disclosure",
             "severity": "info",
             "tags": "config,exposure,devops",
             "path": "exposures/files/styleci-yml-disclosure.yaml"
+        },
+        {
+            "author": "DhiyaneshDK",
+            "id": "pantheon-upstream",
+            "name": "Pantheon upstream.yml Disclosure",
+            "severity": "low",
+            "tags": "exposure,devops,patheon,config",
+            "path": "exposures/files/pantheon-upstream.yaml"
+        },
+        {
+            "author": "DhiyaneshDK",
+            "id": "bitbucket-pipelines",
+            "name": "BitBucket Piplelines Configuration Exposure",
+            "severity": "info",
+            "tags": "exposure,bitbucket,devops,cicd",
+            "path": "exposures/files/bitbucket-pipelines.yaml"
         },
         {
             "author": "hahwul",
@@ -17658,6 +17882,14 @@
             "path": "technologies/graylog-api-browser.yaml"
         },
         {
+            "author": "ritikchaddha",
+            "id": "yeswiki-detect",
+            "name": "YesWiki Detect",
+            "severity": "info",
+            "tags": "yeswiki,panel",
+            "path": "technologies/yeswiki-detect.yaml"
+        },
+        {
             "author": "pikpikcu",
             "id": "livehelperchat-detect",
             "name": "Live Helper Chat Detect",
@@ -17858,6 +18090,14 @@
             "path": "technologies/ymhome-detect.yaml"
         },
         {
+            "author": "TechbrunchFR",
+            "id": "sap-spartacus-detect",
+            "name": "SAP Spartacus detect",
+            "severity": "info",
+            "tags": "tech,sap,hybris,angular,spartacus",
+            "path": "technologies/sap-spartacus-detect.yaml"
+        },
+        {
             "author": "dhiyaneshDk",
             "id": "default-asp-net-page",
             "name": "ASP.Net Test Page",
@@ -17900,7 +18140,7 @@
         {
             "author": "pikpikcu",
             "id": "elfinder-detect",
-            "name": "elFinder Detect",
+            "name": "elFinder - Install Detection",
             "severity": "info",
             "tags": "tech,elfinder",
             "path": "technologies/elfinder-detect.yaml"
@@ -19274,6 +19514,14 @@
             "path": "technologies/oracle/oracle-http-server-12c.yaml"
         },
         {
+            "author": "leovalcante",
+            "id": "oracle-webcenter-sites",
+            "name": "Oracle WebCenter Sites",
+            "severity": "info",
+            "tags": "tech,oracle,webcenter",
+            "path": "technologies/oracle/oracle-webcenter-sites.yaml"
+        },
+        {
             "author": "pussycat0x",
             "id": "oracle-dbcs",
             "name": "Oracle Database as a Service",
@@ -19664,6 +19912,14 @@
             "severity": "info",
             "tags": "panel,metersphere",
             "path": "exposed-panels/metersphere-login.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "jboss-juddi",
+            "name": "JBoss WS JUDDI Console Panel",
+            "severity": "low",
+            "tags": "jboss,juddi",
+            "path": "exposed-panels/jboss-juddi.yaml"
         },
         {
             "author": "DhiyaneshDK",
@@ -20122,6 +20378,14 @@
             "path": "exposed-panels/mikrotik-routeros.yaml"
         },
         {
+            "author": "ritikchaddha",
+            "id": "mitel-panel-detect",
+            "name": "Mitel Panel Detect",
+            "severity": "info",
+            "tags": "panel,mitel",
+            "path": "exposed-panels/mitel-panel-detect.yaml"
+        },
+        {
             "author": "pikpikcu,philippedelteil,daffainfo",
             "id": "aviatrix-panel",
             "name": "Aviatrix Cloud Controller Panel Login",
@@ -20376,6 +20640,14 @@
             "severity": "info",
             "tags": "panel,rabbitmq",
             "path": "exposed-panels/rabbitmq-dashboard.yaml"
+        },
+        {
+            "author": "pikpikcu",
+            "id": "intelbras-panel",
+            "name": "Intelbras Panel",
+            "severity": "info",
+            "tags": "panel,intelbras",
+            "path": "exposed-panels/intelbras-panel.yaml"
         },
         {
             "author": "praetorian-thendrickson",
@@ -21394,6 +21666,14 @@
             "path": "exposed-panels/huawei-hg532e-panel.yaml"
         },
         {
+            "author": "ritikchaddha",
+            "id": "mybb-forum-detect",
+            "name": "MyBB Forum Panel Detect",
+            "severity": "info",
+            "tags": "panel,mybb,forum",
+            "path": "exposed-panels/mybb-forum-detect.yaml"
+        },
+        {
             "author": "dhiyaneshDK",
             "id": "sidekiq-dashboard",
             "name": "sidekiq-dashboard",
@@ -21746,6 +22026,14 @@
             "path": "exposed-panels/dell-openmanager-login.yaml"
         },
         {
+            "author": "ritikchaddha",
+            "id": "microfocus-filr-panel",
+            "name": "Micro Focus Filr Panel",
+            "severity": "info",
+            "tags": "panel,microfocus,filr",
+            "path": "exposed-panels/microfocus-filr-panel.yaml"
+        },
+        {
             "author": "joanbono",
             "id": "checkmarx-panel-detect",
             "name": "Checkmarx WebClient detector",
@@ -21848,6 +22136,14 @@
             "severity": "info",
             "tags": "panel,virtua",
             "path": "exposed-panels/virtua-software-panel.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "microfocus-vibe-panel",
+            "name": "Micro Focus Vibe Login Panel",
+            "severity": "info",
+            "tags": "panel,microfocus,vibe",
+            "path": "exposed-panels/microfocus-vibe-panel.yaml"
         },
         {
             "author": "geeknik",
@@ -22312,6 +22608,14 @@
             "severity": "low",
             "tags": "panel,kubernetes,devops",
             "path": "exposed-panels/kubernetes-dashboard.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "vrealize-loginsight-panel",
+            "name": "vRealize Log Insight Panel",
+            "severity": "info",
+            "tags": "panel,vmware,vrealize",
+            "path": "exposed-panels/vrealize-loginsight-panel.yaml"
         },
         {
             "author": "pdteam",
@@ -22834,6 +23138,14 @@
             "path": "exposed-panels/looker-panel.yaml"
         },
         {
+            "author": "ritikchaddha",
+            "id": "ilch-admin-panel",
+            "name": "Ilch CMS Admin Panel",
+            "severity": "info",
+            "tags": "panel,ilch,cms",
+            "path": "exposed-panels/ilch-admin-panel.yaml"
+        },
+        {
             "author": "Adam Crosser",
             "id": "httpbin-panel",
             "name": "HTTPBin Panel Detect",
@@ -23274,11 +23586,11 @@
             "path": "exposed-panels/compal-panel.yaml"
         },
         {
-            "author": "hakimkt",
+            "author": "hakimkt,arafatansari",
             "id": "jupyter-notebook",
             "name": "Jupyter Notebook",
             "severity": "info",
-            "tags": "jupyter,notebook,exposure",
+            "tags": "panel,jupyter,notebook,exposure",
             "path": "exposed-panels/jupyter-notebook.yaml"
         },
         {
@@ -23544,6 +23856,14 @@
             "severity": "info",
             "tags": "sugarcrm,panel",
             "path": "exposed-panels/sugarcrm-panel.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "weiphp-panel",
+            "name": "Weiphp Panel Detect",
+            "severity": "info",
+            "tags": "panel,weiphp",
+            "path": "exposed-panels/weiphp-panel.yaml"
         },
         {
             "author": "idealphase",
@@ -24258,12 +24578,28 @@
             "path": "exposed-panels/scriptcase/scriptcase-panel.yaml"
         },
         {
+            "author": "princechaddha",
+            "id": "wp-install",
+            "name": "WordPress Exposed Installation",
+            "severity": "high",
+            "tags": "panel,wordpress",
+            "path": "exposed-panels/wordpress/wp-install.yaml"
+        },
+        {
             "author": "Podalirius",
             "id": "joget-panel",
             "name": "JoGet Login Panel",
             "severity": "info",
             "tags": "panel,joget",
             "path": "exposed-panels/joget/joget-panel.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "mybb-forum-install",
+            "name": "MyBB Exposed Installation",
+            "severity": "high",
+            "tags": "panel,mybb,forum",
+            "path": "exposed-panels/mybb/mybb-forum-install.yaml"
         },
         {
             "author": "0x240x23elu",
@@ -24572,7 +24908,7 @@
         {
             "author": "pikpikcu",
             "id": "thinkcmf-lfi",
-            "name": "ThinkCMF LFI",
+            "name": "ThinkCMF - Local File Inclusion",
             "severity": "high",
             "tags": "thinkcmf,lfi",
             "path": "vulnerabilities/thinkcmf/thinkcmf-lfi.yaml"
@@ -24620,7 +24956,7 @@
         {
             "author": "pikpikcu",
             "id": "ruijie-networks-lfi",
-            "name": "Ruijie Networks Switch eWeb S29_RGOS 11.4 LFI",
+            "name": "Ruijie Networks Switch eWeb S29_RGOS 11.4 - Local File Inclusion",
             "severity": "high",
             "tags": "ruijie,lfi",
             "path": "vulnerabilities/ruijie/ruijie-networks-lfi.yaml"
@@ -24682,9 +25018,17 @@
             "path": "vulnerabilities/grafana/grafana-file-read.yaml"
         },
         {
+            "author": "DhiyaneshDK",
+            "id": "vmware-operation-manager-log4j",
+            "name": "VMware Operation Manager - Remote Code Execution (Apache Log4j)",
+            "severity": "critical",
+            "tags": "cve,cve2021,rce,jndi,log4j,vmware",
+            "path": "vulnerabilities/vmware/vmware-operation-manager-log4j.yaml"
+        },
+        {
             "author": "dwisiswant0",
             "id": "vmware-vcenter-lfi",
-            "name": "VMware vCenter Unauthenticated Arbitrary File Read",
+            "name": "VMware vCenter - Local File Inclusion",
             "severity": "high",
             "tags": "vmware,lfi,vcenter",
             "path": "vulnerabilities/vmware/vmware-vcenter-lfi.yaml"
@@ -24708,7 +25052,7 @@
         {
             "author": "PR3R00T",
             "id": "vmware-vcenter-lfi-linux",
-            "name": "Vmware Vcenter LFI for Linux appliances",
+            "name": "Linux Vmware Vcenter - Local File Inclusion",
             "severity": "high",
             "tags": "vmware,lfi,vcenter",
             "path": "vulnerabilities/vmware/vmware-vcenter-lfi-linux.yaml"
@@ -24720,6 +25064,22 @@
             "severity": "critical",
             "tags": "ssrf,lfi,xss,oast,vcenter,vmware",
             "path": "vulnerabilities/vmware/vmware-vcenter-ssrf.yaml"
+        },
+        {
+            "author": "pussycat0x,DhiyaneshDK",
+            "id": "vmware-hcx-log4j",
+            "name": "VMware HCX - Remote Code Execution (Apache Log4j)",
+            "severity": "critical",
+            "tags": "cve,cve2021,rce,jndi,log4j,vmware",
+            "path": "vulnerabilities/vmware/vmware-hcx-log4j.yaml"
+        },
+        {
+            "author": "DhiyaneshDK",
+            "id": "vmware-nsx-log4j",
+            "name": "VMware NSX - Remote Code Execution (Apache Log4j)",
+            "severity": "critical",
+            "tags": "cve,cve2021,rce,jndi,log4j,graylog",
+            "path": "vulnerabilities/vmware/vmware-nsx-log4j.yaml"
         },
         {
             "author": "johnk3r",
@@ -24906,6 +25266,14 @@
             "path": "vulnerabilities/generic/top-xss-params.yaml"
         },
         {
+            "author": "davidfegyver",
+            "id": "generic-j2ee-lfi",
+            "name": "Generic J2EE LFI scan",
+            "severity": "high",
+            "tags": "lfi,generic,j2ee",
+            "path": "vulnerabilities/generic/generic-j2ee-lfi.yaml"
+        },
+        {
             "author": "nadino,geeknik",
             "id": "basic-xss-prober",
             "name": "Basic XSS Prober",
@@ -24994,14 +25362,6 @@
             "path": "vulnerabilities/metersphere/metersphere-plugin-rce.yaml"
         },
         {
-            "author": "pikpikcu",
-            "id": "eyou-email-rce",
-            "name": "Eyou E-Mail <3.6 - Remote Code Execution",
-            "severity": "critical",
-            "tags": "rce,eyou",
-            "path": "vulnerabilities/eyou/eyou-email-rce.yaml"
-        },
-        {
             "author": "manasmbellani",
             "id": "cucm-username-enumeration",
             "name": "Cisco Unified Call Manager Username Enumeration",
@@ -25010,12 +25370,36 @@
             "path": "vulnerabilities/cisco/cucm-username-enumeration.yaml"
         },
         {
+            "author": "DhiyaneshDK",
+            "id": "cisco-unified-communications-log4j",
+            "name": "Cisco Unified Communications - Remote Code Execution (Apache Log4j)",
+            "severity": "critical",
+            "tags": "cve,cve2021,rce,jndi,log4j,cisco",
+            "path": "vulnerabilities/cisco/cisco-unified-communications-log4j.yaml"
+        },
+        {
+            "author": "DhiyaneshDK",
+            "id": "cisco-vmanage-log4j",
+            "name": "Cisco vManage - Remote Code Execution (Apache Log4j)",
+            "severity": "critical",
+            "tags": "cve,cve2021,rce,jndi,log4j,cisco",
+            "path": "vulnerabilities/cisco/cisco-vmanage-log4j.yaml"
+        },
+        {
             "author": "pdteam",
             "id": "gitlab-rce",
             "name": "GitLab CE/EE Unauthenticated RCE Using ExifTool",
             "severity": "critical",
             "tags": "cve,cve2021,gitlab,rce,oast,intrusive",
             "path": "vulnerabilities/gitlab/gitlab-rce.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "liferay-resource-leak",
+            "name": "Liferay - Resource leakage through I18nServlet",
+            "severity": "high",
+            "tags": "liferay,lfi,j2ee",
+            "path": "vulnerabilities/j2ee/liferay-resource-leak.yaml"
         },
         {
             "author": "Adam Crosser",
@@ -25148,7 +25532,7 @@
         {
             "author": "princechaddha",
             "id": "wooyun-2015-148227",
-            "name": "Seeyon WooYun LFR",
+            "name": "Seeyon WooYun - Local File Inclusion",
             "severity": "high",
             "tags": "seeyon,wooyun,lfi,zhiyuan",
             "path": "vulnerabilities/seeyon/wooyun-2015-148227.yaml"
@@ -25228,7 +25612,7 @@
         {
             "author": "dhiyaneshDk",
             "id": "squirrelmail-lfi",
-            "name": "SquirrelMail 1.2.11 Local File Inclusion",
+            "name": "SquirrelMail 1.2.11 - Local File Inclusion",
             "severity": "high",
             "tags": "lfi,squirrelmail",
             "path": "vulnerabilities/squirrelmail/squirrelmail-lfi.yaml"
@@ -25244,7 +25628,7 @@
         {
             "author": "dhiyaneshDk",
             "id": "umbraco-base-ssrf",
-            "name": "Umbraco v8.14.1 - 'baseUrl' SSRF",
+            "name": "Umbraco 8.14.1 - baseUrl Server-Side Request Forgery (SSRF)",
             "severity": "medium",
             "tags": "ssrf,umbraco,oast",
             "path": "vulnerabilities/other/umbraco-base-ssrf.yaml"
@@ -25316,7 +25700,7 @@
         {
             "author": "0x_Akoko",
             "id": "opencti-lfi",
-            "name": "OpenCTI 3.3.1 - Directory Traversal",
+            "name": "OpenCTI 3.3.1 - Local File Inclusion",
             "severity": "high",
             "tags": "opencti,lfi,oss",
             "path": "vulnerabilities/other/opencti-lfi.yaml"
@@ -25348,7 +25732,7 @@
         {
             "author": "gy741",
             "id": "xerox-efi-lfi",
-            "name": "Xerox DC260 EFI Fiery Controller Webtools 2.0 - Arbitrary File Disclosure",
+            "name": "Xerox DC260 EFI Fiery Controller Webtools 2.0 - Local File Inclusion",
             "severity": "high",
             "tags": "iot,xerox,disclosure,lfi",
             "path": "vulnerabilities/other/xerox-efi-lfi.yaml"
@@ -25356,7 +25740,7 @@
         {
             "author": "Random_Robbie",
             "id": "symantec-messaging-gateway",
-            "name": "Symantec Messaging Gateway LFI",
+            "name": "Symantec Messaging Gateway <=10.6.1 - Local File Inclusion",
             "severity": "medium",
             "tags": "lfi,messaging,symantec",
             "path": "vulnerabilities/other/symantec-messaging-gateway.yaml"
@@ -25386,6 +25770,14 @@
             "path": "vulnerabilities/other/carel-bacnet-gateway-traversal.yaml"
         },
         {
+            "author": "DhiyaneshDK",
+            "id": "metabase-log4j",
+            "name": "Metabase - Remote Code Execution (Apache Log4j)",
+            "severity": "critical",
+            "tags": "cve,cve2021,rce,jndi,log4j,metabase",
+            "path": "vulnerabilities/other/metabase-log4j.yaml"
+        },
+        {
             "author": "pikpikcu",
             "id": "mida-eframework-xss",
             "name": "Mida eFramework - Cross Site Scripting",
@@ -25396,7 +25788,7 @@
         {
             "author": "KrE80r",
             "id": "processmaker-lfi",
-            "name": "ProcessMaker <= 3.5.4 Directory Traversal",
+            "name": "ProcessMaker <=3.5.4 - Local File Inclusion",
             "severity": "high",
             "tags": "processmaker,lfi",
             "path": "vulnerabilities/other/processmaker-lfi.yaml"
@@ -25460,7 +25852,7 @@
         {
             "author": "0x_Akoko",
             "id": "karel-ip-phone-lfi",
-            "name": "Karel IP Phone IP1211 Web Management Panel - Directory Traversal",
+            "name": "Karel IP Phone IP1211 Web Management Panel - Local File Inclusion",
             "severity": "high",
             "tags": "karel,lfi",
             "path": "vulnerabilities/other/karel-ip-phone-lfi.yaml"
@@ -25484,7 +25876,7 @@
         {
             "author": "pikpikcu,ritikchaddha",
             "id": "nsasg-arbitrary-file-read",
-            "name": "NS ASG Arbitrary File Read",
+            "name": "NS ASG - Local File Inclusion",
             "severity": "high",
             "tags": "nsasg,lfi",
             "path": "vulnerabilities/other/ns-asg-file-read.yaml"
@@ -25508,7 +25900,7 @@
         {
             "author": "0x_Akoko",
             "id": "jinfornet-jreport-lfi",
-            "name": "Jinfornet Jreport 15.6 - Unauthenticated Directory Traversal",
+            "name": "Jinfornet Jreport 15.6 - Local File Inclusion",
             "severity": "high",
             "tags": "jreport,jinfornet,lfi",
             "path": "vulnerabilities/other/jinfornet-jreport-lfi.yaml"
@@ -25516,7 +25908,7 @@
         {
             "author": "ritikchaddha",
             "id": "kingdee-eas-directory-traversal",
-            "name": "Kingdee EAS - Directory Traversal",
+            "name": "Kingdee EAS - Local File Inclusion",
             "severity": "medium",
             "tags": "kingdee,lfi,traversal",
             "path": "vulnerabilities/other/kingdee-eas-directory-traversal.yaml"
@@ -25540,7 +25932,7 @@
         {
             "author": "ritikchaddha",
             "id": "kingsoft-v8-file-read",
-            "name": "Kingsoft V8 File Read",
+            "name": "Kingsoft 8 - Local File Inclusion",
             "severity": "high",
             "tags": "kingsoft,lfi",
             "path": "vulnerabilities/other/kingsoft-v8-file-read.yaml"
@@ -25588,7 +25980,7 @@
         {
             "author": "princechaddha",
             "id": "nuuo-file-inclusion",
-            "name": "NUUO NVRmini 2 v3.0.8 - Atrbitary File Retrieval",
+            "name": "NUUO NVRmini 2 3.0.8 - Local File Inclusion",
             "severity": "high",
             "tags": "nuuo,lfi",
             "path": "vulnerabilities/other/nuuo-file-inclusion.yaml"
@@ -25596,7 +25988,7 @@
         {
             "author": "gy741",
             "id": "oliver-library-lfi",
-            "name": "Oliver Library Server v5 <8.00.008.053 - Arbitrary File Retrieval",
+            "name": "Oliver 5 Library Server <8.00.008.053 - Local File Inclusion",
             "severity": "high",
             "tags": "windows,lfi,oliver",
             "path": "vulnerabilities/other/oliver-library-lfi.yaml"
@@ -25644,7 +26036,7 @@
         {
             "author": "0x_Akoko",
             "id": "phpwiki-lfi",
-            "name": "phpwiki 1.5.4 - XSS / Local File Inclusion",
+            "name": "phpwiki 1.5.4 - Cross-Site Scripting/Local File Inclusion",
             "severity": "high",
             "tags": "phpwiki,lfi,xss",
             "path": "vulnerabilities/other/phpwiki-lfi.yaml"
@@ -25772,7 +26164,7 @@
         {
             "author": "0x_Akoko",
             "id": "sl-studio-lfi",
-            "name": "Webbdesign SL-Studio Directory Traversal",
+            "name": "Webbdesign SL-Studio - Local File Inclusion",
             "severity": "high",
             "tags": "slstudio,lfi",
             "path": "vulnerabilities/other/sl-studio-lfi.yaml"
@@ -25788,7 +26180,7 @@
         {
             "author": "geeknik",
             "id": "viewlinc-crlf-injection",
-            "name": "viewLinc viewLinc/5.1.2.367 (and sometimes 5.1.1.50) is vulnerable to CRLF Injection.",
+            "name": "viewLinc 5.1.2.367 - Carriage Return Line Feed Attack",
             "severity": "low",
             "tags": "crlf,viewlinc",
             "path": "vulnerabilities/other/viewlinc-crlf-injection.yaml"
@@ -25900,7 +26292,7 @@
         {
             "author": "dhiyaneshDk",
             "id": "pmb-local-file-disclosure",
-            "name": "PMB 5.6 - getgif.php Arbitrary File Retrieval",
+            "name": "PMB 5.6 - Local File Inclusion",
             "severity": "high",
             "tags": "lfi,pmb",
             "path": "vulnerabilities/other/pmb-local-file-disclosure.yaml"
@@ -25932,7 +26324,7 @@
         {
             "author": "dhiyaneshDk",
             "id": "joomla-com-fabrik-lfi",
-            "name": "Joomla! com_fabrik 3.9.11 - Directory Traversal",
+            "name": "Joomla! com_fabrik 3.9.11 - Local File Inclusion",
             "severity": "high",
             "tags": "joomla,lfi",
             "path": "vulnerabilities/other/joomla-com-fabrik-lfi.yaml"
@@ -25940,7 +26332,7 @@
         {
             "author": "pikpikcu",
             "id": "hjtcloud-rest-arbitrary-file-read",
-            "name": "HJTcloud Arbitrary file read",
+            "name": "HJTcloud - Local File Inclusion",
             "severity": "low",
             "tags": "hjtcloud,lfi",
             "path": "vulnerabilities/other/hjtcloud-rest-arbitrary-file-read.yaml"
@@ -26020,7 +26412,7 @@
         {
             "author": "pikpikcu",
             "id": "huawei-hg659-lfi",
-            "name": "HUAWEI HG659 LFI",
+            "name": "HUAWEI HG659 - Local File Inclusion",
             "severity": "high",
             "tags": "lfi,huawei",
             "path": "vulnerabilities/other/huawei-hg659-lfi.yaml"
@@ -26058,12 +26450,28 @@
             "path": "vulnerabilities/other/ewebs-arbitrary-file-reading.yaml"
         },
         {
+            "author": "DhiyaneshDK",
+            "id": "rundeck-log4j",
+            "name": "Rundeck - Remote Code Execution (Apache Log4j)",
+            "severity": "critical",
+            "tags": "cve,cve2021,rce,jndi,log4j,rundeck",
+            "path": "vulnerabilities/other/rundeck-log4j.yaml"
+        },
+        {
             "author": "dhiyaneshDk",
             "id": "gloo-unauth",
             "name": "Unauthenticated Gloo UI",
             "severity": "high",
             "tags": "unauth,gloo",
             "path": "vulnerabilities/other/gloo-unauth.yaml"
+        },
+        {
+            "author": "0x_Akoko",
+            "id": "crystal-live-server-lfi",
+            "name": "Crystal Live HTTP Server 6.01 - Directory Traversal",
+            "severity": "high",
+            "tags": "lfi,crystal",
+            "path": "vulnerabilities/other/crystal-live-server-lfi.yaml"
         },
         {
             "author": "arafatansari",
@@ -26212,7 +26620,7 @@
         {
             "author": "princechaddha,ritikchaddha",
             "id": "huijietong-cloud-fileread",
-            "name": "Huijietong Cloud File Read",
+            "name": "Huijietong - Local File Inclusion",
             "severity": "high",
             "tags": "huijietong,lfi",
             "path": "vulnerabilities/other/huijietong-cloud-fileread.yaml"
@@ -26308,7 +26716,7 @@
         {
             "author": "pikpikcu",
             "id": "opensis-lfi",
-            "name": "openSIS 5.1 - 'ajax.php' Local File Inclusion",
+            "name": "openSIS 5.1 - Local File Inclusion",
             "severity": "high",
             "tags": "opensis,lfi",
             "path": "vulnerabilities/other/opensis-lfi.yaml"
@@ -26326,7 +26734,7 @@
             "id": "omnia-mpx-lfi",
             "name": "Omnia MPX 1.5.0+r1 - Path Traversal",
             "severity": "high",
-            "tags": "omnia,mpx,lfi,traversal",
+            "tags": "lfi,omnia,mpx,traversal",
             "path": "vulnerabilities/other/omnia-mpx-lfi.yaml"
         },
         {
@@ -26404,7 +26812,7 @@
         {
             "author": "pikpikcu",
             "id": "tpshop-directory-traversal",
-            "name": "TPshop Directory Traversal",
+            "name": "TPshop - Local File Inclusion",
             "severity": "high",
             "tags": "tpshop,lfi",
             "path": "vulnerabilities/other/tpshop-directory-traversal.yaml"
@@ -26448,6 +26856,14 @@
             "severity": "high",
             "tags": "auth-bypass",
             "path": "vulnerabilities/other/vpms-auth-bypass.yaml"
+        },
+        {
+            "author": "DhiyaneshDK",
+            "id": "jamf-pro-log4j",
+            "name": "JamfPro - Remote Code Execution (Apache Log4j)",
+            "severity": "critical",
+            "tags": "cve,cve2021,rce,jndi,log4j,jamfpro",
+            "path": "vulnerabilities/other/jamf-pro-log4j.yaml"
         },
         {
             "author": "ffffffff0x",
@@ -26500,7 +26916,7 @@
         {
             "author": "0x_Akoko",
             "id": "orbiteam-bscw-server-lfi",
-            "name": "OrbiTeam BSCW Server - Unauthenticated LFI",
+            "name": "OrbiTeam BSCW Server - Local File Inclusion",
             "severity": "high",
             "tags": "bscw,orbiteam,lfi,unauth",
             "path": "vulnerabilities/other/orbiteam-bscw-server-lfi.yaml"
@@ -26508,7 +26924,7 @@
         {
             "author": "geeknik",
             "id": "pmb-directory-traversal",
-            "name": "PMB 5.6 - Arbitrary File Retrieval",
+            "name": "PMB 5.6 - Local File Inclusion",
             "severity": "medium",
             "tags": "lfi",
             "path": "vulnerabilities/other/pmb-directory-traversal.yaml"
@@ -26578,6 +26994,14 @@
             "path": "vulnerabilities/other/goanywhere-mft-log4j-rce.yaml"
         },
         {
+            "author": "DhiyaneshDK",
+            "id": "graylog-log4j",
+            "name": "GrayLog - Remote Code Execution (Apache Log4j)",
+            "severity": "critical",
+            "tags": "cve,cve2021,rce,jndi,log4j,graylog",
+            "path": "vulnerabilities/other/graylog-log4j.yaml"
+        },
+        {
             "author": "ritikchaddha",
             "id": "finecms-sqli",
             "name": "FineCMS 5.0.10 - SQL Injection",
@@ -26592,14 +27016,6 @@
             "severity": "medium",
             "tags": "xss",
             "path": "vulnerabilities/other/sick-beard-xss.yaml"
-        },
-        {
-            "author": "Akincibor",
-            "id": "unauth-rlm",
-            "name": "Reprise License Manager 14.2 - Authentication Bypass",
-            "severity": "critical",
-            "tags": "unauth,rlm",
-            "path": "vulnerabilities/other/unauth-rlm.yaml"
         },
         {
             "author": "pikpikcu",
@@ -26636,7 +27052,7 @@
         {
             "author": "0x_akoko",
             "id": "sofneta-mecdream-pacs-lfi",
-            "name": "Softneta MedDream PACS Server Premium 6.7.1.1 - Directory Traversal",
+            "name": "Softneta MedDream PACS Server Premium 6.7.1.1 - Local File Inclusion",
             "severity": "high",
             "tags": "sofneta,lfi",
             "path": "vulnerabilities/other/sofneta-mecdream-pacs-lfi.yaml"
@@ -26716,7 +27132,7 @@
         {
             "author": "0x_Akoko",
             "id": "kyocera-m2035dn-lfi",
-            "name": "Kyocera Command Center RX ECOSYS M2035dn - Arbitrary File Retrieval",
+            "name": "Kyocera Command Center RX ECOSYS M2035dn - Local File Inclusion",
             "severity": "high",
             "tags": "printer,iot,kyocera,lfi",
             "path": "vulnerabilities/other/kyocera-m2035dn-lfi.yaml"
@@ -26728,6 +27144,14 @@
             "severity": "high",
             "tags": "resin,caucho,lfr",
             "path": "vulnerabilities/other/resin-cnnvd-200705-315.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "yeswiki-xss",
+            "name": "yeswiki/yeswiki - Unauthenticated Cross Site Scripting - Reflected",
+            "severity": "medium",
+            "tags": "cve,cve2022,xss,yeswiki,unauth",
+            "path": "vulnerabilities/other/yeswiki-xss.yaml"
         },
         {
             "author": "madrobot",
@@ -26768,6 +27192,14 @@
             "severity": "medium",
             "tags": "jfrog",
             "path": "vulnerabilities/other/jfrog-unauth-build-exposed.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "yeswiki-stored-xss",
+            "name": "YesWiki - Cross-site Scripting (Stored)",
+            "severity": "medium",
+            "tags": "yeswiki,xss,stored",
+            "path": "vulnerabilities/other/yeswiki-stored-xss.yaml"
         },
         {
             "author": "Bernardo Rodrigues @bernardofsr",
@@ -26828,7 +27260,7 @@
         {
             "author": "pikpikcu",
             "id": "interlib-fileread",
-            "name": "Interlib Fileread",
+            "name": "Interlib - Local File Inclusion",
             "severity": "high",
             "tags": "interlib,lfi",
             "path": "vulnerabilities/other/interlib-fileread.yaml"
@@ -26836,7 +27268,7 @@
         {
             "author": "0x_Akoko",
             "id": "hrsale-unauthenticated-lfi",
-            "name": "Hrsale 2.0.0 - Hrsale Unauthenticated Lfi",
+            "name": "Hrsale 2.0.0 - Local File Inclusion",
             "severity": "high",
             "tags": "hrsale,lfi",
             "path": "vulnerabilities/other/hrsale-unauthenticated-lfi.yaml"
@@ -26876,7 +27308,7 @@
         {
             "author": "0x_Akoko",
             "id": "pacsone-server-lfi",
-            "name": "PACSOne Server 6.6.2 DICOM Web Viewer Directory Trasversal",
+            "name": "PACSOne Server 6.6.2 - Local File Inclusion",
             "severity": "high",
             "tags": "pacsone,lfi",
             "path": "vulnerabilities/other/pacsone-server-lfi.yaml"
@@ -26908,7 +27340,7 @@
         {
             "author": "pikpikcu",
             "id": "jeewms-lfi",
-            "name": "JEEWMS LFI",
+            "name": "JEEWMS - Local File Inclusion",
             "severity": "high",
             "tags": "jeewms,lfi",
             "path": "vulnerabilities/other/jeewms-lfi.yaml"
@@ -26962,9 +27394,17 @@
             "path": "vulnerabilities/other/vmware-siterecovery-log4j-rce.yaml"
         },
         {
+            "author": "arafatansari",
+            "id": "yeswiki-sql",
+            "name": "YesWiki - SQL Injection",
+            "severity": "critical",
+            "tags": "yeswiki,sqli",
+            "path": "vulnerabilities/other/yeswiki-sql.yaml"
+        },
+        {
             "author": "Evan Rubinstein",
             "id": "yishaadmin-lfi",
-            "name": "yishaadmin path traversal",
+            "name": "yishaadmin - Local File Inclusion",
             "severity": "high",
             "tags": "lfi,yishaadmin",
             "path": "vulnerabilities/other/yishaadmin-lfi.yaml"
@@ -27114,14 +27554,6 @@
             "path": "vulnerabilities/wordpress/wp-prostore-open-redirect.yaml"
         },
         {
-            "author": "princechaddha",
-            "id": "wp-install",
-            "name": "WordPress Exposed Installation",
-            "severity": "high",
-            "tags": "wordpress",
-            "path": "vulnerabilities/wordpress/wp-install.yaml"
-        },
-        {
             "author": "Akincibor",
             "id": "wpify-woo-czech-xss",
             "name": "WPify Woo Czech < 3.5.7 - Reflected Cross-Site Scripting (XSS)",
@@ -27188,7 +27620,7 @@
         {
             "author": "DhiyaneshDK",
             "id": "health-check-lfi",
-            "name": "Health Check & Troubleshooting <= 1.2.3 - Authenticated Path Traversal",
+            "name": "WordPress Health Check & Troubleshooting <1.24 - Local File Inclusion",
             "severity": "high",
             "tags": "lfi,wp,wordpress,wp-plugin,authenticated,lfr",
             "path": "vulnerabilities/wordpress/health-check-lfi.yaml"
@@ -27212,10 +27644,18 @@
         {
             "author": "dhiyaneshDk",
             "id": "mthemeunus-lfi",
-            "name": "mTheme-Unus Theme - Local File Inclusion (LFI)",
+            "name": "WordPress mTheme-Unus Theme - Local File Inclusion",
             "severity": "high",
             "tags": "wordpress,wp-theme,lfi,wordpress,mtheme",
             "path": "vulnerabilities/wordpress/mthemeunus-lfi.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "CVE-2019-10692",
+            "name": "WP Google Maps < 7.11.18 - Unauthenticated SQL Injection",
+            "severity": "critical",
+            "tags": "cve,cve2019,sqli,wp,wordpress,wp-plugin,unauth,googlemaps",
+            "path": "vulnerabilities/wordpress/CVE-2019-10692.yaml"
         },
         {
             "author": "Ratnadip Gajbhiye",
@@ -27308,7 +27748,7 @@
         {
             "author": "dhiyaneshDK",
             "id": "hb-audio-lfi",
-            "name": "Wordpress Plugin HB Audio Gallery Lite - Arbitrary File Retrieval",
+            "name": "Wordpress HB Audio Gallery Lite - Local File Inclusion",
             "severity": "high",
             "tags": "wordpress,wp-plugin,lfi,wp",
             "path": "vulnerabilities/wordpress/hb-audio-lfi.yaml"
@@ -27460,7 +27900,7 @@
         {
             "author": "dhiyaneshDK",
             "id": "db-backup-lfi",
-            "name": "DB Backup <= 4.5 - Path Traversal File Access",
+            "name": "WordPress DB Backup <=4.5 - Local File Inclusion",
             "severity": "high",
             "tags": "wordpress,wp-plugin,lfi,wp",
             "path": "vulnerabilities/wordpress/db-backup-lfi.yaml"
@@ -27548,15 +27988,23 @@
         {
             "author": "Hassan Khan Yusufzai - Splint3r7",
             "id": "cab-fare-calculator-lfi",
-            "name": "Cab fare calculator 1.0.3 - Unauthenticated Local File Inclusion",
+            "name": "WordPress Cab fare calculator 1.0.3 - Local File Inclusion",
             "severity": "high",
             "tags": "wordpress,wp-plugin,lfi,wp",
             "path": "vulnerabilities/wordpress/cab-fare-calculator-lfi.yaml"
         },
         {
+            "author": "DhiyaneshDK",
+            "id": "calameo-publications-xss",
+            "name": "Manage Calameo Publications 1.1.0 - thickbox_content.php attachment_id Parameter Reflected XSS",
+            "severity": "medium",
+            "tags": "wordpress,wp-plugin,xss,wp",
+            "path": "vulnerabilities/wordpress/calameo-publications-xss.yaml"
+        },
+        {
             "author": "0x_Akoko",
             "id": "aspose-ie-file-download",
-            "name": "Wordpress Aspose Importer & Exporter v1.0 - Arbitrary File Retrieval",
+            "name": "WordPress Aspose Importer & Exporter 1.0 - Local File Inclusion",
             "severity": "high",
             "tags": "wordpress,wp-plugin,lfi,aspose",
             "path": "vulnerabilities/wordpress/aspose-ie-file-download.yaml"
@@ -27576,14 +28024,6 @@
             "severity": "info",
             "tags": "wordpress",
             "path": "vulnerabilities/wordpress/wp-xmlrpc.yaml"
-        },
-        {
-            "author": "princechaddha",
-            "id": "wordpress-infinitewp-auth-bypass",
-            "name": "WordPress InfiniteWP Client Authentication Bypass",
-            "severity": "critical",
-            "tags": "wordpress,auth-bypass,wp-plugin",
-            "path": "vulnerabilities/wordpress/wordpress-infinitewp-auth-bypass.yaml"
         },
         {
             "author": "daffainfo",
@@ -27612,7 +28052,7 @@
         {
             "author": "daffainfo,Splint3r7",
             "id": "admin-word-count-column-lfi",
-            "name": "Admin word count column 2.2 - Arbitrary File Retrieval",
+            "name": "WordPress Admin Word Count Column 2.2 - Local File Inclusion",
             "severity": "high",
             "tags": "wordpress,wp-plugin,lfi,wp",
             "path": "vulnerabilities/wordpress/admin-word-count-column-lfi.yaml"
@@ -27684,7 +28124,7 @@
         {
             "author": "0x_Akoko",
             "id": "church-admin-lfi",
-            "name": "Church Admin 0.33.2.1 - Unauthenticated Directory Traversal",
+            "name": "WordPress Church Admin 0.33.2.1 - Local File Inclusion",
             "severity": "high",
             "tags": "wordpress,wp-plugin,lfi",
             "path": "vulnerabilities/wordpress/church-admin-lfi.yaml"
@@ -27700,7 +28140,7 @@
         {
             "author": "0x_Akoko",
             "id": "advanced-access-manager-lfi",
-            "name": "Advanced Access Manager < 5.9.9 - Unauthenticated Local File Inclusion",
+            "name": "WordPress Advanced Access Manager <5.9.9 - Local File Inclusion",
             "severity": "high",
             "tags": "wordpress,wp-plugin,lfi",
             "path": "vulnerabilities/wordpress/advanced-access-manager-lfi.yaml"
@@ -27804,7 +28244,7 @@
         {
             "author": "0x_Akoko",
             "id": "aspose-words-file-download",
-            "name": "Aspose Words Exporter < 2.0 - Arbitrary File Retrieval",
+            "name": "WordPress Aspose Words Exporter <2.0 - Local File Inclusion",
             "severity": "high",
             "tags": "wordpress,wp-plugin,lfi,aspose",
             "path": "vulnerabilities/wordpress/aspose-words-file-download.yaml"
@@ -27900,7 +28340,7 @@
         {
             "author": "0x_Akoko",
             "id": "brandfolder-open-redirect",
-            "name": "WordPress Brandfolder Plugin Open Redirect",
+            "name": "WordPress Brandfolder - Remote/Local File Inclusion",
             "severity": "low",
             "tags": "wordpress,wp-plugin,lfi,rfi",
             "path": "vulnerabilities/wordpress/brandfolder-open-redirect.yaml"
@@ -27980,7 +28420,7 @@
         {
             "author": "0x_Akoko",
             "id": "aspose-pdf-file-download",
-            "name": "WordPress Aspose PDF Exporter - Arbitrary File Retrieval",
+            "name": "WordPress Aspose PDF Exporter - Local File Inclusion",
             "severity": "high",
             "tags": "wordpress,wp-plugin,lfi,aspose",
             "path": "vulnerabilities/wordpress/aspose-pdf-file-download.yaml"
@@ -28004,7 +28444,7 @@
         {
             "author": "0x_Akoko",
             "id": "brandfolder-lfi",
-            "name": "Wordpress brandfolder plugin - RFI & LFI",
+            "name": "Wordpress Brandfolder - Remote/Local File Inclusion",
             "severity": "high",
             "tags": "wordpress,wp-plugin,lfi,rfi",
             "path": "vulnerabilities/wordpress/brandfolder-lfi.yaml"
@@ -28048,6 +28488,14 @@
             "severity": "medium",
             "tags": "wordpress,wp-plugin,xss,feedwordpress,authenticated",
             "path": "vulnerabilities/wordpress/feedwordpress-xss.yaml"
+        },
+        {
+            "author": "DhiyaneshDK",
+            "id": "avchat-video-chat-xss",
+            "name": "AVChat Video Chat 1.4.1 - index_popup.php Multiple Parameters Reflected XSS",
+            "severity": "medium",
+            "tags": "wordpress,wp-plugin,xss,,wp",
+            "path": "vulnerabilities/wordpress/avchat-video-chat-xss.yaml"
         },
         {
             "author": "pussycat0x",
@@ -28100,7 +28548,7 @@
         {
             "author": "0x_Akoko",
             "id": "aspose-file-download",
-            "name": "Wordpress Aspose Cloud eBook Generator - Arbitrary File Retrieval",
+            "name": "Wordpress Aspose Cloud eBook Generator - Local File Inclusion",
             "severity": "high",
             "tags": "wordpress,wp-plugin,lfi,aspose,ebook",
             "path": "vulnerabilities/wordpress/aspose-file-download.yaml"
@@ -28196,7 +28644,7 @@
         {
             "author": "0x_Akoko",
             "id": "ad-widget-lfi",
-            "name": "WordPress Plugin WordPress Ad Widget Local File Inclusion (2.11.0)",
+            "name": "WordPress Ad Widget 2.11.0 - Local File Inclusion",
             "severity": "high",
             "tags": "wordpress,wp-plugin,lfi",
             "path": "vulnerabilities/wordpress/ad-widget-lfi.yaml"
@@ -28252,7 +28700,7 @@
         {
             "author": "daffainfo,Splint3r7",
             "id": "amministrazione-aperta-lfi",
-            "name": "Amministrazione Aperta 3.7.3 - Unauthenticated Local File Read",
+            "name": "WordPress Amministrazione Aperta 3.7.3 - Local File Inclusion",
             "severity": "high",
             "tags": "wordpress,wp-plugin,lfi,wp",
             "path": "vulnerabilities/wordpress/amministrazione-aperta-lfi.yaml"
@@ -28264,6 +28712,14 @@
             "severity": "medium",
             "tags": "wordpress,redirect,wp-plugin,newsletter,wp",
             "path": "vulnerabilities/wordpress/newsletter-open-redirect.yaml"
+        },
+        {
+            "author": "DhiyaneshDK",
+            "id": "wp-blogroll-fun-xss",
+            "name": "WordPress Plugin Blogroll Fun-Show Last Post and Last Update Time (0.8.4) - Cross-Site Scripting",
+            "severity": "medium",
+            "tags": "wordpress,wp-plugin,xss,unauth,wp",
+            "path": "vulnerabilities/wordpress/wp-blogroll-fun-xss.yaml"
         },
         {
             "author": "dwisiswant0",
@@ -28452,7 +28908,7 @@
         {
             "author": "princechaddha",
             "id": "ecology-springframework-directory-traversal",
-            "name": "Ecology Springframework Directory Traversal",
+            "name": "Ecology Springframework - Local File Inclusion",
             "severity": "medium",
             "tags": "ecology,springframework,lfi",
             "path": "vulnerabilities/weaver/ecology/ecology-springframework-directory-traversal.yaml"
@@ -28476,10 +28932,18 @@
         {
             "author": "princechaddha",
             "id": "ecology-filedownload-directory-traversal",
-            "name": "Ecology Directory Traversal",
+            "name": "Ecology - Local File Inclusion",
             "severity": "medium",
             "tags": "ecology,lfi",
             "path": "vulnerabilities/weaver/ecology/ecology-filedownload-directory-traversal.yaml"
+        },
+        {
+            "author": "pikpikcu",
+            "id": "webp-server-go-lfi",
+            "name": "Webp server go - Local File Inclusion",
+            "severity": "high",
+            "tags": "lfi,webp",
+            "path": "vulnerabilities/webp-server-go/webp-server-go-lfi.yaml"
         },
         {
             "author": "dudez",
@@ -28560,14 +29024,6 @@
             "severity": "info",
             "tags": "jolokia,disclosure,java",
             "path": "vulnerabilities/jolokia/jolokia-heap-info-disclosure.yaml"
-        },
-        {
-            "author": "amit-jd",
-            "id": "microweber-stored-xss",
-            "name": "Microweber - Cross-site Scripting",
-            "severity": "medium",
-            "tags": "cve,cve2022,xss,microweber,authenticated",
-            "path": "vulnerabilities/microweber/microweber-stored-xss.yaml"
         },
         {
             "author": "daffainfo",
