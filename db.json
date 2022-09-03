@@ -1,5 +1,5 @@
 {
-    "version": "v9.1.7",
+    "version": "v9.1.8",
     "data": [
         {
             "author": "dhiyaneshDK",
@@ -382,7 +382,7 @@
             "id": "cx-cloud-upload-detect",
             "name": "CX Cloud Unauthenticated Upload Detect",
             "severity": "info",
-            "tags": "upload",
+            "tags": "fileupload",
             "path": "misconfiguration/cx-cloud-upload-detect.yaml"
         },
         {
@@ -526,7 +526,7 @@
             "id": "unauthenticated-popup-upload",
             "name": "Unauthenticated Popup File Uploader",
             "severity": "info",
-            "tags": "edb,fileupload,upload",
+            "tags": "edb,fileupload",
             "path": "misconfiguration/unauthenticated-popup-upload.yaml"
         },
         {
@@ -760,6 +760,14 @@
             "severity": "medium",
             "tags": "wamp,exposure",
             "path": "misconfiguration/wamp-server-configuration.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "aws-s3-explorer",
+            "name": "AWS S3 Explorer",
+            "severity": "low",
+            "tags": "s3,edb,misconfig,aws,amazon",
+            "path": "misconfiguration/aws-s3-explorer.yaml"
         },
         {
             "author": "dhiyaneshDk",
@@ -1238,7 +1246,7 @@
             "id": "roxyfileman-fileupload",
             "name": "Roxy Fileman 1.4.4 - Arbitrary File Upload",
             "severity": "critical",
-            "tags": "intrusive,misconfig,edb,roxy,fileman,rce,upload",
+            "tags": "intrusive,misconfig,edb,roxy,fileman,rce,fileupload",
             "path": "misconfiguration/roxyfileman-fileupload.yaml"
         },
         {
@@ -1717,7 +1725,7 @@
             "author": "Ph33r",
             "id": "teamcity-guest-login-enabled",
             "name": "JetBrains TeamCity - Guest User Access Enabled",
-            "severity": "info",
+            "severity": "high",
             "tags": "misconfig,teamcity,jetbrains",
             "path": "misconfiguration/teamcity/teamcity-guest-login-enabled.yaml"
         },
@@ -1810,12 +1818,28 @@
             "path": "misconfiguration/aem/aem-xss-childlist-selector.yaml"
         },
         {
+            "author": "dhiyaneshDk",
+            "id": "aem-offloading-browser",
+            "name": "Adobe AEM Offloading Browser",
+            "severity": "medium",
+            "tags": "misconfig,aem,adobe",
+            "path": "misconfiguration/aem/aem-offloading-browser.yaml"
+        },
+        {
             "author": "DhiyaneshDk",
             "id": "aem-querybuilder-json-servlet",
             "name": "AEM QueryBuilder Json Servlet",
             "severity": "info",
             "tags": "aem,adobe",
             "path": "misconfiguration/aem/aem-querybuilder-json-servlet.yaml"
+        },
+        {
+            "author": "dhiyaneshDk",
+            "id": "aem-external-link-checker",
+            "name": "Adobe AEM External Link Checker Exposure",
+            "severity": "unknown",
+            "tags": "misconfig,aem,adobe,exposure",
+            "path": "misconfiguration/aem/aem-external-link-checker.yaml"
         },
         {
             "author": "hetroublemakr",
@@ -1842,12 +1866,28 @@
             "path": "misconfiguration/aem/aem-gql-servlet.yaml"
         },
         {
+            "author": "dhiyaneshDk",
+            "id": "aem-disk-usage",
+            "name": "Adobe AEM Disk Usage Information Disclosure",
+            "severity": "low",
+            "tags": "misconfig,aem,adobe,exposure",
+            "path": "misconfiguration/aem/aem-disk-usage.yaml"
+        },
+        {
             "author": "dhiyaneshDK",
             "id": "aem-crx-bypass",
             "name": "AEM Package Manager - Authentication Bypass",
             "severity": "critical",
             "tags": "aem,adobe",
             "path": "misconfiguration/aem/aem-crx-bypass.yaml"
+        },
+        {
+            "author": "dhiyaneshDk",
+            "id": "aem-security-users",
+            "name": "Adobe AEM Security Users Exposure",
+            "severity": "medium",
+            "tags": "misconfig,aem,adobe,exposure",
+            "path": "misconfiguration/aem/aem-security-users.yaml"
         },
         {
             "author": "DhiyaneshDk",
@@ -1864,6 +1904,14 @@
             "severity": "info",
             "tags": "aem,adobe",
             "path": "misconfiguration/aem/aem-login-status.yaml"
+        },
+        {
+            "author": "dhiyaneshDk",
+            "id": "aem-misc-admin",
+            "name": "Adobe AEM Misc Admin Dashboard Exposure",
+            "severity": "high",
+            "tags": "misconfig,aem,adobe,exposure",
+            "path": "misconfiguration/aem/aem-misc-admin.yaml"
         },
         {
             "author": "DhiyaneshDk",
@@ -1883,11 +1931,43 @@
         },
         {
             "author": "DhiyaneshDk",
+            "id": "aem-sling-userinfo",
+            "name": "Adobe AEM Sling User Info Servlet Exposure",
+            "severity": "info",
+            "tags": "misconfig,aem,adobe,exposure",
+            "path": "misconfiguration/aem/aem-sling-userinfo.yaml"
+        },
+        {
+            "author": "dhiyaneshDk",
+            "id": "aem-acs-common",
+            "name": "Adobe AEM ACS Common Exposure",
+            "severity": "medium",
+            "tags": "misconfig,aem,adobe",
+            "path": "misconfiguration/aem/aem-acs-common.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
             "id": "aem-default-get-servlet",
             "name": "AEM DefaultGetServlet",
             "severity": "low",
             "tags": "aem,adobe",
             "path": "misconfiguration/aem/aem-default-get-servlet.yaml"
+        },
+        {
+            "author": "dhiyaneshDk",
+            "id": "aem-explorer-nodetypes",
+            "name": "Adobe AEM Explorer NodeTypes Exposure",
+            "severity": "high",
+            "tags": "misconfig,aem,adobe,exposure",
+            "path": "misconfiguration/aem/aem-explorer-nodetypes.yaml"
+        },
+        {
+            "author": "dhiyaneshDk",
+            "id": "aem-crx-browser",
+            "name": "Adobe AEM CRX Browser Exposure",
+            "severity": "unknown",
+            "tags": "misconfig,aem,adobe,exposure",
+            "path": "misconfiguration/aem/aem-crx-browser.yaml"
         },
         {
             "author": "Dheerajmadhukar",
@@ -1896,6 +1976,30 @@
             "severity": "critical",
             "tags": "aem,adobe,hackerone",
             "path": "misconfiguration/aem/aem-groovyconsole.yaml"
+        },
+        {
+            "author": "dhiyaneshDk",
+            "id": "aem-debugging-libraries",
+            "name": "Adobe AEM Debugging Client Libraries",
+            "severity": "info",
+            "tags": "misconfig,aem,adobe",
+            "path": "misconfiguration/aem/aem-debugging-libraries.yaml"
+        },
+        {
+            "author": "dhiyaneshDk",
+            "id": "aem-osgi-bundles",
+            "name": "Adobe AEM Installed OSGI Bundles",
+            "severity": "low",
+            "tags": "misconfig,aem,adobe",
+            "path": "misconfiguration/aem/aem-osgi-bundles.yaml"
+        },
+        {
+            "author": "dhiyaneshDk",
+            "id": "aem-crx-search",
+            "name": "Adobe AEM CRX Search Exposed",
+            "severity": "unknown",
+            "tags": "misconfig,aem,adobe,exposure",
+            "path": "misconfiguration/aem/aem-crx-search.yaml"
         },
         {
             "author": "zinminphy0,dhiyaneshDK",
@@ -1912,6 +2016,14 @@
             "severity": "low",
             "tags": "aem",
             "path": "misconfiguration/aem/aem-wcm-suggestions-servlet.yaml"
+        },
+        {
+            "author": "dhiyaneshDk",
+            "id": "aem-crx-namespace",
+            "name": "Adobe AEM CRX Namespace Editor Exposure",
+            "severity": "low",
+            "tags": "exposure,aem,adobe",
+            "path": "misconfiguration/aem/aem-crx-namespace.yaml"
         },
         {
             "author": "DhiyaneshDk",
@@ -2770,6 +2882,14 @@
             "path": "technologies/wuzhicms-detect.yaml"
         },
         {
+            "author": "hahwul",
+            "id": "zap-rest-api-detect",
+            "name": "ZAP Rest API Server Running",
+            "severity": "info",
+            "tags": "zap,tech",
+            "path": "technologies/zap-api-detect.yaml"
+        },
+        {
             "author": "cyllective",
             "id": "moinmoin-detect",
             "name": "MoinMoin wiki detect",
@@ -2840,6 +2960,14 @@
             "severity": "info",
             "tags": "jeecg-boot,tech",
             "path": "technologies/jeecg-boot-detect.yaml"
+        },
+        {
+            "author": "1nf1n7y",
+            "id": "drupal-detect",
+            "name": "Drupal Detection",
+            "severity": "info",
+            "tags": "tech,drupal",
+            "path": "technologies/drupal-detect.yaml"
         },
         {
             "author": "dwisiswant0",
@@ -8578,7 +8706,7 @@
             "path": "exposures/configs/esmtprc-config.yaml"
         },
         {
-            "author": "Yash Anand @yashanand155",
+            "author": "Yash Anand @yashanand155,DhiyaneshDK",
             "id": "web-config",
             "name": "Web Config file",
             "severity": "info",
@@ -10125,7 +10253,7 @@
             "author": "pdteam",
             "id": "ofbiz-default-login",
             "name": "Apache OfBiz Default Login",
-            "severity": "medium",
+            "severity": "high",
             "tags": "ofbiz,default-login,apache",
             "path": "default-logins/ofbiz/ofbiz-default-login.yaml"
         },
@@ -10653,7 +10781,7 @@
             "author": "pikpikcu",
             "id": "minio-default-login",
             "name": "Minio Default Login",
-            "severity": "medium",
+            "severity": "high",
             "tags": "default-login,minio",
             "path": "default-logins/minio/minio-default-login.yaml"
         },
@@ -10789,7 +10917,7 @@
             "author": "princechaddha",
             "id": "CNVD-2020-23735",
             "name": "Xxunchi CMS - Local File Inclusion",
-            "severity": "medium",
+            "severity": "high",
             "tags": "xunchi,lfi,cnvd,cnvd2020",
             "path": "cnvd/2020/CNVD-2020-23735.yaml"
         },
@@ -10837,7 +10965,7 @@
             "author": "pikpikcu",
             "id": "CNVD-2021-30167",
             "name": "UFIDA NC BeanShell Remote Command Execution",
-            "severity": "high",
+            "severity": "critical",
             "tags": "cnvd,cnvd2021,beanshell,rce,yonyou",
             "path": "cnvd/2021/CNVD-2021-30167.yaml"
         },
@@ -10878,7 +11006,7 @@
             "id": "CNVD-2021-49104",
             "name": "Pan Micro E-office File Uploads",
             "severity": "critical",
-            "tags": "pan,micro,cnvd,cnvd2021",
+            "tags": "pan,micro,cnvd,cnvd2021,fileupload,intrusive",
             "path": "cnvd/2021/CNVD-2021-49104.yaml"
         },
         {
@@ -11048,6 +11176,14 @@
             "severity": "high",
             "tags": "takeover",
             "path": "takeovers/smugmug-takeover.yaml"
+        },
+        {
+            "author": "MiryangJung",
+            "id": "uservoice-takeover",
+            "name": "Uservoice Takeover Detection",
+            "severity": "high",
+            "tags": "takeover,uservoice",
+            "path": "takeovers/uservoice-takeover.yaml"
         },
         {
             "author": "pdteam",
@@ -12154,6 +12290,14 @@
             "path": "cves/2015/CVE-2015-7450.yaml"
         },
         {
+            "author": "0x_Akoko",
+            "id": "CVE-2015-5469",
+            "name": "Wordpress MDC YouTube Downloader plugin v2.1.0 - Remote file download",
+            "severity": "high",
+            "tags": "cve,cve2015,wp,lfi",
+            "path": "cves/2015/CVE-2015-5469.yaml"
+        },
+        {
             "author": "daffainfo",
             "id": "CVE-2015-2166",
             "name": "Ericsson Drutt MSDP - Local File Inclusion",
@@ -12280,6 +12424,14 @@
             "severity": "critical",
             "tags": "cve,cve2015,elastic,rce,elasticsearch,kev",
             "path": "cves/2015/CVE-2015-1427.yaml"
+        },
+        {
+            "author": "0x_Akoko",
+            "id": "CVE-2015-4074",
+            "name": "Joomla Helpdesk Pro plugin before 1.4.0 - Local File Disclosure",
+            "severity": "high",
+            "tags": "lfi,packetstorm,edb,cve,cve2015,joomla,plugin",
+            "path": "cves/2015/CVE-2015-4074.yaml"
         },
         {
             "author": "pikpikcu",
@@ -12422,7 +12574,7 @@
             "id": "CVE-2017-15715",
             "name": "Apache httpd <=2.4.29 - Arbitrary File Upload",
             "severity": "high",
-            "tags": "apache,httpd,fileupload,vulhub,cve,cve2017",
+            "tags": "apache,httpd,fileupload,vulhub,cve,cve2017,intrusive",
             "path": "cves/2017/CVE-2017-15715.yaml"
         },
         {
@@ -12504,6 +12656,14 @@
             "severity": "medium",
             "tags": "cve,cve2017,trixbox,lfi",
             "path": "cves/2017/CVE-2017-14537.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "CVE-2017-11629",
+            "name": "FineCms 5.0.10 - Cross Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2017,xss,finecms",
+            "path": "cves/2017/CVE-2017-11629.yaml"
         },
         {
             "author": "charanrayudu,meme-lord",
@@ -12594,6 +12754,14 @@
             "path": "cves/2017/CVE-2017-15363.yaml"
         },
         {
+            "author": "0x_Akoko",
+            "id": "CVE-2017-11586",
+            "name": "FineCms < 5.0.9 - Open redirect",
+            "severity": "medium",
+            "tags": "cve,cve2017,redirect,finecms",
+            "path": "cves/2017/CVE-2017-11586.yaml"
+        },
+        {
             "author": "daffainfo",
             "id": "CVE-2017-18536",
             "name": "WordPress Stop User Enumeration <=1.3.7 - Cross-Site Scripting",
@@ -12622,7 +12790,7 @@
             "id": "CVE-2017-6090",
             "name": "PhpColl 2.5.1 Arbitrary File Upload",
             "severity": "high",
-            "tags": "cve2017,phpcollab,rce,fileupload,edb,cve",
+            "tags": "cve2017,phpcollab,rce,fileupload,edb,cve,intrusive",
             "path": "cves/2017/CVE-2017-6090.yaml"
         },
         {
@@ -12630,7 +12798,7 @@
             "id": "CVE-2017-12615",
             "name": "Apache Tomcat Servers - Remote Code Execution",
             "severity": "high",
-            "tags": "rce,tomcat,kev,cisa,vulhub,cve,cve2017,apache",
+            "tags": "rce,tomcat,kev,cisa,vulhub,cve,cve2017,apache,fileupload",
             "path": "cves/2017/CVE-2017-12615.yaml"
         },
         {
@@ -12930,6 +13098,14 @@
             "path": "cves/2022/CVE-2022-34046.yaml"
         },
         {
+            "author": "arafatansari",
+            "id": "CVE-2022-32772",
+            "name": "WWBN AVideo 11.6 - Cross Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2022,avideo,xss,wwbn",
+            "path": "cves/2022/CVE-2022-32772.yaml"
+        },
+        {
             "author": "0x_Akoko",
             "id": "CVE-2022-24900",
             "name": "Piano LED Visualizer 1.3 - Local File Inclusion",
@@ -12948,7 +13124,7 @@
         {
             "author": "random-robbie",
             "id": "CVE-2022-0140",
-            "name": "WordPress Visual Form Builder < 3.0.6 - Unauthenticated Information Disclosure",
+            "name": "WordPress Visual Form Builder <3.0.8 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "wpscan,cve,cve2022,xss,wordpress",
             "path": "cves/2022/CVE-2022-0140.yaml"
@@ -13274,12 +13450,28 @@
             "path": "cves/2022/CVE-2022-1609.yaml"
         },
         {
+            "author": "TenBird",
+            "id": "CVE-2022-29006",
+            "name": "Directory Management System  1.0 - SQLi Authentication Bypass",
+            "severity": "critical",
+            "tags": "cve,cve2022,sqli,auth-bypass,edb",
+            "path": "cves/2022/CVE-2022-29006.yaml"
+        },
+        {
             "author": "akincibor,MantisSTS,calumjelrick",
             "id": "CVE-2022-1386",
             "name": "WordPress Fusion Builder < 3.6.2 - Unauthenticated SSRF",
             "severity": "critical",
             "tags": "wpscan,cve,cve2022,wordpress,ssrf,themefusion,wp,fusion,avada",
             "path": "cves/2022/CVE-2022-1386.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "CVE-2022-32771",
+            "name": "WWBN AVideo 11.6 - Cross Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2022,avideo,xss",
+            "path": "cves/2022/CVE-2022-32771.yaml"
         },
         {
             "author": "rotembar,daffainfo",
@@ -13312,6 +13504,14 @@
             "severity": "critical",
             "tags": "cve,cve2022,crestron,disclosure",
             "path": "cves/2022/CVE-2022-23178.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "CVE-2022-34576",
+            "name": "WAVLINK WN535 G3 - Access Control",
+            "severity": "high",
+            "tags": "cve,cve2022,wavlink,exposure",
+            "path": "cves/2022/CVE-2022-34576.yaml"
         },
         {
             "author": "DhiyaneshDK",
@@ -13364,9 +13564,9 @@
         {
             "author": "Akincibor",
             "id": "CVE-2022-0346",
-            "name": "Google XML Sitemap Generator < 2.0.4 - Reflected Cross-Site Scripting & RCE",
+            "name": "Google XML Sitemap Generator < 2.0.4 - Cross-Site Scripting & RCE",
             "severity": "medium",
-            "tags": "xss,wp,wordpress,wp-plugin,cve,cve2022,wpscan",
+            "tags": "cve,cve2022,xss,wp,wordpress,wp-plugin,wpscan",
             "path": "cves/2022/CVE-2022-0346.yaml"
         },
         {
@@ -13460,7 +13660,7 @@
         {
             "author": "DhiyaneshDK",
             "id": "CVE-2022-0148",
-            "name": "All-in-one Floating Contact Form < 2.0.4 - Authenticated Reflected XSS",
+            "name": "WordPress All-in-one Floating Contact Form <2.0.4 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "xss,wp-plugin,authenticated,wpscan,cve,cve2022,wordpress",
             "path": "cves/2022/CVE-2022-0148.yaml"
@@ -13472,6 +13672,22 @@
             "severity": "medium",
             "tags": "xss,wp,wordpress,wpscan,cve,cve2022,wp-plugin",
             "path": "cves/2022/CVE-2022-1724.yaml"
+        },
+        {
+            "author": "edoardottt",
+            "id": "CVE-2022-34328",
+            "name": "PMB 7.3.10 - Cross Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2022,pmb,xss",
+            "path": "cves/2022/CVE-2022-34328.yaml"
+        },
+        {
+            "author": "akincibor",
+            "id": "CVE-2022-2383",
+            "name": "Feed Them Social < 3.0.1 - Cross-Site Scripting",
+            "severity": "medium",
+            "tags": "wp,wordpress,wp-plugin,wpscan,cve,cve2022,xss",
+            "path": "cves/2022/CVE-2022-2383.yaml"
         },
         {
             "author": "0x_Akoko",
@@ -13510,7 +13726,7 @@
             "id": "CVE-2022-0595",
             "name": "Drag and Drop Multiple File Upload - Contact Form 7 < 1.3.6.3 - Unauthenticated Stored XSS",
             "severity": "medium",
-            "tags": "cve,cve2022,xss,wordpress,wp-plugin,wpscan",
+            "tags": "cve,cve2022,xss,wordpress,wp-plugin,wpscan,fileupload,intrusive",
             "path": "cves/2022/CVE-2022-0595.yaml"
         },
         {
@@ -13790,7 +14006,7 @@
             "id": "CVE-2022-26352",
             "name": "DotCMS - Arbitrary File Upload",
             "severity": "critical",
-            "tags": "packetstorm,cve,cve2022,rce,dotcms,kev",
+            "tags": "packetstorm,cve,cve2022,rce,dotcms,kev,fileupload,intrusive",
             "path": "cves/2022/CVE-2022-26352.yaml"
         },
         {
@@ -13880,6 +14096,14 @@
             "severity": "high",
             "tags": "cve2022,microweber,disclosure,authenticated,huntr,cve",
             "path": "cves/2022/CVE-2022-0660.yaml"
+        },
+        {
+            "author": "TenBird",
+            "id": "CVE-2022-29009",
+            "name": "Cyber Cafe Management System Project v1.0 - SQLi Authentication Bypass",
+            "severity": "critical",
+            "tags": "cve2022,sqli,auth-bypass,edb,cve",
+            "path": "cves/2022/CVE-2022-29009.yaml"
         },
         {
             "author": "For3stCo1d",
@@ -14011,6 +14235,14 @@
         },
         {
             "author": "arafatansari",
+            "id": "CVE-2022-32770",
+            "name": "WWBN AVideo 11.6 - Cross Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2022,avideo,xss,wwbn",
+            "path": "cves/2022/CVE-2022-32770.yaml"
+        },
+        {
+            "author": "arafatansari",
             "id": "CVE-2022-28955",
             "name": "D-Link DIR816L - Access Control",
             "severity": "high",
@@ -14054,7 +14286,7 @@
             "id": "CVE-2022-0963",
             "name": "Microweber > 1.2.12 - Cross-Site Scripting",
             "severity": "medium",
-            "tags": "xss,microweber,cms,authenticated,huntr,cve,cve2022",
+            "tags": "xss,microweber,cms,authenticated,huntr,cve,cve2022,intrusive",
             "path": "cves/2022/CVE-2022-0963.yaml"
         },
         {
@@ -14112,6 +14344,14 @@
             "severity": "medium",
             "tags": "wordpress,cve,cve2022,wpscan,wp,wp-plugin",
             "path": "cves/2022/CVE-2022-1054.yaml"
+        },
+        {
+            "author": "TenBird",
+            "id": "CVE-2022-29007",
+            "name": "Dairy Farm Shop Management System v1.0 - SQLi Authentication Bypass",
+            "severity": "critical",
+            "tags": "cve,cve2022,sqli,auth-bypass,edb",
+            "path": "cves/2022/CVE-2022-29007.yaml"
         },
         {
             "author": "Open-Sec",
@@ -14258,6 +14498,14 @@
             "path": "cves/2016/CVE-2016-1000139.yaml"
         },
         {
+            "author": "0x_Akoko",
+            "id": "CVE-2016-6601",
+            "name": "ZOHO WebNMS Framework 5.2 and 5.2 SP1 - Directory Traversal",
+            "severity": "high",
+            "tags": "cve,cve2016,zoho,lfi,webnms",
+            "path": "cves/2016/CVE-2016-6601.yaml"
+        },
+        {
             "author": "daffainfo",
             "id": "CVE-2016-1000148",
             "name": "WordPress S3 Video <=0.983 - Cross-Site Scripting",
@@ -14374,7 +14622,7 @@
             "id": "CVE-2016-3088",
             "name": "Apache ActiveMQ Fileserver - Arbitrary File Write",
             "severity": "critical",
-            "tags": "fileupload,kev,edb,cve,cve2016,apache,activemq",
+            "tags": "fileupload,kev,edb,cve,cve2016,apache,activemq,intrusive",
             "path": "cves/2016/CVE-2016-3088.yaml"
         },
         {
@@ -15246,7 +15494,7 @@
             "id": "CVE-2019-20183",
             "name": "Simple Employee Records System 1.0 - Unrestricted File Upload",
             "severity": "high",
-            "tags": "upload,edb,cve,cve2019,rce,intrusive",
+            "tags": "edb,cve,cve2019,rce,intrusive,fileupload",
             "path": "cves/2019/CVE-2019-20183.yaml"
         },
         {
@@ -15416,6 +15664,14 @@
             "severity": "medium",
             "tags": "csrf,edb,cve,cve2019,phpmyadmin",
             "path": "cves/2019/CVE-2019-12616.yaml"
+        },
+        {
+            "author": "TenBird",
+            "id": "CVE-2019-14530",
+            "name": "OpenEMR < 5.0.2 - Path Traversal",
+            "severity": "high",
+            "tags": "lfi,authenticated,edb,cve,cve2019,openemr",
+            "path": "cves/2019/CVE-2019-14530.yaml"
         },
         {
             "author": "LogicalHunter",
@@ -15762,6 +16018,14 @@
             "path": "cves/2019/CVE-2019-12461.yaml"
         },
         {
+            "author": "arafatansari",
+            "id": "CVE-2019-7255",
+            "name": "Linear eMerge E3 - Cross Site Scripting",
+            "severity": "medium",
+            "tags": "emerge,xss,packetstorm,cve,cve2019,nortek",
+            "path": "cves/2019/CVE-2019-7255.yaml"
+        },
+        {
             "author": "madrobot",
             "id": "CVE-2019-14322",
             "name": "Pallets Werkzeug <0.15.5 - Local File Inclusion",
@@ -15878,7 +16142,7 @@
             "id": "CVE-2020-23972",
             "name": "Joomla! Component GMapFP 3.5 - Arbitrary File Upload",
             "severity": "high",
-            "tags": "cve,cve2020,joomla,edb,packetstorm",
+            "tags": "cve,cve2020,joomla,edb,packetstorm,fileupload,intrusive",
             "path": "cves/2020/CVE-2020-23972.yaml"
         },
         {
@@ -15992,6 +16256,14 @@
             "severity": "high",
             "tags": "cve,cve2020,wavlink,exposure",
             "path": "cves/2020/CVE-2020-12127.yaml"
+        },
+        {
+            "author": "TenBird",
+            "id": "CVE-2020-5191",
+            "name": "Hospital Management System 4.0 - Cross-Site Scripting",
+            "severity": "medium",
+            "tags": "cve2020,hms,cms,xss,authenticated,edb,cve",
+            "path": "cves/2020/CVE-2020-5191.yaml"
         },
         {
             "author": "pdteam",
@@ -16162,6 +16434,14 @@
             "path": "cves/2020/CVE-2020-14413.yaml"
         },
         {
+            "author": "piyushchhiroliya",
+            "id": "CVE-2020-17526",
+            "name": "Apache Airflow < 1.10.14 - Authentication Bypass",
+            "severity": "high",
+            "tags": "cve,cve2020,apache,airflow,auth-bypass",
+            "path": "cves/2020/CVE-2020-17526.yaml"
+        },
+        {
             "author": "becivells",
             "id": "CVE-2020-15227",
             "name": "Nette Framework - Remote Code Execution",
@@ -16246,7 +16526,7 @@
             "id": "CVE-2020-25213",
             "name": "WordPress File Manager Plugin Remote Code Execution",
             "severity": "critical",
-            "tags": "cve,cve2020,wordpress,rce,kev",
+            "tags": "cve,cve2020,wordpress,rce,kev,fileupload,intrusive",
             "path": "cves/2020/CVE-2020-25213.yaml"
         },
         {
@@ -17086,7 +17366,7 @@
             "id": "CVE-2020-35489",
             "name": "WordPress Contact Form 7 - Unrestricted File Upload",
             "severity": "critical",
-            "tags": "cve,cve2020,wordpress,wp-plugin,rce,upload",
+            "tags": "cve,cve2020,wordpress,wp-plugin,rce,upload,intrusive",
             "path": "cves/2020/CVE-2020-35489.yaml"
         },
         {
@@ -17178,6 +17458,14 @@
             "path": "cves/2020/CVE-2020-5410.yaml"
         },
         {
+            "author": "TenBird",
+            "id": "CVE-2020-5192",
+            "name": "Hospital Management System 4.0 - SQL Injection",
+            "severity": "high",
+            "tags": "cve2020,hms,cms,sqli,authenticated,edb,cve",
+            "path": "cves/2020/CVE-2020-5192.yaml"
+        },
+        {
             "author": "dwisiswant0",
             "id": "CVE-2020-26876",
             "name": "WordPress WP Courses Plugin Information Disclosure",
@@ -17230,7 +17518,7 @@
             "id": "CVE-2020-17518",
             "name": "Apache Flink 1.5.1 - Local File Inclusion",
             "severity": "high",
-            "tags": "lfi,flink,upload,vulhub,cve,cve2020,apache",
+            "tags": "lfi,flink,fileupload,vulhub,cve,cve2020,apache,intrusive",
             "path": "cves/2020/CVE-2020-17518.yaml"
         },
         {
@@ -17246,7 +17534,7 @@
             "id": "CVE-2020-28871",
             "name": "Monitorr 1.7.6m - Unauthenticated Remote Code Execution",
             "severity": "critical",
-            "tags": "cve2020,monitorr,rce,oast,unauth,edb,cve",
+            "tags": "cve2020,monitorr,rce,oast,unauth,edb,cve,fileupload,intrusive",
             "path": "cves/2020/CVE-2020-28871.yaml"
         },
         {
@@ -17382,7 +17670,7 @@
             "id": "CVE-2020-24186",
             "name": "WordPress wpDiscuz <=7.0.4 - Remote Code Execution",
             "severity": "critical",
-            "tags": "rce,upload,packetstorm,cve,cve2020,wordpress,wp-plugin",
+            "tags": "rce,fileupload,packetstorm,cve,cve2020,wordpress,wp-plugin,intrusive",
             "path": "cves/2020/CVE-2020-24186.yaml"
         },
         {
@@ -17454,7 +17742,7 @@
             "id": "CVE-2020-12800",
             "name": "WordPress Contact Form 7 <1.3.3.3 - Remote Code Execution",
             "severity": "critical",
-            "tags": "wordpress,wp-plugin,fileupload,wp,rce,packetstorm,cve,cve2020",
+            "tags": "wordpress,wp-plugin,fileupload,wp,rce,packetstorm,cve,cve2020,intrusive",
             "path": "cves/2020/CVE-2020-12800.yaml"
         },
         {
@@ -17781,7 +18069,7 @@
             "author": "dhiyaneshDK,daffainfo",
             "id": "CVE-2014-8682",
             "name": "Gogs (Go Git Service) - SQL Injection",
-            "severity": "high",
+            "severity": "critical",
             "tags": "gogs,seclists,packetstorm,edb,cve,cve2014,sqli",
             "path": "cves/2014/CVE-2014-8682.yaml"
         },
@@ -18900,7 +19188,7 @@
         {
             "author": "ritikchaddha",
             "id": "CVE-2021-26702",
-            "name": "EPrints 3.4.2 XSS",
+            "name": "EPrints 3.4.2 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,xss,eprints",
             "path": "cves/2021/CVE-2021-26702.yaml"
@@ -19004,7 +19292,7 @@
         {
             "author": "daffainfo",
             "id": "CVE-2021-30049",
-            "name": "SysAid Technologies 20.3.64 b14 Reflected XSS",
+            "name": "SysAid Technologies 20.3.64 b14 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,xss",
             "path": "cves/2021/CVE-2021-30049.yaml"
@@ -19114,6 +19402,14 @@
             "path": "cves/2021/CVE-2021-3293.yaml"
         },
         {
+            "author": "TenBird",
+            "id": "CVE-2021-46073",
+            "name": "Vehicle Service Management System - Cross Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2021,xss,vms,authenticated",
+            "path": "cves/2021/CVE-2021-46073.yaml"
+        },
+        {
             "author": "rootxharsh,iamnoooob",
             "id": "CVE-2021-41349",
             "name": "Microsoft Exchange Server Pre-Auth POST Based Reflected Cross-Site Scripting",
@@ -19132,7 +19428,7 @@
         {
             "author": "daffainfo",
             "id": "CVE-2021-24335",
-            "name": "Car Repair Services < 4.0 - Reflected Cross-Site Scripting (XSS)",
+            "name": "WordPress Car Repair Services & Auto Mechanic Theme <4.0 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,wordpress,xss,wp-plugin,wpscan",
             "path": "cves/2021/CVE-2021-24335.yaml"
@@ -19146,6 +19442,14 @@
             "path": "cves/2021/CVE-2021-46379.yaml"
         },
         {
+            "author": "TenBird",
+            "id": "CVE-2021-46068",
+            "name": "Vehicle Service Management System - Stored Cross Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2021,xss,vms,authenticated",
+            "path": "cves/2021/CVE-2021-46068.yaml"
+        },
+        {
             "author": "pudsec",
             "id": "CVE-2021-22873",
             "name": "Revive Adserver < 5.1.0 Open Redirect",
@@ -19156,7 +19460,7 @@
         {
             "author": "alph4byt3",
             "id": "CVE-2021-30213",
-            "name": "Knowage Suite 7.3 XSS",
+            "name": "Knowage Suite 7.3 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,xss,knowage",
             "path": "cves/2021/CVE-2021-30213.yaml"
@@ -19274,9 +19578,25 @@
             "path": "cves/2021/CVE-2021-46381.yaml"
         },
         {
+            "author": "arafatansari,ritikchaddha",
+            "id": "CVE-2021-43574",
+            "name": "Atmail Hosting Webserver 6.5.0 - Cross-site scripting",
+            "severity": "medium",
+            "tags": "cve,cve2021,atmail,xss",
+            "path": "cves/2021/CVE-2021-43574.yaml"
+        },
+        {
+            "author": "akincibor",
+            "id": "CVE-2021-24917",
+            "name": "WPS Hide Login < 1.9.1 - Protection Bypass with Referer-Header",
+            "severity": "high",
+            "tags": "cve2021,wp,wordpress,wp-plugin,unauth,wpscan,cve",
+            "path": "cves/2021/CVE-2021-24917.yaml"
+        },
+        {
             "author": "dhiyaneshDk",
             "id": "CVE-2021-24891",
-            "name": "Elementor < 3.1.4 - DOM Cross-Site-Scripting",
+            "name": "WordPress Elementor Website Builder <3.1.4 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "wordpress,wp-plugin,elementor,wpscan,cve,cve2021,dom,xss",
             "path": "cves/2021/CVE-2021-24891.yaml"
@@ -19348,7 +19668,7 @@
         {
             "author": "edoardottt",
             "id": "CVE-2021-37416",
-            "name": "Zoho ManageEngine ADSelfService Plus - Reflected XSS",
+            "name": "Zoho ManageEngine ADSelfService Plus <=6103 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,zoho,xss",
             "path": "cves/2021/CVE-2021-37416.yaml"
@@ -19420,7 +19740,7 @@
         {
             "author": "cckuailong",
             "id": "CVE-2021-24300",
-            "name": "PickPlugins Product Slider for WooCommerce < 1.13.22 - XSS",
+            "name": "WordPress WooCommerce <1.13.22 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,xss,wp,wordpress,wp-plugin,authenticated,wpscan",
             "path": "cves/2021/CVE-2021-24300.yaml"
@@ -19564,7 +19884,7 @@
         {
             "author": "daffainfo",
             "id": "CVE-2021-24320",
-            "name": "Bello WordPress Theme < 1.6.0 - Reflected Cross-Site Scripting (XSS)",
+            "name": "WordPress Bello Directory & Listing Theme <1.6.0 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve2021,wordpress,xss,wp-plugin,wpscan,cve",
             "path": "cves/2021/CVE-2021-24320.yaml"
@@ -19620,7 +19940,7 @@
         {
             "author": "DhiyaneshDK",
             "id": "CVE-2021-25075",
-            "name": "WordPress Duplicate Page or Post < 1.5.1 - Stored XSS",
+            "name": "WordPress Duplicate Page or Post <1.5.1 - Cross-Site Scripting",
             "severity": "low",
             "tags": "wpscan,cve,cve2021,wordpress,xss,wp-plugin,authenticated",
             "path": "cves/2021/CVE-2021-25075.yaml"
@@ -19660,7 +19980,7 @@
         {
             "author": "alph4byt3",
             "id": "CVE-2021-27310",
-            "name": "Clansphere CMS 2011.4 - Reflected Cross-Site Scripting (XSS)",
+            "name": "Clansphere CMS 2011.4 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "xss,cve,cve2021,clansphere",
             "path": "cves/2021/CVE-2021-27310.yaml"
@@ -19676,7 +19996,7 @@
         {
             "author": "Ahmed Abou-Ela",
             "id": "CVE-2021-31589",
-            "name": "BeyondTrust Remote Support Reflected XSS",
+            "name": "BeyondTrust Secure Remote Access Base <=6.0.1 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "xss,packetstorm,cve,cve2021,beyondtrust,bomgar",
             "path": "cves/2021/CVE-2021-31589.yaml"
@@ -19868,7 +20188,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2021-24342",
-            "name": "JNews < 8.0.6 - Reflected Cross-Site Scripting (XSS)",
+            "name": "WordPress JNews Theme <8.0.6 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve2021,wordpress,xss,wp-plugin,wpscan,cve",
             "path": "cves/2021/CVE-2021-24342.yaml"
@@ -19886,7 +20206,7 @@
             "id": "CVE-2021-22005",
             "name": "VMware vCenter Server - Arbitrary File Upload",
             "severity": "critical",
-            "tags": "cve,cve2021,vmware,vcenter,upload,kev",
+            "tags": "cve,cve2021,vmware,vcenter,fileupload,kev,intrusive",
             "path": "cves/2021/CVE-2021-22005.yaml"
         },
         {
@@ -19900,7 +20220,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2021-26710",
-            "name": "Redwood v4.3.4.5-v4.5.3 XSS",
+            "name": "Redwood Report2Web 4.3.4.5 & 4.5.3 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,redwood,xss",
             "path": "cves/2021/CVE-2021-26710.yaml"
@@ -19924,7 +20244,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2021-26723",
-            "name": "Jenzabar v9.20-v9.2.2 XSS",
+            "name": "Jenzabar 9.2x-9.2.2 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "packetstorm,cve,cve2021,jenzabar,xss",
             "path": "cves/2021/CVE-2021-26723.yaml"
@@ -19970,11 +20290,19 @@
             "path": "cves/2021/CVE-2021-24370.yaml"
         },
         {
+            "author": "TenBird",
+            "id": "CVE-2021-46071",
+            "name": "Vehicle Service Management System - Stored Cross Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2021,xss,vms,authenticated",
+            "path": "cves/2021/CVE-2021-46071.yaml"
+        },
+        {
             "author": "Screamy",
             "id": "CVE-2021-24910",
-            "name": "Transposh WordPress < 1.0.7 - Reflected Cross-Site Scripting (XSS)",
+            "name": "WordPress Transposh Translation <1.0.8 - Cross-Site Scripting",
             "severity": "medium",
-            "tags": "wp-plugin,xss,wp,wpscan,cve,cve2021,wordpress",
+            "tags": "cve2021,wordpress,wp-plugin,xss,wp,wpscan,cve",
             "path": "cves/2021/CVE-2021-24910.yaml"
         },
         {
@@ -19996,10 +20324,18 @@
         {
             "author": "dhiyaneshDk",
             "id": "CVE-2021-25063",
-            "name": "Contact Form 7 Skins <= 2.5.0 - Reflected Cross-Site Scripting (XSS)",
+            "name": "WordPress Contact Form 7 Skins <=2.5.0 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "wpscan,cve,cve2021,wordpress,wp-plugin,xss,contactform,authenticated",
             "path": "cves/2021/CVE-2021-25063.yaml"
+        },
+        {
+            "author": "TenBird",
+            "id": "CVE-2021-46072",
+            "name": "Vehicle Service Management System - Stored Cross Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2021,xss,vms,authenticated",
+            "path": "cves/2021/CVE-2021-46072.yaml"
         },
         {
             "author": "furkansayim,xShuden",
@@ -20012,7 +20348,7 @@
         {
             "author": "0x_Akoko",
             "id": "CVE-2021-24316",
-            "name": "An Unauthenticated Reflected XSS & XFS Mediumish theme through 1.0.47 for WordPress",
+            "name": "WordPress Mediumish Theme <=1.0.47 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,mediumish,xss,wordpress,wpscan",
             "path": "cves/2021/CVE-2021-24316.yaml"
@@ -20028,7 +20364,7 @@
         {
             "author": "cckuailong",
             "id": "CVE-2021-24926",
-            "name": "WordPress Plugin Domain Check < 1.0.17 - XSS",
+            "name": "WordPress Domain Check <1.0.17 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "wpscan,cve,cve2021,xss,wp,wordpress,wp-plugin,authenticated",
             "path": "cves/2021/CVE-2021-24926.yaml"
@@ -20052,7 +20388,7 @@
         {
             "author": "geeknik",
             "id": "CVE-2021-31250",
-            "name": "CHIYU IoT XSS",
+            "name": "CHIYU TCP/IP Converter - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,chiyu,xss,iot",
             "path": "cves/2021/CVE-2021-31250.yaml"
@@ -20076,7 +20412,7 @@
         {
             "author": "DhiyaneshDk",
             "id": "CVE-2021-30151",
-            "name": "Sidekiq 5.1.3 and 6.x-6.2.0 - Cross-Site Scripting",
+            "name": "Sidekiq <=6.2.0 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,xss,sidekiq",
             "path": "cves/2021/CVE-2021-30151.yaml"
@@ -20118,13 +20454,13 @@
             "id": "CVE-2021-24236",
             "name": "WordPress Plugin Imagements 1.2.5 - Unauthenticated Arbitrary File Upload",
             "severity": "critical",
-            "tags": "cve,rce,wp,unauth,imagements,wpscan,cve2021,upload,wordpress,wp-plugin",
+            "tags": "cve,rce,wp,unauth,imagements,wpscan,cve2021,fileupload,wordpress,wp-plugin,intrusive",
             "path": "cves/2021/CVE-2021-24236.yaml"
         },
         {
             "author": "dhiyaneshDK",
             "id": "CVE-2021-34643",
-            "name": "Skaut bazar < 1.3.3 - Reflected Cross-Site Scripting",
+            "name": "WordPress Skaut Bazar <1.3.3 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "wpscan,wordpress,cve,cve2021,wp-plugin,authenticated",
             "path": "cves/2021/CVE-2021-34643.yaml"
@@ -20140,7 +20476,7 @@
         {
             "author": "atomiczsec",
             "id": "CVE-2021-36450",
-            "name": "Verint 15.2 - Cross Site Scripting",
+            "name": "Verint Workforce Optimization 15.2.8.10048 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,xss,verint",
             "path": "cves/2021/CVE-2021-36450.yaml"
@@ -20156,7 +20492,7 @@
         {
             "author": "suman_kar",
             "id": "CVE-2021-24387",
-            "name": "Real Estate 7 WordPress Theme < 3.1.1 - Unauthenticated Reflected XSS",
+            "name": "WordPress Pro Real Estate 7 Theme <3.1.1 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,xss,wordpress,wpscan",
             "path": "cves/2021/CVE-2021-24387.yaml"
@@ -20188,7 +20524,7 @@
         {
             "author": "daffainfo",
             "id": "CVE-2021-29625",
-            "name": "Adminer reflected XSS via the table parameter",
+            "name": "Adminer <=4.8.0 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,adminer,xss",
             "path": "cves/2021/CVE-2021-29625.yaml"
@@ -20292,7 +20628,7 @@
         {
             "author": "johnjhacking",
             "id": "CVE-2021-24495",
-            "name": "Wordpress Plugin Marmoset Viewer XSS",
+            "name": "Wordpress Marmoset Viewer <1.9.3 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "xss,wpscan,cve,cve2021,wp-plugin,wordpress",
             "path": "cves/2021/CVE-2021-24495.yaml"
@@ -20476,7 +20812,7 @@
         {
             "author": "edoardottt",
             "id": "CVE-2021-45422",
-            "name": "Reprise License Manager 14.2 - Reflected XSS",
+            "name": "Reprise License Manager 14.2 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,reprise,xss,seclists",
             "path": "cves/2021/CVE-2021-45422.yaml"
@@ -20492,7 +20828,7 @@
         {
             "author": "daffainfo",
             "id": "CVE-2021-24389",
-            "name": "FoodBakery < 2.2 - Reflected Cross-Site Scripting (XSS)",
+            "name": "WordPress FoodBakery <2.2 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,wordpress,xss,wp-plugin,wpscan",
             "path": "cves/2021/CVE-2021-24389.yaml"
@@ -20500,7 +20836,7 @@
         {
             "author": "jas37",
             "id": "CVE-2021-31862",
-            "name": "SysAid - Reflected XSS",
+            "name": "SysAid 20.4.74 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,xss,sysaid",
             "path": "cves/2021/CVE-2021-31862.yaml"
@@ -20524,7 +20860,7 @@
         {
             "author": "dhiyaneshDK",
             "id": "CVE-2021-24510",
-            "name": "MF Gig Calendar <= 1.1 - Reflected Cross-Site Scripting (XSS)",
+            "name": "WordPress MF Gig Calendar <=1.1 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "wp-plugin,authenticated,wpscan,wordpress,cve,cve2021",
             "path": "cves/2021/CVE-2021-24510.yaml"
@@ -20532,7 +20868,7 @@
         {
             "author": "edoardottt",
             "id": "CVE-2021-3002",
-            "name": "Seo Panel 4.8.0 - Post based Reflected XSS",
+            "name": "Seo Panel 4.8.0 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,seopanel,xss",
             "path": "cves/2021/CVE-2021-3002.yaml"
@@ -20580,7 +20916,7 @@
         {
             "author": "edoardottt",
             "id": "CVE-2021-27309",
-            "name": "Clansphere CMS 2011.4 - Reflected XSS",
+            "name": "Clansphere CMS 2011.4 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,clansphere,xss,cms,unauth",
             "path": "cves/2021/CVE-2021-27309.yaml"
@@ -20660,7 +20996,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2021-37216",
-            "name": "QSAN Storage Manager prior to v3.3.3 Reflected XSS",
+            "name": "QSAN Storage Manager <3.3.3 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,xss,qsan,storage",
             "path": "cves/2021/CVE-2021-37216.yaml"
@@ -20692,7 +21028,7 @@
         {
             "author": "geeknik",
             "id": "CVE-2021-26475",
-            "name": "EPrints 3.4.2 XSS",
+            "name": "EPrints 3.4.2 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,xss,eprints",
             "path": "cves/2021/CVE-2021-26475.yaml"
@@ -20700,7 +21036,7 @@
         {
             "author": "cckuailong",
             "id": "CVE-2021-24488",
-            "name": "WordPress Plugin Post Grid < 2.1.8 - XSS",
+            "name": "WordPress Post Grid <2.1.8 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "authenticated,wpscan,cve,cve2021,xss,wp,wordpress,wp-plugin",
             "path": "cves/2021/CVE-2021-24488.yaml"
@@ -20764,7 +21100,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2021-24407",
-            "name": "Jannah < 5.4.5 - Reflected Cross-Site Scripting (XSS)",
+            "name": "WordPress Jannah Theme <5.4.5 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,wordpress,xss,wp-theme,wpscan",
             "path": "cves/2021/CVE-2021-24407.yaml"
@@ -20812,7 +21148,7 @@
         {
             "author": "Akincibor",
             "id": "CVE-2021-24987",
-            "name": "Super Socializer < 7.13.30 - Reflected Cross-Site Scripting",
+            "name": "WordPress Super Socializer <7.13.30 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,wpscan,xss,wp,wp-plugin,wordpress",
             "path": "cves/2021/CVE-2021-24987.yaml"
@@ -20836,7 +21172,7 @@
         {
             "author": "dwisiswant0",
             "id": "CVE-2021-32853",
-            "name": "Erxes <= v0.23.0 XSS",
+            "name": "Erxes <0.23.0 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,xss,erxes,oss",
             "path": "cves/2021/CVE-2021-32853.yaml"
@@ -20846,7 +21182,7 @@
             "id": "CVE-2021-40870",
             "name": "Aviatrix Controller 6.x before 6.5-1804.1922 Remote Command Execution",
             "severity": "critical",
-            "tags": "cve,cve2021,rce,aviatrix,kev",
+            "tags": "cve,cve2021,rce,aviatrix,kev,fileupload,intrusive",
             "path": "cves/2021/CVE-2021-40870.yaml"
         },
         {
@@ -20868,7 +21204,7 @@
         {
             "author": "geeknik",
             "id": "CVE-2021-33904",
-            "name": "Accela Civic Platform 21.1 - 'servProvCode' XSS",
+            "name": "Accela Civic Platform <=21.1 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve2021,accela,xss,edb,packetstorm,cve",
             "path": "cves/2021/CVE-2021-33904.yaml"
@@ -20988,7 +21324,7 @@
         {
             "author": "aceseven (digisec360)",
             "id": "CVE-2021-26812",
-            "name": "Moodle jitsi plugin XSS",
+            "name": "Moodle Jitsi Meet 2.7-2.8.3 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,moodle,jitsi,xss,plugin",
             "path": "cves/2021/CVE-2021-26812.yaml"
@@ -21004,7 +21340,7 @@
         {
             "author": "suman_kar",
             "id": "CVE-2021-24498",
-            "name": "Calendar Event Multi View < 1.4.01 - Unauthenticated Reflected Cross-Site Scripting (XSS)",
+            "name": "WordPress Calendar Event Multi View <1.4.01 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,xss,wordpress,wp-plugin,wpscan",
             "path": "cves/2021/CVE-2021-24498.yaml"
@@ -21052,7 +21388,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2021-37833",
-            "name": "Hotel Druid 3.0.2 XSS",
+            "name": "Hotel Druid 3.0.2 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,hoteldruid,xss",
             "path": "cves/2021/CVE-2021-37833.yaml"
@@ -21084,7 +21420,7 @@
         {
             "author": "pikpikcu,daffainfo",
             "id": "CVE-2021-27330",
-            "name": "Triconsole 3.75 XSS",
+            "name": "Triconsole Datepicker Calendar <3.77 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "xss,edb,cve,cve2021,triconsole",
             "path": "cves/2021/CVE-2021-27330.yaml"
@@ -21100,7 +21436,7 @@
         {
             "author": "geeknik",
             "id": "CVE-2021-31537",
-            "name": "SIS-REWE GO version 7.5.0/12C XSS",
+            "name": "SIS Informatik REWE GO SP17 <7.7 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,xss,seclists",
             "path": "cves/2021/CVE-2021-31537.yaml"
@@ -21182,7 +21518,7 @@
             "id": "CVE-2021-21978",
             "name": "VMware View Planner <4.6 SP1- Remote Code Execution",
             "severity": "critical",
-            "tags": "cve,cve2021,vmware,rce,packetstorm",
+            "tags": "cve,cve2021,vmware,rce,packetstorm,fileupload,intrusive",
             "path": "cves/2021/CVE-2021-21978.yaml"
         },
         {
@@ -21228,7 +21564,7 @@
         {
             "author": "dhiyaneshDK",
             "id": "CVE-2021-34640",
-            "name": "Securimage-WP-Fixed <= 3.5.4 - Reflected Cross-Site Scripting (XSS)",
+            "name": "WordPress Securimage-WP-Fixed <=3.5.4 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "wpscan,wordpress,cve,cve2021,wp-plugin,authenticated",
             "path": "cves/2021/CVE-2021-34640.yaml"
@@ -21268,7 +21604,7 @@
         {
             "author": "kh4sh3i",
             "id": "CVE-2021-27519",
-            "name": "FUDForum 3.1.0 - Reflected XSS",
+            "name": "FUDForum 3.1.0 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "xss,fudforum,edb,packetstorm,cve,cve2021",
             "path": "cves/2021/CVE-2021-27519.yaml"
@@ -21284,7 +21620,7 @@
         {
             "author": "pdteam",
             "id": "CVE-2021-42063",
-            "name": "SAP Knowledge Warehouse (KW) - Reflected XSS",
+            "name": "SAP Knowledge Warehouse <=7.5.0 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve2021,sap,xss,seclists,packetstorm,cve",
             "path": "cves/2021/CVE-2021-42063.yaml"
@@ -21292,7 +21628,7 @@
         {
             "author": "rootxharsh,iamnoooob",
             "id": "CVE-2021-29484",
-            "name": "DOM XSS in Ghost CMS",
+            "name": "Ghost CMS <=4.32 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,xss,ghost",
             "path": "cves/2021/CVE-2021-29484.yaml"
@@ -21308,7 +21644,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2021-24364",
-            "name": "Jannah < 5.4.4 (XSS)",
+            "name": "WordPress Jannah Theme <5.4.4 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,wordpress,xss,wp-theme,wpscan",
             "path": "cves/2021/CVE-2021-24364.yaml"
@@ -21340,7 +21676,7 @@
         {
             "author": "0x_Akoko",
             "id": "CVE-2021-34370",
-            "name": "Accela Civic Platform 21.1 - Open Redirect & XSS",
+            "name": "Accela Civic Platform <=21.1 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "xss,redirect,cve,cve2021,accela,edb",
             "path": "cves/2021/CVE-2021-34370.yaml"
@@ -21358,7 +21694,7 @@
             "id": "CVE-2021-3378",
             "name": "FortiLogger 4.4.2.2 - Arbitrary File Upload",
             "severity": "critical",
-            "tags": "fortilogger,fortigate,fortinet,packetstorm,cve,cve2021",
+            "tags": "fortilogger,fortigate,fortinet,packetstorm,cve,cve2021,fileupload,intrusive",
             "path": "cves/2021/CVE-2021-3378.yaml"
         },
         {
@@ -21372,7 +21708,7 @@
         {
             "author": "dhiyaneshDK",
             "id": "CVE-2021-26247",
-            "name": "Unauthenticated XSS Cacti - auth_changepassword.php",
+            "name": "Cacti - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,cacti,xss",
             "path": "cves/2021/CVE-2021-26247.yaml"
@@ -21416,6 +21752,14 @@
             "severity": "high",
             "tags": "cve,cve2021,metabase,lfi",
             "path": "cves/2021/CVE-2021-41277.yaml"
+        },
+        {
+            "author": "TenBird",
+            "id": "CVE-2021-46069",
+            "name": "Vehicle Service Management System - Stored Cross Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2021,xss,vms,authenticated",
+            "path": "cves/2021/CVE-2021-46069.yaml"
         },
         {
             "author": "madrobot",
@@ -21774,7 +22118,7 @@
             "id": "CVE-2018-15961",
             "name": "Adobe ColdFusion - Unrestricted File Upload Remote Code Execution",
             "severity": "critical",
-            "tags": "cve,cve2018,adobe,rce,coldfusion,fileupload,kev",
+            "tags": "cve,cve2018,adobe,rce,coldfusion,fileupload,kev,intrusive",
             "path": "cves/2018/CVE-2018-15961.yaml"
         },
         {
@@ -22590,7 +22934,7 @@
             "id": "CVE-2018-20526",
             "name": "Roxy Fileman 1.4.5 - Unrestricted File Upload",
             "severity": "critical",
-            "tags": "cve,cve2018,roxy,fileman,rce,upload,intrusive,packetstorm,edb",
+            "tags": "cve,cve2018,roxy,fileman,rce,fileupload,intrusive,packetstorm,edb",
             "path": "cves/2018/CVE-2018-20526.yaml"
         },
         {
@@ -22934,7 +23278,7 @@
             "id": "wordpress-rce-simplefilelist",
             "name": "WordPress SimpleFilelist - Remote Code Execution",
             "severity": "critical",
-            "tags": "wpscan,wordpress,wp-plugin,rce,intrusive,upload,python",
+            "tags": "wpscan,wordpress,wp-plugin,rce,intrusive,fileupload,python",
             "path": "vulnerabilities/wordpress/wordpress-rce-simplefilelist.yaml"
         },
         {
@@ -22950,7 +23294,7 @@
             "id": "ait-csv-import-export-rce",
             "name": "WordPress AIT CSV Import Export - Unauthenticated Remote Code Execution",
             "severity": "critical",
-            "tags": "wp-plugin,rce,upload,unauth,wpscan,msf,wordpress,ait-csv,wp",
+            "tags": "wp-plugin,rce,fileupload,unauth,wpscan,msf,wordpress,ait-csv,wp,intrusive",
             "path": "vulnerabilities/wordpress/ait-csv-import-export-rce.yaml"
         },
         {
@@ -23357,7 +23701,7 @@
             "author": "dhiyaneshDk",
             "id": "my-chatbot-xss",
             "name": "WordPress My Chatbot <= 1.1 - Reflected Cross-Site Scripting",
-            "severity": "medium",
+            "severity": "high",
             "tags": "wordpress,wp-plugin,xss,authenticated,wpscan",
             "path": "vulnerabilities/wordpress/my-chatbot-xss.yaml"
         },
@@ -23418,7 +23762,7 @@
             "path": "vulnerabilities/wordpress/wp-sym404.yaml"
         },
         {
-            "author": "Kiblyn11,zomsop82,madrobot,geeknik,daffainfo,r12w4n",
+            "author": "Kiblyn11,zomsop82,madrobot,geeknik,daffainfo,r12w4n,tess",
             "id": "wordpress-accessible-wpconfig",
             "name": "WordPress wp-config Detection",
             "severity": "medium",
@@ -23621,7 +23965,7 @@
             "author": "daffainfo",
             "id": "wp-socialfit-xss",
             "name": "WordPress SocialFit - Cross-Site Scripting",
-            "severity": "medium",
+            "severity": "high",
             "tags": "wordpress,xss,wp-plugin,edb",
             "path": "vulnerabilities/wordpress/wp-socialfit-xss.yaml"
         },
@@ -24458,7 +24802,7 @@
             "path": "vulnerabilities/generic/error-based-sql-injection.yaml"
         },
         {
-            "author": "geeknik,unstabl3,pentest_swissky,sushantkamble,0xSmiley",
+            "author": "geeknik,unstabl3,pentest_swissky,sushantkamble,0xSmiley,DhiyaneshDK",
             "id": "generic-linux-lfi",
             "name": "Generic Linux - Local File Inclusion",
             "severity": "high",
@@ -24530,7 +24874,7 @@
             "path": "vulnerabilities/generic/request-based-interaction.yaml"
         },
         {
-            "author": "mesaglio,sushantkamble",
+            "author": "mesaglio,sushantkamble,ritikchaddha",
             "id": "generic-windows-lfi",
             "name": "Windows - Local File Inclusion",
             "severity": "high",
@@ -24574,7 +24918,7 @@
             "id": "zhiyuan-file-upload",
             "name": "Zhiyuan OA Arbitrary File Upload Vulnerability",
             "severity": "critical",
-            "tags": "zhiyuan,rce,upload,seeyon",
+            "tags": "zhiyuan,rce,fileupload,seeyon,intrusive",
             "path": "vulnerabilities/seeyon/zhiyuan-file-upload.yaml"
         },
         {
@@ -24597,7 +24941,7 @@
             "author": "harshbothra_",
             "id": "ibm-infoprint-lfi",
             "name": "IBM InfoPrint 4247-Z03 Impact Matrix Printer - Local File Inclusion",
-            "severity": "medium",
+            "severity": "high",
             "tags": "matrix,printer,edb,ibm,lfi",
             "path": "vulnerabilities/ibm/ibm-infoprint-lfi.yaml"
         },
@@ -24710,7 +25054,7 @@
             "id": "oa-v9-uploads-file",
             "name": "OA V9 RCE via File Upload",
             "severity": "high",
-            "tags": "rce,jsp",
+            "tags": "rce,jsp,fileupload,intrusive",
             "path": "vulnerabilities/weaver/oa-v9-uploads-file.yaml"
         },
         {
@@ -24725,7 +25069,7 @@
             "author": "princechaddha",
             "id": "ecology-springframework-directory-traversal",
             "name": "Ecology Springframework - Local File Inclusion",
-            "severity": "medium",
+            "severity": "high",
             "tags": "ecology,springframework,lfi",
             "path": "vulnerabilities/weaver/ecology/ecology-springframework-directory-traversal.yaml"
         },
@@ -24733,7 +25077,7 @@
             "author": "princechaddha",
             "id": "ecology-filedownload-directory-traversal",
             "name": "Ecology - Local File Inclusion",
-            "severity": "medium",
+            "severity": "high",
             "tags": "ecology,lfi",
             "path": "vulnerabilities/weaver/ecology/ecology-filedownload-directory-traversal.yaml"
         },
@@ -24789,7 +25133,7 @@
             "author": "geeknik",
             "id": "simple-crm-sql-injection",
             "name": "Simple CRM 3.0 SQL Injection and Authentication Bypass",
-            "severity": "high",
+            "severity": "critical",
             "tags": "packetstorm,sqli,simplecrm,auth-bypass,injection",
             "path": "vulnerabilities/simplecrm/simple-crm-sql-injection.yaml"
         },
@@ -24814,7 +25158,7 @@
             "id": "core-chuangtian-cloud-rce",
             "name": "Core Chuangtian Cloud Desktop System - Remote Code Execution",
             "severity": "critical",
-            "tags": "rce",
+            "tags": "rce,fileupload,intrusive",
             "path": "vulnerabilities/other/core-chuangtian-cloud-rce.yaml"
         },
         {
@@ -25061,7 +25405,7 @@
             "author": "gy741",
             "id": "magicflow-lfi",
             "name": "MagicFlow - Local File Inclusion",
-            "severity": "critical",
+            "severity": "high",
             "tags": "magicflow,lfi",
             "path": "vulnerabilities/other/magicflow-lfi.yaml"
         },
@@ -25141,7 +25485,7 @@
             "author": "pikpikcu",
             "id": "hjtcloud-rest-arbitrary-file-read",
             "name": "HJTcloud - Local File Inclusion",
-            "severity": "low",
+            "severity": "high",
             "tags": "hjtcloud,lfi",
             "path": "vulnerabilities/other/hjtcloud-rest-arbitrary-file-read.yaml"
         },
@@ -25317,7 +25661,7 @@
             "author": "dhiyaneshDk",
             "id": "nginx-merge-slashes-path-traversal",
             "name": "Nginx Server - Local File Inclusion",
-            "severity": "medium",
+            "severity": "high",
             "tags": "exposure,config,lfi,nginx",
             "path": "vulnerabilities/other/nginx-merge-slashes-path-traversal.yaml"
         },
@@ -25614,7 +25958,7 @@
             "id": "cisco-rv-series-rce",
             "name": "Cisco Small Business RV Series - Authentication Bypass and Command Injection",
             "severity": "critical",
-            "tags": "auth-bypass,injection,packetstorm,cve,cve2021,cisco,rce",
+            "tags": "auth-bypass,injection,packetstorm,cve,cve2021,cisco,rce,intrusive",
             "path": "vulnerabilities/other/cisco-rv-series-rce.yaml"
         },
         {
@@ -25645,7 +25989,7 @@
             "author": "ritikchaddha",
             "id": "kingdee-eas-directory-traversal",
             "name": "Kingdee EAS - Local File Inclusion",
-            "severity": "medium",
+            "severity": "high",
             "tags": "kingdee,lfi,traversal",
             "path": "vulnerabilities/other/kingdee-eas-directory-traversal.yaml"
         },
@@ -25661,7 +26005,7 @@
             "author": "princechaddha",
             "id": "unauth-spark-api",
             "name": "Unauthenticated Spark REST API",
-            "severity": "medium",
+            "severity": "critical",
             "tags": "spark,unauth",
             "path": "vulnerabilities/other/unauth-spark-api.yaml"
         },
@@ -25965,7 +26309,7 @@
             "author": "gy741",
             "id": "carel-bacnet-gateway-traversal",
             "name": "Carel pCOWeb HVAC BACnet Gateway 2.1.0 - Local File Inclusion",
-            "severity": "medium",
+            "severity": "high",
             "tags": "carel,lfi,traversal,unauth,bacnet",
             "path": "vulnerabilities/other/carel-bacnet-gateway-traversal.yaml"
         },
@@ -25974,7 +26318,7 @@
             "id": "dixell-xweb500-filewrite",
             "name": "Emerson Dixell XWEB-500 - Arbitrary File Write",
             "severity": "critical",
-            "tags": "lfw,iot,dixell,xweb500,edb",
+            "tags": "lfw,iot,dixell,xweb500,edb,fileupload,intrusive",
             "path": "vulnerabilities/other/dixell-xweb500-filewrite.yaml"
         },
         {
@@ -26117,7 +26461,7 @@
             "author": "geeknik",
             "id": "pmb-directory-traversal",
             "name": "PMB 5.6 - Local File Inclusion",
-            "severity": "medium",
+            "severity": "high",
             "tags": "lfi,packetstorm",
             "path": "vulnerabilities/other/pmb-directory-traversal.yaml"
         },
@@ -26333,7 +26677,7 @@
             "author": "Random_Robbie",
             "id": "symantec-messaging-gateway",
             "name": "Symantec Messaging Gateway <=10.6.1 - Local File Inclusion",
-            "severity": "medium",
+            "severity": "high",
             "tags": "lfi,messaging,symantec",
             "path": "vulnerabilities/other/symantec-messaging-gateway.yaml"
         },
@@ -26461,7 +26805,7 @@
             "author": "pikpikcu",
             "id": "finereport-path-traversal",
             "name": "FineReport 8.0 - Local File Inclusion",
-            "severity": "medium",
+            "severity": "high",
             "tags": "finereport,lfi",
             "path": "vulnerabilities/other/finereport-path-traversal.yaml"
         },
@@ -26469,7 +26813,7 @@
             "author": "madrobot",
             "id": "geowebserver-xss",
             "name": "GeoVision Geowebserver 5.3.3 - Cross-Site Scripting",
-            "severity": "medium",
+            "severity": "high",
             "tags": "geowebserver,xss,packetstorm",
             "path": "vulnerabilities/other/geovision-geowebserver-xss.yaml"
         },
@@ -26566,7 +26910,7 @@
             "id": "powercreator-cms-rce",
             "name": "PowerCreator CMS - Remote Code Execution",
             "severity": "critical",
-            "tags": "rce,powercreator,intrusive",
+            "tags": "rce,powercreator,intrusive,fileupload",
             "path": "vulnerabilities/other/powercreator-cms-rce.yaml"
         },
         {
@@ -26866,7 +27210,7 @@
             "path": "exposed-panels/kenesto-login.yaml"
         },
         {
-            "author": "righettod",
+            "author": "righettod,PJBorah,Hardik-Rathod",
             "id": "archibus-webcentral-panel",
             "name": "Archibus Web Central Panel",
             "severity": "info",
@@ -27666,6 +28010,14 @@
             "path": "exposed-panels/vmware-cloud-director.yaml"
         },
         {
+            "author": "DhiyaneshDk",
+            "id": "icc-pro-login",
+            "name": "ICC Pro System Login",
+            "severity": "info",
+            "tags": "panel,icc-pro,edb",
+            "path": "exposed-panels/icc-pro-login.yaml"
+        },
+        {
             "author": "dhiyaneshDK,hackergautam",
             "id": "open-stack-dashboard-login",
             "name": "OpenStack Dashboard",
@@ -27712,6 +28064,14 @@
             "severity": "info",
             "tags": "jamf,panel,mdm",
             "path": "exposed-panels/jamf-panel.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "eMerge-panel",
+            "name": "Nortek Linear eMerge - Panel Detect",
+            "severity": "info",
+            "tags": "panel,emerge,nortek",
+            "path": "exposed-panels/eMerge-panel.yaml"
         },
         {
             "author": "c-sh0",
@@ -28218,6 +28578,14 @@
             "path": "exposed-panels/yopass-panel.yaml"
         },
         {
+            "author": "ritikchaddha",
+            "id": "osticket-panel",
+            "name": "OSTicket Panel Detect",
+            "severity": "info",
+            "tags": "panel,osticket",
+            "path": "exposed-panels/osticket-panel.yaml"
+        },
+        {
             "author": "Arr0way",
             "id": "matomo-login-portal",
             "name": "Matomo Login Portal",
@@ -28309,7 +28677,7 @@
             "author": "sullo",
             "id": "sicom-mgrng-login",
             "name": "Sicom MGRNG - Administrative Login Found",
-            "severity": "low",
+            "severity": "info",
             "tags": "sicom,mgrng,panel",
             "path": "exposed-panels/sicom-panel.yaml"
         },
@@ -29077,7 +29445,7 @@
             "author": "pdteam",
             "id": "ambari-exposure",
             "name": "Apache Ambari Exposure Admin Login Panel",
-            "severity": "medium",
+            "severity": "info",
             "tags": "panel,apache,ambari,exposure",
             "path": "exposed-panels/ambari-exposure.yaml"
         },
@@ -29965,7 +30333,7 @@
             "author": "Techryptic (@Tech)",
             "id": "codemeter-webadmin-panel",
             "name": "CodeMeter - WebAdmin Panel Access",
-            "severity": "high",
+            "severity": "info",
             "tags": "codemeter,webadmin,panel",
             "path": "exposed-panels/codemeter-webadmin-panel.yaml"
         },
@@ -31202,10 +31570,18 @@
             "path": "exposed-panels/istat-panel-detect.yaml"
         },
         {
+            "author": "Nodauf",
+            "id": "mfiles-web-detect",
+            "name": "M-Files Web Panel Detect",
+            "severity": "info",
+            "tags": "panel,m-files",
+            "path": "exposed-panels/mfiles-web-detect.yaml"
+        },
+        {
             "author": "pussycat0x",
             "id": "epson-access-detect",
             "name": "Epson Device Unauthorized Access Detect",
-            "severity": "medium",
+            "severity": "info",
             "tags": "iot,printer,panel,unauth,epson,edb",
             "path": "exposed-panels/epson-access-detect.yaml"
         },
@@ -31338,6 +31714,14 @@
             "path": "exposed-panels/adobe/adobe-component-login.yaml"
         },
         {
+            "author": "dhiyaneshDk",
+            "id": "aem-sling-login",
+            "name": "AEM Sling Login",
+            "severity": "info",
+            "tags": "panel,aem,adobe,sling",
+            "path": "exposed-panels/adobe/aem-sling-login.yaml"
+        },
+        {
             "author": "dhiyaneshDK",
             "id": "adobe-media-server",
             "name": "Adobe Media Server Login Panel",
@@ -31360,6 +31744,14 @@
             "severity": "info",
             "tags": "adobe,panel,connect-central",
             "path": "exposed-panels/adobe/adobe-connect-central-login.yaml"
+        },
+        {
+            "author": "dhiyaneshDk",
+            "id": "aem-crx-package-manager",
+            "name": "Adobe AEM CRX Package Manager Exposure",
+            "severity": "info",
+            "tags": "panel,aem,adobe",
+            "path": "exposed-panels/adobe/aem-crx-package-manager.yaml"
         },
         {
             "author": "johnk3r",
@@ -31912,6 +32304,14 @@
             "severity": "info",
             "tags": "panel,qnap,qts",
             "path": "exposed-panels/qnap/qnap-qts-panel.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "osticket-install",
+            "name": "OSTicket Installation",
+            "severity": "high",
+            "tags": "panel,osticket,install",
+            "path": "exposed-panels/osticket/osticket-install.yaml"
         },
         {
             "author": "pdteam,pikpikcu",
