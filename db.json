@@ -1,5 +1,5 @@
 {
-    "version": "v9.1.9",
+    "version": "v9.2.0",
     "data": [
         {
             "author": "dhiyaneshDK",
@@ -120,6 +120,14 @@
             "severity": "info",
             "tags": "axis,network,edb,iot",
             "path": "iot/liveview-axis-camera.yaml"
+        },
+        {
+            "author": "af001",
+            "id": "sony-camera-backdoor",
+            "name": "Backdoor In Sony IPELA Engine IP Cameras",
+            "severity": "high",
+            "tags": "sony,backdoor,unauth,telnet,iot,camera",
+            "path": "iot/sony-camera-backdoor.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -333,7 +341,7 @@
             "author": "pdteam",
             "id": "window-name-domxss",
             "name": "window.name - DOM Cross-Site Scripting",
-            "severity": "medium",
+            "severity": "high",
             "tags": "headless,xss,domxss",
             "path": "headless/window-name-domxss.yaml"
         },
@@ -572,8 +580,8 @@
         {
             "author": "joshlarsen",
             "id": "xss-deprecated-header-detect",
-            "name": "Detect Deprecated XSS Protection Header",
-            "severity": "info",
+            "name": "XSS-Protection Header - Cross-Site Scripting",
+            "severity": "high",
             "tags": "xss,misconfig,generic",
             "path": "misconfiguration/xss-deprecated-header.yaml"
         },
@@ -954,6 +962,14 @@
             "path": "misconfiguration/wamp-xdebug-detect.yaml"
         },
         {
+            "author": "DhiyaneshDk",
+            "id": "codemeter-webadmin",
+            "name": "CodeMeter Webadmin Dashboard",
+            "severity": "low",
+            "tags": "misconfig,exposure,codemeter",
+            "path": "misconfiguration/codemeter-webadmin.yaml"
+        },
+        {
             "author": "dhiyaneshDk",
             "id": "unauthenticated-zipkin",
             "name": "Zipkin Discovery",
@@ -1138,6 +1154,14 @@
             "path": "misconfiguration/grafana-public-signup.yaml"
         },
         {
+            "author": "DhiyaneshDk",
+            "id": "bitbucket-public-repository",
+            "name": "Atlassian Bitbucket Public Repository Exposure",
+            "severity": "low",
+            "tags": "misconfig,bitbucket",
+            "path": "misconfiguration/bitbucket-public-repository.yaml"
+        },
+        {
             "author": "0xelkomy",
             "id": "unauthenticated-varnish-cache-purge",
             "name": "Varnish Unauthenticated Cache Purge",
@@ -1194,6 +1218,14 @@
             "path": "misconfiguration/ups-status.yaml"
         },
         {
+            "author": "DhiyaneshDk",
+            "id": "cloud-metadata",
+            "name": "GCP/AWS Metadata Disclosure",
+            "severity": "low",
+            "tags": "misconfig,exposure,devops,cloud,aws,gcp",
+            "path": "misconfiguration/cloud-metadata.yaml"
+        },
+        {
             "author": "KabirSuda",
             "id": "ssrf-via-oauth-misconfig",
             "name": "SSRF due to misconfiguration in OAuth",
@@ -1212,8 +1244,8 @@
         {
             "author": "pdteam",
             "id": "wildcard-postmessage",
-            "name": "Wildcard postMessage detection",
-            "severity": "info",
+            "name": "postMessage - Cross-Site Scripting",
+            "severity": "high",
             "tags": "xss,postmessage",
             "path": "misconfiguration/wildcard-postmessage.yaml"
         },
@@ -1317,7 +1349,7 @@
             "author": "pdteam",
             "id": "akamai-arl-xss",
             "name": "Open Akamai ARL - Cross-Site Scripting",
-            "severity": "medium",
+            "severity": "high",
             "tags": "akamai,xss",
             "path": "misconfiguration/akamai-arl-xss.yaml"
         },
@@ -1452,8 +1484,8 @@
         {
             "author": "pdteam",
             "id": "apache-tomcat-snoop",
-            "name": "Apache Tomcat example page disclosure - snoop",
-            "severity": "low",
+            "name": "Apache Tomcat 4.x-7.x - Cross-Site Scripting",
+            "severity": "high",
             "tags": "apache,misconfig,tomcat,disclosure",
             "path": "misconfiguration/apache/apache-tomcat-snoop.yaml"
         },
@@ -1860,8 +1892,8 @@
         {
             "author": "dhiyaneshDk",
             "id": "aem-xss-childlist-selector",
-            "name": "XSS in childlist selector",
-            "severity": "medium",
+            "name": "Adobe Experience Manager - Cross-Site Scripting",
+            "severity": "high",
             "tags": "xss,aem,adobe",
             "path": "misconfiguration/aem/aem-xss-childlist-selector.yaml"
         },
@@ -2052,8 +2084,8 @@
         {
             "author": "zinminphy0,dhiyaneshDK",
             "id": "aem-setpreferences-xss",
-            "name": "AEM setPreferences - Cross-Site Scripting",
-            "severity": "medium",
+            "name": "Adobe Experience Manager  - Cross-Site Scripting",
+            "severity": "high",
             "tags": "aem,xss",
             "path": "misconfiguration/aem/aem-setpreferences-xss.yaml"
         },
@@ -2100,7 +2132,7 @@
         {
             "author": "dhiyaneshDK",
             "id": "openbmcs-ssrf",
-            "name": "OpenBMCS 2.4 Unauthenticated SSRF / RFI",
+            "name": "OpenBMCS 2.4 - Server-Side Request Forgery /  Remote File Inclusion",
             "severity": "high",
             "tags": "ssrf,oast,openbmcs,edb",
             "path": "misconfiguration/openbmcs/openbmcs-ssrf.yaml"
@@ -2888,6 +2920,14 @@
             "severity": "info",
             "tags": "tech,kingsoft",
             "path": "technologies/kingsoft-webserver-detect.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "ispyconnect-detect",
+            "name": "iSpyConnect - Detect",
+            "severity": "info",
+            "tags": "tech,ispy",
+            "path": "technologies/ispyconnect-detect.yaml"
         },
         {
             "author": "righettod",
@@ -4560,6 +4600,14 @@
             "severity": "low",
             "tags": "ssl",
             "path": "ssl/expired-ssl.yaml"
+        },
+        {
+            "author": "Lingtren",
+            "id": "detect-ssl-issuer",
+            "name": "Detect SSL Certificate Issuer",
+            "severity": "info",
+            "tags": "ssl",
+            "path": "ssl/detect-ssl-issuer.yaml"
         },
         {
             "author": "daffainfo",
@@ -7778,6 +7826,14 @@
             "path": "workflows/mobileiron-workflow.yaml"
         },
         {
+            "author": "LogicalHunter",
+            "id": "oracle-peoplesoft-workflow",
+            "name": "oracle-peoplesoft Security Checks",
+            "severity": "",
+            "tags": "",
+            "path": "workflows/oracle-peoplesoft-workflow.yaml"
+        },
+        {
             "author": "daffainfo",
             "id": "emby-workflow",
             "name": "Emby Server Security Checks",
@@ -8634,6 +8690,14 @@
             "path": "exposures/configs/magento-config-disclosure.yaml"
         },
         {
+            "author": "geeknik",
+            "id": "tox-ini",
+            "name": "tox.ini File Exposure",
+            "severity": "low",
+            "tags": "exposure,config,tox",
+            "path": "exposures/configs/tox-ini.yaml"
+        },
+        {
             "author": "DhiyaneshDk",
             "id": "exposed-authentication-asmx",
             "name": "Exposed Authentication.asmx",
@@ -8930,6 +8994,14 @@
             "path": "exposures/configs/procfile-config.yaml"
         },
         {
+            "author": "geeknik",
+            "id": "redis-config",
+            "name": "Redis Configuration File Exposure",
+            "severity": "medium",
+            "tags": "redis,exposure,config",
+            "path": "exposures/configs/redis-config.yaml"
+        },
+        {
             "author": "luqman",
             "id": "debug-vars",
             "name": "Golang expvar Information Disclosure",
@@ -9048,6 +9120,14 @@
             "severity": "low",
             "tags": "exposure,prometheus,hackerone,config",
             "path": "exposures/configs/prometheus-metrics.yaml"
+        },
+        {
+            "author": "geeknik",
+            "id": "ventrilo-config",
+            "name": "Ventrilo Configuration File",
+            "severity": "high",
+            "tags": "ventrilo,config,exposure",
+            "path": "exposures/configs/ventrilo-config.yaml"
         },
         {
             "author": "geeknik,afaq",
@@ -9682,6 +9762,14 @@
             "path": "exposures/files/domcfg-page.yaml"
         },
         {
+            "author": "geeknik",
+            "id": "vscode-sftp",
+            "name": "VSCode SFTP File Exposure",
+            "severity": "high",
+            "tags": "exposure,vscode,sftp,ssh",
+            "path": "exposures/files/vscode-sftp.yaml"
+        },
+        {
             "author": "dhiyaneshDk",
             "id": "snyk-ignore-file-disclosure",
             "name": "Snyk Ignore File Disclosure",
@@ -9904,6 +9992,14 @@
             "severity": "info",
             "tags": "exposure,files",
             "path": "exposures/files/webpack-sourcemap-disclosure.yaml"
+        },
+        {
+            "author": "geeknik",
+            "id": "atom-sync-remote",
+            "name": "Atom Synchronization Exposure",
+            "severity": "high",
+            "tags": "atom,exposure,config",
+            "path": "exposures/files/atom-sync-remote.yaml"
         },
         {
             "author": "amsda",
@@ -10300,7 +10396,7 @@
         {
             "author": "0xelkomy & C0NQR0R",
             "id": "tomcat-examples-login",
-            "name": "Tomcat Examples Default Login",
+            "name": "Apache Tomcat - Default Login Discovery",
             "severity": "info",
             "tags": "default-login,tomcat",
             "path": "default-logins/apache/tomcat-examples-login.yaml"
@@ -12395,6 +12491,14 @@
         },
         {
             "author": "0x_Akoko",
+            "id": "CVE-2015-3035",
+            "name": "Multiple TP-LINK Products Vulnerable - Local File Inclusion",
+            "severity": "high",
+            "tags": "router,lfi,seclists,cve,cve2015,tplink,kev",
+            "path": "cves/2015/CVE-2015-3035.yaml"
+        },
+        {
+            "author": "0x_Akoko",
             "id": "CVE-2015-7245",
             "name": "D-Link DVG-N5402SP - Path Traversal",
             "severity": "high",
@@ -13236,7 +13340,7 @@
         {
             "author": "arafatansari",
             "id": "CVE-2022-30073",
-            "name": "WBCE CMS v1.5.2 XSS Stored",
+            "name": "WBCE CMS 1.5.2 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2022,wbcecms,xss",
             "path": "cves/2022/CVE-2022-30073.yaml"
@@ -13292,7 +13396,7 @@
         {
             "author": "Akincibor",
             "id": "CVE-2022-1904",
-            "name": "Easy Pricing Tables < 3.2.1 - Cross-Site-Scripting",
+            "name": "WordPress Easy Pricing Tables <3.2.1 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "wp,wordpress,wpscan,cve,cve2022,wp-plugin,xss",
             "path": "cves/2022/CVE-2022-1904.yaml"
@@ -13314,12 +13418,28 @@
             "path": "cves/2022/CVE-2022-34045.yaml"
         },
         {
+            "author": "edoardottt",
+            "id": "CVE-2022-31299",
+            "name": "Haraj v3.7 - Cross Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2022,haraj,xss",
+            "path": "cves/2022/CVE-2022-31299.yaml"
+        },
+        {
             "author": "ritikchaddha",
             "id": "CVE-2022-31373",
             "name": "SolarView Compact 6.00 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2022,xss,solarview",
             "path": "cves/2022/CVE-2022-31373.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "CVE-2022-34590",
+            "name": "Hospital Management System v1.0 - SQL Injection",
+            "severity": "high",
+            "tags": "cve,cve2022,hms,cms,sqli",
+            "path": "cves/2022/CVE-2022-34590.yaml"
         },
         {
             "author": "For3stCo1d",
@@ -13348,7 +13468,7 @@
         {
             "author": "arafatansari",
             "id": "CVE-2022-35493",
-            "name": "eShop - Cross-Site Scripting",
+            "name": "eShop 3.0.4 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2022,eshop,xss",
             "path": "cves/2022/CVE-2022-35493.yaml"
@@ -13436,7 +13556,7 @@
         {
             "author": "For3stCo1d",
             "id": "CVE-2022-2187",
-            "name": "Contact Form 7 Captcha < 0.1.2 - Cross-Site Scripting",
+            "name": "WordPress Contact Form 7 Captcha <0.1.2 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "wpscan,cve,cve2022,wordpress,xss,wp-plugin,wp",
             "path": "cves/2022/CVE-2022-2187.yaml"
@@ -13484,7 +13604,7 @@
         {
             "author": "arafatansari",
             "id": "CVE-2022-32195",
-            "name": "Open edX - Cross-Site Scripting",
+            "name": "Open edX <2022-06-06 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2022,openedx,xss",
             "path": "cves/2022/CVE-2022-32195.yaml"
@@ -13514,9 +13634,25 @@
             "path": "cves/2022/CVE-2022-1040.yaml"
         },
         {
+            "author": "For3stCo1d",
+            "id": "CVE-2022-29078",
+            "name": "Ejs - RCE",
+            "severity": "critical",
+            "tags": "cve,cve2022,rce,ejs,nodejs,oast",
+            "path": "cves/2022/CVE-2022-29078.yaml"
+        },
+        {
+            "author": "For3stCo1d",
+            "id": "CVE-2022-39960",
+            "name": "Atlassian Jira addon Netic Group Export < 1.0.3 - Unauthenticated Access",
+            "severity": "high",
+            "tags": "cve,cve2022,atlassian,jira,netic,unauth",
+            "path": "cves/2022/CVE-2022-39960.yaml"
+        },
+        {
             "author": "ritikchaddha",
             "id": "CVE-2022-34048",
-            "name": "Wavlink WN533A8 - Cross-Site Scripting",
+            "name": "Wavlink WN-533A8 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve2022,wavlink,xss,router,edb,cve",
             "path": "cves/2022/CVE-2022-34048.yaml"
@@ -13532,7 +13668,7 @@
         {
             "author": "amit-jd",
             "id": "CVE-2022-0954",
-            "name": "Microweber - Cross-Site Scripting",
+            "name": "Microweber <1.2.11 - Stored Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2022,xss,microweber,huntr",
             "path": "cves/2022/CVE-2022-0954.yaml"
@@ -13540,7 +13676,7 @@
         {
             "author": "Akincibor",
             "id": "CVE-2022-1946",
-            "name": "Gallery < 2.0.0 - Cross-Site Scripting",
+            "name": "WordPress Gallery <2.0.0 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "wpscan,cve2022,wp,xss,wordpress,gallery,unauth,cve,wp-plugin",
             "path": "cves/2022/CVE-2022-1946.yaml"
@@ -13548,7 +13684,7 @@
         {
             "author": "random-robbie",
             "id": "CVE-2022-1906",
-            "name": "Copyright Proof <= 4.16 - Cross-Site-Scripting",
+            "name": "WordPress Copyright Proof <=4.16 - Cross-Site-Scripting",
             "severity": "medium",
             "tags": "wordpress,xss,wp-plugin,wp,wpscan,cve,cve2022",
             "path": "cves/2022/CVE-2022-1906.yaml"
@@ -13596,7 +13732,7 @@
         {
             "author": "rotembar,daffainfo",
             "id": "CVE-2022-29455",
-            "name": "Wordpress Elementor <= 3.5.5 - DOM-based Cross-Site Scripting",
+            "name": "WordPress Elementor Website Builder <= 3.5.5 - DOM Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2022,xss,wordpress,elementor",
             "path": "cves/2022/CVE-2022-29455.yaml"
@@ -13732,7 +13868,7 @@
         {
             "author": "lucasljm2001,ekrause",
             "id": "CVE-2022-24181",
-            "name": "PKP Open Journals System 3.3 - Cross-Site Scripting",
+            "name": "PKP Open Journal Systems 2.4.8-3.3 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2022,xss,oss,pkp-lib,edb",
             "path": "cves/2022/CVE-2022-24181.yaml"
@@ -13748,15 +13884,15 @@
         {
             "author": "LogicalHunter",
             "id": "CVE-2022-0776",
-            "name": "RevealJS postMessage Cross-Site Scripting",
-            "severity": "medium",
+            "name": "RevealJS postMessage <4.3.0 - Cross-Site Scripting",
+            "severity": "high",
             "tags": "hackerone,huntr,cve,cve2022,headless,postmessage,revealjs",
             "path": "cves/2022/CVE-2022-0776.yaml"
         },
         {
             "author": "Akincibor,DhiyaneshDK",
             "id": "CVE-2022-1937",
-            "name": "Awin Data Feed <= 1.6 - Cross-Site Scripting",
+            "name": "WordPress Awin Data Feed <=1.6 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2022,xss,awin,wpscan,wp-plugin,wp,wordpress,authenticated",
             "path": "cves/2022/CVE-2022-1937.yaml"
@@ -13788,7 +13924,7 @@
         {
             "author": "Akincibor",
             "id": "CVE-2022-1724",
-            "name": "Simple Membership < 4.1.1 - Cross-Site Scripting",
+            "name": "WordPress Simple Membership <4.1.1 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "xss,wp,wordpress,wpscan,cve,cve2022,wp-plugin",
             "path": "cves/2022/CVE-2022-1724.yaml"
@@ -13804,7 +13940,7 @@
         {
             "author": "akincibor",
             "id": "CVE-2022-2383",
-            "name": "Feed Them Social < 3.0.1 - Cross-Site Scripting",
+            "name": "WordPress Feed Them Social <3.0.1 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "wp,wordpress,wp-plugin,wpscan,cve,cve2022,xss",
             "path": "cves/2022/CVE-2022-2383.yaml"
@@ -13816,6 +13952,14 @@
             "severity": "high",
             "tags": "cve,cve2022,lfi,gitblit",
             "path": "cves/2022/CVE-2022-31268.yaml"
+        },
+        {
+            "author": "tess",
+            "id": "CVE-2022-2544",
+            "name": "Ninja Job Board < 1.3.3 - Resume Disclosure via Directory Listing",
+            "severity": "high",
+            "tags": "cve,cve2022,wordpress,wp-plugin,wp,ninja,exposure",
+            "path": "cves/2022/CVE-2022-2544.yaml"
         },
         {
             "author": "pdteam",
@@ -13836,9 +13980,9 @@
         {
             "author": "edoardottt",
             "id": "CVE-2022-29548",
-            "name": "WSO2 Management Console - Cross-Site Scripting",
+            "name": "WSO2 - Cross-Site Scripting",
             "severity": "medium",
-            "tags": "cve,cve2022,wso2,xss",
+            "tags": "cve,cve2022,wso2,xss,packetstorm",
             "path": "cves/2022/CVE-2022-29548.yaml"
         },
         {
@@ -13884,7 +14028,7 @@
         {
             "author": "0x240x23elu",
             "id": "CVE-2022-35416",
-            "name": "H3C SSL VPN through 2022-07-10 - Cookie Based Cross-Site Scripting",
+            "name": "H3C SSL VPN <=2022-07-10 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2022,xss,vpn,h3c",
             "path": "cves/2022/CVE-2022-35416.yaml"
@@ -13900,7 +14044,7 @@
         {
             "author": "TenBird",
             "id": "CVE-2022-29005",
-            "name": "Online Birth Certificate System V1.2 - Stored Cross-Site scripting",
+            "name": "Online Birth Certificate System 1.2 - Stored Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2022,xss,obcs,authenticated",
             "path": "cves/2022/CVE-2022-29005.yaml"
@@ -13908,7 +14052,7 @@
         {
             "author": "arafatansari",
             "id": "CVE-2022-29349",
-            "name": "kkFileView v4.0.0 - Cross-Site Scripting",
+            "name": "kkFileView 4.0.0 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2022,kkFileView,xss",
             "path": "cves/2022/CVE-2022-29349.yaml"
@@ -13924,7 +14068,7 @@
         {
             "author": "veshraj",
             "id": "CVE-2022-1597",
-            "name": "WPQA < 5.4 - Cross-Site Scripting",
+            "name": "WordPress WPQA <5.4 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "wpscan,xss,wordpress,wp-plugin,wp,cve,cve2022,wpqa",
             "path": "cves/2022/CVE-2022-1597.yaml"
@@ -13944,6 +14088,14 @@
             "severity": "medium",
             "tags": "cve2022,emerge,nortek,xss,packetstorm,cve",
             "path": "cves/2022/CVE-2022-31798.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "CVE-2022-29775",
+            "name": "iSpyConnect iSpy v7.2.2.0 - Improper Authentication",
+            "severity": "critical",
+            "tags": "cve,cve2022,ispy,auth-bypass",
+            "path": "cves/2022/CVE-2022-29775.yaml"
         },
         {
             "author": "cckuakilong",
@@ -13986,6 +14138,14 @@
             "path": "cves/2022/CVE-2022-1020.yaml"
         },
         {
+            "author": "arafatansari",
+            "id": "CVE-2022-38637",
+            "name": "Hospital Management System v1.0 - SQL Injection",
+            "severity": "critical",
+            "tags": "cve,cve2022,hms,cms,sqli,auth-bypass",
+            "path": "cves/2022/CVE-2022-38637.yaml"
+        },
+        {
             "author": "random-robbie",
             "id": "CVE-2022-0422",
             "name": "WordPress White Label CMS <2.2.9 - Cross-Site Scripting",
@@ -14004,7 +14164,7 @@
         {
             "author": "arafatansari",
             "id": "CVE-2022-37153",
-            "name": "Artica Proxy - Cross-Site Scripting",
+            "name": "Artica Proxy 4.30.000000 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2022,xss,artica",
             "path": "cves/2022/CVE-2022-37153.yaml"
@@ -14016,6 +14176,14 @@
             "severity": "high",
             "tags": "cve,cve2022,carrental,cms,sqli,authenticated",
             "path": "cves/2022/CVE-2022-32024.yaml"
+        },
+        {
+            "author": "tess",
+            "id": "CVE-2022-0678",
+            "name": "Microweber < 1.2.11- Cross-Site Scripting",
+            "severity": "medium",
+            "tags": "huntr,cve,cve2022,xss,microweber",
+            "path": "cves/2022/CVE-2022-0678.yaml"
         },
         {
             "author": "arafatansari",
@@ -14036,7 +14204,7 @@
         {
             "author": "amit-jd",
             "id": "CVE-2022-0928",
-            "name": "Microweber - Cross-Site Scripting",
+            "name": "Microweber <1.2.12 - Stored Cross-Site Scripting",
             "severity": "medium",
             "tags": "authenticated,huntr,cve,cve2022,xss,microweber,cms",
             "path": "cves/2022/CVE-2022-0928.yaml"
@@ -14044,7 +14212,7 @@
         {
             "author": "For3stCo1d",
             "id": "CVE-2022-30489",
-            "name": "Wavlink Wn535g3 - POST Cross-Site Scripting",
+            "name": "Wavlink WN-535G3 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "xss,cve2022,wavlink,cve,router,iot",
             "path": "cves/2022/CVE-2022-30489.yaml"
@@ -14052,7 +14220,7 @@
         {
             "author": "3th1c_yuk1",
             "id": "CVE-2022-30776",
-            "name": "Atmail - Cross-Site Scripting",
+            "name": "Atmail 6.5.0 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2022,atmail,xss",
             "path": "cves/2022/CVE-2022-30776.yaml"
@@ -14080,6 +14248,14 @@
             "severity": "critical",
             "tags": "vulhub,cve,cve2022,springcloud,rce,kev",
             "path": "cves/2022/CVE-2022-22963.yaml"
+        },
+        {
+            "author": "For3stCo1d",
+            "id": "CVE-2022-35413",
+            "name": "Wapples Web Application Firewall - Hardcoded credentials",
+            "severity": "critical",
+            "tags": "cve,cve2022,wapples,firewall,default-login",
+            "path": "cves/2022/CVE-2022-35413.yaml"
         },
         {
             "author": "amit-jd",
@@ -14148,7 +14324,7 @@
         {
             "author": "dbrwsky",
             "id": "CVE-2022-2290",
-            "name": "Trilium - Cross-Site Scripting",
+            "name": "Trilium <0.52.4 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2022,xss,trilium,huntr",
             "path": "cves/2022/CVE-2022-2290.yaml"
@@ -14204,7 +14380,7 @@
         {
             "author": "arafatansari",
             "id": "CVE-2022-35151",
-            "name": "kkFileView v4.1.0 - Cross-Site Scripting",
+            "name": "kkFileView 4.1.0 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2022,xss,kkfileview",
             "path": "cves/2022/CVE-2022-35151.yaml"
@@ -14220,7 +14396,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2022-1439",
-            "name": "Microweber Cross-Site Scripting",
+            "name": "Microweber <1.2.15 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2022,microweber,xss,huntr",
             "path": "cves/2022/CVE-2022-1439.yaml"
@@ -14236,7 +14412,7 @@
         {
             "author": "TenBird",
             "id": "CVE-2022-29004",
-            "name": "Diary Management System v1.0 - Cross-Site scripting",
+            "name": "Diary Management System 1.0 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2022,xss,authenticated,edms",
             "path": "cves/2022/CVE-2022-29004.yaml"
@@ -14284,7 +14460,7 @@
         {
             "author": "arafatansari",
             "id": "CVE-2022-33119",
-            "name": "NVRsolo v03.06.02 - Cross-Site Scripting",
+            "name": "NUUO NVRsolo Video Recorder 03.06.02 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2022,nvrsolo,xss",
             "path": "cves/2022/CVE-2022-33119.yaml"
@@ -14338,6 +14514,14 @@
             "path": "cves/2022/CVE-2022-0543.yaml"
         },
         {
+            "author": "edoardottt",
+            "id": "CVE-2022-34121",
+            "name": "CuppaCMS v1.0 - Local File Inclusion",
+            "severity": "high",
+            "tags": "cve,cve2022,lfi,cuppa,cms",
+            "path": "cves/2022/CVE-2022-34121.yaml"
+        },
+        {
             "author": "gy741",
             "id": "CVE-2022-24260",
             "name": "VoipMonitor - Pre-Auth SQL Injection",
@@ -14362,9 +14546,9 @@
             "path": "cves/2022/CVE-2022-24124.yaml"
         },
         {
-            "author": "true13",
+            "author": "viniciuspereiras,true13",
             "id": "CVE-2022-35405",
-            "name": "Zoho ManageEngine Password Manager Pro - Unauthenticated Remote Command Execution",
+            "name": "Zoho ManageEngine Password Manager Pro and PAM 360 - Unauthenticated Remote Command Execution",
             "severity": "critical",
             "tags": "cve,cve2022,rce,zoho,passwordmanager,deserialization,unauth,msf",
             "path": "cves/2022/CVE-2022-35405.yaml"
@@ -14372,7 +14556,7 @@
         {
             "author": "3th1c_yuk1",
             "id": "CVE-2022-30777",
-            "name": "Parallels H-Sphere - Cross-Site Scripting",
+            "name": "Parallels H-Sphere 3.6.1713 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2022,parallels,hsphere,xss",
             "path": "cves/2022/CVE-2022-30777.yaml"
@@ -14392,6 +14576,14 @@
             "severity": "medium",
             "tags": "cve,cve2022,avideo,xss,wwbn",
             "path": "cves/2022/CVE-2022-32770.yaml"
+        },
+        {
+            "author": "DhiyaneshDk,tess,sullo",
+            "id": "CVE-2022-36804",
+            "name": "Atlassian Bitbucket Command Injection Vulnerability",
+            "severity": "high",
+            "tags": "cve,cve2022,bitbucket,atlassian",
+            "path": "cves/2022/CVE-2022-36804.yaml"
         },
         {
             "author": "arafatansari",
@@ -14416,6 +14608,14 @@
             "severity": "high",
             "tags": "cve,cve2022,wavlink,exposure",
             "path": "cves/2022/CVE-2022-31845.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "CVE-2022-32094",
+            "name": "Hospital Management System v1.0 - SQL Injection",
+            "severity": "critical",
+            "tags": "cve,cve2022,hms,cms,sqli,auth-bypass",
+            "path": "cves/2022/CVE-2022-32094.yaml"
         },
         {
             "author": "pikpikcu",
@@ -14444,7 +14644,7 @@
         {
             "author": "amit-jd",
             "id": "CVE-2022-0963",
-            "name": "Microweber > 1.2.12 - Cross-Site Scripting",
+            "name": "Microweber <1.2.12 - Stored Cross-Site Scripting",
             "severity": "medium",
             "tags": "xss,microweber,cms,authenticated,huntr,cve,cve2022,intrusive",
             "path": "cves/2022/CVE-2022-0963.yaml"
@@ -14484,10 +14684,18 @@
         {
             "author": "ritikchaddha",
             "id": "CVE-2022-24899",
-            "name": "Contao 4.13.2 - Cross-Site Scripting",
+            "name": "Contao <4.13.3 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2022,contao,xss,huntr",
             "path": "cves/2022/CVE-2022-24899.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "CVE-2022-40734",
+            "name": "UniSharp aka Laravel Filemanager v2.5.1 - Directory Traversal",
+            "severity": "medium",
+            "tags": "cve,cve2022,laravel,unisharp,lfi,traversal",
+            "path": "cves/2022/CVE-2022-40734.yaml"
         },
         {
             "author": "0x_Akoko",
@@ -14524,7 +14732,7 @@
         {
             "author": "aringo",
             "id": "CVE-2022-31474",
-            "name": "BackupBuddy Arbitrary File Read",
+            "name": "BackupBuddy - Local File Inclusion",
             "severity": "high",
             "tags": "cve,cve2022,wordpress,wp-plugin,wp,lfi,backupbuddy",
             "path": "cves/2022/CVE-2022-31474.yaml"
@@ -14532,7 +14740,7 @@
         {
             "author": "Open-Sec",
             "id": "CVE-2022-24681",
-            "name": "ManageEngine ADSelfService - Stored Cross-Site Scripting",
+            "name": "ManageEngine ADSelfService Plus <6121 - Stored Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2022,manageengine,xss,authenticated",
             "path": "cves/2022/CVE-2022-24681.yaml"
@@ -14540,7 +14748,7 @@
         {
             "author": "veshraj",
             "id": "CVE-2022-1221",
-            "name": "Gwyn's Imagemap Selector <= 0.3.3 - Cross-Site Scripting",
+            "name": "WordPress Gwyn's Imagemap Selector <=0.3.3 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve2022,wpscan,xss,wordpress,wp-plugin,wp,cve",
             "path": "cves/2022/CVE-2022-1221.yaml"
@@ -16482,14 +16690,6 @@
             "path": "cves/2020/CVE-2020-9484.yaml"
         },
         {
-            "author": "philippedelteil",
-            "id": "CVE-2020-9490",
-            "name": "Apache HTTP Server 2.4.20-2.4.43 - HTTP/2 Cache-Digest Denial of Service Attack",
-            "severity": "high",
-            "tags": "cve,cve2020,apache",
-            "path": "cves/2020/CVE-2020-9490.yaml"
-        },
-        {
             "author": "pikpikcu",
             "id": "CVE-2020-9483",
             "name": "SkyWalking SQLI",
@@ -17852,7 +18052,7 @@
         {
             "author": "pikpikcu",
             "id": "CVE-2020-13258",
-            "name": "Contentful - Cross-Site Scripting",
+            "name": "Contentful <=2020-05-21 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2020,contentful,xss",
             "path": "cves/2020/CVE-2020-13258.yaml"
@@ -17956,7 +18156,7 @@
         {
             "author": "pikpikcu,3th1c_yuk1",
             "id": "CVE-2020-13483",
-            "name": "Bitrix24 through 20.0.0 allows Cross-Site Scripting",
+            "name": "Bitrix24 <=20.0.0 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2020,xss,bitrix",
             "path": "cves/2020/CVE-2020-13483.yaml"
@@ -18164,7 +18364,7 @@
         {
             "author": "0x_Akoko",
             "id": "CVE-2014-8676",
-            "name": "Simple Online Planning Tool 1.3.2 - Directory Traversal",
+            "name": "Simple Online Planning Tool <1.3.2 - Local File Inclusion",
             "severity": "medium",
             "tags": "packetstorm,edb,seclists,cve,cve2014,soplanning,lfi",
             "path": "cves/2014/CVE-2014-8676.yaml"
@@ -19301,7 +19501,7 @@
             "author": "dhiyaneshDK",
             "id": "CVE-2008-1061",
             "name": "WordPress Sniplets <=1.2.2 - Cross-Site Scripting",
-            "severity": "medium",
+            "severity": "high",
             "tags": "xss,wp-plugin,wp,edb,wpscan,cve,cve2008,wordpress,sniplets",
             "path": "cves/2008/CVE-2008-1061.yaml"
         },
@@ -20876,7 +21076,7 @@
         {
             "author": "dhiyaneshDK",
             "id": "CVE-2021-24276",
-            "name": "Contact Form by Supsystic < 1.7.15 - Cross-Site Scripting",
+            "name": "WordPress Supsystic Contact Form <1.7.15 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "wordpress,cve,cve2021,wp-plugin,wpscan,packetstorm",
             "path": "cves/2021/CVE-2021-24276.yaml"
@@ -21764,7 +21964,7 @@
         {
             "author": "Supras",
             "id": "CVE-2021-24746",
-            "name": "WordPress Sassy Social Share Plugin - Cross-Site Scripting",
+            "name": "WordPress Sassy Social Share Plugin <3.3.40 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2021,wordpress,wp-plugin,xss,wp,wpscan",
             "path": "cves/2021/CVE-2021-24746.yaml"
@@ -21784,6 +21984,14 @@
             "severity": "critical",
             "tags": "cve,cve2021,rce,oast,log4j,injection",
             "path": "cves/2021/CVE-2021-45046.yaml"
+        },
+        {
+            "author": "tess",
+            "id": "CVE-2021-24214",
+            "name": "OpenID Connect Generic Client 3.8.0-3.8.1 - Reflected Cross Site Scripting (XSS) via Login Error",
+            "severity": "medium",
+            "tags": "wpscan,cve,cve2021,wordpress,xss,wp-plugin,wp,openid",
+            "path": "cves/2021/CVE-2021-24214.yaml"
         },
         {
             "author": "dhiyaneshDk",
@@ -22716,7 +22924,7 @@
         {
             "author": "atomiczsec",
             "id": "CVE-2018-16139",
-            "name": "BIBLIOsoft BIBLIOpac 2008 - Cross Site Scripting",
+            "name": "BIBLIOsoft BIBLIOpac 2008 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2018,xss,bibliopac,bibliosoft",
             "path": "cves/2018/CVE-2018-16139.yaml"
@@ -24042,6 +24250,14 @@
             "path": "vulnerabilities/wordpress/aspose-pdf-file-download.yaml"
         },
         {
+            "author": "SecTheBit",
+            "id": "3dprint-arbitrary-file-upload",
+            "name": "3DPrint Lite < 1.9.1.5 - Unauthenticated Arbitrary File Upload",
+            "severity": "high",
+            "tags": "wpscan,edb,wordpress,wp,wp-plugin,fileupload,intrusive,3dprint",
+            "path": "vulnerabilities/wordpress/3dprint-arbitrary-file-upload.yaml"
+        },
+        {
             "author": "r3dg33k",
             "id": "wordpress-rdf-user-enum",
             "name": "Wordpress RDF User Enumeration",
@@ -24732,8 +24948,8 @@
         {
             "author": "ritikchaddha",
             "id": "dedecms-config-xss",
-            "name": "DedeCMS V5.7 config.php Cross-Site Scripting",
-            "severity": "medium",
+            "name": "DedeCMS 5.7 - Cross-Site Scripting",
+            "severity": "high",
             "tags": "dedecms,xss",
             "path": "vulnerabilities/dedecms/dedecms-config-xss.yaml"
         },
@@ -24852,8 +25068,8 @@
         {
             "author": "shifacyclewla,hackergautam,djoevanka",
             "id": "concrete-xss",
-            "name": "Concrete - Unauthenticated Reflected XSS in preview_as_user function",
-            "severity": "medium",
+            "name": "Concrete CMS <8.5.2 - Cross-Site Scripting",
+            "severity": "high",
             "tags": "hackerone,concrete,xss,cms,unauth",
             "path": "vulnerabilities/concrete/concrete-xss.yaml"
         },
@@ -25922,6 +26138,14 @@
             "path": "vulnerabilities/other/kingsoft-v8-file-read.yaml"
         },
         {
+            "author": "For3stCo1d",
+            "id": "wapples-firewall-lfi",
+            "name": "Wapples Web Application Firewall - Arbitrary File Download",
+            "severity": "high",
+            "tags": "wapples,firewall,lfi,authenticated",
+            "path": "vulnerabilities/other/wapples-firewall-lfi.yaml"
+        },
+        {
             "author": "gy741",
             "id": "netis-info-leak",
             "name": "Netis E1+ V1.2.32533 - Unauthenticated WiFi Password Leak",
@@ -25952,6 +26176,14 @@
             "severity": "high",
             "tags": "netgear,auth-bypass,router,iot",
             "path": "vulnerabilities/other/netgear-wac124-router-auth-bypass.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "hospital-management-xss2",
+            "name": "Hospital Management System v1.0 - Cross Site Scripting",
+            "severity": "medium",
+            "tags": "hms,hospital,cms,xss,authenticated",
+            "path": "vulnerabilities/other/hospital-management-xss2.yaml"
         },
         {
             "author": "gy741",
@@ -27178,6 +27410,14 @@
             "path": "vulnerabilities/other/natshell-path-traversal.yaml"
         },
         {
+            "author": "arafatansari",
+            "id": "hospital-management-xss",
+            "name": "Hospital Management System v1.0 - Cross Site Scripting",
+            "severity": "medium",
+            "tags": "hms,hospital,cms,xss,authenticated",
+            "path": "vulnerabilities/other/hospital-management-xss.yaml"
+        },
+        {
             "author": "infosecsanyam",
             "id": "ms-exchange-server-reflected-xss",
             "name": "MS Exchange Server Cross-Site Scripting",
@@ -27842,6 +28082,14 @@
             "path": "exposed-panels/linksys-wifi-login.yaml"
         },
         {
+            "author": "DhiyaneshDK",
+            "id": "darktrace-threat-visualizer",
+            "name": "Darktrace Threat Visualizer",
+            "severity": "info",
+            "tags": "panel,darktrace",
+            "path": "exposed-panels/darktrace-threat-visualizer.yaml"
+        },
+        {
             "author": "pussycat0x",
             "id": "extreme-netconfig-ui",
             "name": "Extreme NetConfig UI",
@@ -27952,6 +28200,14 @@
             "severity": "info",
             "tags": "panel,grafana",
             "path": "exposed-panels/grafana-detect.yaml"
+        },
+        {
+            "author": "DhiyaneshDK",
+            "id": "sentinelone-console",
+            "name": "SentinelOne - Management Console",
+            "severity": "info",
+            "tags": "panel,sentinelone",
+            "path": "exposed-panels/sentinelone-console.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -28568,6 +28824,14 @@
             "severity": "info",
             "tags": "panel,nagios,nagios-xi",
             "path": "exposed-panels/nagios-xi-panel.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "phpldap-admin",
+            "name": "phpLDAPAdmin Login",
+            "severity": "info",
+            "tags": "panel,php,phpldap",
+            "path": "exposed-panels/phpldap-admin.yaml"
         },
         {
             "author": "princechaddha",
@@ -30290,6 +30554,14 @@
             "path": "exposed-panels/tuxedo-connected-controller.yaml"
         },
         {
+            "author": "DhiyaneshDK",
+            "id": "webroot-login",
+            "name": "Webroot - Login",
+            "severity": "info",
+            "tags": "panel,webroot",
+            "path": "exposed-panels/webroot-login.yaml"
+        },
+        {
             "author": "pussycat0x",
             "id": "aerohive-netconfig-ui",
             "name": "Aerohive NetConfig UI",
@@ -30552,6 +30824,14 @@
             "severity": "medium",
             "tags": "grails,panel",
             "path": "exposed-panels/grails-database-admin-console.yaml"
+        },
+        {
+            "author": "DhiyaneshDK",
+            "id": "datadog-login",
+            "name": "Datadog Login Panel",
+            "severity": "info",
+            "tags": "panel,datadog",
+            "path": "exposed-panels/datadog-login.yaml"
         },
         {
             "author": "ritikchaddha",
@@ -31290,6 +31570,14 @@
             "path": "exposed-panels/cas-login.yaml"
         },
         {
+            "author": "tess",
+            "id": "footprints-panel",
+            "name": "footprints panel",
+            "severity": "info",
+            "tags": "tech,panel,footprints",
+            "path": "exposed-panels/footprints-panel.yaml"
+        },
+        {
             "author": "ahmetpergamum",
             "id": "watchguard-panel",
             "name": "Watchguard Panel",
@@ -31954,6 +32242,14 @@
             "path": "exposed-panels/officekeeper-admin-login.yaml"
         },
         {
+            "author": "DhiyaneshDK",
+            "id": "bitdefender-gravityzone",
+            "name": "Bitdefender GravityZone",
+            "severity": "info",
+            "tags": "panel,bitdefender",
+            "path": "exposed-panels/bitdefender-gravityzone.yaml"
+        },
+        {
             "author": "gy741",
             "id": "terramaster-login",
             "name": "TerraMaster Login Panel",
@@ -31968,6 +32264,14 @@
             "severity": "info",
             "tags": "sitefinity,edb,panel",
             "path": "exposed-panels/sitefinity-login.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "hospital-management-panel",
+            "name": "Hospital Management System Panel",
+            "severity": "info",
+            "tags": "panel,hms,cms",
+            "path": "exposed-panels/hospital-management-panel.yaml"
         },
         {
             "author": "joanbono",
@@ -32890,6 +33194,14 @@
             "path": "network/tidb-unauth.yaml"
         },
         {
+            "author": "its0x08",
+            "id": "backdoored-zte",
+            "name": "Backdoored ZTE Routers",
+            "severity": "high",
+            "tags": "network,zte,telnet,backdoor,router",
+            "path": "network/backdoor/backdoored-zte.yaml"
+        },
+        {
             "author": "geeknik",
             "id": "php-scanner",
             "name": "PHP Scanner",
@@ -33364,8 +33676,8 @@
         {
             "author": "geeknik",
             "id": "dom-xss",
-            "name": "DOM XSS Sources & Sinks",
-            "severity": "info",
+            "name": "DOM Invader - Cross-Site Scripting",
+            "severity": "high",
             "tags": "xss,file",
             "path": "file/xss/dom-xss.yaml"
         },
