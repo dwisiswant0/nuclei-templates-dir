@@ -1,5 +1,5 @@
 {
-    "version": "v9.2.0",
+    "version": "v9.2.1",
     "data": [
         {
             "author": "dhiyaneshDK",
@@ -581,7 +581,7 @@
             "author": "joshlarsen",
             "id": "xss-deprecated-header-detect",
             "name": "XSS-Protection Header - Cross-Site Scripting",
-            "severity": "high",
+            "severity": "info",
             "tags": "xss,misconfig,generic",
             "path": "misconfiguration/xss-deprecated-header.yaml"
         },
@@ -13645,7 +13645,7 @@
             "author": "For3stCo1d",
             "id": "CVE-2022-39960",
             "name": "Atlassian Jira addon Netic Group Export < 1.0.3 - Unauthenticated Access",
-            "severity": "high",
+            "severity": "medium",
             "tags": "cve,cve2022,atlassian,jira,netic,unauth",
             "path": "cves/2022/CVE-2022-39960.yaml"
         },
@@ -13958,7 +13958,7 @@
             "id": "CVE-2022-2544",
             "name": "Ninja Job Board < 1.3.3 - Resume Disclosure via Directory Listing",
             "severity": "high",
-            "tags": "cve,cve2022,wordpress,wp-plugin,wp,ninja,exposure",
+            "tags": "ninja,exposure,wpscan,cve,cve2022,wordpress,wp-plugin,wp",
             "path": "cves/2022/CVE-2022-2544.yaml"
         },
         {
@@ -33198,7 +33198,7 @@
             "id": "backdoored-zte",
             "name": "Backdoored ZTE Routers",
             "severity": "high",
-            "tags": "network,zte,telnet,backdoor,router",
+            "tags": "edb,network,zte,telnet,backdoor,router",
             "path": "network/backdoor/backdoored-zte.yaml"
         },
         {
