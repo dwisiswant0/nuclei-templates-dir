@@ -1,5 +1,5 @@
 {
-    "version": "v9.2.2",
+    "version": "v9.2.3",
     "data": [
         {
             "author": "sheikhrishad",
@@ -224,6 +224,14 @@
             "severity": "medium",
             "tags": "config,exposure,devops",
             "path": "exposures/configs/appveyor-configuration-file.yaml"
+        },
+        {
+            "author": "geeknik,DhiyaneshDK",
+            "id": "s3cfg-config",
+            "name": "S3CFG Configuration - File Exposure",
+            "severity": "unknown",
+            "tags": "amazon,s3,exposure,config",
+            "path": "exposures/configs/s3cfg-config.yaml"
         },
         {
             "author": "DhiyaneshDK",
@@ -1042,7 +1050,7 @@
             "path": "exposures/logs/clockwork-php-page.yaml"
         },
         {
-            "author": "sheikhrishad",
+            "author": "sheikhrishad,DhiyaneshDk",
             "id": "npm-log-file",
             "name": "Publicly accessible NPM Log file",
             "severity": "low",
@@ -1874,6 +1882,14 @@
             "path": "exposures/files/cold-fusion-cfcache-map.yaml"
         },
         {
+            "author": "DhiyaneshDK",
+            "id": "nuget-package-config",
+            "name": "NuGet Package.config File Disclosure",
+            "severity": "info",
+            "tags": "exposure,sass,devops,cicd,nuget,files",
+            "path": "exposures/files/nuget-package-config.yaml"
+        },
+        {
             "author": "Borna Nematzadeh,nadino",
             "id": "insecure-crossdomain",
             "name": "Insecure cross-domain.xml file",
@@ -1976,6 +1992,14 @@
             "severity": "medium",
             "tags": "config,exposure,azure,microsoft,cloud,devops",
             "path": "exposures/files/azure-pipelines-exposed.yaml"
+        },
+        {
+            "author": "DhiyaneshDK",
+            "id": "sass-lint",
+            "name": "Sass Lint File Exposure",
+            "severity": "info",
+            "tags": "exposure,sass,devops,cicd,files",
+            "path": "exposures/files/sass-lint.yaml"
         },
         {
             "author": "hahwul",
@@ -2152,6 +2176,14 @@
             "severity": "medium",
             "tags": "exposure,sendgrid,key,api",
             "path": "exposures/files/sendgrid-env.yaml"
+        },
+        {
+            "author": "tess",
+            "id": "wordpress-readme-file",
+            "name": "WordPress Readme File",
+            "severity": "info",
+            "tags": "exposure,wordpress,wp,readme,files",
+            "path": "exposures/files/wordpress-readme-file.yaml"
         },
         {
             "author": "dhiyaneshDk",
@@ -4482,6 +4514,14 @@
             "path": "cves/2021/CVE-2021-28149.yaml"
         },
         {
+            "author": "theamanrawat",
+            "id": "CVE-2021-24227",
+            "name": "Patreon WordPress < 1.7.0 - Unauthenticated Local File Disclosure",
+            "severity": "high",
+            "tags": "wordpress,patreon-connect,unauth,cve2021,lfi,patreon,wp,wpscan,cve",
+            "path": "cves/2021/CVE-2021-24227.yaml"
+        },
+        {
             "author": "z3bd",
             "id": "CVE-2021-28073",
             "name": "Ntopng Authentication Bypass",
@@ -4592,6 +4632,14 @@
             "severity": "critical",
             "tags": "bigip,cve,cve2021,rce,mirai,kev",
             "path": "cves/2021/CVE-2021-22986.yaml"
+        },
+        {
+            "author": "tess,sullo",
+            "id": "CVE-2021-22911",
+            "name": "RocketChat - NoSQL injection",
+            "severity": "critical",
+            "tags": "rocketchat,nosqli,packetstorm,vulhub,hackerone,cve,cve2021",
+            "path": "cves/2021/CVE-2021-22911.yaml"
         },
         {
             "author": "princechaddha",
@@ -5584,6 +5632,14 @@
             "severity": "high",
             "tags": "authenticated,wpscan,cve,cve2021,sqli,wp,wordpress,wp-plugin",
             "path": "cves/2021/CVE-2021-24750.yaml"
+        },
+        {
+            "author": "theamanrawat",
+            "id": "CVE-2021-24150",
+            "name": "Like Button Rating < 2.6.32 - Unauthenticated Full-Read SSRF",
+            "severity": "high",
+            "tags": "cve,cve2021,wordpress,wp-plugin,wp,ssrf,wpscan,unauth,likebtn-like-button",
+            "path": "cves/2021/CVE-2021-24150.yaml"
         },
         {
             "author": "arcc,intx0x80,dwisiswant0,r3dg33k",
@@ -6760,6 +6816,14 @@
             "severity": "high",
             "tags": "rce,php,packetstorm,cve,cve2020,phpfusion",
             "path": "cves/2020/CVE-2020-24949.yaml"
+        },
+        {
+            "author": "tess",
+            "id": "CVE-2020-11450",
+            "name": "Microstrategy Web 10.4 exposes the JVM configuration",
+            "severity": "high",
+            "tags": "microstrategy,exposure,jvm,config,packetstorm,cve,cve2020",
+            "path": "cves/2020/CVE-2020-11450.yaml"
         },
         {
             "author": "pikpikcu",
@@ -11018,6 +11082,14 @@
             "path": "cves/2022/CVE-2022-31299.yaml"
         },
         {
+            "author": "tess",
+            "id": "CVE-2022-30513",
+            "name": "School Dormitory Management - Authenticated XSS",
+            "severity": "medium",
+            "tags": "cve,cve2022,xss,authenticated",
+            "path": "cves/2022/CVE-2022-30513.yaml"
+        },
+        {
             "author": "pdteam",
             "id": "CVE-2022-24856",
             "name": "Flyte Console <0.52.0 - Server-Side Request Forgery",
@@ -11048,6 +11120,14 @@
             "severity": "high",
             "tags": "cve,cve2022,wavlink,exposure",
             "path": "cves/2022/CVE-2022-31845.yaml"
+        },
+        {
+            "author": "theamanrawat",
+            "id": "CVE-2022-0781",
+            "name": "Nirweb support < 2.8.2 - Unauthenticated SQLi",
+            "severity": "critical",
+            "tags": "cve,cve2022,wordpress,wp-plugin,wp,sqli,wpscan,nirweb-support,unauth",
+            "path": "cves/2022/CVE-2022-0781.yaml"
         },
         {
             "author": "edoardottt",
@@ -11306,6 +11386,14 @@
             "path": "cves/2022/CVE-2022-1904.yaml"
         },
         {
+            "author": "For3stCo1d",
+            "id": "CVE-2022-35914",
+            "name": "GLPI - Remote Code Execution",
+            "severity": "critical",
+            "tags": "cve,cve2022,glpi,rce",
+            "path": "cves/2022/CVE-2022-35914.yaml"
+        },
+        {
             "author": "badboycxcc",
             "id": "CVE-2022-29303",
             "name": "SolarView Compact 6.00 - OS Command Injection",
@@ -11416,6 +11504,14 @@
             "severity": "high",
             "tags": "wp,wp-plugin,sitemap,wpscan,cve,cve2022,wordpress",
             "path": "cves/2022/CVE-2022-0952.yaml"
+        },
+        {
+            "author": "edoardottt",
+            "id": "CVE-2022-1768",
+            "name": "RSVPMaker WordPress plugin <= 9.3.2 - SQL Injection",
+            "severity": "high",
+            "tags": "cve,cve2022,wordpress,wp-plugin,wp,sqli,rsvpmaker",
+            "path": "cves/2022/CVE-2022-1768.yaml"
         },
         {
             "author": "c-sh0",
@@ -11618,6 +11714,14 @@
             "path": "cves/2022/CVE-2022-32195.yaml"
         },
         {
+            "author": "Akincibor",
+            "id": "CVE-2022-25356",
+            "name": "Alt-N MDaemon Security Gateway - XML Injection",
+            "severity": "medium",
+            "tags": "cve,cve2022,altn,gateway,xml,injection",
+            "path": "cves/2022/CVE-2022-25356.yaml"
+        },
+        {
             "author": "ritikchaddha",
             "id": "CVE-2022-34048",
             "name": "Wavlink WN-533A8 - Cross-Site Scripting",
@@ -11682,14 +11786,6 @@
             "path": "cves/2022/CVE-2022-34590.yaml"
         },
         {
-            "author": "tess,sullo",
-            "id": "CVE-2021-22911",
-            "name": "RocketChat - NoSQL injection",
-            "severity": "critical",
-            "tags": "rocketchat,nosqli,packetstorm,vulhub,hackerone,cve,cve2021",
-            "path": "cves/2022/CVE-2021-22911.yaml"
-        },
-        {
             "author": "pikpikcu",
             "id": "CVE-2022-37299",
             "name": "Shirne CMS 1.2.0. - Path Traversal",
@@ -11752,6 +11848,14 @@
             "severity": "medium",
             "tags": "cve,cve2022,xss,oss,pkp-lib,edb",
             "path": "cves/2022/CVE-2022-24181.yaml"
+        },
+        {
+            "author": "edoardottt",
+            "id": "CVE-2022-0412",
+            "name": "TI WooCommerce Wishlist WP plugin < 1.40.1 - SQL Injection",
+            "severity": "critical",
+            "tags": "sqli,ti-woocommerce-wishlist,wpscan,cve,cve2022,woocommerce,wordpress,wp-plugin,wp",
+            "path": "cves/2022/CVE-2022-0412.yaml"
         },
         {
             "author": "dwisiswant0,Ph33r",
@@ -11986,6 +12090,14 @@
             "path": "cves/2022/CVE-2022-24129.yaml"
         },
         {
+            "author": "tess",
+            "id": "CVE-2022-30512",
+            "name": "School Dormitory Management System 1.0 - SQL Injection",
+            "severity": "critical",
+            "tags": "cve,cve2022,sqli",
+            "path": "cves/2022/CVE-2022-30512.yaml"
+        },
+        {
             "author": "arafatansari",
             "id": "CVE-2022-23348",
             "name": "BigAnt Server v5.6.06 - Improper Access control",
@@ -12000,6 +12112,14 @@
             "severity": "high",
             "tags": "cve,cve2022,dvdFab,lfi,lfr,tenable",
             "path": "cves/2022/CVE-2022-25216.yaml"
+        },
+        {
+            "author": "Veshraj",
+            "id": "CVE-2022-0679",
+            "name": "Narnoo Distributor <= 2.5.1 - Unauthenticated LFI to Arbitrary File Read / RCE",
+            "severity": "critical",
+            "tags": "narnoo-distributor,cve,cve2022,wordpress,wp-plugin,wpscan,wp,rce,unauth,lfi",
+            "path": "cves/2022/CVE-2022-0679.yaml"
         },
         {
             "author": "edoardottt",
@@ -12088,6 +12208,14 @@
             "severity": "medium",
             "tags": "cve,cve2022,xss,wp,wordpress,wp-plugin,wpscan",
             "path": "cves/2022/CVE-2022-0346.yaml"
+        },
+        {
+            "author": "For3stCo1d",
+            "id": "CVE-2022-38817",
+            "name": "Dapr Dashboard - Unauthorized Access",
+            "severity": "high",
+            "tags": "cve,cve2022,dapr,dashboard,unauth",
+            "path": "cves/2022/CVE-2022-38817.yaml"
         },
         {
             "author": "For3stCo1d",
@@ -12184,6 +12312,14 @@
             "severity": "critical",
             "tags": "cve2022,sqli,auth-bypass,edb,cve",
             "path": "cves/2022/CVE-2022-29009.yaml"
+        },
+        {
+            "author": "tess",
+            "id": "CVE-2022-30514",
+            "name": "School Dormitory Management -  Authenticated XSS via \"s=\" parameter",
+            "severity": "medium",
+            "tags": "cve,cve2022,xss,authenticated",
+            "path": "cves/2022/CVE-2022-30514.yaml"
         },
         {
             "author": "h1ei1,prajiteshsingh",
@@ -12474,6 +12610,14 @@
             "path": "cves/2022/CVE-2022-1391.yaml"
         },
         {
+            "author": "dwisiswant0,theamanrawat",
+            "id": "CVE-2022-0441",
+            "name": "MasterStudy LMS plugin < 2.7.6 - Unauthenticated Admin Account Creation",
+            "severity": "critical",
+            "tags": "cve,cve2022,wordpress,wp-plugin,wpscan,wp,unauth",
+            "path": "cves/2022/CVE-2022-0441.yaml"
+        },
+        {
             "author": "elitebaz",
             "id": "CVE-2022-29383",
             "name": "NETGEAR ProSafe SSL VPN firmware - SQL Injection",
@@ -12584,6 +12728,14 @@
             "severity": "high",
             "tags": "cve2022,emerge,exposure,packetstorm,cve",
             "path": "cves/2022/CVE-2022-31269.yaml"
+        },
+        {
+            "author": "edoardottt",
+            "id": "CVE-2022-2467",
+            "name": "SourceCodester Garage Management System 1.0 - SQL Injection",
+            "severity": "critical",
+            "tags": "cve,cve2022,sourcecodester,garagemanagementsystem,sqli",
+            "path": "cves/2022/CVE-2022-2467.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -14938,6 +15090,14 @@
             "path": "technologies/default-openresty.yaml"
         },
         {
+            "author": "daffainfo",
+            "id": "hugo-detect",
+            "name": "Hugo Detect",
+            "severity": "info",
+            "tags": "tech,hugo",
+            "path": "technologies/hugo-detect.yaml"
+        },
+        {
             "author": "ricardomaia",
             "id": "glpi-project-detect",
             "name": "GLPI Detect",
@@ -15258,6 +15418,14 @@
             "path": "technologies/default-lucee-page.yaml"
         },
         {
+            "author": "pikpikcu",
+            "id": "apple-httpserver",
+            "name": "Apple HttpServer Detect",
+            "severity": "info",
+            "tags": "tech,apple,httpserver",
+            "path": "technologies/apple-httpserver.yaml"
+        },
+        {
             "author": "uomogrande",
             "id": "cloudfoundry-detect",
             "name": "Cloudfoundry Detect",
@@ -15280,6 +15448,14 @@
             "severity": "info",
             "tags": "tech,impresscms",
             "path": "technologies/impresscms-detect.yaml"
+        },
+        {
+            "author": "canberbamber",
+            "id": "glpi-status-page",
+            "name": "GLPI Status Page - Detect",
+            "severity": "info",
+            "tags": "tech,status,glpi",
+            "path": "technologies/glpi-status-page.yaml"
         },
         {
             "author": "dr0pd34d",
@@ -15594,7 +15770,7 @@
             "path": "technologies/dedecms-detect.yaml"
         },
         {
-            "author": "cyllective",
+            "author": "cyllective,pascalheidmann",
             "id": "shopware-detect",
             "name": "Shopware CMS detect",
             "severity": "info",
@@ -15728,6 +15904,14 @@
             "severity": "info",
             "tags": "panel,geowebserver",
             "path": "technologies/geo-webserver.yaml"
+        },
+        {
+            "author": "pikpikcu",
+            "id": "smtp2go-detect",
+            "name": "SMTP2GO Detect",
+            "severity": "info",
+            "tags": "tech,smtp2go",
+            "path": "technologies/smtp2go-detect.yaml"
         },
         {
             "author": "princechaddha",
@@ -16058,6 +16242,14 @@
             "path": "technologies/drupal-detect.yaml"
         },
         {
+            "author": "pikpikcu",
+            "id": "wms-server-detect",
+            "name": "Wms-Server detect",
+            "severity": "info",
+            "tags": "tech,wms,httpserver",
+            "path": "technologies/wms-server-detect.yaml"
+        },
+        {
             "author": "philippedelteil,retr0",
             "id": "redcap-detector",
             "name": "REDCap detector",
@@ -16346,7 +16538,7 @@
             "path": "technologies/samsung-smarttv-debug.yaml"
         },
         {
-            "author": "pikpikcu",
+            "author": "pikpikcu,daffainfo",
             "id": "harbor-detect",
             "name": "Harbor Detect",
             "severity": "info",
@@ -18306,6 +18498,14 @@
             "path": "exposed-panels/lenovo-thinkserver-panel.yaml"
         },
         {
+            "author": "pikpikcu",
+            "id": "axel-webserver",
+            "name": "Axel WebServer Panel",
+            "severity": "info",
+            "tags": "panel,axel,webserver",
+            "path": "exposed-panels/axel-webserver.yaml"
+        },
+        {
             "author": "c-sh0",
             "id": "hashicorp-consul-agent",
             "name": "Hashicorp Consul Agent Detection",
@@ -18344,6 +18544,22 @@
             "severity": "info",
             "tags": "panel,versa,sdwan",
             "path": "exposed-panels/versa-sdwan.yaml"
+        },
+        {
+            "author": "daffainfo",
+            "id": "harbor-panel",
+            "name": "Harbor Login Panel",
+            "severity": "info",
+            "tags": "panel,harbor",
+            "path": "exposed-panels/harbor-panel.yaml"
+        },
+        {
+            "author": "robotshell",
+            "id": "davantis-panel",
+            "name": "Davantis Video Analytics - Login Panel",
+            "severity": "info",
+            "tags": "panel,davantis",
+            "path": "exposed-panels/davantis-panel.yaml"
         },
         {
             "author": "praetorian-thendrickson",
@@ -18938,6 +19154,14 @@
             "path": "exposed-panels/kettle-panel.yaml"
         },
         {
+            "author": "Aayush Vishnoi",
+            "id": "zblog-admin-panel",
+            "name": "Z-BlogPHP Admin Panel Exposed",
+            "severity": "info",
+            "tags": "zblog,panel",
+            "path": "exposed-panels/zblog-exposed-admin-panel.yaml"
+        },
+        {
             "author": "schniggie,StreetOfHackerR007",
             "id": "traefik-dashboard-detect",
             "name": "Traefik Dashboard",
@@ -19355,6 +19579,14 @@
         },
         {
             "author": "ritikchaddha",
+            "id": "php-mailer",
+            "name": "PHP Mailer Detect",
+            "severity": "unknown",
+            "tags": "panel,php,mailer",
+            "path": "exposed-panels/php-mailer.yaml"
+        },
+        {
+            "author": "ritikchaddha",
             "id": "ilch-admin-panel",
             "name": "Ilch CMS Admin Panel",
             "severity": "info",
@@ -19506,6 +19738,14 @@
             "path": "exposed-panels/mini-start-page.yaml"
         },
         {
+            "author": "tess",
+            "id": "qualtrics-login",
+            "name": "Qualtrics Login Panel",
+            "severity": "info",
+            "tags": "panel,qualtrics",
+            "path": "exposed-panels/qualtrics-login.yaml"
+        },
+        {
             "author": "pdteam",
             "id": "metersphere-login",
             "name": "Metersphere Login",
@@ -19528,6 +19768,14 @@
             "severity": "info",
             "tags": "panel,rancher,kubernetes,devops,cloud,login",
             "path": "exposed-panels/rancher-panel.yaml"
+        },
+        {
+            "author": "robotshell",
+            "id": "avigilon-panel",
+            "name": "Avigilon - Login Panel",
+            "severity": "info",
+            "tags": "panel,avigilon",
+            "path": "exposed-panels/avigilon-panel.yaml"
         },
         {
             "author": "Nodauf",
@@ -19736,6 +19984,14 @@
             "severity": "info",
             "tags": "panel,yopass",
             "path": "exposed-panels/yopass-panel.yaml"
+        },
+        {
+            "author": "gy741",
+            "id": "arris-modem-detect",
+            "name": "ARRIS Touchstone Telephony Modem - Panel Detect",
+            "severity": "info",
+            "tags": "panel,arris",
+            "path": "exposed-panels/arris-modem-detect.yaml"
         },
         {
             "author": "princechaddha",
@@ -20946,7 +21202,7 @@
             "path": "exposed-panels/dotclear-panel.yaml"
         },
         {
-            "author": "thardt-praetorian",
+            "author": "thardt-praetorian,daffainfo",
             "id": "buildbot-panel",
             "name": "Buildbot Panel Detect",
             "severity": "info",
@@ -21402,6 +21658,14 @@
             "path": "exposed-panels/raspberrymatic-panel.yaml"
         },
         {
+            "author": "pikpikcu",
+            "id": "neobox-panel",
+            "name": "Neobox WebServer - Panel",
+            "severity": "info",
+            "tags": "panel,neobox,webserver",
+            "path": "exposed-panels/neobox-panel.yaml"
+        },
+        {
             "author": "__Fazal",
             "id": "clave-login-panel",
             "name": "Clave login panel",
@@ -21482,7 +21746,7 @@
             "path": "exposed-panels/open-stack-dashboard-login.yaml"
         },
         {
-            "author": "ritikchaddha",
+            "author": "ritikchaddha,daffainfo",
             "id": "looker-panel",
             "name": "Looker Login Panel",
             "severity": "info",
@@ -21706,6 +21970,14 @@
             "path": "exposed-panels/aerohive-netconfig-ui.yaml"
         },
         {
+            "author": "gy741",
+            "id": "sungrow-logger1000-detect",
+            "name": "SUNGROW Logger1000 (Solar Energy Inverter Monitoring Devices) Panel Detect",
+            "severity": "info",
+            "tags": "panel,logger1000,sungrow",
+            "path": "exposed-panels/sungrow-logger1000-detect.yaml"
+        },
+        {
             "author": "pdteam",
             "id": "rocketmq-console-exposure",
             "name": "Apache RocketMQ Console Exposure",
@@ -21768,6 +22040,22 @@
             "severity": "info",
             "tags": "pichome,panel",
             "path": "exposed-panels/pichome-panel.yaml"
+        },
+        {
+            "author": "pikpikcu",
+            "id": "ektron-cms-panel",
+            "name": "Ektron CMS - Panel",
+            "severity": "info",
+            "tags": "panel,ektron,cms",
+            "path": "exposed-panels/extron-cms-panel.yaml"
+        },
+        {
+            "author": "gy741",
+            "id": "room-alert-detect",
+            "name": "AVTECH Room Alert - Panel Detect",
+            "severity": "info",
+            "tags": "panel,room-alert,avtech",
+            "path": "exposed-panels/room-alert-detect.yaml"
         },
         {
             "author": "dhiyaneshDk",
@@ -22650,6 +22938,14 @@
             "path": "exposed-panels/apache/apache-apisix-panel.yaml"
         },
         {
+            "author": "pikpikcu",
+            "id": "apache-mesos-panel",
+            "name": "Apache Mesos - Panel",
+            "severity": "info",
+            "tags": "panel,apache,mesos",
+            "path": "exposed-panels/apache/apache-mesos-panel.yaml"
+        },
+        {
             "author": "princechaddha",
             "id": "zyxel-vsg1432b101-login",
             "name": "Zyxel VSG1432-B101 - Login Detection",
@@ -23091,6 +23387,14 @@
         },
         {
             "author": "pdteam",
+            "id": "mismatched-ssl",
+            "name": "Mismatched SSL Certificate",
+            "severity": "low",
+            "tags": "ssl",
+            "path": "ssl/mismatched-ssl.yaml"
+        },
+        {
+            "author": "pdteam",
             "id": "expired-ssl",
             "name": "Expired SSL Certificate",
             "severity": "low",
@@ -23099,7 +23403,7 @@
         },
         {
             "author": "Lingtren",
-            "id": "detect-ssl-issuer",
+            "id": "ssl-issuer",
             "name": "Detect SSL Certificate Issuer",
             "severity": "info",
             "tags": "ssl",
@@ -24746,6 +25050,14 @@
             "path": "token-spray/api-virustotal.yaml"
         },
         {
+            "author": "0xlittleboy",
+            "id": "api-ticketmaster",
+            "name": "Ticket Master API Test",
+            "severity": "info",
+            "tags": "token-spray,ticketmaster",
+            "path": "token-spray/api-ticketmaster.yaml"
+        },
+        {
             "author": "daffainfo",
             "id": "api-bible",
             "name": "API.Bible API Test",
@@ -24832,6 +25144,14 @@
             "severity": "info",
             "tags": "token-spray,hirak",
             "path": "token-spray/api-hirak-rates.yaml"
+        },
+        {
+            "author": "0xlittleboy",
+            "id": "api-newrelic",
+            "name": "New Relic Rest API",
+            "severity": "info",
+            "tags": "token-spray,newrelic",
+            "path": "token-spray/api-newrelic.yaml"
         },
         {
             "author": "zzeitlin",
@@ -25882,6 +26202,14 @@
             "path": "token-spray/api-front.yaml"
         },
         {
+            "author": "0xlittleboy",
+            "id": "api-opsgenie",
+            "name": "OpsGenie API Test",
+            "severity": "info",
+            "tags": "token-spray,opsgenie",
+            "path": "token-spray/api-opsgenie.yaml"
+        },
+        {
             "author": "daffainfo",
             "id": "api-abstract-iban-validation",
             "name": "Abstract Api IBAN Validation Test",
@@ -25896,6 +26224,14 @@
             "severity": "info",
             "tags": "token-spray,currencyfreaks",
             "path": "token-spray/api-currencyfreaks.yaml"
+        },
+        {
+            "author": "0xlittleboy",
+            "id": "api-userstack",
+            "name": "User Stack API Test",
+            "severity": "info",
+            "tags": "token-spray,userstack",
+            "path": "token-spray/api-userstack.yaml"
         },
         {
             "author": "zzeitlin",
