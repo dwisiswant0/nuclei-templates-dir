@@ -1,5 +1,5 @@
 {
-    "version": "v9.2.5",
+    "version": "v9.2.6",
     "data": [
         {
             "author": "meme-lord",
@@ -275,7 +275,7 @@
         },
         {
             "author": "DhiyaneshDk",
-            "id": "karma-conf-js",
+            "id": "karma-config-js",
             "name": "Karma Configuration File Exposure",
             "severity": "medium",
             "tags": "config,exposure,devops",
@@ -715,7 +715,7 @@
         },
         {
             "author": "geeknik",
-            "id": "htpasswd",
+            "id": "htpasswd-detection",
             "name": "Detect exposed .htpasswd files",
             "severity": "info",
             "tags": "config,exposure",
@@ -1018,6 +1018,14 @@
             "path": "exposures/configs/exposed-svn.yaml"
         },
         {
+            "author": "DhiyaneshDk",
+            "id": "rackup-config-ru",
+            "name": "Rackup config.ru Configuration Exposure",
+            "severity": "info",
+            "tags": "exposure,files,config,rackup",
+            "path": "exposures/configs/rackup-config-ru.yaml"
+        },
+        {
             "author": "j33n1k4",
             "id": "configuration-listing",
             "name": "Sensitive Configuration Files Listing",
@@ -1032,6 +1040,14 @@
             "severity": "info",
             "tags": "amazon,config,exposure",
             "path": "exposures/configs/s3cmd-config.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "rubocop-config",
+            "name": "Rubocop Configuration File Exposure",
+            "severity": "info",
+            "tags": "exposure,files,config,ruby",
+            "path": "exposures/configs/rubocop-config.yaml"
         },
         {
             "author": "gy741",
@@ -2026,14 +2042,6 @@
             "path": "exposures/files/django-secret-key.yaml"
         },
         {
-            "author": "0w4ys",
-            "id": "ds-store-file",
-            "name": "Directory Listing via DS_Store",
-            "severity": "info",
-            "tags": "exposure,files",
-            "path": "exposures/files/ds_store.yaml"
-        },
-        {
             "author": "geeknik",
             "id": "cold-fusion-cfcache-map",
             "name": "Discover Cold Fusion cfcache.map Files",
@@ -2178,6 +2186,14 @@
             "path": "exposures/files/styleci-yml-disclosure.yaml"
         },
         {
+            "author": "DhiyaneshDk",
+            "id": "cargo-toml-file",
+            "name": "Cargo TOML File Disclosure",
+            "severity": "info",
+            "tags": "exposure,files,cargo",
+            "path": "exposures/files/cargo-toml-file.yaml"
+        },
+        {
             "author": "dhiyaneshDk",
             "id": "pyproject-disclosure",
             "name": "Pyproject Disclosure",
@@ -2218,6 +2234,14 @@
             "path": "exposures/files/phpunit.yaml"
         },
         {
+            "author": "DhiyaneshDk",
+            "id": "cargo-lock-package",
+            "name": "Cargo Lock Packages Disclosure",
+            "severity": "info",
+            "tags": "exposure,files,cargo",
+            "path": "exposures/files/cargo-lock-package.yaml"
+        },
+        {
             "author": "DhiyaneshDK",
             "id": "pipfile-lock",
             "name": "Pipfile.lock Disclosure",
@@ -2240,6 +2264,22 @@
             "severity": "low",
             "tags": "exposure,lotus,files",
             "path": "exposures/files/domcfg-page.yaml"
+        },
+        {
+            "author": "tess",
+            "id": "db-xml-file",
+            "name": "db.xml File Exposure",
+            "severity": "medium",
+            "tags": "misconfig,db,files,exposure",
+            "path": "exposures/files/db-xml-file.yaml"
+        },
+        {
+            "author": "0w4ys",
+            "id": "ds-store-file",
+            "name": "Directory Listing via DS_Store",
+            "severity": "info",
+            "tags": "exposure,files",
+            "path": "exposures/files/ds-store-file.yaml"
         },
         {
             "author": "DhiyaneshDK",
@@ -2658,6 +2698,14 @@
             "path": "default-logins/prtg-default-login.yaml"
         },
         {
+            "author": "clem9669",
+            "id": "steve-default-login",
+            "name": "SteVe Default login",
+            "severity": "high",
+            "tags": "panel,default-login,steve",
+            "path": "default-logins/steve-default-login.yaml"
+        },
+        {
             "author": "ritikchaddha",
             "id": "jinher-oa-default-login",
             "name": "Jinher-OA C6 - Default Admin Discovery",
@@ -2672,6 +2720,14 @@
             "severity": "high",
             "tags": "octobercms,default-login,oss",
             "path": "default-logins/octobercms-default-login.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "ruckus-wireless-default-login",
+            "name": "Ruckus Wireless Admin Default Login Credential",
+            "severity": "critical",
+            "tags": "default-login,router,ruckus",
+            "path": "default-logins/ruckus-wireless-default-login.yaml"
         },
         {
             "author": "pdteam",
@@ -2928,6 +2984,14 @@
             "severity": "medium",
             "tags": "kingsoft,default-login",
             "path": "default-logins/others/kingsoft-v8-default-login.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "opencats-default-login",
+            "name": "OpenCATS Default Login",
+            "severity": "high",
+            "tags": "default-login,opencats",
+            "path": "default-logins/others/opencats-default-login.yaml"
         },
         {
             "author": "socketz",
@@ -4526,7 +4590,7 @@
             "id": "http-missing-security-headers",
             "name": "HTTP Missing Security Headers",
             "severity": "info",
-            "tags": "misconfig,generic",
+            "tags": "misconfig,headers,generic",
             "path": "misconfiguration/http-missing-security-headers.yaml"
         },
         {
@@ -4552,6 +4616,14 @@
             "severity": "medium",
             "tags": "edb,packetstorm,zabbix,unauth",
             "path": "misconfiguration/zabbix-dashboards-access.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "limesurvey-installer",
+            "name": "Limesurvey Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,limesurvey,install",
+            "path": "misconfiguration/limesurvey-installer.yaml"
         },
         {
             "author": "pdteam",
@@ -4650,12 +4722,44 @@
             "path": "misconfiguration/roxyfileman-fileupload.yaml"
         },
         {
+            "author": "DhiyaneshDk",
+            "id": "matomo-installer",
+            "name": "Matomo Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,matomo,install",
+            "path": "misconfiguration/matomo-installer.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "mautic-installer",
+            "name": "Mautic Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,mautic,install",
+            "path": "misconfiguration/mautic-installer.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "vtiger-installer",
+            "name": "Vtiger CRM Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,vtiger,install,exposure",
+            "path": "misconfiguration/vtiger-installer.yaml"
+        },
+        {
             "author": "dhiyaneshDk",
             "id": "clockwork-dashboard-exposure",
             "name": "Clockwork Dashboard Exposure",
             "severity": "high",
             "tags": "exposure,unauth",
             "path": "misconfiguration/clockwork-dashboard-exposure.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "joomla-installer",
+            "name": "Joomla! Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,joomla,install",
+            "path": "misconfiguration/joomla-installer.yaml"
         },
         {
             "author": "dhiyaneshDk",
@@ -4720,6 +4824,14 @@
             "severity": "High",
             "tags": "jupyter,misconfig",
             "path": "misconfiguration/jupyter-notebooks-exposed.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "piwik-installer",
+            "name": "Piwik Installer Exposure",
+            "severity": "low",
+            "tags": "misconfig,piwik,install",
+            "path": "misconfiguration/piwik-installer.yaml"
         },
         {
             "author": "dhiyaneshDk",
@@ -4834,6 +4946,22 @@
             "path": "misconfiguration/exposed-service-now.yaml"
         },
         {
+            "author": "DhiyaneshDk",
+            "id": "nodebb-installer",
+            "name": "NodeBB Web Installer",
+            "severity": "high",
+            "tags": "misconfig,nodebb,install,exposure",
+            "path": "misconfiguration/nodebb-installer.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "nopcommerce-installer",
+            "name": "nopCommerce Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,nopcommerce,installer",
+            "path": "misconfiguration/nopcommerce-installer.yaml"
+        },
+        {
             "author": "pdteam",
             "id": "akamai-arl-xss",
             "name": "Open Akamai ARL - Cross-Site Scripting",
@@ -4874,6 +5002,14 @@
             "path": "misconfiguration/aws-xray-application.yaml"
         },
         {
+            "author": "DhiyaneshDk",
+            "id": "magento-installer",
+            "name": "Magento Installation Wizard",
+            "severity": "high",
+            "tags": "misconfig,magento,install,exposure",
+            "path": "misconfiguration/magento-installer.yaml"
+        },
+        {
             "author": "DhiyaneshDK",
             "id": "apache-drill-exposure",
             "name": "Apache Drill Exposure",
@@ -4888,6 +5024,14 @@
             "severity": "high",
             "tags": "misconfig,formalms",
             "path": "misconfiguration/formalms-install.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "typo3-installer",
+            "name": "TYPO3 Installer",
+            "severity": "medium",
+            "tags": "misconfig,typo3,install",
+            "path": "misconfiguration/typo3-installer.yaml"
         },
         {
             "author": "organiccrap,pdteam",
@@ -4914,6 +5058,14 @@
             "path": "misconfiguration/xss-deprecated-header.yaml"
         },
         {
+            "author": "DhiyaneshDk",
+            "id": "dokuwiki-installer",
+            "name": "DokuWiki Install Exposure",
+            "severity": "high",
+            "tags": "misconfig,dokuwiki,install,exposure",
+            "path": "misconfiguration/dokuwiki-installer.yaml"
+        },
+        {
             "author": "0xelkomy",
             "id": "unauthenticated-varnish-cache-purge",
             "name": "Varnish Unauthenticated Cache Purge",
@@ -4928,6 +5080,14 @@
             "severity": "low",
             "tags": "panel",
             "path": "misconfiguration/command-api-explorer.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "gitea-installer",
+            "name": "Gitea Installer Exposure",
+            "severity": "medium",
+            "tags": "misconfig,gitea,install",
+            "path": "misconfiguration/gitea-installer.yaml"
         },
         {
             "author": "qlkwej",
@@ -4962,6 +5122,14 @@
             "path": "misconfiguration/pghero-dashboard-exposure.yaml"
         },
         {
+            "author": "DhiyaneshDk",
+            "id": "suitecrm-installer",
+            "name": "SuiteCRM Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,suitecrm,install",
+            "path": "misconfiguration/suitecrm-installer.yaml"
+        },
+        {
             "author": "pikpikcu",
             "id": "alibaba-mongoshake-unauth",
             "name": "Alibaba Mongoshake Unauth",
@@ -4994,6 +5162,14 @@
             "path": "misconfiguration/locust-exposure.yaml"
         },
         {
+            "author": "tess",
+            "id": "server-monitor-installer",
+            "name": "Server Monitor Installer",
+            "severity": "high",
+            "tags": "misconfig,monitor,exposure,install",
+            "path": "misconfiguration/server-monitor-installer.yaml"
+        },
+        {
             "author": "w4cky_,geeknik,dhiyaneshDK",
             "id": "php-errors",
             "name": "PHP errors",
@@ -5008,6 +5184,14 @@
             "severity": "medium",
             "tags": "config,java,javamelody",
             "path": "misconfiguration/java-melody-exposed.yaml"
+        },
+        {
+            "author": "tess",
+            "id": "prestashop-installer",
+            "name": "Prestashop Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,prestashop,exposure,install",
+            "path": "misconfiguration/prestashop-installer.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -5050,6 +5234,14 @@
             "path": "misconfiguration/ec2-instance-information.yaml"
         },
         {
+            "author": "DhiyaneshDk",
+            "id": "opensis-installer",
+            "name": "openSIS Installation Wizard",
+            "severity": "high",
+            "tags": "misconfig,opensis,install,exposure",
+            "path": "misconfiguration/opensis-installer.yaml"
+        },
+        {
             "author": "koti2",
             "id": "apcu-service",
             "name": "APCu service information leakage",
@@ -5090,12 +5282,28 @@
             "path": "misconfiguration/atlassian-bamboo-build.yaml"
         },
         {
+            "author": "DhiyaneshDk",
+            "id": "owncloud-installer-exposure",
+            "name": "OwnCloud Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,owncloud,exposure,install",
+            "path": "misconfiguration/owncloud-installer-exposure.yaml"
+        },
+        {
             "author": "w0Tx",
             "id": "selenium-exposure",
             "name": "Selenium - Node Exposure",
             "severity": "high",
             "tags": "selenium,misconfiguration,rce,chromium",
             "path": "misconfiguration/selenium-exposure.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "tiny-rss-installer",
+            "name": "Tiny Tiny RSS Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,tiny,install",
+            "path": "misconfiguration/tiny-rss-installer.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -5186,6 +5394,14 @@
             "path": "misconfiguration/jkstatus-manager.yaml"
         },
         {
+            "author": "DhiyaneshDk",
+            "id": "redash-installer",
+            "name": "Redash Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,redash,install",
+            "path": "misconfiguration/redash-installer.yaml"
+        },
+        {
             "author": "aaron_costello (@ConspiracyProof),Ph33rr",
             "id": "salesforce-aura",
             "name": "Salesforce Lightning - API Detection",
@@ -5251,6 +5467,14 @@
         },
         {
             "author": "DhiyaneshDk",
+            "id": "umbraco-installer",
+            "name": "Umbraco Install Exposure",
+            "severity": "high",
+            "tags": "misconfig,umbraco,install,oss",
+            "path": "misconfiguration/umbraco-installer.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
             "id": "codemeter-webadmin",
             "name": "CodeMeter Webadmin Dashboard",
             "severity": "low",
@@ -5264,6 +5488,14 @@
             "severity": "medium",
             "tags": "node,misconfig",
             "path": "misconfiguration/unauthorized-puppet-node-manager-detect.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "phpbb-installer",
+            "name": "phpBB Installation File Exposure",
+            "severity": "high",
+            "tags": "misconfig,phpbb,install,exposure",
+            "path": "misconfiguration/phpbb-installer.yaml"
         },
         {
             "author": "DEENA",
@@ -5284,10 +5516,18 @@
         {
             "author": "DhiyaneshDk",
             "id": "unauthenticated-popup-upload",
-            "name": "Unauthenticated Popup File Uploader",
+            "name": "Unauthenticated Popup File Upload - Detect",
             "severity": "info",
             "tags": "edb,fileupload",
             "path": "misconfiguration/unauthenticated-popup-upload.yaml"
+        },
+        {
+            "author": "tess",
+            "id": "awstats-listing",
+            "name": "AWStats Listing",
+            "severity": "low",
+            "tags": "misconfig,aws,exposure,amazon,awstats,oss",
+            "path": "misconfiguration/awstats-listing.yaml"
         },
         {
             "author": "xElkomy",
@@ -5324,7 +5564,7 @@
         {
             "author": "dhiyaneshDk",
             "id": "cx-cloud-upload-detect",
-            "name": "CX Cloud Unauthenticated Upload Detect",
+            "name": "CX Cloud Unauthenticated Upload - Detect",
             "severity": "info",
             "tags": "fileupload",
             "path": "misconfiguration/cx-cloud-upload-detect.yaml"
@@ -5442,6 +5682,14 @@
             "path": "misconfiguration/unauthenticated-glowroot.yaml"
         },
         {
+            "author": "DhiyaneshDk",
+            "id": "cadvisor-exposure",
+            "name": "cAdvisor Exposure",
+            "severity": "medium",
+            "tags": "exposure,misconfig,dashboard",
+            "path": "misconfiguration/cadvisor-exposure.yaml"
+        },
+        {
             "author": "panch0r3d",
             "id": "artifactory-anonymous-deploy",
             "name": "Artifactory anonymous deploy",
@@ -5488,6 +5736,22 @@
             "severity": "low",
             "tags": "seeyon,unauth,zhiyuan",
             "path": "misconfiguration/zhiyuan-oa-unauthorized.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "express-stack-trace",
+            "name": "Express Stack Trace",
+            "severity": "low",
+            "tags": "misconfig,express",
+            "path": "misconfiguration/express-stack-trace.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "processwire-installer",
+            "name": "ProcessWire 3.x Installer Exposure",
+            "severity": "unknown",
+            "tags": "misconfig,processwire,install,exposure",
+            "path": "misconfiguration/processwire-installer.yaml"
         },
         {
             "author": "dudez",
@@ -5671,7 +5935,7 @@
             "name": "phpmyadmin Data Exposure",
             "severity": "medium",
             "tags": "phpmyadmin,misconfig,edb",
-            "path": "misconfiguration/phpmyadmin/phpmyadmin-sql.php-server.yaml"
+            "path": "misconfiguration/phpmyadmin/phpmyadmin-misconfiguration.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -5680,6 +5944,14 @@
             "severity": "info",
             "tags": "misconfig,nginx,status",
             "path": "misconfiguration/nginx/nginx-status.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "nginx-auto-installer",
+            "name": "NginX Auto Installer Exposure",
+            "severity": "low",
+            "tags": "misconfig,nginx,install,exposure",
+            "path": "misconfiguration/nginx/nginx-auto-installer.yaml"
         },
         {
             "author": "geeknik",
@@ -5864,6 +6136,14 @@
             "severity": "low",
             "tags": "misconfig,springboot,exposure",
             "path": "misconfiguration/springboot/springboot-jolokia.yaml"
+        },
+        {
+            "author": "DhiyaneshDK",
+            "id": "springboot-conditions",
+            "name": "Detect Springboot Conditions Actuator",
+            "severity": "low",
+            "tags": "misconfig,springboot,exposure",
+            "path": "misconfiguration/springboot/springboot-conditions.yaml"
         },
         {
             "author": "that_juan_,dwisiswant0,wdahlenb",
@@ -6112,6 +6392,174 @@
             "severity": "info",
             "tags": "misconfig,jira,confluence,atlassian",
             "path": "misconfiguration/confluence/confluence-oauth-admin.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "contentify-installer",
+            "name": "Contentify Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,contentify,install,exposure",
+            "path": "misconfiguration/installer/contentify-installer.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "smf-installer",
+            "name": "SMF Installer",
+            "severity": "high",
+            "tags": "misconfig,smf,install,exposure",
+            "path": "misconfiguration/installer/smf-installer.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "discourse-installer",
+            "name": "Discourse Installer Exposure",
+            "severity": "unknown",
+            "tags": "misconfig,discourse,install",
+            "path": "misconfiguration/installer/discourse-installer.yaml"
+        },
+        {
+            "author": "tess",
+            "id": "seoking-shopify-app",
+            "name": "SEO King - Shopify App \u2014 Installer",
+            "severity": "info",
+            "tags": "misconfig,shopify,install",
+            "path": "misconfiguration/installer/seoking-shopify-app.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "eshop-installer",
+            "name": "OXID eShop Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,eshop,install,exposure",
+            "path": "misconfiguration/installer/eshop-installer.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "codeigniter-installer",
+            "name": "Codeigniter Application Installer Exposure",
+            "severity": "unknown",
+            "tags": "misconfig,codeigniter,install,exposure",
+            "path": "misconfiguration/installer/codeigniter-installer.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "blesta-installer",
+            "name": "Blesta Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,blesta,install,exposure",
+            "path": "misconfiguration/installer/blesta-installer.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "webuzo-installer",
+            "name": "Webuzo Installer",
+            "severity": "high",
+            "tags": "misconfig,webuzo,install,exposure",
+            "path": "misconfiguration/installer/webuzo-installer.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "facturascripts-installer",
+            "name": "FacturaScripts Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,facturascripts,install,exposure",
+            "path": "misconfiguration/installer/facturascripts-installer.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "bagisto-installer",
+            "name": "Bagisto Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,bagisto,install,exposure",
+            "path": "misconfiguration/installer/bagisto-installer.yaml"
+        },
+        {
+            "author": "tess",
+            "id": "phpwind-installer",
+            "name": "phpwind Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,phpwind,exposure,installer",
+            "path": "misconfiguration/installer/phpwind-installer.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "permissions-installer",
+            "name": "Permissions  Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,permissions,install,exposure",
+            "path": "misconfiguration/installer/permissions-installer.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "geniusocean-installer",
+            "name": "GeniusOcean Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,geniusocean,install,exposure",
+            "path": "misconfiguration/installer/geniusocean-installer.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "pagekit-installer",
+            "name": "Pagekit Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,pagekit,install,exposure",
+            "path": "misconfiguration/installer/pagekit-installer.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "webasyst-installer",
+            "name": "Webasyst Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,webasyst,install,exposure",
+            "path": "misconfiguration/installer/webasyst-installer.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "cloudcenter-installer",
+            "name": "CloudCenter Installer Exposure",
+            "severity": "unknown",
+            "tags": "misconfig,cisco,cloudcenter,install,exposure",
+            "path": "misconfiguration/installer/cloudcenter-Installer.yaml"
+        },
+        {
+            "author": "tess",
+            "id": "binom-installer",
+            "name": "Binom Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,binom,install,exposure",
+            "path": "misconfiguration/installer/binom-installer.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "sumowebtools-installer",
+            "name": "SumoWebTools Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,sumowebtools,install,exposure",
+            "path": "misconfiguration/installer/sumowebtools-installer.yaml"
+        },
+        {
+            "author": "tess",
+            "id": "turbo-website-installer",
+            "name": "Turbo Website Reviewer Installer Panel",
+            "severity": "high",
+            "tags": "turbo,misconfig,exposure,install",
+            "path": "misconfiguration/installer/turbo-website-installer.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "lmszai-installer",
+            "name": "LMSZAI Installer Exposure",
+            "severity": "high",
+            "tags": "misconfig,blesta,install,exposure",
+            "path": "misconfiguration/installer/lmszai-installer.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "lychee-installer",
+            "name": "Lychee Installer",
+            "severity": "high",
+            "tags": "misconfig,lychee,install,exposure",
+            "path": "misconfiguration/installer/lychee-installer.yaml"
         },
         {
             "author": "0w4ys",
@@ -6586,6 +7034,14 @@
             "path": "cves/2022/CVE-2022-30489.yaml"
         },
         {
+            "author": "tehtbl",
+            "id": "CVE-2022-2863",
+            "name": "WordPress WPvivid Backup < 0.9.76 - Local File Inclusion",
+            "severity": "medium",
+            "tags": "wp,wpscan,seclists,packetstorm,authenticated,cve,cve2022,lfi,wordpress,wp-plugin",
+            "path": "cves/2022/CVE-2022-2863.yaml"
+        },
+        {
             "author": "TenBird",
             "id": "CVE-2022-29009",
             "name": "Cyber Cafe Management System 1.0 - SQL Injection",
@@ -6648,6 +7104,14 @@
             "severity": "high",
             "tags": "cve,cve2022,xss,solarview,edb",
             "path": "cves/2022/CVE-2022-29301.yaml"
+        },
+        {
+            "author": "8arthur",
+            "id": "CVE-2022-1007",
+            "name": "Advanced Booking Calendar < 1.7.1 - Cross-Site Scripting",
+            "severity": "medium",
+            "tags": "wp-plugin,advanced-booking-calendar,cve,cve2022,wp,authenticated,wpscan,wordpress,xss",
+            "path": "cves/2022/CVE-2022-1007.yaml"
         },
         {
             "author": "lucasljm2001,ekrause",
@@ -6812,7 +7276,7 @@
         {
             "author": "theamanrawat",
             "id": "CVE-2022-1574",
-            "name": "HTML2WP <= 1.0.0 - Unauthenticated Arbitrary File Upload",
+            "name": "WordPress HTML2WP <=1.0.0 - Arbitrary File Upload",
             "severity": "critical",
             "tags": "wp-plugin,wp,fileupload,unauth,wpscan,cve2022,wordpress,intrusive,cve,html2wp",
             "path": "cves/2022/CVE-2022-1574.yaml"
@@ -6824,6 +7288,14 @@
             "severity": "critical",
             "tags": "cve,cve2022,qnap,lfi,kev",
             "path": "cves/2022/CVE-2022-27593.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "CVE-2022-43017",
+            "name": "OpenCATS v0.9.6 - Cross Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2022,xss,opencats,authenticated",
+            "path": "cves/2022/CVE-2022-43017.yaml"
         },
         {
             "author": "arafatansari",
@@ -7116,9 +7588,9 @@
         {
             "author": "amit-jd",
             "id": "CVE-2022-0928",
-            "name": "Microweber <1.2.12 - Stored Cross-Site Scripting",
+            "name": "Microweber < 1.2.12 - Stored Cross-Site Scripting",
             "severity": "medium",
-            "tags": "authenticated,huntr,cve,cve2022,xss,microweber,cms",
+            "tags": "cve,cve2022,authenticated,huntr,xss,microweber,cms",
             "path": "cves/2022/CVE-2022-0928.yaml"
         },
         {
@@ -7322,6 +7794,14 @@
             "path": "cves/2022/CVE-2022-29006.yaml"
         },
         {
+            "author": "arafatansari",
+            "id": "CVE-2022-43018",
+            "name": "OpenCATS v0.9.6 - Cross Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2022,xss,opencats,authenticated",
+            "path": "cves/2022/CVE-2022-43018.yaml"
+        },
+        {
             "author": "lucasljm2001,ekrause,ritikchaddha",
             "id": "CVE-2022-28080",
             "name": "Royal Event - SQL Injection",
@@ -7400,6 +7880,14 @@
             "severity": "high",
             "tags": "cve,cve2022,wavlink,exposure",
             "path": "cves/2022/CVE-2022-31846.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "CVE-2022-43016",
+            "name": "OpenCATS v0.9.6 - Cross Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2022,xss,opencats,authenticated",
+            "path": "cves/2022/CVE-2022-43016.yaml"
         },
         {
             "author": "Open-Sec",
@@ -7560,6 +8048,14 @@
             "severity": "high",
             "tags": "wp,wordpress,wp-plugin,cve,cve2022,disclosure",
             "path": "cves/2022/CVE-2022-27849.yaml"
+        },
+        {
+            "author": "theamanrawat",
+            "id": "CVE-2022-41840",
+            "name": "Welcart eCommerce <= 2.7.7 - Unauth Directory Traversal",
+            "severity": "high",
+            "tags": "cve,cve2022,wp-plugin,wordpress,wp,lfi,unauth,usc-e-shop",
+            "path": "cves/2022/CVE-2022-41840.yaml"
         },
         {
             "author": "0x_Akoko",
@@ -7768,6 +8264,14 @@
             "severity": "medium",
             "tags": "wpscan,cve2022,wp,xss,wordpress,gallery,unauth,cve,wp-plugin",
             "path": "cves/2022/CVE-2022-1946.yaml"
+        },
+        {
+            "author": "8arthur",
+            "id": "CVE-2022-0147",
+            "name": "Cookie Information < 2.0.8 - Reflected Cross-Site Scripting",
+            "severity": "medium",
+            "tags": "cve2022,wordpress,xss,wp,authenticated,cve,wp-plugin,wp-gdpr-compliance,wpscan",
+            "path": "cves/2022/CVE-2022-0147.yaml"
         },
         {
             "author": "pdteam",
@@ -8000,6 +8504,14 @@
             "severity": "medium",
             "tags": "cve,cve2022,haraj,xss",
             "path": "cves/2022/CVE-2022-31299.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "CVE-2022-43014",
+            "name": "OpenCATS v0.9.6 - Cross Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2022,xss,opencats,authenticated",
+            "path": "cves/2022/CVE-2022-43014.yaml"
         },
         {
             "author": "amit-jd",
@@ -8258,6 +8770,14 @@
             "path": "cves/2022/CVE-2022-29775.yaml"
         },
         {
+            "author": "arafatansari",
+            "id": "CVE-2022-43015",
+            "name": "OpenCATS v0.9.6 - Cross Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2022,xss,opencats,authenticated",
+            "path": "cves/2022/CVE-2022-43015.yaml"
+        },
+        {
             "author": "akincibor,MantisSTS,calumjelrick",
             "id": "CVE-2022-1386",
             "name": "WordPress Fusion Builder < 3.6.2 - Unauthenticated SSRF",
@@ -8330,6 +8850,14 @@
             "path": "cves/2022/CVE-2022-1391.yaml"
         },
         {
+            "author": "arafatansari",
+            "id": "CVE-2022-40879",
+            "name": "kkFileView 4.1.0 - Cross-Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2022,kkFileView,xss",
+            "path": "cves/2022/CVE-2022-40879.yaml"
+        },
+        {
             "author": "daffainfo,Splint3r7",
             "id": "CVE-2022-1390",
             "name": "WordPress Admin Word Count Column 2.2 - Local File Inclusion",
@@ -8344,6 +8872,14 @@
             "severity": "medium",
             "tags": "cve,cve2022,xss,wordpress,wp-plugin,wpscan,fileupload,intrusive,unauth",
             "path": "cves/2022/CVE-2022-0595.yaml"
+        },
+        {
+            "author": "theamanrawat",
+            "id": "CVE-2022-1057",
+            "name": "Pricing Deals for WooCommerce < 2.0.3 - Unauthenticated SQL Injection",
+            "severity": "critical",
+            "tags": "cve,cve2022,sqli,wpscan,wordpress,wp-plugin,wp,pricing-deals-for-woocommerce,unauth",
+            "path": "cves/2022/CVE-2022-1057.yaml"
         },
         {
             "author": "For3stCo1d",
@@ -11580,7 +12116,7 @@
         {
             "author": "gy741",
             "id": "CVE-2021-1499",
-            "name": "Cisco HyperFlex HX Data Platform - File Upload Vulnerability",
+            "name": "Cisco HyperFlex HX Data Platform - Arbitrary File Upload",
             "severity": "medium",
             "tags": "fileupload,intrusive,packetstorm,cve,cve2021,cisco",
             "path": "cves/2021/CVE-2021-1499.yaml"
@@ -13132,9 +13668,9 @@
         {
             "author": "madrobot",
             "id": "CVE-2020-6308",
-            "name": "Unauthenticated Blind SSRF in SAP",
+            "name": "SAP - Unauthenticated Blind SSRF",
             "severity": "medium",
-            "tags": "cve,cve2020,sap,ssrf,oast,blind",
+            "tags": "cve,cve2020,sap,ssrf,oast,unauth",
             "path": "cves/2020/CVE-2020-6308.yaml"
         },
         {
@@ -15612,7 +16148,7 @@
         {
             "author": "madrobot",
             "id": "CVE-2017-10075",
-            "name": "Oracle Content Server Cross-Site Scripting",
+            "name": "Oracle Content Server - Cross-Site Scripting",
             "severity": "high",
             "tags": "cve,cve2017,xss,oracle",
             "path": "cves/2017/CVE-2017-10075.yaml"
@@ -16070,7 +16606,7 @@
             "id": "CVE-2019-19908",
             "name": "phpMyChat-Plus 1.98 - Cross-Site Scripting",
             "severity": "medium",
-            "tags": "cve,cve2019,xss,injection,javascript",
+            "tags": "cve,cve2019,phpMyChat,xss",
             "path": "cves/2019/CVE-2019-19908.yaml"
         },
         {
@@ -16612,7 +17148,7 @@
         {
             "author": "pdteam",
             "id": "CVE-2019-3402",
-            "name": "Jira <8.1.1 - Cross-Site Scripting",
+            "name": "Jira < 8.1.1 - Cross-Site Scripting",
             "severity": "medium",
             "tags": "cve,cve2019,atlassian,jira,xss",
             "path": "cves/2019/CVE-2019-3402.yaml"
@@ -17674,7 +18210,7 @@
             "path": "cves/2018/CVE-2018-2894.yaml"
         },
         {
-            "author": "princechaddha",
+            "author": "princechaddha,thelicato",
             "id": "CVE-2018-17246",
             "name": "Kibana - Local File Inclusion",
             "severity": "critical",
@@ -19930,6 +20466,14 @@
             "path": "token-spray/api-festivo.yaml"
         },
         {
+            "author": "daffainfo",
+            "id": "api-nytimes",
+            "name": "NYTimes API Test",
+            "severity": "info",
+            "tags": "token-spray,nytimes",
+            "path": "token-spray/api-nytimes.yaml"
+        },
+        {
             "author": "zzeitlin",
             "id": "api-loqate",
             "name": "Loqate API Test",
@@ -21098,6 +21642,14 @@
             "path": "exposed-panels/sungrow-logger1000-detect.yaml"
         },
         {
+            "author": "ritikchaddha",
+            "id": "openvpn-connect",
+            "name": "OpenVPN Connect Panel",
+            "severity": "info",
+            "tags": "panel,openvpn,connect,vpn",
+            "path": "exposed-panels/openvpn-connect.yaml"
+        },
+        {
             "author": "geeknik,daffainfo",
             "id": "cacti-panel",
             "name": "Cacti Login Panel",
@@ -21242,11 +21794,11 @@
             "path": "exposed-panels/star-network-utility.yaml"
         },
         {
-            "author": "joanbono",
-            "id": "nessus-panel-detect",
-            "name": "Nessus Panel detector",
+            "author": "joanbono,tess",
+            "id": "nessus-panel",
+            "name": "Nessus Panel Detect",
             "severity": "info",
-            "tags": "panel",
+            "tags": "panel,nessus",
             "path": "exposed-panels/nessus-panel.yaml"
         },
         {
@@ -21458,6 +22010,14 @@
             "path": "exposed-panels/cobbler-webgui.yaml"
         },
         {
+            "author": "tess",
+            "id": "kubernetes-web-view",
+            "name": "Kubernetes Web View",
+            "severity": "medium",
+            "tags": "pane,misconfig,kubernetes,k8s",
+            "path": "exposed-panels/kubernetes-web-view.yaml"
+        },
+        {
             "author": "DhiyaneshDk",
             "id": "jboss-juddi",
             "name": "JBoss WS JUDDI Console Panel",
@@ -21552,6 +22112,14 @@
             "severity": "info",
             "tags": "panel,audiocodes",
             "path": "exposed-panels/audiocodes-detect.yaml"
+        },
+        {
+            "author": "korteke",
+            "id": "temenos-t24-login",
+            "name": "Temenos T24/Transact Login Pagel",
+            "severity": "info",
+            "tags": "panel,exposure,temenos",
+            "path": "exposed-panels/temenos-t24-login.yaml"
         },
         {
             "author": "DhiyaneshDk",
@@ -21656,14 +22224,6 @@
             "severity": "info",
             "tags": "jamf,panel,mdm",
             "path": "exposed-panels/jamf-panel.yaml"
-        },
-        {
-            "author": "dhiyaneshDK",
-            "id": "plesk-obsidian",
-            "name": "Plesk Obsidian",
-            "severity": "info",
-            "tags": "plesk,edb,panel",
-            "path": "exposed-panels/plesk-obsidian.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -21874,6 +22434,14 @@
             "path": "exposed-panels/daybyday-panel.yaml"
         },
         {
+            "author": "ritikchaddha",
+            "id": "openvpn-admin",
+            "name": "OpenVPN Admin Panel",
+            "severity": "info",
+            "tags": "panel,openvpn,admin,config",
+            "path": "exposed-panels/openvpn-admin.yaml"
+        },
+        {
             "author": "pussycat0x",
             "id": "whm-login-detect",
             "name": "WHM Login Detect",
@@ -21912,6 +22480,14 @@
             "severity": "info",
             "tags": "edb,panel,olt",
             "path": "exposed-panels/olt-web-interface.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "turnkey-openvpn",
+            "name": "TurnKey OpenVPN Panel",
+            "severity": "info",
+            "tags": "panel,openvpn,turnkey,webshell,vpn",
+            "path": "exposed-panels/turnkey-openvpn.yaml"
         },
         {
             "author": "dhiyaneshDK",
@@ -22136,6 +22712,14 @@
             "severity": "info",
             "tags": "panel,teampass",
             "path": "exposed-panels/teampass-panel.yaml"
+        },
+        {
+            "author": "tess",
+            "id": "linkerd-panel",
+            "name": "Linkered Panel Exposure",
+            "severity": "high",
+            "tags": "panel,misconfig,linkerd,exposure",
+            "path": "exposed-panels/linkerd-panel.yaml"
         },
         {
             "author": "powerexploit",
@@ -22874,6 +23458,14 @@
             "path": "exposed-panels/edgeos-login.yaml"
         },
         {
+            "author": "theamanrawat",
+            "id": "openfire-admin-panel",
+            "name": "Openfire Admin Console",
+            "severity": "info",
+            "tags": "panel,openfire,admin,console",
+            "path": "exposed-panels/openfire-admin-panel.yaml"
+        },
+        {
             "author": "idealphase",
             "id": "mspcontrol-login",
             "name": "MSPControl Login",
@@ -22938,6 +23530,14 @@
             "path": "exposed-panels/ruckus-unleashed-panel.yaml"
         },
         {
+            "author": "tess",
+            "id": "maestro-login-panel",
+            "name": "Maestro - LuCI Login Panel",
+            "severity": "info",
+            "tags": "panel,maestro,luci",
+            "path": "exposed-panels/maestro-login-panel.yaml"
+        },
+        {
             "author": "DhiyaneshDk",
             "id": "syncthru-web-service",
             "name": "SyncThru Web Service",
@@ -22962,6 +23562,14 @@
             "path": "exposed-panels/ems-login-panel.yaml"
         },
         {
+            "author": "DhiyaneshDk",
+            "id": "openshift-installer-panel",
+            "name": "OpenShift Assisted Installer",
+            "severity": "high",
+            "tags": "panel,openshift,cluster",
+            "path": "exposed-panels/openshift-installer-panel.yaml"
+        },
+        {
             "author": "ritikchaddha,daffainfo",
             "id": "looker-panel",
             "name": "Looker Login Panel",
@@ -22976,6 +23584,14 @@
             "severity": "info",
             "tags": "panel,tech,hiveos,aerohive",
             "path": "exposed-panels/aerohive-netconfig-ui.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "vertex-tax-installer-panel",
+            "name": "Vertex Tax Installer Panel",
+            "severity": "info",
+            "tags": "panel,vertex",
+            "path": "exposed-panels/vertex-tax-installer-panel.yaml"
         },
         {
             "author": "DhiyaneshDK",
@@ -23122,6 +23738,14 @@
             "path": "exposed-panels/kafka-center-login.yaml"
         },
         {
+            "author": "ritikchaddha",
+            "id": "logitech-harmony-portal",
+            "name": "Logitech Harmony Pro Installer Portal",
+            "severity": "info",
+            "tags": "panel,logitech,harmony,exposure",
+            "path": "exposed-panels/logitech-harmony-portal.yaml"
+        },
+        {
             "author": "Adam Crosser",
             "id": "flowci-panel",
             "name": "FlowCI Panel Detect",
@@ -23179,6 +23803,14 @@
         },
         {
             "author": "DhiyaneshDk",
+            "id": "beego-admin-dashboard",
+            "name": "Beego Admin Dashboard",
+            "severity": "medium",
+            "tags": "panel,beego,unauth",
+            "path": "exposed-panels/beego-admin-dashboard.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
             "id": "flureedb-admin-console",
             "name": "FlureeDB Admin Console",
             "severity": "info",
@@ -23196,7 +23828,7 @@
         {
             "author": "princechaddha",
             "id": "laravel-filemanager",
-            "name": "Laravel FileManager Panel Detect",
+            "name": "Laravel File Manager - Panel Detect",
             "severity": "info",
             "tags": "laravel,filemanager,fileupload",
             "path": "exposed-panels/laravel-filemanager.yaml"
@@ -23274,9 +23906,9 @@
             "path": "exposed-panels/fiori-launchpad.yaml"
         },
         {
-            "author": "DhiyaneshDk",
+            "author": "DhiyaneshDk, daffainfo",
             "id": "rundeck-login",
-            "name": "RunDeck Login",
+            "name": "RunDeck Login Panel",
             "severity": "info",
             "tags": "panel,rundeck",
             "path": "exposed-panels/rundeck-login.yaml"
@@ -23288,6 +23920,14 @@
             "severity": "info",
             "tags": "edb,panel,login",
             "path": "exposed-panels/sharecenter-login.yaml"
+        },
+        {
+            "author": "kh4sh3i",
+            "id": "opennebula-panel",
+            "name": "OpenNebula Panel Detect",
+            "severity": "info",
+            "tags": "panel,opennebula,cloud",
+            "path": "exposed-panels/opennebula-panel.yaml"
         },
         {
             "author": "pussycat0x",
@@ -23354,6 +23994,14 @@
             "path": "exposed-panels/seeddms-panel.yaml"
         },
         {
+            "author": "organiccrap,dwisiswant0,ricardomaia",
+            "id": "liferay-portal",
+            "name": "Liferay Portal Detect",
+            "severity": "info",
+            "tags": "panel,liferay,portal",
+            "path": "exposed-panels/liferay-portal.yaml"
+        },
+        {
             "author": "chron0x",
             "id": "tikiwiki-cms",
             "name": "Tiki Wiki CMS Groupware",
@@ -23376,6 +24024,14 @@
             "severity": "info",
             "tags": "panel",
             "path": "exposed-panels/shoutcast-server.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "superset-login",
+            "name": "Superset Login",
+            "severity": "info",
+            "tags": "panel,superset",
+            "path": "exposed-panels/superset-login.yaml"
         },
         {
             "author": "pdteam",
@@ -23472,6 +24128,14 @@
             "severity": "info",
             "tags": "panel,zblogphp",
             "path": "exposed-panels/zblogphp-panel.yaml"
+        },
+        {
+            "author": "clem9669",
+            "id": "steve-login-panel",
+            "name": "SteVe Login Panel",
+            "severity": "info",
+            "tags": "panel,steve",
+            "path": "exposed-panels/steve-login-panel.yaml"
         },
         {
             "author": "DhiyaneshDK",
@@ -23704,6 +24368,14 @@
             "severity": "low",
             "tags": "panel,webalizer,edb",
             "path": "exposed-panels/exposed-webalizer.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "opencats-panel",
+            "name": "OpenCATS Login Panel",
+            "severity": "info",
+            "tags": "panel,opencats",
+            "path": "exposed-panels/opencats-panel.yaml"
         },
         {
             "author": "binaryfigments,daffainfo",
@@ -23984,6 +24656,14 @@
             "severity": "info",
             "tags": "panel,opengear",
             "path": "exposed-panels/opengear-panel.yaml"
+        },
+        {
+            "author": "tess",
+            "id": "gitblit-panel",
+            "name": "Gitblit Login Panel Detect",
+            "severity": "info",
+            "tags": "panel,gitblit",
+            "path": "exposed-panels/gitblit-panel.yaml"
         },
         {
             "author": "pdteam",
@@ -24738,14 +25418,6 @@
             "path": "exposed-panels/sophos-fw-version-detect.yaml"
         },
         {
-            "author": "dhiyaneshDK",
-            "id": "plesk-onyx-login",
-            "name": "Plesk Onyx login portal",
-            "severity": "info",
-            "tags": "panel,plesk,login,edb",
-            "path": "exposed-panels/plesk-onyx.yaml"
-        },
-        {
             "author": "pdteam",
             "id": "webpagetest-panel",
             "name": "WebPageTest Panel",
@@ -24784,6 +25456,14 @@
             "severity": "info",
             "tags": "panel,keycloak",
             "path": "exposed-panels/key-cloak-admin-panel.yaml"
+        },
+        {
+            "author": "tess",
+            "id": "git-repository-browser",
+            "name": "Git Repository Browser Detect",
+            "severity": "info",
+            "tags": "panel,git",
+            "path": "exposed-panels/git-repository-browser.yaml"
         },
         {
             "author": "idealphase",
@@ -25258,7 +25938,7 @@
             "path": "exposed-panels/bigip-rest-panel.yaml"
         },
         {
-            "author": "c-sh0",
+            "author": "c-sh0,daffainfo",
             "id": "puppetboard-panel",
             "name": "Puppetlabs Puppetboard",
             "severity": "info",
@@ -25268,7 +25948,7 @@
         {
             "author": "pikpikcu,philippedelteil,daffainfo",
             "id": "aviatrix-panel",
-            "name": "Aviatrix Cloud Controller Panel Login",
+            "name": "Aviatrix Cloud Controller Panel",
             "severity": "info",
             "tags": "panel,aviatrix",
             "path": "exposed-panels/aviatrix-panel.yaml"
@@ -25330,6 +26010,14 @@
             "path": "exposed-panels/webshell4-login-panel.yaml"
         },
         {
+            "author": "tess",
+            "id": "acunetix-login",
+            "name": "Acunetix Login Panel Detect",
+            "severity": "info",
+            "tags": "panel,acunetix",
+            "path": "exposed-panels/acunetix-login.yaml"
+        },
+        {
             "author": "princechaddha",
             "id": "fatpipe-warp-panel",
             "name": "FatPipe WARP Panel Detect",
@@ -25352,6 +26040,22 @@
             "severity": "info",
             "tags": "panel,sonicwall",
             "path": "exposed-panels/sonicwall-sslvpn-panel.yaml"
+        },
+        {
+            "author": "tess",
+            "id": "code-server-login",
+            "name": "Code Server Login",
+            "severity": "info",
+            "tags": "panel,detect,misc",
+            "path": "exposed-panels/code-server-login.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "mcloud-panel",
+            "name": "MCloud Panel Exposure",
+            "severity": "high",
+            "tags": "panel,mcloud,exposure",
+            "path": "exposed-panels/mcloud-panel.yaml"
         },
         {
             "author": "Techryptic (@Tech)",
@@ -25426,6 +26130,14 @@
             "path": "exposed-panels/crxde-lite.yaml"
         },
         {
+            "author": "dhiyaneshDK",
+            "id": "jfrog-login",
+            "name": "JFrog Login",
+            "severity": "info",
+            "tags": "panel,jfrog,edb",
+            "path": "exposed-panels/jfrog-login.yaml"
+        },
+        {
             "author": "schniggie,StreetOfHackerR007",
             "id": "traefik-dashboard-detect",
             "name": "Traefik Dashboard",
@@ -25456,6 +26168,14 @@
             "severity": "info",
             "tags": "panel,jeedom,login",
             "path": "exposed-panels/jeedom-panel.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "openvpn-router-management",
+            "name": "OpenVPN Server Router Management",
+            "severity": "low",
+            "tags": "panel,openvpn,router",
+            "path": "exposed-panels/openvpn-router-management.yaml"
         },
         {
             "author": "righettod",
@@ -25504,6 +26224,14 @@
             "severity": "info",
             "tags": "panel,led,mediacloud",
             "path": "exposed-panels/led-imediacloud-panel.yaml"
+        },
+        {
+            "author": "theamanrawat",
+            "id": "xeams-admin-console",
+            "name": "Xeams Admin Console",
+            "severity": "info",
+            "tags": "panel,xeams,admin,console",
+            "path": "exposed-panels/xeams-admin-console.yaml"
         },
         {
             "author": "divya_mudgal",
@@ -25650,6 +26378,14 @@
             "path": "exposed-panels/opencast-detect.yaml"
         },
         {
+            "author": "dhiyaneshDK,daffainfo",
+            "id": "plesk-obsidian-login",
+            "name": "Plesk Obsidian login panel",
+            "severity": "info",
+            "tags": "panel,plesk,login,edb",
+            "path": "exposed-panels/plesk-obsidian-login.yaml"
+        },
+        {
             "author": "DhiyaneshDk",
             "id": "jamf-login",
             "name": "Jamf Pro Login",
@@ -25700,7 +26436,7 @@
         {
             "author": "liquidsec,DhiyaneshDk",
             "id": "roxy-fileman",
-            "name": "Roxy Fileman Detect",
+            "name": "Roxy File Manager - Detect",
             "severity": "info",
             "tags": "tech,fileupload,roxy,fileman",
             "path": "exposed-panels/roxy-fileman.yaml"
@@ -25891,14 +26627,6 @@
         },
         {
             "author": "dhiyaneshDK",
-            "id": "jfrog-login",
-            "name": "JFrog Login",
-            "severity": "info",
-            "tags": "panel,jfrog,edb",
-            "path": "exposed-panels/jfrog.yaml"
-        },
-        {
-            "author": "dhiyaneshDK",
             "id": "plastic-scm-login",
             "name": "Plastic SCM Login",
             "severity": "info",
@@ -25994,9 +26722,17 @@
             "path": "exposed-panels/sql-monitor.yaml"
         },
         {
+            "author": "dhiyaneshDK,daffainfo",
+            "id": "plesk-onyx-login",
+            "name": "Plesk Onyx Login Panel",
+            "severity": "info",
+            "tags": "panel,plesk,login,edb",
+            "path": "exposed-panels/plesk-onyx-login.yaml"
+        },
+        {
             "author": "its0x08",
             "id": "wordpress-login",
-            "name": "WordPress login",
+            "name": "WordPress Login Panel",
             "severity": "info",
             "tags": "panel,wordpress",
             "path": "exposed-panels/wordpress-login.yaml"
@@ -26995,7 +27731,7 @@
         },
         {
             "author": "daffainfo",
-            "id": "fortiner-workflow",
+            "id": "fortinet-workflow",
             "name": "Fortinet Security Checks",
             "severity": "",
             "tags": "",
@@ -28379,6 +29115,14 @@
         },
         {
             "author": "dwisiswant0",
+            "id": "clamav-unauth",
+            "name": "ClamAV Server - Unauthenticated Access",
+            "severity": "high",
+            "tags": "network,clamav,unauth,seclists",
+            "path": "network/clamav-unauth.yaml"
+        },
+        {
+            "author": "dwisiswant0",
             "id": "cisco-smi-exposure",
             "name": "Cisco Smart Install Endpoints Exposure",
             "severity": "info",
@@ -28424,6 +29168,14 @@
             "severity": "high",
             "tags": "network,redis,unauth",
             "path": "network/exposed-redis.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "niagara-fox-info-enum",
+            "name": "Niagara Fox Protocol Information Enumeration",
+            "severity": "info",
+            "tags": "network,fox,niagara",
+            "path": "network/niagara-fox-protocol-enum.yaml"
         },
         {
             "author": "randomstr1ng",
@@ -28563,11 +29315,27 @@
         },
         {
             "author": "pussycat0x",
+            "id": "vmware-authentication-daemon",
+            "name": "VMware Authentication Daemon Detection",
+            "severity": "info",
+            "tags": "network,vmware,authenticated",
+            "path": "network/detection/vmware-authentication-daemon-detect.yaml"
+        },
+        {
+            "author": "pussycat0x",
             "id": "xlight-ftp-service-detect",
             "name": "Xlight FTP Service Detect",
             "severity": "info",
             "tags": "network,ftp,xlight",
             "path": "network/detection/xlight-ftp-service-detect.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "sshd-dropbear-detect",
+            "name": "Dropbear sshd Detection",
+            "severity": "info",
+            "tags": "network,ssh,dropbear",
+            "path": "network/detection/sshd-dropbear-detect.yaml"
         },
         {
             "author": "r3dg33k,daffainfo,iamthefrogy",
@@ -28592,6 +29360,14 @@
             "severity": "info",
             "tags": "network,mongodb",
             "path": "network/detection/mongodb-detect.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "clamav-detect",
+            "name": "ClamAV Server Detect",
+            "severity": "info",
+            "tags": "network,clamav",
+            "path": "network/detection/clamav-detect.yaml"
         },
         {
             "author": "vsh00t,geeknik",
@@ -28806,7 +29582,7 @@
             "id": "azure-kubernetes-service",
             "name": "Detect Azure Kubernetes Service",
             "severity": "info",
-            "tags": "tech,azure,k8s",
+            "tags": "tech,azure,k8s,kubernetes",
             "path": "technologies/azure-kubernetes-service.yaml"
         },
         {
@@ -29674,6 +30450,14 @@
             "path": "technologies/puppet-node-manager-detect.yaml"
         },
         {
+            "author": "DhiyaneshDk",
+            "id": "express-default-page",
+            "name": "Express Default Page",
+            "severity": "info",
+            "tags": "tech,express",
+            "path": "technologies/express-default-page.yaml"
+        },
+        {
             "author": "idealphase",
             "id": "projectsend-detect",
             "name": "ProjectSend Detect",
@@ -30090,11 +30874,11 @@
             "path": "technologies/iplanet-web-server.yaml"
         },
         {
-            "author": "pdteam",
+            "author": "pdteam,daffainfo",
             "id": "wordpress-detect",
-            "name": "WordPress Detection",
+            "name": "WordPress Detect",
             "severity": "info",
-            "tags": "tech,wordpress",
+            "tags": "tech,wordpress,cms,wp",
             "path": "technologies/wordpress-detect.yaml"
         },
         {
@@ -30184,14 +30968,6 @@
             "severity": "info",
             "tags": "tech,smartstore,oss",
             "path": "technologies/smartstore-detect.yaml"
-        },
-        {
-            "author": "organiccrap,dwisiswant0",
-            "id": "liferay-portal-detect",
-            "name": "Liferay Portal Detection",
-            "severity": "info",
-            "tags": "tech,liferay",
-            "path": "technologies/liferay-portal-detect.yaml"
         },
         {
             "author": "gy741",
@@ -31486,7 +32262,7 @@
             "id": "homeautomation-v3-openredirect",
             "name": "HomeAutomation 3.3.2 - Open Redirect",
             "severity": "medium",
-            "tags": "packetstorm,iot,redirect",
+            "tags": "homeautomation,packetstorm,iot,redirect",
             "path": "vulnerabilities/other/homeautomation-v3-openredirect.yaml"
         },
         {
@@ -32604,7 +33380,7 @@
         {
             "author": "princechaddha",
             "id": "ueditor-file-upload",
-            "name": "UEditor Arbitrary File Upload",
+            "name": "UEditor - Arbitrary File Upload",
             "severity": "high",
             "tags": "ueditor,fileupload",
             "path": "vulnerabilities/other/ueditor-file-upload.yaml"
@@ -33016,6 +33792,14 @@
             "severity": "high",
             "tags": "blue-ocean,lfi",
             "path": "vulnerabilities/other/blue-ocean-excellence-lfi.yaml"
+        },
+        {
+            "author": "clem9669",
+            "id": "steve-xss",
+            "name": "SteVe - Cross-Site Scripting",
+            "severity": "medium",
+            "tags": "steve,xss,oss",
+            "path": "vulnerabilities/other/steve-xss.yaml"
         },
         {
             "author": "ritikchaddha",
@@ -33796,7 +34580,7 @@
         {
             "author": "SecTheBit",
             "id": "3dprint-arbitrary-file-upload",
-            "name": "3DPrint Lite < 1.9.1.5 - Unauthenticated Arbitrary File Upload",
+            "name": "3DPrint Lite <1.9.1.5 - Arbitrary File Upload",
             "severity": "high",
             "tags": "wpscan,edb,wordpress,wp,wp-plugin,fileupload,intrusive,3dprint",
             "path": "vulnerabilities/wordpress/3dprint-arbitrary-file-upload.yaml"
@@ -34652,7 +35436,7 @@
         {
             "author": "ritikchaddha",
             "id": "ecology-arbitrary-file-upload",
-            "name": "Ecology Arbitrary File Upload",
+            "name": "Ecology - Arbitrary File Upload",
             "severity": "medium",
             "tags": "ecology,upload,fileupload,intrusive",
             "path": "vulnerabilities/weaver/ecology/ecology-arbitrary-file-upload.yaml"
