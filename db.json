@@ -1,5 +1,5 @@
 {
-    "version": "v9.3.0",
+    "version": "v9.3.1",
     "data": [
         {
             "author": "philippedelteil",
@@ -5738,6 +5738,14 @@
             "path": "vulnerabilities/wordpress/wordpress-installer-log.yaml"
         },
         {
+            "author": "arafatansari",
+            "id": "wp-related-post-xss",
+            "name": "WordPress Related Posts <= 2.1.1 - Cross Site Scripting",
+            "severity": "medium",
+            "tags": "wordpress,wp,wp-plugin,xss,relatedposts,authenticated",
+            "path": "vulnerabilities/wordpress/wp-related-post-xss.yaml"
+        },
+        {
             "author": "daffainfo",
             "id": "wp-phpfreechat-xss",
             "name": "WordPress PHPFreeChat 0.2.8 - Cross-Site Scripting",
@@ -9330,6 +9338,14 @@
             "path": "exposed-panels/vault-panel.yaml"
         },
         {
+            "author": "pussycat0x",
+            "id": "ruckus-wireless-admin-login",
+            "name": "Ruckus Wireless Admin Login Panel",
+            "severity": "info",
+            "tags": "panel,exposed,ruckus",
+            "path": "exposed-panels/ruckus-wireless-admin-login.yaml"
+        },
+        {
             "author": "c-sh0",
             "id": "cobbler-webgui",
             "name": "Cobbler WebGUI Login Panel - Detect",
@@ -10928,6 +10944,14 @@
             "severity": "info",
             "tags": "panel,dell,login",
             "path": "exposed-panels/dell-wyse-login.yaml"
+        },
+        {
+            "author": "righettod",
+            "id": "jalios-jcms-panel",
+            "name": "Jalios JCMS Panel",
+            "severity": "info",
+            "tags": "panel,jalios,jcms",
+            "path": "exposed-panels/jcms-panel.yaml"
         },
         {
             "author": "gy741",
@@ -14764,9 +14788,9 @@
         {
             "author": "pdteam",
             "id": "cargocollective-takeover",
-            "name": "cargocollective takeover detection",
+            "name": "CargoCollective Takeover Detection",
             "severity": "high",
-            "tags": "takeover",
+            "tags": "takeover,cargocollective",
             "path": "takeovers/cargocollective-takeover.yaml"
         },
         {
@@ -14788,15 +14812,15 @@
         {
             "author": "pdteam",
             "id": "zendesk-takeover",
-            "name": "zendesk takeover detection",
+            "name": "Zendesk Takeover Detection",
             "severity": "high",
-            "tags": "takeover",
+            "tags": "takeover,zendesk,hackerone",
             "path": "takeovers/zendesk-takeover.yaml"
         },
         {
             "author": "pdteam",
             "id": "canny-takeover",
-            "name": "canny takeover detection",
+            "name": "Canny Takeover Detection",
             "severity": "high",
             "tags": "takeover",
             "path": "takeovers/canny-takeover.yaml"
@@ -14820,17 +14844,17 @@
         {
             "author": "pdteam",
             "id": "smugmug-takeover",
-            "name": "smugmug takeover detection",
+            "name": "Smugmug Takeover Detection",
             "severity": "high",
-            "tags": "takeover",
+            "tags": "takeover,smugmug",
             "path": "takeovers/smugmug-takeover.yaml"
         },
         {
             "author": "pdteam",
             "id": "uberflip-takeover",
-            "name": "uberflip takeover detection",
+            "name": "Uberflip Takeover Detection",
             "severity": "high",
-            "tags": "takeover",
+            "tags": "takeover,uberflip,hackerone",
             "path": "takeovers/uberflip-takeover.yaml"
         },
         {
@@ -14844,15 +14868,15 @@
         {
             "author": "pdteam",
             "id": "readme-takeover",
-            "name": "readme takeover detection",
+            "name": "Readme Takeover Detection",
             "severity": "high",
-            "tags": "takeover",
+            "tags": "takeover,readme",
             "path": "takeovers/readme-takeover.yaml"
         },
         {
             "author": "pdteam",
             "id": "intercom-takeover",
-            "name": "intercom takeover detection",
+            "name": "Intercom Takeover Detection",
             "severity": "high",
             "tags": "takeover,intercom",
             "path": "takeovers/intercom-takeover.yaml"
@@ -14882,6 +14906,14 @@
             "path": "takeovers/short-io.yaml"
         },
         {
+            "author": "pdteam",
+            "id": "campaignmonitor-takeover",
+            "name": "CampaignMonitor Takeover Detection",
+            "severity": "high",
+            "tags": "takeover,campaignmonitor",
+            "path": "takeovers/campaignmonitor-takeover.yaml"
+        },
+        {
             "author": "Mhdsamx",
             "id": "sprintful-takeover",
             "name": "Sprintful Takeover",
@@ -14908,9 +14940,9 @@
         {
             "author": "pdteam",
             "id": "agilecrm-takeover",
-            "name": "agilecrm - Subdomain Takeover Detection",
+            "name": "AgileCRM Takeover Detection",
             "severity": "high",
-            "tags": "takeover",
+            "tags": "takeover,agilecrm",
             "path": "takeovers/agilecrm-takeover.yaml"
         },
         {
@@ -14948,7 +14980,7 @@
         {
             "author": "pdteam",
             "id": "launchrock-takeover",
-            "name": "launchrock takeover detection",
+            "name": "Launchrock Takeover Detection",
             "severity": "high",
             "tags": "takeover",
             "path": "takeovers/launchrock-takeover.yaml"
@@ -14956,7 +14988,7 @@
         {
             "author": "0xPrial,pdteam",
             "id": "heroku-takeover",
-            "name": "heroku takeover detection",
+            "name": "Heroku Takeover Detection",
             "severity": "high",
             "tags": "takeover,heroku",
             "path": "takeovers/heroku-takeover.yaml"
@@ -14971,7 +15003,7 @@
         },
         {
             "author": "rivalsec",
-            "id": "rivalsec-meteor-takeover",
+            "id": "meteor-takeover",
             "name": "Meteor subdomain takeover",
             "severity": "high",
             "tags": "takeover,meteor",
@@ -14996,9 +15028,9 @@
         {
             "author": "pdteam",
             "id": "pingdom-takeover",
-            "name": "pingdom takeover detection",
+            "name": "Pingdom Takeover Detection",
             "severity": "high",
-            "tags": "takeover",
+            "tags": "takeover,pingdom",
             "path": "takeovers/pingdom-takeover.yaml"
         },
         {
@@ -15006,7 +15038,7 @@
             "id": "airee-takeover",
             "name": "Airee Takeover Detection",
             "severity": "high",
-            "tags": "takeover",
+            "tags": "takeover,airee",
             "path": "takeovers/airee-takeover.yaml"
         },
         {
@@ -15060,7 +15092,7 @@
         {
             "author": "pdteam",
             "id": "jetbrains-takeover",
-            "name": "jetbrains takeover detection",
+            "name": "Jetbrains Takeover Detection",
             "severity": "high",
             "tags": "takeover,jetbrains",
             "path": "takeovers/jetbrains-takeover.yaml"
@@ -15076,9 +15108,9 @@
         {
             "author": "pdteam",
             "id": "strikingly-takeover",
-            "name": "strikingly takeover detection",
+            "name": "Strikingly Takeover Detection",
             "severity": "high",
-            "tags": "takeover",
+            "tags": "takeover,strikingly",
             "path": "takeovers/strikingly-takeover.yaml"
         },
         {
@@ -15139,18 +15171,10 @@
         },
         {
             "author": "pdteam",
-            "id": "campaignmonitor-takeover",
-            "name": "campaignmonitor takeover detection",
-            "severity": "high",
-            "tags": "takeover",
-            "path": "takeovers/campaignmonitor.yaml"
-        },
-        {
-            "author": "pdteam",
             "id": "getresponse-takeover",
-            "name": "getresponse takeover detection",
+            "name": "Getresponse Takeover Detection",
             "severity": "high",
-            "tags": "takeover",
+            "tags": "takeover,getresponse",
             "path": "takeovers/getresponse-takeover.yaml"
         },
         {
@@ -15180,7 +15204,7 @@
         {
             "author": "pdteam",
             "id": "pantheon-takeover",
-            "name": "pantheon takeover detection",
+            "name": "Pantheon Takeover Detection",
             "severity": "high",
             "tags": "takeover",
             "path": "takeovers/pantheon-takeover.yaml"
@@ -15204,7 +15228,7 @@
         {
             "author": "pdteam",
             "id": "smartjob-takeover",
-            "name": "smartjob takeover detection",
+            "name": "Smartjob Takeover Detection",
             "severity": "high",
             "tags": "takeover",
             "path": "takeovers/smartjob-takeover.yaml"
@@ -15212,9 +15236,9 @@
         {
             "author": "pdteam",
             "id": "readthedocs-takeover",
-            "name": "readthedocs takeover detection",
+            "name": "Read the Docs Takeover Detection",
             "severity": "high",
-            "tags": "takeover",
+            "tags": "takeover,readthedocs",
             "path": "takeovers/readthedocs-takeover.yaml"
         },
         {
@@ -15236,9 +15260,9 @@
         {
             "author": "pdteam",
             "id": "gemfury-takeover",
-            "name": "gemfury takeover detection",
+            "name": "Gemfury Takeover Detection",
             "severity": "high",
-            "tags": "takeover",
+            "tags": "takeover,gemfury",
             "path": "takeovers/gemfury-takeover.yaml"
         },
         {
@@ -15252,9 +15276,9 @@
         {
             "author": "pdteam",
             "id": "wishpond-takeover",
-            "name": "wishpond takeover detection",
+            "name": "Wishpond Takeover Detection",
             "severity": "high",
-            "tags": "takeover",
+            "tags": "takeover,wishpond",
             "path": "takeovers/wishpond-takeover.yaml"
         },
         {
@@ -15268,9 +15292,9 @@
         {
             "author": "pdteam",
             "id": "helprace-takeover",
-            "name": "helprace takeover detection",
+            "name": "Helprace Takeover Detection",
             "severity": "high",
-            "tags": "takeover",
+            "tags": "takeover,helprace",
             "path": "takeovers/helprace-takeover.yaml"
         },
         {
@@ -15284,9 +15308,9 @@
         {
             "author": "pdteam",
             "id": "ngrok-takeover",
-            "name": "ngrok takeover detection",
+            "name": "Ngrok Takeover Detection",
             "severity": "high",
-            "tags": "takeover",
+            "tags": "takeover,ngrok",
             "path": "takeovers/ngrok-takeover.yaml"
         },
         {
@@ -20106,6 +20130,14 @@
             "path": "technologies/default-lucee-page.yaml"
         },
         {
+            "author": "c-sh0",
+            "id": "influxdb-version-detect",
+            "name": "InfluxDB Version Detection",
+            "severity": "info",
+            "tags": "tech,influxdb,api",
+            "path": "technologies/influxdb-version-detect.yaml"
+        },
+        {
             "author": "tess",
             "id": "notion-detect",
             "name": "Notion Detect",
@@ -20192,6 +20224,14 @@
             "severity": "info",
             "tags": "tech,java,spring",
             "path": "technologies/spring-detect.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "pypiserver-detect",
+            "name": "PyPI Server Detect",
+            "severity": "info",
+            "tags": "tech,pypiserver",
+            "path": "technologies/pypiserver-detect.yaml"
         },
         {
             "author": "praetorian-thendrickson",
@@ -21584,6 +21624,14 @@
             "severity": "info",
             "tags": "tech,versa,network",
             "path": "technologies/versa/versa-networks-detect.yaml"
+        },
+        {
+            "author": "c-sh0",
+            "id": "versa-analytics-server",
+            "name": "Versa Analytics Server Detection",
+            "severity": "info",
+            "tags": "tech,versa,analytics",
+            "path": "technologies/versa/versa-analytics-server.yaml"
         },
         {
             "author": "philippedelteil,daffainfo",
@@ -30622,7 +30670,7 @@
             "id": "CVE-2020-14408",
             "name": "Agentejo Cockpit 0.10.2 - Cross-Site Scripting",
             "severity": "medium",
-            "tags": "cve,cve2022,cockpit,agentejo,xss,oss",
+            "tags": "cve,cve2020,cockpit,agentejo,xss,oss",
             "path": "cves/2020/CVE-2020-14408.yaml"
         },
         {
@@ -31766,7 +31814,7 @@
             "id": "CVE-2020-24903",
             "name": "Cute Editor for ASP.NET 6.4 - Cross Site Scripting",
             "severity": "medium",
-            "tags": "cve,cve2022,cuteeditor,xss,seclists",
+            "tags": "cve,cve2020,cuteeditor,xss,seclists",
             "path": "cves/2020/CVE-2020-24903.yaml"
         },
         {
@@ -34782,7 +34830,7 @@
             "id": "CVE-2021-35380",
             "name": "TermTalk Server 3.24.0.2 - Unauthenticated Arbitrary File Read",
             "severity": "high",
-            "tags": "cve,cve2022,termtalk,lfi,unauth,lfr,edb",
+            "tags": "cve,cve2021,termtalk,lfi,unauth,lfr,edb",
             "path": "cves/2021/CVE-2021-35380.yaml"
         },
         {
@@ -37208,6 +37256,14 @@
             "severity": "high",
             "tags": "cve,cve2017,apache,rce,struts,kev",
             "path": "cves/2017/CVE-2017-9805.yaml"
+        },
+        {
+            "author": "johnk3r",
+            "id": "CVE-2017-14186",
+            "name": "FortiGate SSL VPN Web Portal - Cross Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2017,fortigate,xss,fortinet",
+            "path": "cves/2017/CVE-2017-14186.yaml"
         },
         {
             "author": "0x_Akoko",
