@@ -1,5 +1,5 @@
 {
-    "version": "v9.3.2",
+    "version": "v9.3.3",
     "data": [
         {
             "author": "geeknik",
@@ -624,6 +624,30 @@
             "severity": "info",
             "tags": "python,file,sast",
             "path": "file/python/python-scanner.yaml"
+        },
+        {
+            "author": "shelled",
+            "id": "tiny-filemanager-default-login",
+            "name": "Tiny File Manager Default Login",
+            "severity": "high",
+            "tags": "default-login,tiny,filemanager",
+            "path": "default-logins/tiny-file-manager-default-login.yaml"
+        },
+        {
+            "author": "shelled",
+            "id": "kanboard-default-login",
+            "name": "Kanboard Default Login",
+            "severity": "high",
+            "tags": "default-login,kanboard",
+            "path": "default-logins/kanboard-default-login.yaml"
+        },
+        {
+            "author": "dali",
+            "id": "xui-weak-login",
+            "name": "X-UI Login Default Login",
+            "severity": "high",
+            "tags": "x-ui,default-login",
+            "path": "default-logins/xui-weak-login.yaml"
         },
         {
             "author": "princechaddha",
@@ -1266,6 +1290,14 @@
             "path": "default-logins/digitalrebar/digitalrebar-default-login.yaml"
         },
         {
+            "author": "robotshell",
+            "id": "mobotix-default-credentials",
+            "name": "Mobotix Webcam Default Admin Credentials",
+            "severity": "high",
+            "tags": "mobotix,default-login,webcam,iot",
+            "path": "default-logins/mobotix/mobotix-default-login.yaml"
+        },
+        {
             "author": "c-sh0",
             "id": "cobbler-default-login",
             "name": "Cobbler Default Login",
@@ -1850,6 +1882,14 @@
             "path": "exposed-panels/landrayoa-panel.yaml"
         },
         {
+            "author": "theabhinavgaur",
+            "id": "ncentral-panel",
+            "name": "N-central Login Panel",
+            "severity": "info",
+            "tags": "panel,n-central",
+            "path": "exposed-panels/ncentral-panel.yaml"
+        },
+        {
             "author": "DhiyaneshDk",
             "id": "tableau-service-manager",
             "name": "Tableau Services Manager Login",
@@ -2200,6 +2240,14 @@
             "severity": "info",
             "tags": "panel,cofense,vision",
             "path": "exposed-panels/cofense-vision-panel.yaml"
+        },
+        {
+            "author": "Hardik-Solanki",
+            "id": "xfinity-panel",
+            "name": "Xfinity Panel",
+            "severity": "info",
+            "tags": "panel,xfinity",
+            "path": "exposed-panels/xfinity-panel.yaml"
         },
         {
             "author": "gy741",
@@ -4794,6 +4842,14 @@
             "path": "exposed-panels/racksnet-login.yaml"
         },
         {
+            "author": "theabhinavgaur",
+            "id": "loxone-panel",
+            "name": "Loxone Intercom Video Login",
+            "severity": "info",
+            "tags": "panel,loxone",
+            "path": "exposed-panels/loxone-panel.yaml"
+        },
+        {
             "author": "0x_Akoko",
             "id": "xnat-login",
             "name": "XNAT Login",
@@ -5498,6 +5554,14 @@
             "path": "exposed-panels/gocd-login.yaml"
         },
         {
+            "author": "theabhinavgaur",
+            "id": "content-central-login",
+            "name": "Content Central Login Panel",
+            "severity": "info",
+            "tags": "panel,content-central",
+            "path": "exposed-panels/content-central-login.yaml"
+        },
+        {
             "author": "princechaddha",
             "id": "edgeos-login",
             "name": "EdgeOS login Detect",
@@ -5594,12 +5658,28 @@
             "path": "exposed-panels/wowza-streaming-engine.yaml"
         },
         {
+            "author": "theamanrawat",
+            "id": "creatio-login-panel",
+            "name": "Creatio Login Panel",
+            "severity": "info",
+            "tags": "panel,creatio",
+            "path": "exposed-panels/creatio-login-panel.yaml"
+        },
+        {
             "author": "DhiyaneshDk",
             "id": "syncthru-web-service",
             "name": "SyncThru Web Service",
             "severity": "low",
             "tags": "edb,panel,syncthru,printer",
             "path": "exposed-panels/syncthru-web-service.yaml"
+        },
+        {
+            "author": "jonathanwalker",
+            "id": "atlantis-detect",
+            "name": "Atlantis Detect",
+            "severity": "info",
+            "tags": "panel,atlantis",
+            "path": "exposed-panels/atlantis-detect.yaml"
         },
         {
             "author": "Yuzhe-zhang-0",
@@ -5970,6 +6050,14 @@
             "path": "exposed-panels/yarn-manager-exposure.yaml"
         },
         {
+            "author": "DhiyaneshDK",
+            "id": "kanboard-login",
+            "name": "Kanboard Login Panel",
+            "severity": "info",
+            "tags": "panel,kanboard",
+            "path": "exposed-panels/kanboard-login.yaml"
+        },
+        {
             "author": "pussycat0x",
             "id": "r-webserver-login",
             "name": "R WebServer Login Panel - Detect",
@@ -6312,6 +6400,14 @@
             "severity": "info",
             "tags": "panel,keycloak",
             "path": "exposed-panels/key-cloak-admin-panel.yaml"
+        },
+        {
+            "author": "theamanrawat",
+            "id": "webuzo-admin-panel",
+            "name": "Webuzo Admin Panel",
+            "severity": "info",
+            "tags": "panel,webuzo,admin",
+            "path": "exposed-panels/webuzo-admin-panel.yaml"
         },
         {
             "author": "DhiyaneshDk",
@@ -6912,6 +7008,14 @@
             "severity": "info",
             "tags": "panel,akamai",
             "path": "exposed-panels/akamai-cloudtest.yaml"
+        },
+        {
+            "author": "theabhinavgaur",
+            "id": "posthog-admin-panel",
+            "name": "Posthog Admin Panel",
+            "severity": "info",
+            "tags": "panel,posthog",
+            "path": "exposed-panels/posthog-admin-panel.yaml"
         },
         {
             "author": "pathtaga",
@@ -8242,6 +8346,14 @@
             "path": "vulnerabilities/concrete/concrete-xss.yaml"
         },
         {
+            "author": "DhiyaneshDk",
+            "id": "amazon-ec2-ssrf",
+            "name": "Amazon EC2 - Server-side request forgery (SSRF)",
+            "severity": "critical",
+            "tags": "aws,ec2,ssrf,amazon",
+            "path": "vulnerabilities/amazon/amazon-ec2-ssrf.yaml"
+        },
+        {
             "author": "princechaddha",
             "id": "host-header-injection",
             "name": "Host Header Injection",
@@ -9408,6 +9520,14 @@
             "severity": "high",
             "tags": "nginx,xss,status",
             "path": "vulnerabilities/other/nginx-module-vts-xss.yaml"
+        },
+        {
+            "author": "DhiyaneshDk",
+            "id": "digital-ocean-ssrf",
+            "name": "Digital Ocean - Server-side request forgery (SSRF)",
+            "severity": "critical",
+            "tags": "digitalocean,ssrf",
+            "path": "vulnerabilities/other/digital-ocean-ssrf.yaml"
         },
         {
             "author": "pikpikcu",
@@ -10896,6 +11016,14 @@
             "severity": "critical",
             "tags": "thinkphp,rce",
             "path": "vulnerabilities/thinkphp/thinkphp-2-rce.yaml"
+        },
+        {
+            "author": "kagamigawa",
+            "id": "thinkphp6-lang-lfi",
+            "name": "Thinkphp Lang - LFI",
+            "severity": "high",
+            "tags": "thinkphp,lfi",
+            "path": "vulnerabilities/thinkphp/thinkphp6-lang-lfi.yaml"
         },
         {
             "author": "lark-lab",
@@ -13066,9 +13194,9 @@
             "path": "technologies/default-lucee-page.yaml"
         },
         {
-            "author": "pdteam",
+            "author": "pdteam,its0x08",
             "id": "hikvision-detect",
-            "name": "Hikvision Detection",
+            "name": "Hikvision Panel",
             "severity": "info",
             "tags": "tech,hikvision",
             "path": "technologies/hikvision-detect.yaml"
@@ -14242,6 +14370,14 @@
             "path": "technologies/phppgadmin-version.yaml"
         },
         {
+            "author": "nybble04",
+            "id": "akamai-cache-detect",
+            "name": "Akamai Cache Detection",
+            "severity": "info",
+            "tags": "cache,akamai,tech",
+            "path": "technologies/akamai-cache-detect.yaml"
+        },
+        {
             "author": "pikpikcu",
             "id": "web-suite-detect",
             "name": "Web Suite Detect",
@@ -14712,6 +14848,14 @@
             "severity": "info",
             "tags": "tech,cloudrun,google",
             "path": "technologies/google/cloud-run-default-page.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "amazon-ec2-detect",
+            "name": "Amazon EC2 Server Detect",
+            "severity": "info",
+            "tags": "tech,aws,ec2,amazon",
+            "path": "technologies/aws/amazon-ec2-detect.yaml"
         },
         {
             "author": "jiheon-dev",
@@ -15250,6 +15394,1606 @@
             "path": "technologies/kubernetes/kube-api/kube-api-nodes.yaml"
         },
         {
+            "author": "ricardomaia",
+            "id": "wordpress-loco-translate",
+            "name": "Loco Translate Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/loco-translate.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-optinmonster",
+            "name": "Popup Builder by OptinMonster \u2013 WordPress Popups for Optins, Email Newsletters and Lead Generation Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/optinmonster.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-cloudflare",
+            "name": "Cloudflare Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/cloudflare.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-forminator",
+            "name": "Forminator \u2013 Contact Form, Payment Form & Custom Form Builder Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/forminator.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-members",
+            "name": "Members \u2013 Membership & User Role Editor Plugin Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/members.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-amp",
+            "name": "AMP Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/amp.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-imsanity",
+            "name": "Imsanity Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/imsanity.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-disable-gutenberg",
+            "name": "Disable Gutenberg Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/disable-gutenberg.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-wp-fastest-cache",
+            "name": "WP Fastest Cache Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/wp-fastest-cache.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-imagify",
+            "name": "Imagify \u2013 Optimize Images & Convert WebP | Compress Images Easily Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/imagify.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-google-site-kit",
+            "name": "Site Kit by Google \u2013 Analytics, Search Console, AdSense, Speed Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/google-site-kit.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-woosidebars",
+            "name": "WooSidebars Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/woosidebars.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-force-regenerate-thumbnails",
+            "name": "Force Regenerate Thumbnails Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/force-regenerate-thumbnails.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-woocommerce-services",
+            "name": "WooCommerce Shipping & Tax Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/woocommerce-services.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-google-analytics-for-wordpress",
+            "name": "MonsterInsights \u2013 Google Analytics Dashboard for WordPress (Website Stats Made Easy) Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/google-analytics-for-wordpress.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-gtranslate",
+            "name": "Translate WordPress with GTranslate Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/gtranslate.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-antispam-bee",
+            "name": "Antispam Bee Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/antispam-bee.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-wp-maintenance-mode",
+            "name": "LightStart \u2013 Maintenance Mode, Coming Soon and Landing Page Builder Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/wp-maintenance-mode.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-wp-user-avatar",
+            "name": "Paid Membership, Ecommerce, Registration Form, Login Form, User Profile, Paywall & Restrict Content \u2013 ProfilePress Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/wp-user-avatar.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-all-in-one-seo-pack",
+            "name": "All in One SEO \u2013 Best WordPress SEO Plugin \u2013 Easily Improve SEO Rankings & Increase Traffic Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/all-in-one-seo-pack.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-litespeed-cache",
+            "name": "LiteSpeed Cache Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/litespeed-cache.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-elementor",
+            "name": "Elementor Website Builder Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/elementor.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-wp-super-cache",
+            "name": "WP Super Cache Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/wp-super-cache.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-health-check",
+            "name": "Health Check & Troubleshooting Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/health-check.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-unyson",
+            "name": "Unyson Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/unyson.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-worker",
+            "name": "ManageWP Worker Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/worker.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-header-footer-code-manager",
+            "name": "Header Footer Code Manager Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/header-footer-code-manager.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-widget-importer-exporter",
+            "name": "Widget Importer & Exporter Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/widget-importer-exporter.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-wp-sitemap-page",
+            "name": "WP Sitemap Page Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/wp-sitemap-page.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-click-to-chat-for-whatsapp",
+            "name": "Click to Chat Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/click-to-chat-for-whatsapp.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-wp-migrate-db",
+            "name": "WP Migrate Lite \u2013 WordPress Migration Made Easy Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/wp-migrate-db.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-disable-comments",
+            "name": "Disable Comments \u2013 Remove Comments & Stop Spam [Multi-Site Support] Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/disable-comments.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-sucuri-scanner",
+            "name": "Sucuri Security \u2013 Auditing, Malware Scanner and Security Hardening Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/sucuri-scanner.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-admin-menu-editor",
+            "name": "Admin Menu Editor Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/admin-menu-editor.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-add-to-any",
+            "name": "AddToAny Share Buttons Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/add-to-any.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-newsletter",
+            "name": "Newsletter \u2013 Send awesome emails from WordPress Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/newsletter.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-custom-fonts",
+            "name": "Custom Fonts Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/custom-fonts.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-kadence-blocks",
+            "name": "Gutenberg Blocks by Kadence Blocks \u2013 Page Builder Features Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/kadence-blocks.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-yith-woocommerce-compare",
+            "name": "YITH WooCommerce Compare Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/yith-woocommerce-compare.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-wpcf7-recaptcha",
+            "name": "ReCaptcha v2 for Contact Form 7 Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/wpcf7-recaptcha.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-formidable",
+            "name": "Formidable Forms \u2013 Contact Form, Survey, Quiz, Calculator & Custom Form Builder Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/formidable.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-backwpup",
+            "name": "BackWPup \u2013 WordPress Backup Plugin Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/backwpup.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-favicon-by-realfavicongenerator",
+            "name": "Favicon by RealFaviconGenerator Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/favicon-by-realfavicongenerator.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-use-any-font",
+            "name": "Use Any Font | Custom Font Uploader Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/use-any-font.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-fluentform",
+            "name": "Contact Form Plugin \u2013 Fastest Contact Form Builder Plugin for WordPress by Fluent Forms Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/fluentform.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-photo-gallery",
+            "name": "Photo Gallery by 10Web \u2013 Mobile-Friendly Image Gallery Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/photo-gallery.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-one-click-demo-import",
+            "name": "One Click Demo Import Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/one-click-demo-import.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-astra-sites",
+            "name": "Starter Templates \u2014 Elementor, WordPress & Beaver Builder Templates Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/astra-sites.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-complianz-gdpr",
+            "name": "Complianz \u2013 GDPR/CCPA Cookie Consent Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/complianz-gdpr.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-table-of-contents-plus",
+            "name": "Table of Contents Plus Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/table-of-contents-plus.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-better-wp-security",
+            "name": "iThemes Security Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/better-wp-security.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-nextgen-gallery",
+            "name": "WordPress Gallery Plugin \u2013 NextGEN Gallery Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/nextgen-gallery.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-premium-addons-for-elementor",
+            "name": "Premium Addons for Elementor Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/premium-addons-for-elementor.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-broken-link-checker",
+            "name": "Broken Link Checker Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/broken-link-checker.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-translatepress-multilingual",
+            "name": "Translate Multilingual sites \u2013 TranslatePress Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/translatepress-multilingual.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-woocommerce-payments",
+            "name": "WooCommerce Payments \u2013 Fully Integrated Solution Built and Supported by Woo Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/woocommerce-payments.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-woo-variation-swatches",
+            "name": "Variation Swatches for WooCommerce Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/woo-variation-swatches.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-cookie-law-info",
+            "name": "CookieYes | GDPR Cookie Consent & Compliance Notice (CCPA Ready) Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/cookie-law-info.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-wp-mail-smtp",
+            "name": "WP Mail SMTP by WPForms \u2013 The Most Popular SMTP and Email Log Plugin Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/wp-mail-smtp.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-woocommerce",
+            "name": "WooCommerce Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/woocommerce.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-polylang",
+            "name": "Polylang Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/polylang.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-duplicator",
+            "name": "Duplicator \u2013 WordPress Migration & Backup Plugin Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/duplicator.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-leadin",
+            "name": "HubSpot \u2013 CRM, Email Marketing, Live Chat, Forms & Analytics Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/leadin.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-ssl-insecure-content-fixer",
+            "name": "SSL Insecure Content Fixer Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/ssl-insecure-content-fixer.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-header-and-footer-scripts",
+            "name": "Header and Footer Scripts Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/header-and-footer-scripts.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-insert-headers-and-footers",
+            "name": "WPCode \u2013 Insert Headers and Footers + Custom Code Snippets \u2013 WordPress Code Manager Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/insert-headers-and-footers.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-wpcf7-redirect",
+            "name": "Redirection for Contact Form 7 Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/wpcf7-redirect.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-better-search-replace",
+            "name": "Better Search Replace Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/better-search-replace.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-woocommerce-paypal-payments",
+            "name": "WooCommerce PayPal Payments Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/woocommerce-paypal-payments.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-google-listings-and-ads",
+            "name": "Google Listings & Ads Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/google-listings-and-ads.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-font-awesome",
+            "name": "Font Awesome Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/font-awesome.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-custom-post-type-ui",
+            "name": "Custom Post Type UI Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/custom-post-type-ui.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-yith-woocommerce-wishlist",
+            "name": "YITH WooCommerce Wishlist Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/yith-woocommerce-wishlist.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-creame-whatsapp-me",
+            "name": "Joinchat Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/creame-whatsapp-me.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-kirki",
+            "name": "Kirki Customizer Framework Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/kirki.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-wp-smushit",
+            "name": "Smush \u2013 Lazy Load Images, Optimize & Compress Images Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/wp-smushit.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-all-in-one-wp-migration",
+            "name": "All-in-One WP Migration Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/all-in-one-wp-migration.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-ad-inserter",
+            "name": "Ad Inserter \u2013 Ad Manager & AdSense Ads Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/ad-inserter.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-mailchimp-for-wp",
+            "name": "MC4WP' Mailchimp for WordPress Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/mailchimp-for-wp.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-elementskit-lite",
+            "name": "ElementsKit Elementor addons (Header Footer Builder, Mega Menu Builder, Free Elementor Widgets & Templates Library) Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/elementskit-lite.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-wordpress-importer",
+            "name": "WordPress Importer Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/wordpress-importer.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-woocommerce-gateway-stripe",
+            "name": "WooCommerce Stripe Payment Gateway Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/woocommerce-gateway-stripe.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-classic-widgets",
+            "name": "Classic Widgets Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/classic-widgets.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-enable-media-replace",
+            "name": "Enable Media Replace Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/enable-media-replace.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-coblocks",
+            "name": "Page Builder Gutenberg Blocks \u2013 CoBlocks Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/coblocks.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-wp-multibyte-patch",
+            "name": "WP Multibyte Patch Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/wp-multibyte-patch.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-advanced-custom-fields",
+            "name": "Advanced Custom Fields Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/advanced-custom-fields.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-seo-by-rank-math",
+            "name": "Rank Math SEO Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/seo-by-rank-math.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-iwp-client",
+            "name": "InfiniteWP Client Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/iwp-client.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-easy-google-fonts",
+            "name": "Easy Google Fonts Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/easy-google-fonts.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-webp-converter-for-media",
+            "name": "Converter for Media \u2013 Optimize images | Convert WebP & AVIF Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/webp-converter-for-media.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-classic-editor",
+            "name": "Classic Editor Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/classic-editor.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-wp-pagenavi",
+            "name": "WP-PageNavi Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/wp-pagenavi.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-google-analytics-dashboard-for-wp",
+            "name": "ExactMetrics \u2013 Google Analytics Dashboard for WordPress (Website Stats Plugin) Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/google-analytics-dashboard-for-wp.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-shortcodes-ultimate",
+            "name": "WordPress Shortcodes Plugin \u2014 Shortcodes Ultimate Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/shortcodes-ultimate.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-all-in-one-wp-security-and-firewall",
+            "name": "All-In-One Security (AIOS) \u2013 Security and Firewall Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/all-in-one-wp-security-and-firewall.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-really-simple-ssl",
+            "name": "Really Simple SSL Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/really-simple-ssl.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-simple-page-ordering",
+            "name": "Simple Page Ordering Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/simple-page-ordering.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-contact-form-7-honeypot",
+            "name": "Honeypot for Contact Form 7 Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/contact-form-7-honeypot.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-envato-elements",
+            "name": "Envato Elements \u2013 Photos & Elementor Templates Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/envato-elements.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-essential-addons-for-elementor-lite",
+            "name": "Essential Addons for Elementor Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/essential-addons-for-elementor-lite.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-smart-slider-3",
+            "name": "Smart Slider 3 Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/smart-slider-3.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-nextend-facebook-connect",
+            "name": "Nextend Social Login and Register Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/nextend-facebook-connect.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-cmb2",
+            "name": "CMB2 Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/cmb2.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-wp-file-manager",
+            "name": "File Manager Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/wp-file-manager.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-popup-maker",
+            "name": "Popup Maker \u2013 Popup for opt-ins, lead gen, & more Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/popup-maker.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-siteguard",
+            "name": "SiteGuard WP Plugin Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/siteguard.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-post-types-order",
+            "name": "Post Types Order Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/post-types-order.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-akismet",
+            "name": "Akismet Spam Protection Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/akismet.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-wordpress-seo",
+            "name": "Yoast SEO Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/wordpress-seo.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-happy-elementor-addons",
+            "name": "Happy Addons for Elementor Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/happy-elementor-addons.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-so-widgets-bundle",
+            "name": "SiteOrigin Widgets Bundle Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/so-widgets-bundle.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-really-simple-captcha",
+            "name": "Really Simple CAPTCHA Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/really-simple-captcha.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-under-construction-page",
+            "name": "Under Construction Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/under-construction-page.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-woocommerce-gateway-paypal-express-checkout",
+            "name": "WooCommerce PayPal Checkout Payment Gateway Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/woocommerce-gateway-paypal-express-checkout.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-limit-login-attempts",
+            "name": "Limit Login Attempts Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/limit-login-attempts.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-autoptimize",
+            "name": "Autoptimize Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/autoptimize.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-duplicate-page",
+            "name": "Duplicate Page Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/duplicate-page.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-ninja-forms",
+            "name": "Ninja Forms Contact Form \u2013 The Drag and Drop Form Builder for WordPress Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/ninja-forms.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-mailpoet",
+            "name": "MailPoet \u2013 emails and newsletters in WordPress Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/mailpoet.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-custom-css-js",
+            "name": "Simple Custom CSS and JS Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/custom-css-js.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-ml-slider",
+            "name": "Slider, Gallery, and Carousel by MetaSlider \u2013 Responsive WordPress Plugin Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/ml-slider.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-woocommerce-pdf-invoices-packing-slips",
+            "name": "PDF Invoices & Packing Slips for WooCommerce Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/woocommerce-pdf-invoices-packing-slips.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-themeisle-companion",
+            "name": "Orbit Fox by ThemeIsle Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/themeisle-companion.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-simple-custom-post-order",
+            "name": "Simple Custom Post Order Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/simple-custom-post-order.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-code-snippets",
+            "name": "Code Snippets Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/code-snippets.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-regenerate-thumbnails",
+            "name": "Regenerate Thumbnails Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/regenerate-thumbnails.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-hello-dolly",
+            "name": "Hello Dolly Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/hello-dolly.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-pretty-link",
+            "name": "Pretty Links \u2013 Affiliate Links, Link Branding, Link Tracking & Marketing Plugin Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/pretty-link.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-meta-box",
+            "name": "Meta Box \u2013 WordPress Custom Fields Framework Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/meta-box.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-adminimize",
+            "name": "Adminimize Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/adminimize.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-duracelltomi-google-tag-manager",
+            "name": "GTM4WP Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/duracelltomi-google-tag-manager.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-w3-total-cache",
+            "name": "W3 Total Cache Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/w3-total-cache.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-google-sitemap-generator",
+            "name": "XML Sitemaps Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/google-sitemap-generator.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-password-protected",
+            "name": "Password Protected Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/password-protected.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-shortpixel-image-optimiser",
+            "name": "ShortPixel Image Optimizer Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/shortpixel-image-optimiser.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-popup-builder",
+            "name": "Popup Builder \u2013 Create highly converting, mobile friendly marketing popups. Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/popup-builder.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-malcare-security",
+            "name": "MalCare WordPress Security Plugin \u2013 Malware Scanner, Cleaner, Security Firewall Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/malcare-security.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-limit-login-attempts-reloaded",
+            "name": "Limit Login Attempts Reloaded Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/limit-login-attempts-reloaded.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-gutenberg",
+            "name": "Gutenberg Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/gutenberg.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-redirection",
+            "name": "Redirection Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/redirection.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-tinymce-advanced",
+            "name": "Advanced Editor Tools (previously TinyMCE Advanced) Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/tinymce-advanced.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-coming-soon",
+            "name": "Website Builder by SeedProd \u2014 Theme Builder, Landing Page Builder, Coming Soon Page, Maintenance Mode Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/coming-soon.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-facebook-for-woocommerce",
+            "name": "Facebook for WooCommerce Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/facebook-for-woocommerce.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-intuitive-custom-post-order",
+            "name": "Intuitive Custom Post Order Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/intuitive-custom-post-order.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-stops-core-theme-and-plugin-updates",
+            "name": "Easy Updates Manager Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/stops-core-theme-and-plugin-updates.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-maintenance",
+            "name": "Maintenance Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/maintenance.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-contact-form-cfdb7",
+            "name": "Contact Form 7 Database Addon \u2013 CFDB7 Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/contact-form-cfdb7.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-sg-cachepress",
+            "name": "SiteGround Optimizer Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/sg-cachepress.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-ocean-extra",
+            "name": "Ocean Extra Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/ocean-extra.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-tablepress",
+            "name": "TablePress Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/tablepress.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-loginpress",
+            "name": "LoginPress | Custom Login Page Customizer Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/loginpress.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-loginizer",
+            "name": "Loginizer Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/loginizer.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-wp-google-maps",
+            "name": "WP Go Maps (formerly WP Google Maps) Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/wp-google-maps.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-wp-reset",
+            "name": "WP Reset \u2013 Most Advanced WordPress Reset Tool Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/wp-reset.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-jetpack",
+            "name": "Jetpack \u2013 WP Security, Backup, Speed, & Growth Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/jetpack.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-mainwp-child",
+            "name": "MainWP Child \u2013 Securely Connects Sites to the MainWP WordPress Manager Dashboard Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/mainwp-child.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-wp-statistics",
+            "name": "WP Statistics Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/wp-statistics.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-creative-mail-by-constant-contact",
+            "name": "Creative Mail \u2013 Easier WordPress & WooCommerce Email Marketing Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/creative-mail-by-constant-contact.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-wp-optimize",
+            "name": "WP-Optimize \u2013 Cache, Clean, Compress. Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/wp-optimize.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-astra-widgets",
+            "name": "Astra Widgets Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/astra-widgets.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-easy-table-of-contents",
+            "name": "Easy Table of Contents Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/easy-table-of-contents.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-php-compatibility-checker",
+            "name": "PHP Compatibility Checker Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/php-compatibility-checker.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-pixelyoursite",
+            "name": "PixelYourSite \u2013 Your smart PIXEL (TAG) Manager Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/pixelyoursite.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-wps-hide-login",
+            "name": "WPS Hide Login Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/wps-hide-login.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-contact-form-7",
+            "name": "Contact Form 7 Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/contact-form-7.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-redux-framework",
+            "name": "Gutenberg Template and Pattern Library & Redux Framework Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/redux-framework.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-sg-security",
+            "name": "SiteGround Security Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/sg-security.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-mailchimp-for-woocommerce",
+            "name": "Mailchimp for WooCommerce Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/mailchimp-for-woocommerce.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-wordfence",
+            "name": "Wordfence Security \u2013 Firewall & Malware Scan Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/wordfence.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-svg-support",
+            "name": "SVG Support Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/svg-support.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-megamenu",
+            "name": "Max Mega Menu Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/megamenu.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-wpforms-lite",
+            "name": "Contact Form by WPForms \u2013 Drag & Drop Form Builder for WordPress Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/wpforms-lite.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-safe-svg",
+            "name": "Safe SVG Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/safe-svg.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-all-404-redirect-to-homepage",
+            "name": "All 404 Redirect to Homepage & Broken images Redirection Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/all-404-redirect-to-homepage.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-flamingo",
+            "name": "Flamingo Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/flamingo.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-updraftplus",
+            "name": "UpdraftPlus WordPress Backup Plugin Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/updraftplus.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-header-footer-elementor",
+            "name": "Elementor Header & Footer Builder Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/header-footer-elementor.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-duplicate-post",
+            "name": "Yoast Duplicate Post Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/duplicate-post.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-official-facebook-pixel",
+            "name": "Meta pixel for WordPress Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/official-facebook-pixel.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-ultimate-addons-for-gutenberg",
+            "name": "Spectra \u2013 WordPress Gutenberg Blocks Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/ultimate-addons-for-gutenberg.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-instagram-feed",
+            "name": "Smash Balloon Social Photo Feed Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/instagram-feed.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-breadcrumb-navxt",
+            "name": "Breadcrumb NavXT Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/breadcrumb-navxt.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-pdf-embedder",
+            "name": "PDF Embedder Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/pdf-embedder.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-user-role-editor",
+            "name": "User Role Editor Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/user-role-editor.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-header-footer",
+            "name": "Head, Footer and Post Injections Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/header-footer.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-woo-checkout-field-editor-pro",
+            "name": "Checkout Field Editor (Checkout Manager) for WooCommerce Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/woo-checkout-field-editor-pro.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-siteorigin-panels",
+            "name": "Page Builder by SiteOrigin Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/siteorigin-panels.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-velvet-blues-update-urls",
+            "name": "Velvet Blues Update URLs Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/velvet-blues-update-urls.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-ga-google-analytics",
+            "name": "GA Google Analytics Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/ga-google-analytics.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-ewww-image-optimizer",
+            "name": "EWWW Image Optimizer Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/ewww-image-optimizer.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-easy-wp-smtp",
+            "name": "Easy WP SMTP \u2013 WordPress Email SMTP Plugin Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/easy-wp-smtp.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-woo-cart-abandonment-recovery",
+            "name": "WooCommerce Cart Abandonment Recovery Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/woo-cart-abandonment-recovery.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-black-studio-tinymce-widget",
+            "name": "Black Studio TinyMCE Widget Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/black-studio-tinymce-widget.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-child-theme-configurator",
+            "name": "Child Theme Configurator Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/child-theme-configurator.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-taxonomy-terms-order",
+            "name": "Category Order and Taxonomy Terms Order Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/taxonomy-terms-order.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-post-smtp",
+            "name": "Post SMTP Mailer/Email Log \u2013 Best Mail SMTP For WP Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/post-smtp.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-the-events-calendar",
+            "name": "The Events Calendar Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/the-events-calendar.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-cookie-notice",
+            "name": "Cookie Notice & Compliance for GDPR / CCPA Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-100,top-200",
+            "path": "technologies/wordpress/plugins/cookie-notice.yaml"
+        },
+        {
+            "author": "ricardomaia",
+            "id": "wordpress-easy-fancybox",
+            "name": "Easy FancyBox Detection",
+            "severity": "info",
+            "tags": "tech,wordpress,wp-plugin,top-200",
+            "path": "technologies/wordpress/plugins/easy-fancybox.yaml"
+        },
+        {
             "author": "pikpikcu,dhiyaneshDK",
             "id": "ms-exchange-server",
             "name": "Microsoft Exchange Server Detect",
@@ -15328,6 +17072,14 @@
             "severity": "info",
             "tags": "network,addpac,apos,voip",
             "path": "network/detect-addpac-voip-gateway.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "exposed-dockerd",
+            "name": "Docker Daemon Exposed",
+            "severity": "critical",
+            "tags": "network,docker",
+            "path": "network/exposed-dockerd.yaml"
         },
         {
             "author": "dwisiswant0",
@@ -16042,9 +17794,9 @@
             "path": "exposures/files/redmine-settings.yaml"
         },
         {
-            "author": "DhiyaneshDK",
+            "author": "DhiyaneshDK,Hardik-Solanki",
             "id": "cloud-config",
-            "name": "Cloud Config Yaml - File Disclosure",
+            "name": "Cloud Config File Exposure",
             "severity": "medium",
             "tags": "exposure,cloud,devops,files",
             "path": "exposures/files/cloud-config.yaml"
@@ -17018,6 +18770,22 @@
             "path": "exposures/tokens/bitly/bitly-secret-key.yaml"
         },
         {
+            "author": "ritikchaddha",
+            "id": "zenserp-api-key",
+            "name": "Zenserp Api Key",
+            "severity": "info",
+            "tags": "exposure,token,zenserp,apikey",
+            "path": "exposures/tokens/zenserp/zenserp-api-key.yaml"
+        },
+        {
+            "author": "ritikchaddha",
+            "id": "zenscrape-api-key",
+            "name": "Zenscrape API Key",
+            "severity": "info",
+            "tags": "exposure,token,zenscrape,apikey",
+            "path": "exposures/tokens/zenserp/zenscrape-api-key.yaml"
+        },
+        {
             "author": "puzzlepeaches",
             "id": "mailchimp-access-key-value",
             "name": "Mailchimp API Value",
@@ -17176,6 +18944,14 @@
             "severity": "low",
             "tags": "logs,exposure,error",
             "path": "exposures/logs/error-logs.yaml"
+        },
+        {
+            "author": "Hardik-Solanki",
+            "id": "ws-ftp-log",
+            "name": "WS FTP File Disclosure",
+            "severity": "low",
+            "tags": "exposure,ftp,logs",
+            "path": "exposures/logs/ws-ftp-log.yaml"
         },
         {
             "author": "sheikhrishad,geeknik",
@@ -21218,6 +22994,14 @@
             "path": "cves/2021/CVE-2021-41569.yaml"
         },
         {
+            "author": "For3stCo1d",
+            "id": "CVE-2021-30128",
+            "name": "Apache OFBiz <17.12.07 - Arbitrary Code Execution",
+            "severity": "critical",
+            "tags": "cve,cve2021,apache,ofbiz,deserialization,rce",
+            "path": "cves/2021/CVE-2021-30128.yaml"
+        },
+        {
             "author": "shifacyclewala,hackergautam",
             "id": "CVE-2021-30461",
             "name": "VoipMonitor <24.61 - Remote Code Execution",
@@ -22320,6 +24104,14 @@
             "severity": "high",
             "tags": "cve,cve2021,wordpress,wp-plugin,wp,ssrf,wpscan,unauth,likebtn-like-button",
             "path": "cves/2021/CVE-2021-24150.yaml"
+        },
+        {
+            "author": "gy741",
+            "id": "CVE-2021-42887",
+            "name": "TOTOLINK - Authentication Bypass",
+            "severity": "critical",
+            "tags": "totolink,auth-bypass,cve,cve2021,router",
+            "path": "cves/2021/CVE-2021-42887.yaml"
         },
         {
             "author": "gy741",
@@ -23530,6 +25322,14 @@
             "path": "cves/2022/CVE-2022-31269.yaml"
         },
         {
+            "author": "gy741",
+            "id": "CVE-2022-25082",
+            "name": "TOTOLink - Unauthenticated Command Injection",
+            "severity": "critical",
+            "tags": "totolink,cve,cve2022,router,unauth,rce,iot",
+            "path": "cves/2022/CVE-2022-25082.yaml"
+        },
+        {
             "author": "xeldax",
             "id": "CVE-2022-24288",
             "name": "Apache Airflow OS Command Injection",
@@ -23600,6 +25400,14 @@
             "severity": "high",
             "tags": "cve,cve2022,powertek,auth-bypass",
             "path": "cves/2022/CVE-2022-33174.yaml"
+        },
+        {
+            "author": "arafatansari",
+            "id": "CVE-2022-46381",
+            "name": "Certain Linear eMerge E3-Series - Cross Site Scripting",
+            "severity": "medium",
+            "tags": "cve,cve2022,xss,emerge,linear",
+            "path": "cves/2022/CVE-2022-46381.yaml"
         },
         {
             "author": "_0xf4n9x_,For3stCo1d",
@@ -24186,6 +25994,14 @@
             "path": "cves/2022/CVE-2022-0149.yaml"
         },
         {
+            "author": "princechaddha",
+            "id": "CVE-2022-33891",
+            "name": "Apache Spark UI - Command Injection",
+            "severity": "high",
+            "tags": "cve,cve2022,apache,spark,authenticated",
+            "path": "cves/2022/CVE-2022-33891.yaml"
+        },
+        {
             "author": "elitebaz",
             "id": "CVE-2022-29383",
             "name": "NETGEAR ProSafe SSL VPN firmware - SQL Injection",
@@ -24304,6 +26120,14 @@
             "severity": "critical",
             "tags": "cve,cve2022,atlassian,jira,exposure,auth-bypass",
             "path": "cves/2022/CVE-2022-0540.yaml"
+        },
+        {
+            "author": "theamanrawat",
+            "id": "CVE-2022-0786",
+            "name": "KiviCare < 2.3.9 - Unauthenticated SQLi",
+            "severity": "critical",
+            "tags": "cve,cve2022,wordpress,wp-plugin,wp,sqli,kivicare-clinic-management-system,unauth",
+            "path": "cves/2022/CVE-2022-0786.yaml"
         },
         {
             "author": "pikpikcu",
@@ -24528,6 +26352,14 @@
             "severity": "critical",
             "tags": "cve,cve2022,kubeview,kubernetes,exposure",
             "path": "cves/2022/CVE-2022-45933.yaml"
+        },
+        {
+            "author": "theamanrawat",
+            "id": "CVE-2022-45362",
+            "name": "Paytm Payment Gateway Plugin <= 2.7.0 Server Side Request Forgery (SSRF)",
+            "severity": "high",
+            "tags": "cve,cve2022,ssrf,wordpress,wp-plugin,wp,paytm-payments,unauth,oast,paytm",
+            "path": "cves/2022/CVE-2022-45362.yaml"
         },
         {
             "author": "theamanrawat",
@@ -25202,6 +27034,14 @@
             "path": "cves/2022/CVE-2022-22965.yaml"
         },
         {
+            "author": "Hardik-Solanki",
+            "id": "CVE-2022-4260",
+            "name": "WP-Ban < 1.69.1 - Admin Stored XSS",
+            "severity": "high",
+            "tags": "cve,cve2022,wordpress,wp-plugin,wp,xss,wp-ban,authenticated",
+            "path": "cves/2022/CVE-2022-4260.yaml"
+        },
+        {
             "author": "8arthur",
             "id": "CVE-2022-0147",
             "name": "WordPress Cookie Information/Free GDPR Consent Solution <2.0.8 - Cross-Site Scripting",
@@ -25440,6 +27280,14 @@
             "severity": "high",
             "tags": "cve,cve2022,lfi,weblogic,oracle",
             "path": "cves/2022/CVE-2022-21371.yaml"
+        },
+        {
+            "author": "Hardik-Solanki",
+            "id": "CVE-2022-3768",
+            "name": "WPSmartContracts < 1.3.12 - Author SQLi",
+            "severity": "high",
+            "tags": "cve,cve2022,wordpress,wp-plugin,wp,sqli,wp-smart-contracts,authenticated",
+            "path": "cves/2022/CVE-2022-3768.yaml"
         },
         {
             "author": "0x_Akoko",
@@ -32794,6 +34642,14 @@
             "path": "miscellaneous/options-method.yaml"
         },
         {
+            "author": "MihhailSokolov",
+            "id": "gpc-json",
+            "name": "Global Privacy Control (GPC) File Disclosure",
+            "severity": "info",
+            "tags": "misc,generic,gpc",
+            "path": "miscellaneous/gpc-json.yaml"
+        },
+        {
             "author": "c-sh0",
             "id": "netflix-conductor-version",
             "name": "Netflix Conductor Version Detection",
@@ -35446,7 +37302,7 @@
             "id": "docker-registry",
             "name": "Docker Registry Listing",
             "severity": "medium",
-            "tags": "docker,devops",
+            "tags": "misconfig,docker,devops",
             "path": "misconfiguration/docker-registry.yaml"
         },
         {
@@ -36002,6 +37858,14 @@
             "path": "misconfiguration/database-error.yaml"
         },
         {
+            "author": "geeknik",
+            "id": "sony-bravia-disclosure",
+            "name": "Sony BRAVIA Digital Signage 1.7.8 System API Information Disclosure",
+            "severity": "low",
+            "tags": "misconfig,sony,unauth,exposure",
+            "path": "misconfiguration/sony-bravia-disclosure.yaml"
+        },
+        {
             "author": "arafatansari",
             "id": "corebos-htaccess",
             "name": "CoreBos - .htaccess File Exposure",
@@ -36458,6 +38322,14 @@
             "path": "misconfiguration/installer/contentify-installer.yaml"
         },
         {
+            "author": "pussycat0x",
+            "id": "concrete-installer",
+            "name": "Concrete Installer",
+            "severity": "high",
+            "tags": "misconfig,exposure,install,concrete",
+            "path": "misconfiguration/installer/concrete-installer.yaml"
+        },
+        {
             "author": "ritikchaddha",
             "id": "sms-installer",
             "name": "SMS Gateway Installation",
@@ -36544,6 +38416,14 @@
             "severity": "high",
             "tags": "misconfig,prestashop,exposure,install",
             "path": "misconfiguration/installer/prestashop-installer.yaml"
+        },
+        {
+            "author": "pussycat0x",
+            "id": "dolibarr-installer",
+            "name": "Dolibarr Installer",
+            "severity": "high",
+            "tags": "misconfig,exposure,install",
+            "path": "misconfiguration/installer/dolibarr-installer.yaml"
         },
         {
             "author": "ritikchaddha",
@@ -37618,6 +39498,14 @@
             "path": "iot/codian-mcu-login.yaml"
         },
         {
+            "author": "Hardik-Solanki",
+            "id": "carel-plantvisor-panel",
+            "name": "CAREL Pl@ntVisor Panel",
+            "severity": "info",
+            "tags": "panels,scada,iot,carel",
+            "path": "iot/carel-plantvisor-panel.yaml"
+        },
+        {
             "author": "dhiyaneshDK",
             "id": "huawei-home-gateway",
             "name": "HUAWEI Home Gateway HG658d",
@@ -37818,6 +39706,14 @@
             "path": "iot/stem-audio-table-private-keys.yaml"
         },
         {
+            "author": "pussycat0x",
+            "id": "raspberry-shake-config",
+            "name": "Raspberry Shake Config Detection",
+            "severity": "medium",
+            "tags": "misconfig,unauth,iot,raspberry",
+            "path": "iot/raspberry-shake-config.yaml"
+        },
+        {
             "author": "DhiyaneshDk",
             "id": "novus-ip-camera",
             "name": "NoVus IP camera Login",
@@ -37864,6 +39760,14 @@
             "severity": "info",
             "tags": "iot",
             "path": "iot/grandstream-device-configuration.yaml"
+        },
+        {
+            "author": "Hardik-Solanki",
+            "id": "hue-personal-wireless-panel",
+            "name": "HUE Personal Wireless Lighting Panel",
+            "severity": "info",
+            "tags": "hue,iot,wireless",
+            "path": "iot/hue-personal-wireless-panel.yaml"
         },
         {
             "author": "droberson",
