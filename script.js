@@ -1,6 +1,6 @@
 const repo = "projectdiscovery/nuclei-templates"
 
-var blob = `https://github.com/${repo}/blob/master`,
+var blob = `https://github.com/${repo}/blob/main`,
 	cmd = document.getElementById("command"),
 	cmdDialog = document.getElementById("command-dialog"),
 	cmdTitle = document.getElementById("command-title"),
@@ -76,7 +76,7 @@ function init() {
 
 function loadTop10() {
 	let req = new XMLHttpRequest();
-	req.open("GET", `https://raw.githubusercontent.com/${repo}/master/TOP-10.md`, true);
+	req.open("GET", `https://raw.githubusercontent.com/${repo}/main/TOP-10.md`, true);
 	req.send();
 	req.addEventListener("readystatechange", function() {
 		if (this.readyState === this.DONE && this.status === 200) {
