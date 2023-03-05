@@ -53,19 +53,21 @@ document.body.onscroll = function() {
 
 function init() {
 	let req = new XMLHttpRequest();
-	req.open("GET", "db.json", true);
+	req.open("GET", "db.json.gz", true);
+	req.responseType = "arraybuffer";
 	req.send();
 	req.addEventListener("readystatechange", function() {
 		if (this.readyState === this.DONE) {
+			const data = this.response;
 			try {
-				window.db = JSON.parse(this.response);
+				window.db = JSON.parse(pako.inflate(data,{to:"string"}));
 				version.innerText = window.db["version"];
 				versionBadge.removeAttribute("style")
 				suggest.style.display = "block";
 				search.removeAttribute("disabled");
 				getQueryHash()
 			} catch(e) {
-				dialogMsg.innerText = "Database can't be loaded: " + e.message;
+				dialogMsg.innerText = "Database can't be loaded: " + e.toString();
 				dialog.showModal()
 			}
 		}
