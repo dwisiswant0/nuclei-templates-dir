@@ -68,5 +68,5 @@ for template in tpl:
 		except:
 			pass
 
-print(json.dumps(data, indent=4))
+print(json.dumps(data, separators=("," ":")))
 shutil.rmtree(temp)
