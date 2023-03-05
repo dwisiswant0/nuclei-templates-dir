@@ -41,7 +41,7 @@ jobs:
           OUT="db.json"
 
           python .github/scripts/builder.py 1>$OUT
-          gzip $OUT > $OUT.gz
+          gzip -cf $OUT > $OUT.gz
 
           echo "::set-output name=changes::$(git status -s | wc -l)"
 
