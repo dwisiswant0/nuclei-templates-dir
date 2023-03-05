@@ -52,28 +52,57 @@ document.body.onscroll = function() {
 };
 
 function init() {
+	let db = window.localStorage.getItem("db");
+	if (db == null) {
+		getDb()
+	} else {
+		window.db = JSON.parse(db)
+		let req = new XMLHttpRequest();
+		req.open("GET", "https://raw.githubusercontent.com/dwisiswant0/nuclei-templates-dir/master/VERSION", true);
+		req.send();
+		req.addEventListener("readystatechange", function() {
+			if (this.readyState === this.DONE && this.status === 200) {
+				if (this.response.trim() !== window.db["version"]) {
+					getDb()
+				} else {
+					toggle()
+				}
+			}
+		})
+	}
+	loadTop10()
+}
+
+function toggle(e) {
+	if (e) {
+		dialogMsg.innerText = "Database can't be loaded: " + e.toString();
+		dialog.showModal()
+	} else {
+		version.innerText = window.db["version"];
+		versionBadge.removeAttribute("style")
+		suggest.style.display = "block";
+		search.removeAttribute("disabled");
+		getQueryHash()
+	}
+}
+
+function getDb() {
 	let req = new XMLHttpRequest();
 	req.open("GET", "db.json.gz", true);
 	req.responseType = "arraybuffer";
 	req.send();
 	req.addEventListener("readystatechange", function() {
 		if (this.readyState === this.DONE) {
-			const data = this.response;
 			try {
-				window.db = JSON.parse(pako.inflate(data,{to:"string"}));
-				version.innerText = window.db["version"];
-				versionBadge.removeAttribute("style")
-				suggest.style.display = "block";
-				search.removeAttribute("disabled");
-				getQueryHash()
+				const data = pako.inflate(this.response, {to:"string"});
+				window.db = JSON.parse(data);
+				window.localStorage.setItem("db", data);
+				toggle()
 			} catch(e) {
-				dialogMsg.innerText = "Database can't be loaded: " + e.toString();
-				dialog.showModal()
+				toggle(e)
 			}
 		}
 	});
-
-	loadTop10()
 }
 
 function loadTop10() {
