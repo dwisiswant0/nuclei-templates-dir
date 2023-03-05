@@ -25,7 +25,7 @@ def get_latest():
 
 try:
 	if sys.argv[1] == "get-latest":
-		print(get_latest())
+		print(get_latest(), end="")
 except:
 	pass
 else:
