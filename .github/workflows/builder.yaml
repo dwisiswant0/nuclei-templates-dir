@@ -29,6 +29,7 @@ jobs:
           REMOTE="$(python .github/scripts/builder.py get-latest)"
 
           [[ "${LOCAL}" != "${REMOTE}" ]] && STATUS="true" || STATUS="false"
+          [[ "${{ github.event_name }}" == "workflow_dispatch" ]] && STATUS="true"
 
           echo "::set-output name=available::$STATUS"
           echo "${REMOTE}" > VERSION
