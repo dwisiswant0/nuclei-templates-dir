@@ -19,13 +19,13 @@ jobs:
 
       - name: Install dependencies
         run: |
-          sudo apt install jq gzip -y
+          sudo apt install gzip -y
           python -m pip install -r .github/scripts/requirements.txt
 
       - name: Check if update available
         id: update
         run: |
-          LOCAL="$(cat db.json | jq -r .version)"
+          LOCAL="$(cat VERSION)"
           REMOTE="$(python .github/scripts/builder.py get-latest)"
 
           [[ "${LOCAL}" != "${REMOTE}" ]] && STATUS="true" || STATUS="false"
