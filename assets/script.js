@@ -58,7 +58,7 @@ function init() {
 	} else {
 		window.db = JSON.parse(db)
 		let req = new XMLHttpRequest();
-		req.open("GET", "https://raw.githubusercontent.com/dwisiswant0/nuclei-templates-dir/master/VERSION", true);
+		req.open("GET", "/VERSION", true);
 		req.send();
 		req.addEventListener("readystatechange", function() {
 			if (this.readyState === this.DONE && this.status === 200) {
