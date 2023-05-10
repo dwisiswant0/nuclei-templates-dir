@@ -62,7 +62,7 @@ function init() {
 		req.send();
 		req.addEventListener("readystatechange", function() {
 			if (this.readyState === this.DONE && this.status === 200) {
-				if (this.response !== window.db["version"]) {
+				if (this.response.trim() !== window.db["version"]) {
 					getDb()
 				} else {
 					toggle()
