@@ -68,7 +68,7 @@
           <form method="dialog">
             <p class="title" id="command-title"></p>
             <pre><code class="language-bash" id="command">...</code></pre>
-            <menu class="dialog-menu">
+            <menu class="dialog-menu" style="padding-left; 0;">
               <button class="nes-btn">Close</button>
               <a class="nes-btn is-primary" id="command-url" href="#" target="_blank">Open</a>
             </menu>
@@ -96,7 +96,7 @@
         <p id="suggest" style="display: none;">
           <button type="button" class="nes-btn is-primary" onclick="doSuggest(this)">pdteam</button>
           <button type="button" class="nes-btn" onclick="doSuggest(this)">takeover</button>
-          <button type="button" class="nes-btn is-success" onclick="doSuggest(this)">workflow</button>
+          <button type="button" class="nes-btn is-success" onclick="doSuggest(this)">osint</button>
           <button type="button" class="nes-btn is-warning" id="cve-year-suggest" onclick="doSuggest(this)">cve-NNNN</button>
           <button type="button" class="nes-btn is-error" onclick="doSuggest(this)">RCE</button>
         </p>
