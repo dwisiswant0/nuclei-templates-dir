@@ -8,6 +8,7 @@ var blob = `https://github.com/${repo}/blob/`,
 	contributors = document.getElementById("contributors"),
 	count = document.getElementById("count"),
 	countIssue = document.getElementById("count-issue"),
+	cveYear = document.getElementById("cve-year-suggest"),
 	dialog = document.getElementById("dialog"),
 	dialogMsg = document.getElementById("dialog-message"),
 	header = document.getElementById("header"),
@@ -80,7 +81,8 @@ function toggle(e) {
 		dialog.showModal()
 	} else {
 		version.innerText = window.db["version"];
-		versionBadge.removeAttribute("style")
+		versionBadge.removeAttribute("style");
+		cveYear.innerText = "cve-" + new Date().getFullYear();
 		suggest.style.display = "block";
 		search.removeAttribute("disabled");
 		getQueryHash()
@@ -168,7 +170,16 @@ function getQueryHash() {
 	}
 }
 
-function doSuggest(keyword) {
+function doSuggest(e) {
+	let keyword = "";
+	switch (typeof e) {
+		case "object":
+			keyword = e.innerText;
+			break;
+		case "string":
+			keyword = e;
+			break;
+	}
 	search.value = keyword;
 	doSearch()
 }

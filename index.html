@@ -94,11 +94,11 @@
       <section class="topic">        
         <h2><a href="#search">#</a>Search</h2>
         <p id="suggest" style="display: none;">
-          <button type="button" class="nes-btn is-primary" onclick="doSuggest('pdteam')">pdteam</button>
-          <button type="button" class="nes-btn" onclick="doSuggest('takeover')">takeover</button>
-          <button type="button" class="nes-btn is-success" onclick="doSuggest('workflow')">workflow</button>
-          <button type="button" class="nes-btn is-warning" onclick="doSuggest('cve-2021')">cve-2021</button>
-          <button type="button" class="nes-btn is-error" onclick="doSuggest('RCE')">RCE</button>
+          <button type="button" class="nes-btn is-primary" onclick="doSuggest(this)">pdteam</button>
+          <button type="button" class="nes-btn" onclick="doSuggest(this)">takeover</button>
+          <button type="button" class="nes-btn is-success" onclick="doSuggest(this)">workflow</button>
+          <button type="button" class="nes-btn is-warning" id="cve-year-suggest" onclick="doSuggest(this)">cve-NNNN</button>
+          <button type="button" class="nes-btn is-error" onclick="doSuggest(this)">RCE</button>
         </p>
         <p>
           Search by template ID, name, tags and/or author.
