@@ -1,6 +1,6 @@
 const repo = "projectdiscovery/nuclei-templates"
 
-var blob = `https://github.com/${repo}/blob/main`,
+var blob = `https://github.com/${repo}/blob/`,
 	cmd = document.getElementById("command"),
 	cmdDialog = document.getElementById("command-dialog"),
 	cmdTitle = document.getElementById("command-title"),
@@ -70,6 +70,7 @@ function init() {
 			}
 		})
 	}
+	blob += window.db["version"]
 	loadTop10()
 }
 
