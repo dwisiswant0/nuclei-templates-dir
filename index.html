@@ -69,8 +69,12 @@
             <p class="title" id="command-title"></p>
             <pre><code class="language-bash" id="command">...</code></pre>
             <menu class="dialog-menu" style="padding-left: 0;">
-              <button class="nes-btn">Close</button>
+              <label style="float: right;">
+                <input type="checkbox" id="remote-url" class="nes-checkbox" />
+                <span>Remote URL</span>
+              </label>
               <a class="nes-btn is-primary" id="command-url" href="#" target="_blank">Open</a>
+              <button class="nes-btn">Close</button>
             </menu>
           </form>
         </dialog>

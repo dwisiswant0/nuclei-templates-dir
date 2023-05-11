@@ -28,6 +28,7 @@ var blob = `https://github.com/${repo}/blob/`,
 	suggest = document.getElementById("suggest"),
 	top10 = document.getElementById("top-10"),
 	version = document.getElementById("version"),
+	remoteURL = document.getElementById("remote-url"),
 	versionBadge = document.getElementById("version-badge");
 
 String.prototype.toHtmlEntities = function() {	
@@ -41,6 +42,19 @@ String.prototype.escapeRegExp = function() {
 		return s.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
 	});
 };
+
+remoteURL.addEventListener('change', e => {
+	var tplURL = cmdURL.getAttribute("href");
+	var tplPath = tplURL.replace(`${blob}/`, "");
+	var tplRAW = `${blob.replace("/blob/", "/raw/")}/${tplPath}`;
+
+	if (e.target.checked) {
+		cmd.innerText = cmd.innerText.replace(tplPath, tplRAW);
+	} else {
+		cmd.innerText = cmd.innerText.replace(tplRAW, tplPath);
+	}
+	hljs.highlightAll();
+});
 
 document.body.onscroll = function() {
 	if (window.pageYOffset > 50) {
@@ -148,6 +162,7 @@ function genCommand(obj) {
 	hljs.highlightAll();
 	cmdTitle.innerText = obj.innerText;
 	cmdURL.setAttribute("href", `${blob}/${path}`);
+	remoteURL.checked = false;
 	cmdDialog.showModal();
 
 	return false
