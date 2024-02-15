@@ -97,6 +97,12 @@ header.sticky .nav-brand p {
   width: 30% !important;
 }
 
+.lists {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 500px;
+}
+
 /* Footer */
 footer {
   text-align: center;
