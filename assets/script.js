@@ -234,6 +234,7 @@ function doSearch() {
 
 	if (input === "") {
 		result.style.display = "none";
+		search.classList.remove("is-error");
 		return
 	}
 
@@ -250,7 +251,13 @@ function doSearch() {
 		}
 	});
 
-	0 == i ? shrug.style.display = "block" : shrug.style.display = "none";
+	if (0 == i) {
+		shrug.style.display = "block";
+		search.classList.add("is-error")
+	} else {
+		shrug.style.display = "none";
+		search.classList.remove("is-error")
+	}
 
 	count.innerText = i;
 	keyword.innerText = input;
@@ -286,14 +293,22 @@ function doSearchIssue() {
 					output += `<li>${getIcon(type, e.state)} <a href="https://github.com/${repo}/${type == "pull_request" ? "pull" : type == "issue" && type + "s"}/${e.number}" target="_blank">${e.title}</a></li>`;
 				});
 
-				res.total_count > 100 ? output += `<br><p>The display limit is 100, for the rest navigate to the <a href="https://github.com/${repo}/issues?q=${encodeURIComponent(input)}" target="_blank">GitHub repository page</a>.</p>` : false;
+				res.total_count > 100 ? output += `<br><p class="nes-text is-error">* The display limit is 100, for the rest navigate to the <a href="https://github.com/${repo}/issues?q=${encodeURIComponent(input)}" target="_blank">GitHub repository page</a>.</p>` : false;
 
-				i == 0 ? shrugIssue.style.display = "block" : shrugIssue.style.display = "none"
+				if (i == 0) {
+					shrugIssue.style.display = "block";
+					searchIssue.classList.add("is-error")
+				} else {
+					shrugIssue.style.display = "none"
+					searchIssue.classList.remove("is-error")
+				}
 			} else if (this.status == 403) {
 				rateLimited.style.display = "block";
-				shrugIssue.style.display = "none"
+				shrugIssue.style.display = "none";
+				searchIssue.classList.add("is-error")
 			} else {
-				rateLimited.style.display = "none"
+				rateLimited.style.display = "none";
+				searchIssue.classList.remove("is-error")
 			}
 
 			countIssue.innerText = i;
