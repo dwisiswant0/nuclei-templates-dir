@@ -175,7 +175,7 @@ function getQueryHash() {
 	params.forEach(function(val) {
 		var split = val.split("=");
 		if (split[0] == "q") {
-			keyword = split[1];
+			keyword = decodeURIComponent(split[1]);
 			return
 		}
 	});
@@ -227,8 +227,8 @@ function getIcon(type, state, size) {
 function doSearch() {
 	var input = search.value.trim(),
 		regex = new RegExp(input.escapeRegExp(), "i"),
-		i = 0,
-		output = "";
+		output = [],
+		content = "";
 
 	replaceState(input);
 
@@ -238,30 +238,43 @@ function doSearch() {
 		return
 	}
 
-	window.db["data"].forEach(function(e) {
-		if ((e.author.toString().search(regex) != -1) || (e.id.search(regex) != -1) || (e.name.search(regex) != -1) || (e.tags.search(regex) != -1)) {
-			var title = `${e.path.startsWith("cves") ? `${e.id}: ` : ""}${e.name}`,
-				severity = e.severity == "" ? "none" : e.severity.toLowerCase();
+	const data = window.db["data"];
 
-			output += `<li><div class="severity-indicator"><div class="severity-indicator_separator"></div><div class="severity-indicator_separator"></div>` +
+	for (var i = 0; i < data.length; i++) {
+		var e = data[i];
+
+		if ((e.author.toString().search(regex) != -1) || (e.id.search(regex) != -1) || (e.name.search(regex) != -1) || (e.tags.search(regex) != -1)) {
+			output.push(e);
+		}
+
+		try {
+			if (jmespath.search(e, input) && !(e in output)) output.push(e)
+		} catch(e) {
+			console.error(e);
+			break
+		}
+	};
+
+	if (output.length > 0) {
+		output.forEach(function(e) {
+			var title = `${e.id.startsWith("CVE") ? `${e.id}: ` : ""}${e.name}`,
+				severity = e.severity == "" ? "none" : e.severity.toLowerCase();
+			content += `<li><div class="severity-indicator"><div class="severity-indicator_separator"></div><div class="severity-indicator_separator"></div>` +
 				`<div class="severity-indicator_separator"></div><div class="severity-indicator_separator"></div>` +
 				`<div class="severity-indicator_progress severity-indicator_progress-${severity}"></div></div> ` +
 				`<a href="${blob}/${e.path}" onclick="return genCommand(this);">${title}</a></li>`;
-			i++
-		}
-	});
+		});
 
-	if (0 == i) {
-		shrug.style.display = "block";
-		search.classList.add("is-error")
-	} else {
 		shrug.style.display = "none";
 		search.classList.remove("is-error")
+	} else {
+		shrug.style.display = "block";
+		search.classList.add("is-error")
 	}
 
-	count.innerText = i;
+	count.innerText = output.length;
 	keyword.innerText = input;
-	list.innerHTML = output;
+	list.innerHTML = content;
 	result.style.display = "block"
 };
 
