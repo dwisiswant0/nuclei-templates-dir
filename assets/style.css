@@ -100,7 +100,7 @@ header.sticky .nav-brand p {
 .lists {
   overflow-y: auto;
   overflow-x: hidden;
-  height: 500px;
+  max-height: 500px;
 }
 
 ::-webkit-scrollbar {
