@@ -124,18 +124,24 @@ function getDb() {
 
 function loadTop10() {
 	let req = new XMLHttpRequest();
-	req.open("GET", `https://raw.githubusercontent.com/${repo}/main/TOP-10.md`, true);
+	req.open("GET", "https://api.projectdiscovery.io/v1/template/leaderboard?from=0", true);
 	req.send();
 	req.addEventListener("readystatechange", function() {
 		if (this.readyState === this.DONE && this.status === 200) {
-			var list = Array.from(this.response.matchAll(/^\|\s\w+.+?\|\s+\d+\s\|\s(\w+)/gm)).map(match => match[1]),
-				output = "";
+			const data = JSON.parse(this.responseText).data;
+			let output = "";
 
-			list.forEach(function(user) {
-				output += `<a class="contributor" href="https://github.com/${user}" target="_blank">` +
-					`<img class="nes-avatar is-large is-rounded lazy" src="//github.com/${user}.png?size=64" onerror="this.onerror=null, this.src='//github.com/github.png?size=64'">` +
-					`<p>${user}</p></a>\n`
-			});
+			for (let i = 0; i < 10; i++) {
+				const user = data[i];
+				const link = user.links.github || undefined;
+				const img = user.links.github || "//github.com/projectdiscovery";
+
+				output += link ? `<a class="contributor" href="${link}" target="_blank">` : `<span class="contributor">`;
+				output += `<img class="nes-avatar is-large is-rounded lazy" src="${img}.png?size=64">`;
+				output += `<p>${user.author}</p>`;
+				output += (link ? "</a>" : "</span>") + "\n";
+			}
+
 			top10.innerHTML = output;
 			contributors.style.display = "block"
 		}
