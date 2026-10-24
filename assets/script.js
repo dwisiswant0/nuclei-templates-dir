@@ -6,6 +6,7 @@ var blob = `https://github.com/${repo}/blob/`,
 	cmdTitle = document.getElementById("command-title"),
 	cmdURL = document.getElementById("command-url");
 	contributors = document.getElementById("contributors"),
+	copySearchCommandBtn = document.getElementById("copy-search-command"),
 	count = document.getElementById("count"),
 	countIssue = document.getElementById("count-issue"),
 	cveYear = document.getElementById("cve-year-suggest"),
@@ -149,7 +150,7 @@ function loadTop10() {
 }
 
 function genCommand(obj) {
-	var cmdTxt = "$ nuclei -u ",
+	var cmdTxt = "nuclei -u ",
 		path = obj.getAttribute("href").replace(`${blob}/`, "");
 
 	if (path.startsWith(`file/`)) {
@@ -172,6 +173,59 @@ function genCommand(obj) {
 	cmdDialog.showModal();
 
 	return false
+}
+
+function copyTextToClipboard(text) {
+	if (navigator.clipboard && window.isSecureContext) {
+		return navigator.clipboard.writeText(text);
+	}
+
+	return new Promise((resolve, reject) => {
+		let txtArea = document.createElement("textarea");
+		txtArea.value = text;
+		txtArea.style.position = "fixed";
+		txtArea.style.opacity = "0";
+		document.body.appendChild(txtArea);
+		txtArea.focus();
+		txtArea.select();
+
+		try {
+			document.execCommand("copy");
+			resolve();
+		} catch (e) {
+			reject(e);
+		} finally {
+			document.body.removeChild(txtArea);
+		}
+	});
+}
+
+function setCopySearchCommand(output) {
+	let ids = [...new Set(output.map(e => e.id).filter(e => e !== ""))];
+
+	if (ids.length === 0) {
+		copySearchCommandBtn.style.display = "none";
+		copySearchCommandBtn.removeAttribute("data-command");
+		return;
+	}
+
+	copySearchCommandBtn.innerText = "Copy nuclei command";
+	copySearchCommandBtn.setAttribute("data-command", `nuclei -u "URL" -id "${ids.join(",")}"`);
+	copySearchCommandBtn.style.display = "inline-block";
+}
+
+function copySearchCommand() {
+	let command = copySearchCommandBtn.getAttribute("data-command");
+	if (!command) return;
+
+	copyTextToClipboard(command).then(() => {
+		copySearchCommandBtn.innerText = "Copied!";
+		setTimeout(() => copySearchCommandBtn.innerText = "Copy nuclei command", 1500);
+	}).catch(e => {
+		console.error(e);
+		copySearchCommandBtn.innerText = "Copy failed";
+		setTimeout(() => copySearchCommandBtn.innerText = "Copy nuclei command", 1500);
+	});
 }
 
 function getQueryHash() {
@@ -262,6 +316,7 @@ function doSearch() {
 	};
 
 	if (output.length > 0) {
+		setCopySearchCommand(output);
 		output.forEach(function(e) {
 			var title = `${e.id.startsWith("CVE") ? `${e.id}: ` : ""}${e.name}`,
 				severity = e.severity == "" ? "none" : e.severity.toLowerCase();
@@ -274,6 +329,8 @@ function doSearch() {
 		shrug.style.display = "none";
 		search.classList.remove("is-error")
 	} else {
+		copySearchCommandBtn.style.display = "none";
+		copySearchCommandBtn.removeAttribute("data-command");
 		shrug.style.display = "block";
 		search.classList.add("is-error")
 	}
@@ -342,3 +399,4 @@ function doSearchIssue() {
 
 search.addEventListener("keyup", doSearch);
 searchIssue.addEventListener("keyup", doSearchIssue);
+copySearchCommandBtn.addEventListener("click", copySearchCommand);
